@@ -125,7 +125,7 @@
         </div>
       </div>
       <div class="panel-body panel-body__overall">
-        <div class="col-md-7 col-sm-8 col-xs-12">
+        <div class="col-md-8 col-sm-8 col-xs-12">
           <div class="x_panel tile fixed_height_360 overflow_hidden points-by-brand-panel panel-rounded">
             <div class="x_title">
               <h2 class="special-header__overall">Total Earnings By Brand Category <i
@@ -243,7 +243,7 @@
           </div>
         </div>
 
-        <div class="col-md-5 col-sm-4 col-xs-12">
+        <div class="col-md-4 col-sm-4 col-xs-12">
           <div class="x_panel panel-rounded" style="min-height: 25em;">
             <div class="x_title">
               <h2 class="special-header__overall">Earnings vs Opportunities <i class="fa fa-question-circle superscript"
@@ -257,8 +257,8 @@
             </div> -->
 
             <div class="col-xs-12 flex-center">
-              <canvas height="280" width="280" class="circle_chart" id="echart_full_pie"
-                aria-label="Sold vs Opportunities doughnut chart" role="img" style="padding: 1.5em;"></canvas>
+              <canvas height="250" width="250" class="circle_chart" id="echart_full_pie"
+                aria-label="Sold vs Opportunities doughnut chart" role="img" style="padding: 1.15em;"></canvas>
             </div>
           </div>
         </div>
@@ -2125,11 +2125,13 @@
         plugins: {
           labels: {
             render: 'percentage',
-            fontColor: '#fff',
+            ontStyle: 'bold',
+            fontColor: '#ffffff',
+            fontFamily: '"Lucida Console", Monaco, monospace',
             precision: 1
           }
         },
-        cutoutPercentage: 65,
+        cutoutPercentage: 69,
         responsive: false
       }
     });
