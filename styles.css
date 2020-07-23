@@ -765,7 +765,7 @@ input[type="search"] {
 }
 
 .stats_count__icon {
-    font-size: 50px;
+    font-size: 40px !important;
 }
 
 .stats_count__icon-pane {
