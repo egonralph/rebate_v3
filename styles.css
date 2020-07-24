@@ -781,7 +781,7 @@ input[type="search"] {
     background: linear-gradient(to top, #EAEAEA, #DBDBDB, #F2F2F2, #EAEAEA);
     border-radius: 10px;
     text-align: right;
-    padding: 0.5em 2em 0.5em 0.25em;
+    padding: 0.5em 0.25em !important;
     height: 6em;
 }
 
@@ -990,8 +990,16 @@ input[type="search"] {
     padding-right: 0 !important;
 }
 
-.tile_count .tile_stats_count:not(:first-child) {
+.tile_count .tile_stats_count {
     max-width: 18.75%;
+}
+
+.tile_count .tile_stats_count.stats_count_container--vendor {
+    max-width: 20.75%;
+}
+
+.tile_count .tile_stats_count.stats_count_container.stats_count_container--qtd {
+    max-width: 23%;
 }
 
 .tooltip-inner {
