@@ -424,6 +424,10 @@ input[type="search"] {
     margin-left: 15px;
 }
 
+.legend_progress_item{
+    padding-left: 1.3em;
+}
+
 #lineChartByBrand {
     width: 100% !important;
     height: 400px !important;
@@ -653,7 +657,13 @@ input[type="search"] {
     margin-bottom: 0.8em;
 }
 
-.progress.progress_units {
+/* .progress.progress_units {
+    border-radius: 10px;
+    background-color: #aaaaaa;
+} */
+
+.progress.progress_quarter{
+    margin-bottom: 0;
     border-radius: 10px;
     background-color: #aaaaaa;
 }
@@ -669,18 +679,27 @@ input[type="search"] {
 
 .progress-bar_items {
     width: 100%;
-    color: #fff;
+    color: #555555 !important;
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 100 !important;
     /* display: flex;
     justify-content: space-around; */
     align-items: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 0px 0 0 17em;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.50);
+    text-shadow: none !important;
     z-index: 1;
     /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif */
+}
+
+.progress-bar_content {
+    font-size: 13px;
+    z-index: 2;
+    padding-left: 1em;
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.50);
 }
 
 .progress-bar.progress__bg-blue {
@@ -721,6 +740,12 @@ input[type="search"] {
 
 .progress-bar.progress__bg-warning {
     background-color: #ffc107;
+}
+
+.progress_units {
+    background-color: #ffffff;
+    height: 20px;
+    margin-bottom: 20px;
 }
 
 .quater_earnings_icon {
