@@ -786,8 +786,14 @@ span.count_top {
     margin-bottom: 4em;
 }
 
-.stats_count_container--qtd .stats_count__pane{
-    padding-right: 0.5em !important;
+.stats_count_container--qtd .stats_count__pane.stats_count__pane--main{
+    background-color: #b0e4f7;
+    background-image: -webkit-linear-gradient(180deg, #b0e4f7 0%, #a3d3e4 12%, #ffffff 50%, #b0e4f7 88%, #b0e4f7 100%);
+    background-image: linear-gradient(180deg, #b0e4f7 0%, #a3d3e4 12%, #ffffff 50%, #a3d3e4 88%, #b0e4f7 100%);
+    border-radius: 10px;
+    text-align: right;
+    padding: 0.5em 0.5em 0.5em 0.25em !important;
+    height: 6em;
 }
 
 .stats_count__icon {
@@ -813,6 +819,7 @@ span.count_top {
 
 .stats_count__pane.stats_count__pane--special {
     background: #ffffff;
+    background-image: linear-gradient(0deg, #efefef 0%, #ffffff 10%, #ffffff 90%, #efefef 100%) !important;
     border: #EAEAEA;
     padding: 0.5em .25em;
 }
@@ -1026,6 +1033,11 @@ span.count_top {
 
 .tile_count .tile_stats_count.stats_count_container.stats_count_container--qtd {
     max-width: 23%;
+}
+
+.tile_stats_count .stats_count__pane .count{
+    font-size: 36px;
+    text-shadow: 1px 1px 4px #eee;
 }
 
 .tooltip-inner {
