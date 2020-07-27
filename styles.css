@@ -912,8 +912,16 @@ span.count_top {
     width: 21%;
 }
 
+.table_col_24 {
+    width: 24%;
+}
+
 .table_col_25 {
     width: 25%;
+}
+
+.table_col_28 {
+    width: 28%;
 }
 
 .table_col_30 {
@@ -1068,6 +1076,17 @@ span.count_top {
 .tooltip-inner {
     white-space: nowrap;
     max-width: none;
+}
+
+.total_earnings_section{
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+}
+
+.total_earnings_chart_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 ul.dropdown-menu>li:hover {

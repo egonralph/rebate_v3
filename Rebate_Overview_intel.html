@@ -145,7 +145,100 @@
             </div>
 
             <div class="x_content">
-              <table class="table table-fixed no_margin_bottom">
+              <div class="total_earnings_section" style="display: grid;">
+                <div class="total_earnings_chart_section">
+                  <canvas height="180" class="circle_chart" id="canvas1" style="display: inline-block;"
+                          width="180"></canvas>
+                </div>
+
+                <div class="total_earnings_legend_section">
+                  <table id="points-to-date-by-brand-category-main-chart"
+                        class="table table-hover table-sm table-fixed no_margin_bottom">
+                        <thead>
+                          <tr>
+                            <th class="table_col_legend_label"></th>
+                            <th class="table_col_28 no_wrap" data-toggle="tooltip" title="CPU Name">CPU Name</th>
+                            <th class="table_col_24 no_wrap" data-toggle="tooltip" title="Units">Units</th>
+                            <th class="table_col_24 no_wrap" data-toggle="tooltip" title="Earnings">Earnings</th>
+                            <th class="table_col_24 no_wrap" data-toggle="tooltip" title="Earnings">Opportunities</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="no_border">
+                              <div class="date__by__brand__category__legend-rebate dbbcl-rebate1">
+                              </div>
+                            </td>
+                            <td class="no_border">Core i3</td>
+                            <td class="no_border">249</td>
+                            <td class="no_border">$1894</td>
+                            <td class="no_border">14%</td>
+                          </tr>
+                          <tr>
+                            <td class="no_border">
+                              <div class="date__by__brand__category__legend-rebate dbbcl-rebate2">
+                              </div>
+                            </td>
+                            <td class="no_border">Core i5</td>
+                            <td class="no_border">674</td>
+                            <td class="no_border">$6256</td>
+                            <td class="no_border">29%</td>
+                          </tr>
+                          <tr>
+                            <td class="no_border">
+                              <div class="date__by__brand__category__legend-rebate dbbcl-rebate3">
+                              </div>
+                            </td>
+                            <td class="no_border">Core i7</td>
+                            <td class="no_border">348</td>
+                            <td class="no_border">$2561</td>
+                            <td class="no_border">22%</td>
+                          </tr>
+                          <tr>
+                            <td class="no_border">
+                              <div class="date__by__brand__category__legend-rebate dbbcl-rebate4">
+                              </div>
+                            </td>
+                            <td class="no_border">Core i9</td>
+                            <td class="no_border">22</td>
+                            <td class="no_border">$220</td>
+                            <td class="no_border">12%</td>
+                          </tr>
+                          <tr>
+                            <td class="no_border">
+                              <div class="date__by__brand__category__legend-rebate dbbcl-rebate5">
+                              </div>
+                            </td>
+                            <td class="no_border">Core m3</td>
+                            <td class="no_border">35</td>
+                            <td class="no_border">$35</td>
+                            <td class="no_border">1%</td>
+                          </tr>
+                          <tr>
+                            <td class="no_border">
+                              <div class="date__by__brand__category__legend-rebate dbbcl-rebate6">
+                              </div>
+                            </td>
+                            <td class="no_border">Pentium</td>
+                            <td class="no_border">59</td>
+                            <td class="no_border">$354</td>
+                            <td class="no_border">18%</td>
+                          </tr>
+                          <tr>
+                            <td class="no_border">
+                              <div class="date__by__brand__category__legend-rebate dbbcl-rebate7">
+                              </div>
+                            </td>
+                            <td class="no_border">Xeon</td>
+                            <td class="no_border">10</td>
+                            <td class="no_border">$20</td>
+                            <td class="no_border">4%</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+              </div>
+              <!-- <table class="table table-fixed no_margin_bottom">
                 <tbody>
                   <tr class="table_col_15">
                     <td class="no_border center">
@@ -243,7 +336,7 @@
                     </td>
                   </tr>
                 </tbody>
-              </table>
+              </table> -->
 
               <div class="clearfix clearfix_small_height">&nbsp;</div>
             </div>
@@ -265,7 +358,7 @@
 
             <div class="col-xs-12 flex-center">
               <canvas height="250" width="250" class="circle_chart" id="echart_full_pie"
-                aria-label="Sold vs Opportunities doughnut chart" role="img" style="padding: 1.15em;"></canvas>
+                aria-label="Sold vs Opportunities doughnut chart" role="img" style="padding: 0.61em;"></canvas>
             </div>
           </div>
         </div>

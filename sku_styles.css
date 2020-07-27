@@ -897,8 +897,16 @@ input[type="search"] {
     width: 21%;
 }
 
+.table_col_24 {
+    width: 24%;
+}
+
 .table_col_25 {
     width: 25%;
+}
+
+.table_col_28 {
+    width: 28%;
 }
 
 .table_col_30 {
