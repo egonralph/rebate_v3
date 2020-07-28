@@ -50,7 +50,7 @@
 
         <div class="count red">$1,447</div>
       </div>
-      <div class="col-xs-3 center count_panel__link" data-toogle="tooltip" title="Go to Rewards Breakdown page">
+      <div class="col-xs-3 center count_panel__link count_panel__link--js" data-toogle="tooltip" title="Go to Rewards Breakdown page">
           <span class="count_spend_points">
             <a href="https://10.0.7.197/web/context-rebate/rewards" class="count_spend_points__link">Spend Points</a>
           </span>
@@ -2526,6 +2526,14 @@
       collapseIcon.toggleClass('fa-angle-down fa-angle-right');
       var collapseSvgIcon = $(this).find('svg.collapse_icon');
       collapseSvgIcon.toggleClass('fa-angle-down fa-angle-right');
+    });
+  });
+
+  $(document).ready(function () {
+    $('.count_panel__link--js').click(function () {
+
+      var url= 'https://10.0.7.197/web/context-rebate/rewards';
+		  $(location).attr('href', url);
     });
   });
 
