@@ -134,9 +134,6 @@
                         <li class="nav-item">
                             <a href="#full_period" aria-controls="full_period" role="tab" data-toggle="tab" class="nav-link">Full Period</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#month_by_month" aria-controls="month_by_month" role="tab" data-toggle="tab" class="nav-link">Month by Month</a>
-                        </li>
                     </ul>
                 </div>
                 <!-- End navigation pills  -->
@@ -164,9 +161,9 @@
                                 </div>
 
                                 <div class="x_content">
-                                    <div class="total_earnings_section" style="display: grid;">
+                                    <div class="total_earnings_section">
                                         <div class="total_earnings_chart_section">
-                                            <canvas height="180" class="circle_chart" id="canvas1" style="display: inline-block;" width="180"></canvas>
+                                            <canvas height="180" class="circle_chart" id="canvas1" style="display: inline-block; padding: 0.5em; margin: 0.2em;" width="180"></canvas>
                                         </div>
 
                                         <div class="total_earnings_legend_section">
@@ -174,10 +171,11 @@
                                                 <thead>
                                                     <tr>
                                                         <th class="table_col_legend_label"></th>
-                                                        <th class="table_col_28 no_wrap" data-toggle="tooltip" title="CPU Name">CPU Name</th>
-                                                        <th class="table_col_24 no_wrap" data-toggle="tooltip" title="Units">Units</th>
-                                                        <th class="table_col_24 no_wrap" data-toggle="tooltip" title="Earnings">Earnings</th>
-                                                        <th class="table_col_24 no_wrap" data-toggle="tooltip" title="Earnings">Opportunities</th>
+                                                        <th class="table_col_20 no_wrap" data-toggle="tooltip" title="CPU Name">CPU Name</th>
+                                                        <th class="table_col_20 no_wrap" data-toggle="tooltip" title="Units">Units Earnings</th>
+                                                        <th class="table_col_20 no_wrap" data-toggle="tooltip" title="Earnings">Earnings</th>
+                                                        <th class="table_col_20 no_wrap" data-toggle="tooltip" title="Earnings">Opportunities</th>
+                                                        <th class="table_col_20 no_wrap" data-toggle="tooltip" title="Units Opportunities">Units Opportunities</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -188,8 +186,9 @@
                                                         </td>
                                                         <td class="no_border">Core i3</td>
                                                         <td class="no_border">249</td>
-                                                        <td class="no_border">$1894</td>
+                                                        <td class="no_border">$1,894</td>
                                                         <td class="no_border">14%</td>
+                                                        <td class="no_border">15</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="no_border">
@@ -198,8 +197,9 @@
                                                         </td>
                                                         <td class="no_border">Core i5</td>
                                                         <td class="no_border">674</td>
-                                                        <td class="no_border">$6256</td>
+                                                        <td class="no_border">$6,256</td>
                                                         <td class="no_border">29%</td>
+                                                        <td class="no_border">21</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="no_border">
@@ -208,8 +208,9 @@
                                                         </td>
                                                         <td class="no_border">Core i7</td>
                                                         <td class="no_border">348</td>
-                                                        <td class="no_border">$2561</td>
+                                                        <td class="no_border">$2,561</td>
                                                         <td class="no_border">22%</td>
+                                                        <td class="no_border">18</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="no_border">
@@ -220,6 +221,7 @@
                                                         <td class="no_border">22</td>
                                                         <td class="no_border">$220</td>
                                                         <td class="no_border">12%</td>
+                                                        <td class="no_border">11</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="no_border">
@@ -230,6 +232,7 @@
                                                         <td class="no_border">35</td>
                                                         <td class="no_border">$35</td>
                                                         <td class="no_border">1%</td>
+                                                        <td class="no_border">1</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="no_border">
@@ -240,6 +243,7 @@
                                                         <td class="no_border">59</td>
                                                         <td class="no_border">$354</td>
                                                         <td class="no_border">18%</td>
+                                                        <td class="no_border">17</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="no_border">
@@ -250,6 +254,7 @@
                                                         <td class="no_border">10</td>
                                                         <td class="no_border">$20</td>
                                                         <td class="no_border">4%</td>
+                                                        <td class="no_border">3</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -379,9 +384,6 @@
                         <h3>Full Period content..</h3>
                     </div>
 
-                    <div role="tabpanel" class="tab-pane fade" id="month_by_month">
-                        <h3>Month by Month content..</h3>
-                    </div>
                 </div>
             </div>
         </div>
@@ -622,7 +624,7 @@
         var options = {
             legend: false,
             responsive: false,
-            cutoutPercentage: 65,
+            cutoutPercentage: 70,
             tooltips: {
                 callbacks: {
                     afterLabel: function(tooltipItem, data) {
@@ -633,9 +635,11 @@
             plugins: {
                 labels: {
                     render: 'percentage',
-                    fontColor: '#fff',
+                    fontColor: '#333333',
+                    fontStyle: 'bold',
                     fontFamily: '"Lucida Console", Monaco, monospace',
-                    precision: 1
+                    precision: 1,
+                    position: 'outside'
                 }
             },
         };
