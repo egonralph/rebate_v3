@@ -961,6 +961,21 @@ span.count_top {
     vertical-align: inherit;
 }
 
+.table th.no_side_padd.two_rows_header,
+.table td:last-child,
+.table th:last-child {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+.table th.two_rows_header {
+    height: 20px;
+}
+
+.table th.no_border.two_rows_header {
+    border: none;
+}
+
 .table_col_4 {
     width: 4%;
 }
