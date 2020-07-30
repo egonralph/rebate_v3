@@ -38,6 +38,12 @@ a.paginate_button,
     font-weight: 600;
 }
 
+.btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
 .center {
     text-align: center;
 }
@@ -917,8 +923,8 @@ span.count_top {
 
 .stats_count_container--qtd .stats_count__pane.stats_count__pane--main {
     background-color: #b0e4f7;
-    background-image: -webkit-linear-gradient(180deg, #b0e4f7 0%, #a3d3e4 12%, #ffffff 50%, #b0e4f7 88%, #b0e4f7 100%);
-    background-image: linear-gradient(180deg, #b0e4f7 0%, #a3d3e4 12%, #ffffff 50%, #a3d3e4 88%, #b0e4f7 100%);
+    background-image: -webkit-linear-gradient(180deg, #CDEFFD 0%, #a3d3e4 12%, #ffffff 50%, #a3d3e4 88%, #CDEFFD 100%);
+    background-image: linear-gradient(180deg, #CDEFFD 0%, #a3d3e4 12%, #ffffff 50%, #a3d3e4 88%, #CDEFFD 100%);
     border-radius: 10px;
     text-align: right;
     padding: 0.25em 1em 0.25em 0.25em !important;
