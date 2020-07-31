@@ -348,222 +348,236 @@
     </div>
 </div>
 
+<!-- Vendor view panel section-->
 <div class="row">
-    <div class="col-xs-12 dashboard_filter_panel">
-        <div class="col-md-6 col-sm-3 col-xs-3 dash_ratio_container" id="dash_ratio_container">
-            <div class="radio" id="point_to_earn_radio">
-                <label class="radio_label">
-          <input name="points_chart" type="radio" value="PTE" />
-          Points To Earn per Category
-        </label>
-            </div>
-
-            <div class="radio" id="point_to_date_radio">
-                <label class="radio_label">
-          <input checked="checked" name="points_chart" type="radio" value="PTD" />
-          Points To Date By Brand Category
-        </label>
+    <div class="panel panel-default panel-section__vendorView">
+        <div class="panel-heading panel-sticky flex-header">
+            <div class="row">
+                <div class="col-xs-12 header-pane__vendorView">
+                    <h2 class="bold section_main_header">
+                        <i class="fad fa-user-tie half_margin_right"></i> Vendor View
+                    </h2>
+                </div>
             </div>
         </div>
+        <div class="panel-body panel-body__vendorView">
+            <div class="col-xs-12 dashboard_filter_panel">
+                <div class="col-md-6 col-sm-3 col-xs-3 dash_ratio_container" id="dash_ratio_container">
+                    <div class="radio" id="point_to_earn_radio">
+                        <label class="radio_label">
+              <input name="points_chart" type="radio" value="PTE" />
+              Points To Earn per Category
+            </label>
+                    </div>
 
-        <!-- Points To Earn per Category -->
-        <!-- <div class="col-md-2 col-sm-3 col-xs-3 hide" 
+                    <div class="radio" id="point_to_date_radio">
+                        <label class="radio_label">
+              <input checked="checked" name="points_chart" type="radio" value="PTD" />
+              Points To Date By Brand Category
+            </label>
+                    </div>
+                </div>
+
+                <!-- Points To Earn per Category -->
+                <!-- <div class="col-md-2 col-sm-3 col-xs-3 hide" 
 				id="points_to_earn_hidden_combobox">
 		</div> -->
-        <div class="col-md-2 offset-md-2 col-sm-3 offset-sm-3 col-xs-3 offset-xs-3 dashboard_freq half_top_margin hide" id="points_to_earn_vendor_dropdownmenu">
-            <div class="row">
-                <label class="titled_component one_margin_left">Vendor &nbsp;</label>
-            </div>
-            <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuVendor" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Choose Vendor
-          <i class="fa fa-angle-down dropdown-icon" aria-hidden="true"></i>
-        </button>
-                <ul class="dropdown-menu" id="earn_vendor_dd_menu">
-                    <li class="dropdown_list">
-                        <input type="checkbox" class="form-check-input dropdown_chbx" id="checkVend1" checked>
-                        <label class="form-check-label" for="checkVend1">
-              5 Element
-            </label>
-                    </li>
-                    <li class="dropdown_list">
-                        <input type="checkbox" class="form-check-input dropdown_chbx" id="checkVend2" checked>
-                        <label class="form-check-label" for="checkVend2">
-              Best Selection
-            </label>
-                    </li>
-                    <li class="dropdown_list">
-                        <input type="checkbox" class="form-check-input dropdown_chbx" id="checkVend3" checked>
-                        <label class="form-check-label" for="checkVend3">
-              Brighthouse
-            </label>
-                    </li>
-                    <li class="dropdown_list">
-                        <input type="checkbox" class="form-check-input dropdown_chbx" id="checkVend4" checked>
-                        <label class="form-check-label" for="checkVend4">
-              Electronic Partner
-            </label>
-                    </li>
-                    <li class="dropdown_list">
-                        <input type="checkbox" class="form-check-input dropdown_chbx" id="checkVend5" checked>
-                        <label class="form-check-label" for="checkVend5">
-              Net-on-Net
-            </label>
-                    </li>
-                    <li class="dropdown_list">
-                        <input type="checkbox" class="form-check-input dropdown_chbx" id="checkVend6" checked>
-                        <label class="form-check-label" for="checkVend6">
-              Technomarket
-            </label>
-                    </li>
-                    <li class="not-sortable columns-li-padding">
-                        <button class="btn btn-primary btn-xs btn-block" id="default_checkVend">Show All</button>
-                    </li>
-                </ul>
-            </div>
-        </div>
+                <div class="col-md-2 offset-md-2 col-sm-3 offset-sm-3 col-xs-3 offset-xs-3 dashboard_freq half_top_margin hide" id="points_to_earn_vendor_dropdownmenu">
+                    <div class="row">
+                        <label class="titled_component one_margin_left">Vendor &nbsp;</label>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuVendor" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Choose Vendor
+              <i class="fa fa-angle-down dropdown-icon" aria-hidden="true"></i>
+            </button>
+                        <ul class="dropdown-menu" id="earn_vendor_dd_menu">
+                            <li class="dropdown_list">
+                                <input type="checkbox" class="form-check-input dropdown_chbx" id="checkVend1" checked>
+                                <label class="form-check-label" for="checkVend1">
+                  5 Element
+                </label>
+                            </li>
+                            <li class="dropdown_list">
+                                <input type="checkbox" class="form-check-input dropdown_chbx" id="checkVend2" checked>
+                                <label class="form-check-label" for="checkVend2">
+                  Best Selection
+                </label>
+                            </li>
+                            <li class="dropdown_list">
+                                <input type="checkbox" class="form-check-input dropdown_chbx" id="checkVend3" checked>
+                                <label class="form-check-label" for="checkVend3">
+                  Brighthouse
+                </label>
+                            </li>
+                            <li class="dropdown_list">
+                                <input type="checkbox" class="form-check-input dropdown_chbx" id="checkVend4" checked>
+                                <label class="form-check-label" for="checkVend4">
+                  Electronic Partner
+                </label>
+                            </li>
+                            <li class="dropdown_list">
+                                <input type="checkbox" class="form-check-input dropdown_chbx" id="checkVend5" checked>
+                                <label class="form-check-label" for="checkVend5">
+                  Net-on-Net
+                </label>
+                            </li>
+                            <li class="dropdown_list">
+                                <input type="checkbox" class="form-check-input dropdown_chbx" id="checkVend6" checked>
+                                <label class="form-check-label" for="checkVend6">
+                  Technomarket
+                </label>
+                            </li>
+                            <li class="not-sortable columns-li-padding">
+                                <button class="btn btn-primary btn-xs btn-block" id="default_checkVend">Show All</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-        <div class="col-md-2 offset-md-2 col-sm-3 offset-sm-3 col-xs-3 offset-xs-3 dashboard_freq hide" id="points_to_earn_vendor_combobox">
-            <div class="row">
-                <label class="titled_component">Vendor &nbsp;</label>
-            </div>
-            <br> &nbsp;
-            <div class="row">
-                <select class="browser-default custom-select" id="earn_point_vendor_chooser">
-          <option value="1">5 Element</option>
-          <option value="2">Best Selection</option>
-          <option value="3">Brighthouse</option>
-          <option value="4">ElectronicPartner</option>
-          <option value="5">Net-on-Net</option>
-          <option value="6">Technomarket</option>
-        </select>
-            </div>
-        </div>
+                <div class="col-md-2 offset-md-2 col-sm-3 offset-sm-3 col-xs-3 offset-xs-3 dashboard_freq hide" id="points_to_earn_vendor_combobox">
+                    <div class="row">
+                        <label class="titled_component">Vendor &nbsp;</label>
+                    </div>
+                    <br> &nbsp;
+                    <div class="row">
+                        <select class="browser-default custom-select" id="earn_point_vendor_chooser">
+              <option value="1">5 Element</option>
+              <option value="2">Best Selection</option>
+              <option value="3">Brighthouse</option>
+              <option value="4">ElectronicPartner</option>
+              <option value="5">Net-on-Net</option>
+              <option value="6">Technomarket</option>
+            </select>
+                    </div>
+                </div>
 
-        <div class="col-md-2 col-sm-3 col-xs-3 dashboard_freq hide" id="points_to_earn_category_combobox">
-            <div class="row">
-                <label class="titled_component">Category</label>
-            </div>
-            <br>
-            <div class="row">
-                <select class="browser-default custom-select country" id="earn_point_activity_graph">
-          <option value="1">Core i3</option>
-          <option value="2">Core i5</option>
-          <option value="3">Core i7</option>
-          <option value="4">Core i9</option>
-          <option value="5">Core m3</option>
-          <option value="6">Pentium</option>
-          <option value="7">Xeon</option>
-        </select>
-            </div>
-        </div>
+                <div class="col-md-2 col-sm-3 col-xs-3 dashboard_freq hide" id="points_to_earn_category_combobox">
+                    <div class="row">
+                        <label class="titled_component">Category</label>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <select class="browser-default custom-select country" id="earn_point_activity_graph">
+              <option value="1">Core i3</option>
+              <option value="2">Core i5</option>
+              <option value="3">Core i7</option>
+              <option value="4">Core i9</option>
+              <option value="5">Core m3</option>
+              <option value="6">Pentium</option>
+              <option value="7">Xeon</option>
+            </select>
+                    </div>
+                </div>
 
-        <!-- Points To Date By Brand Category -->
-        <div class="col-md-2 col-sm-3 col-xs-3 dashboard_freq" id="points_to_date_vendor_combobox">
-            <div class="row">
-                <label class="titled_component one_margin_left">Vendor &nbsp;</label>
-            </div>
-            <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuBrandDateVendor" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Choose Vendor
-          <i class="fa fa-angle-down dropdown-icon" aria-hidden="true"></i>
-        </button>
-                <ul class="dropdown-menu" id="date_brand_vendor_dd_menu">
-                    <li class="dropdown_list">
-                        <input type="checkbox" class="form-check-input dropdown_chbx" id="checkBrandDateVend1" checked>
-                        <label class="form-check-label" for="checkBrandDateVend1">
-              5 Element
-            </label>
-                        <span class="dropdown_menu_chart">
-              <i class="fa fa-minus fa-lg dropdown_menu_chart-icon1" aria-hidden="true"></i>
-            </span>
-                    </li>
+                <!-- Points To Date By Brand Category -->
+                <div class="col-md-2 col-sm-3 col-xs-3 dashboard_freq" id="points_to_date_vendor_combobox">
+                    <div class="row">
+                        <label class="titled_component one_margin_left">Vendor &nbsp;</label>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuBrandDateVendor" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Choose Vendor
+              <i class="fa fa-angle-down dropdown-icon" aria-hidden="true"></i>
+            </button>
+                        <ul class="dropdown-menu" id="date_brand_vendor_dd_menu">
+                            <li class="dropdown_list">
+                                <input type="checkbox" class="form-check-input dropdown_chbx" id="checkBrandDateVend1" checked>
+                                <label class="form-check-label" for="checkBrandDateVend1">
+                  5 Element
+                </label>
+                                <span class="dropdown_menu_chart">
+                  <i class="fa fa-minus fa-lg dropdown_menu_chart-icon1" aria-hidden="true"></i>
+                </span>
+                            </li>
 
-                    <li class="dropdown_list">
-                        <input type="checkbox" class="form-check-input dropdown_chbx" id="checkBrandDateVend2" checked>
-                        <label class="form-check-label" for="checkBrandDateVend2">
-              Best Selection
-            </label>
-                        <span class="dropdown_menu_chart">
-              <i class="fa fa-minus fa-lg dropdown_menu_chart-icon2" aria-hidden="true"></i>
-            </span>
-                    </li>
+                            <li class="dropdown_list">
+                                <input type="checkbox" class="form-check-input dropdown_chbx" id="checkBrandDateVend2" checked>
+                                <label class="form-check-label" for="checkBrandDateVend2">
+                  Best Selection
+                </label>
+                                <span class="dropdown_menu_chart">
+                  <i class="fa fa-minus fa-lg dropdown_menu_chart-icon2" aria-hidden="true"></i>
+                </span>
+                            </li>
 
-                    <li class="dropdown_list">
-                        <input type="checkbox" class="form-check-input dropdown_chbx" id="checkBrandDateVend3" checked>
-                        <label class="form-check-label" for="checkBrandDateVend3">
-              Brighthouse
-            </label>
-                        <span class="dropdown_menu_chart">
-              <i class="fa fa-minus fa-lg dropdown_menu_chart-icon3" aria-hidden="true"></i>
-            </span>
-                    </li>
+                            <li class="dropdown_list">
+                                <input type="checkbox" class="form-check-input dropdown_chbx" id="checkBrandDateVend3" checked>
+                                <label class="form-check-label" for="checkBrandDateVend3">
+                  Brighthouse
+                </label>
+                                <span class="dropdown_menu_chart">
+                  <i class="fa fa-minus fa-lg dropdown_menu_chart-icon3" aria-hidden="true"></i>
+                </span>
+                            </li>
 
-                    <li class="dropdown_list">
-                        <input type="checkbox" class="form-check-input dropdown_chbx" id="checkBrandDateVend4" checked>
-                        <label class="form-check-label" for="checkBrandDateVend4">
-              Electronic Partner
-            </label>
-                        <span class="dropdown_menu_chart">
-              <i class="fa fa-minus fa-lg dropdown_menu_chart-icon4" aria-hidden="true"></i>
-            </span>
-                    </li>
+                            <li class="dropdown_list">
+                                <input type="checkbox" class="form-check-input dropdown_chbx" id="checkBrandDateVend4" checked>
+                                <label class="form-check-label" for="checkBrandDateVend4">
+                  Electronic Partner
+                </label>
+                                <span class="dropdown_menu_chart">
+                  <i class="fa fa-minus fa-lg dropdown_menu_chart-icon4" aria-hidden="true"></i>
+                </span>
+                            </li>
 
-                    <li class="dropdown_list">
-                        <input type="checkbox" class="form-check-input dropdown_chbx" id="checkBrandDateVend5" checked>
-                        <label class="form-check-label" for="checkBrandDateVend5">
-              Net-on-Net
-            </label>
-                        <span class="dropdown_menu_chart">
-              <i class="fa fa-minus fa-lg dropdown_menu_chart-icon5" aria-hidden="true"></i>
-            </span>
-                    </li>
+                            <li class="dropdown_list">
+                                <input type="checkbox" class="form-check-input dropdown_chbx" id="checkBrandDateVend5" checked>
+                                <label class="form-check-label" for="checkBrandDateVend5">
+                  Net-on-Net
+                </label>
+                                <span class="dropdown_menu_chart">
+                  <i class="fa fa-minus fa-lg dropdown_menu_chart-icon5" aria-hidden="true"></i>
+                </span>
+                            </li>
 
-                    <li class="dropdown_list">
-                        <input type="checkbox" class="form-check-input dropdown_chbx" id="checkBrandDateVend6" checked>
-                        <label class="form-check-label" for="checkBrandDateVend6">
-              Technomarket
-            </label>
-                        <span class="dropdown_menu_chart">
-              <i class="fa fa-minus fa-lg dropdown_menu_chart-icon6" aria-hidden="true"></i>
-            </span>
-                    </li>
-                    <li class="not-sortable columns-li-padding">
-                        <button class="btn btn-primary btn-xs btn-block" id="default_checkBrandDateVend">Show All</button>
-                    </li>
-                </ul>
-            </div>
-        </div>
+                            <li class="dropdown_list">
+                                <input type="checkbox" class="form-check-input dropdown_chbx" id="checkBrandDateVend6" checked>
+                                <label class="form-check-label" for="checkBrandDateVend6">
+                  Technomarket
+                </label>
+                                <span class="dropdown_menu_chart">
+                  <i class="fa fa-minus fa-lg dropdown_menu_chart-icon6" aria-hidden="true"></i>
+                </span>
+                            </li>
+                            <li class="not-sortable columns-li-padding">
+                                <button class="btn btn-primary btn-xs btn-block" id="default_checkBrandDateVend">Show All</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-        <div class="col-md-2 col-sm-3 col-xs-3 dashboard_freq" id="points_to_date_category_combobox">
-            <div class="row">
-                <label class="titled_component">Category</label>
-            </div>
-            <br>
-            <div class="row">
-                <select class="browser-default custom-select" id="brand_date_point_activity_graph">
-          <option value="1">Core i3</option>
-          <option value="2">Core i5</option>
-          <option value="3">Core i7</option>
-          <option value="4">Core i9</option>
-          <option value="5">Core m3</option>
-          <option value="6">Pentium</option>
-          <option value="7">Xeon</option>
-        </select>
-            </div>
-        </div>
+                <div class="col-md-2 col-sm-3 col-xs-3 dashboard_freq" id="points_to_date_category_combobox">
+                    <div class="row">
+                        <label class="titled_component">Category</label>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <select class="browser-default custom-select" id="brand_date_point_activity_graph">
+              <option value="1">Core i3</option>
+              <option value="2">Core i5</option>
+              <option value="3">Core i7</option>
+              <option value="4">Core i9</option>
+              <option value="5">Core m3</option>
+              <option value="6">Pentium</option>
+              <option value="7">Xeon</option>
+            </select>
+                    </div>
+                </div>
 
-        <div class="col-md-2 col-sm-3 col-xs-3 dashboard_freq" id="points_to_date_freq_combobox">
-            <div class="row">
-                <label class="titled_component">Frequency</label>
-            </div>
+                <div class="col-md-2 col-sm-3 col-xs-3 dashboard_freq" id="points_to_date_freq_combobox">
+                    <div class="row">
+                        <label class="titled_component">Frequency</label>
+                    </div>
 
-            <div class="row">
-                <select class="browser-default custom-select country" id="freq_point_activity_graph">
-          <option value="1">Daily</option>
-          <option value="2">Weekly</option>
-          <option value="3">Monthly</option>
-        </select>
+                    <div class="row">
+                        <select class="browser-default custom-select country" id="freq_point_activity_graph">
+              <option value="1">Daily</option>
+              <option value="2">Weekly</option>
+              <option value="3">Monthly</option>
+            </select>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -1223,6 +1237,9 @@
     window.__define = undefined;
     window.__require = undefined;
 </script>
+
+<!-- Font awesome v5 -->
+<script src="https://kit.fontawesome.com/d3400346f7.js" crossorigin="anonymous"></script>
 
 <script>
     Chart.defaults.global.legend = {
