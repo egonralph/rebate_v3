@@ -1,241 +1,354 @@
-<div>
-    <div class="page-title">
-    <div class="title_left">
-    <h1>Rewards</h1>
+<!-- page content -->
+<div class="row tile_count">
+
+    <!-- top tiles -->
+    <div class="col-md-2 col-sm-2 col-xs-2 tile_stats_count stats_count_container stats_count_container--vendor">
+        <div class="stats_count__pane stats_count__pane--special">
+            <div class="col-xs-12">
+                <span class="stats_count__vendor">Net-On-Net</span>
+            </div>
+
+            <div class="col-xs-4">
+                <b class="stats_count__time">Join Date</b>
+                <span class="stats_count__time">01 Jan 2015</span>
+            </div>
+
+            <div class="col-xs-4">
+                <b class="stats_count__time">Last Update</b>
+                <span class="stats_count__time">30 Jul 2020</span>
+            </div>
+
+            <div class="col-xs-4">
+                <b class="stats_count__time">Current Quarter</b>
+                <span class="stats_count__time">Q3</span>
+            </div>
+        </div>
     </div>
-    
-    <div class="title_right">
-    <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-    <div class="input-group"><input class="form-control" placeholder="Search for..." type="text" /> <span class="input-group-btn"><button class="btn btn-default" type="button">Go!</button> </span></div>
+
+    <div class="col-md-3 col-sm-3 col-xs-3 tile_stats_count stats_count_container stats_count_container--qtd">
+        <div class="stats_count__pane stats_count__pane--main">
+            <div class="col-xs-2 stats_count__icon-pane">
+                <!-- <i class="fad fa-money-bill-wave stats_count__icon"></i> -->
+                <span class="fa-stack fa-1x one_margin_right points-margin qtd_earnings_icon">
+                    <i class="fal fa-braille fa-stack-1x braille" data-fa-transform="up-2"></i>
+                    <i class="fad fa-bullseye fa-stack-1x bullseye" data-fa-transform="shrink-4 down-1"></i>
+                    <i class="fas fa-hand-pointer fa-stack-1x hand-pointer"
+                        data-fa-transform="shrink-2 down-7 right-2"></i>
+                </span>
+            </div>
+
+            <div class="col-xs-7 center">
+                <span class="count_top">
+                    <b>Current Rewards Balance <i class="fa fa-question-circle superscript"
+                            title="These are earnings made in the current quarter">&nbsp;</i></b>
+                </span>
+
+                <div class="count red">$1,447</div>
+            </div>
+            <div class="col-xs-3 center count_panel__link count_panel__link--js" data-toogle="tooltip" title="Go to Rewards Breakdown page">
+                <span class="count_spend_points">
+                    <a href="rewards" class="count_spend_points__link">Spend Points</a>
+                </span>
+            </div>
+        </div>
     </div>
+
+    <div class="col-md-2 col-sm-2 col-xs-2 tile_stats_count stats_count_container">
+        <div class="stats_count__pane">
+            <div class="col-xs-3 stats_count__icon-pane">
+                <i class="fad fa-handshake stats_count__icon"></i>
+            </div>
+
+            <div class="col-xs-9 center">
+                <span class="count_top">
+                    <b>Latest Rewards Earned <i class="fa fa-question-circle superscript"
+                            title="These are the expected earnings that have not yet been achieved in this quarter">&nbsp;</i></b>
+                </span>
+
+                <div class="count green">$3,010</div>
+            </div>
+        </div>
     </div>
+
+    <div class="col-md-2 col-sm-2 col-xs-2 tile_stats_count stats_count_container">
+        <div class="stats_count__pane">
+            <div class="col-xs-3 stats_count__icon-pane">
+                <i class="fad fa-trophy stats_count__icon"></i>
+            </div>
+
+            <div class="col-xs-9 center">
+                <span class="count_top">
+                    <b>Latest Period Opportunities <i class="fa fa-question-circle superscript"
+                            title="This is a percentage of the current quarter's earnings">&nbsp;</i></b>
+                </span>
+
+                <div class="count blue">48%</div>
+            </div>
+        </div>
     </div>
-    
-    <div class="clearfix">&nbsp;</div>
-    
+
+    <div class="col-md-2 col-sm-2 col-xs-2 tile_stats_count stats_count_container last-child">
+        <div class="stats_count__pane">
+            <div class="col-xs-3 stats_count__icon-pane">
+                <i class="fad fa-hand-holding-usd stats_count__icon"></i>
+            </div>
+
+            <div class="col-xs-9 center">
+                <span class="count_top">
+                    <b>Total Rewards Earned <i class="fa fa-question-circle superscript"
+                            title="Total Earnings achieved this year">&nbsp;</i></b>
+                </span>
+
+                <div class="count violet">$11,340</div>
+            </div>
+        </div>
+    </div>
+    <!-- /top tiles -->
+
+    <!-- Search input go -->
+    <div class="input_search_go">
+        <div class="form-group top_search">
+            <div class="input-group"><input class="form-control" placeholder="Search for..." type="text" />
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" style="margin-right: 0;">Go!</button>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- /Search input go -->
+
     <div class="row">
-    <div class="col-md-12">
-    <div class="x_panel">
-    <div class="x_title">
-    <ul class="nav navbar-right panel_toolbox">
-        <li>&nbsp;</li>
-        <li class="dropdown">
-        <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Settings 1</a></li>
-            <li><a href="#">Settings 2</a></li>
-        </ul>
-        </li>
-        <li>&nbsp;</li>
-    </ul>
-    
-    <div class="clearfix">&nbsp;</div>
+        <div class="col-md-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <ul class="nav navbar-right panel_toolbox">
+                        <li>&nbsp;</li>
+                        <li class="dropdown">
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Settings 1</a></li>
+                                <li><a href="#">Settings 2</a></li>
+                            </ul>
+                        </li>
+                        <li>&nbsp;</li>
+                    </ul>
+
+                    <div class="clearfix">&nbsp;</div>
+                </div>
+
+                <div class="x_content FButtonsXContent1">
+                    <div class="row">
+                        <div class="col-md-55">
+                            <div class="thumbnail" style="height: 260px;">
+                                <div class="image view view-first"><img alt="image" src="/o/gentelella-theme/images/media.jpg" style="width: 100%; display: block;" />
+                                    <div class="mask">
+                                        <p>Core i7</p>
+
+                                        <p>1900 X 1080</p>
+
+                                        <div class="tools tools-bottom">&nbsp;</div>
+                                    </div>
+                                </div>
+
+                                <div class="caption">
+                                    <p style="color:red; font-weight: bold;">Points: 120</p>
+
+                                    <p>Snow and Ice Incoming for the South</p>
+                                </div>
+                                <button class="btn btn-info btn-lg" style="width:100%" type="button">Claim</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-55">
+                            <div class="thumbnail" style="height: 260px;">
+                                <div class="image view view-first"><img alt="image" src="/documents/242830/270063/amazon1.png/32c6c6c7-5e58-0e8d-3934-494e6e38f3e8?t=1584466919107" style="width: 100%; display: block;" />
+                                    <div class="mask">
+                                        <p>Core i7</p>
+
+                                        <p>1900 X 1080</p>
+
+                                        <div class="tools tools-bottom">&nbsp;</div>
+                                    </div>
+                                </div>
+
+                                <div class="caption">
+                                    <p style="color:red; font-weight: bold;">Points: 120</p>
+
+                                    <p>Snow and Ice Incoming for the South</p>
+                                </div>
+                                <button class="btn btn-info btn-lg" style="width:100%" type="button">Claim</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-55">
+                            <div class="thumbnail" style="height: 260px;">
+                                <div class="image view view-first"><img alt="image" src="/o/gentelella-theme/images/media.jpg" style="width: 100%; display: block;" />
+                                    <div class="mask">
+                                        <p>Core i7</p>
+
+                                        <p>1900 X 1080</p>
+
+                                        <div class="tools tools-bottom">&nbsp;</div>
+                                    </div>
+                                </div>
+
+                                <div class="caption">
+                                    <p style="color:red; font-weight: bold;">Points: 120</p>
+
+                                    <p>Snow and Ice Incoming for the South</p>
+                                </div>
+                                <button class="btn btn-info btn-lg" style="width:100%" type="button">Claim</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-55">
+                            <div class="thumbnail" style="height: 260px;">
+                                <div class="image view view-first"><img alt="image" src="/documents/242830/270063/amazon1.png/32c6c6c7-5e58-0e8d-3934-494e6e38f3e8?t=1584466919107" style="width: 100%; display: block;" />
+                                    <div class="mask">
+                                        <p>Core i7</p>
+
+                                        <p>1900 X 1080</p>
+
+                                        <div class="tools tools-bottom">&nbsp;</div>
+                                    </div>
+                                </div>
+
+                                <div class="caption">
+                                    <p style="color:red; font-weight: bold;">Points: 120</p>
+
+                                    <p>Snow and Ice Incoming for the South</p>
+                                </div>
+                                <button class="btn btn-info btn-lg" style="width:100%" type="button">Claim</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-55">
+                            <div class="thumbnail" style="height: 260px;">
+                                <div class="image view view-first"><img alt="image" src="/o/gentelella-theme/images/media.jpg" style="width: 100%; display: block;" />
+                                    <div class="mask">
+                                        <p>Core i7</p>
+
+                                        <p>1900 X 1080</p>
+
+                                        <div class="tools tools-bottom">&nbsp;</div>
+                                    </div>
+                                </div>
+
+                                <div class="caption">
+                                    <p style="color:red; font-weight: bold;">Points: 120</p>
+
+                                    <p>Snow and Ice Incoming for the South</p>
+                                </div>
+                                <button class="btn btn-info btn-lg" style="width:100%" type="button">Claim</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-55">
+                            <div class="thumbnail" style="height: 260px;">
+                                <div class="image view view-first"><img alt="image" src="/documents/242830/270063/amazon1.png/32c6c6c7-5e58-0e8d-3934-494e6e38f3e8?t=1584466919107" style="width: 100%; display: block;" />
+                                    <div class="mask">
+                                        <p>Core i7</p>
+
+                                        <p>1900 X 1080</p>
+
+                                        <div class="tools tools-bottom">&nbsp;</div>
+                                    </div>
+                                </div>
+
+                                <div class="caption">
+                                    <p style="color:red; font-weight: bold;">Points: 120</p>
+
+                                    <p>Snow and Ice Incoming for the South</p>
+                                </div>
+                                <button class="btn btn-info btn-lg" style="width:100%" type="button">Claim</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-55">
+                            <div class="thumbnail" style="height: 260px;">
+                                <div class="image view view-first"><img alt="image" src="/o/gentelella-theme/images/media.jpg" style="width: 100%; display: block;" />
+                                    <div class="mask">
+                                        <p>Core i7</p>
+
+                                        <p>1900 X 1080</p>
+
+                                        <div class="tools tools-bottom">&nbsp;</div>
+                                    </div>
+                                </div>
+
+                                <div class="caption">
+                                    <p style="color:red; font-weight: bold;">Points: 120</p>
+
+                                    <p>Snow and Ice Incoming for the South</p>
+                                </div>
+                                <button class="btn btn-info btn-lg" style="width:100%" type="button">Claim</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-55">
+                            <div class="thumbnail" style="height: 260px;">
+                                <div class="image view view-first"><img alt="image" src="/documents/242830/270063/amazon1.png/32c6c6c7-5e58-0e8d-3934-494e6e38f3e8?t=1584466919107" style="width: 100%; display: block;" />
+                                    <div class="mask">
+                                        <p>Core i7</p>
+
+                                        <p>1900 X 1080</p>
+
+                                        <div class="tools tools-bottom">&nbsp;</div>
+                                    </div>
+                                </div>
+
+                                <div class="caption">
+                                    <p style="color:red; font-weight: bold;">Points: 120</p>
+
+                                    <p>Snow and Ice Incoming for the South</p>
+                                </div>
+                                <button class="btn btn-info btn-lg" style="width:100%" type="button">Claim</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-55">
+                            <div class="thumbnail" style="height: 260px;">
+                                <div class="image view view-first"><img alt="image" src="/o/gentelella-theme/images/media.jpg" style="width: 100%; display: block;" />
+                                    <div class="mask">
+                                        <p>Core i7</p>
+
+                                        <p>1900 X 1080</p>
+
+                                        <div class="tools tools-bottom">&nbsp;</div>
+                                    </div>
+                                </div>
+
+                                <div class="caption">
+                                    <p style="color:red; font-weight: bold;">Points: 120</p>
+
+                                    <p>Snow and Ice Incoming for the South</p>
+                                </div>
+                                <button class="btn btn-info btn-lg" style="width:100%" type="button">Claim</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-55">
+                            <div class="thumbnail" style="height: 260px;">
+                                <div class="image view view-first"><img alt="image" src="/documents/242830/270063/amazon1.png/32c6c6c7-5e58-0e8d-3934-494e6e38f3e8?t=1584466919107" style="width: 100%; display: block;" />
+                                    <div class="mask">
+                                        <p>Core i7</p>
+
+                                        <p>1900 X 1080</p>
+
+                                        <div class="tools tools-bottom">&nbsp;</div>
+                                    </div>
+                                </div>
+
+                                <div class="caption">
+                                    <p style="color:red; font-weight: bold;">Points: 120</p>
+
+                                    <p>Snow and Ice Incoming for the South</p>
+                                </div>
+                                <button class="btn btn-info btn-lg" style="width:100%" type="button">Claim</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    
-    <div class="x_content FButtonsXContent1">
-    <div class="row">
-    <div class="col-md-55">
-    <div class="thumbnail" style="height: 260px;">
-    <div class="image view view-first"><img alt="image" src="/o/gentelella-theme/images/media.jpg" style="width: 100%; display: block;" />
-    <div class="mask">
-    <p>Core i7</p>
-    
-    <p>1900 X 1080</p>
-    
-    <div class="tools tools-bottom">&nbsp;</div>
-    </div>
-    </div>
-    
-    <div class="caption">
-    <p style="color:red; font-weight: bold;">Points: 120</p>
-    
-    <p>Snow and Ice Incoming for the South</p>
-    </div>
-    <button class="btn btn-info btn-lg" style="width:100%" type="button">Claim</button></div>
-    </div>
-    
-    <div class="col-md-55">
-    <div class="thumbnail" style="height: 260px;">
-    <div class="image view view-first"><img alt="image" src="/documents/242830/270063/amazon1.png/32c6c6c7-5e58-0e8d-3934-494e6e38f3e8?t=1584466919107" style="width: 100%; display: block;" />
-    <div class="mask">
-    <p>Core i7</p>
-    
-    <p>1900 X 1080</p>
-    
-    <div class="tools tools-bottom">&nbsp;</div>
-    </div>
-    </div>
-    
-    <div class="caption">
-    <p style="color:red; font-weight: bold;">Points: 120</p>
-    
-    <p>Snow and Ice Incoming for the South</p>
-    </div>
-    <button class="btn btn-info btn-lg" style="width:100%" type="button">Claim</button></div>
-    </div>
-    
-    <div class="col-md-55">
-    <div class="thumbnail" style="height: 260px;">
-    <div class="image view view-first"><img alt="image" src="/o/gentelella-theme/images/media.jpg" style="width: 100%; display: block;" />
-    <div class="mask">
-    <p>Core i7</p>
-    
-    <p>1900 X 1080</p>
-    
-    <div class="tools tools-bottom">&nbsp;</div>
-    </div>
-    </div>
-    
-    <div class="caption">
-    <p style="color:red; font-weight: bold;">Points: 120</p>
-    
-    <p>Snow and Ice Incoming for the South</p>
-    </div>
-    <button class="btn btn-info btn-lg" style="width:100%" type="button">Claim</button></div>
-    </div>
-    
-    <div class="col-md-55">
-    <div class="thumbnail" style="height: 260px;">
-    <div class="image view view-first"><img alt="image" src="/documents/242830/270063/amazon1.png/32c6c6c7-5e58-0e8d-3934-494e6e38f3e8?t=1584466919107" style="width: 100%; display: block;" />
-    <div class="mask">
-    <p>Core i7</p>
-    
-    <p>1900 X 1080</p>
-    
-    <div class="tools tools-bottom">&nbsp;</div>
-    </div>
-    </div>
-    
-    <div class="caption">
-    <p style="color:red; font-weight: bold;">Points: 120</p>
-    
-    <p>Snow and Ice Incoming for the South</p>
-    </div>
-    <button class="btn btn-info btn-lg" style="width:100%" type="button">Claim</button></div>
-    </div>
-    
-    <div class="col-md-55">
-    <div class="thumbnail" style="height: 260px;">
-    <div class="image view view-first"><img alt="image" src="/o/gentelella-theme/images/media.jpg" style="width: 100%; display: block;" />
-    <div class="mask">
-    <p>Core i7</p>
-    
-    <p>1900 X 1080</p>
-    
-    <div class="tools tools-bottom">&nbsp;</div>
-    </div>
-    </div>
-    
-    <div class="caption">
-    <p style="color:red; font-weight: bold;">Points: 120</p>
-    
-    <p>Snow and Ice Incoming for the South</p>
-    </div>
-    <button class="btn btn-info btn-lg" style="width:100%" type="button">Claim</button></div>
-    </div>
-    
-    <div class="col-md-55">
-    <div class="thumbnail" style="height: 260px;">
-    <div class="image view view-first"><img alt="image" src="/documents/242830/270063/amazon1.png/32c6c6c7-5e58-0e8d-3934-494e6e38f3e8?t=1584466919107" style="width: 100%; display: block;" />
-    <div class="mask">
-    <p>Core i7</p>
-    
-    <p>1900 X 1080</p>
-    
-    <div class="tools tools-bottom">&nbsp;</div>
-    </div>
-    </div>
-    
-    <div class="caption">
-    <p style="color:red; font-weight: bold;">Points: 120</p>
-    
-    <p>Snow and Ice Incoming for the South</p>
-    </div>
-    <button class="btn btn-info btn-lg" style="width:100%" type="button">Claim</button></div>
-    </div>
-    
-    <div class="col-md-55">
-    <div class="thumbnail" style="height: 260px;">
-    <div class="image view view-first"><img alt="image" src="/o/gentelella-theme/images/media.jpg" style="width: 100%; display: block;" />
-    <div class="mask">
-    <p>Core i7</p>
-    
-    <p>1900 X 1080</p>
-    
-    <div class="tools tools-bottom">&nbsp;</div>
-    </div>
-    </div>
-    
-    <div class="caption">
-    <p style="color:red; font-weight: bold;">Points: 120</p>
-    
-    <p>Snow and Ice Incoming for the South</p>
-    </div>
-    <button class="btn btn-info btn-lg" style="width:100%" type="button">Claim</button></div>
-    </div>
-    
-    <div class="col-md-55">
-    <div class="thumbnail" style="height: 260px;">
-    <div class="image view view-first"><img alt="image" src="/documents/242830/270063/amazon1.png/32c6c6c7-5e58-0e8d-3934-494e6e38f3e8?t=1584466919107" style="width: 100%; display: block;" />
-    <div class="mask">
-    <p>Core i7</p>
-    
-    <p>1900 X 1080</p>
-    
-    <div class="tools tools-bottom">&nbsp;</div>
-    </div>
-    </div>
-    
-    <div class="caption">
-    <p style="color:red; font-weight: bold;">Points: 120</p>
-    
-    <p>Snow and Ice Incoming for the South</p>
-    </div>
-    <button class="btn btn-info btn-lg" style="width:100%" type="button">Claim</button></div>
-    </div>
-    
-    <div class="col-md-55">
-    <div class="thumbnail" style="height: 260px;">
-    <div class="image view view-first"><img alt="image" src="/o/gentelella-theme/images/media.jpg" style="width: 100%; display: block;" />
-    <div class="mask">
-    <p>Core i7</p>
-    
-    <p>1900 X 1080</p>
-    
-    <div class="tools tools-bottom">&nbsp;</div>
-    </div>
-    </div>
-    
-    <div class="caption">
-    <p style="color:red; font-weight: bold;">Points: 120</p>
-    
-    <p>Snow and Ice Incoming for the South</p>
-    </div>
-    <button class="btn btn-info btn-lg" style="width:100%" type="button">Claim</button></div>
-    </div>
-    
-    <div class="col-md-55">
-    <div class="thumbnail" style="height: 260px;">
-    <div class="image view view-first"><img alt="image" src="/documents/242830/270063/amazon1.png/32c6c6c7-5e58-0e8d-3934-494e6e38f3e8?t=1584466919107" style="width: 100%; display: block;" />
-    <div class="mask">
-    <p>Core i7</p>
-    
-    <p>1900 X 1080</p>
-    
-    <div class="tools tools-bottom">&nbsp;</div>
-    </div>
-    </div>
-    
-    <div class="caption">
-    <p style="color:red; font-weight: bold;">Points: 120</p>
-    
-    <p>Snow and Ice Incoming for the South</p>
-    </div>
-    <button class="btn btn-info btn-lg" style="width:100%" type="button">Claim</button></div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    
+</div>
