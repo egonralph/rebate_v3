@@ -24,7 +24,7 @@
 
             <div class="col-xs-4">
                 <b class="stats_count__time">Last Update</b>
-                <span class="stats_count__time">31 Jul 2020</span>
+                <span class="stats_count__time">3 Aug 2020</span>
             </div>
 
             <div class="col-xs-4">
@@ -108,7 +108,7 @@
                             title="Total Earnings achieved this year">&nbsp;</i></b>
                 </span>
 
-                <div class="count violet">$11,340</div>
+                <div class="count violet">$35,162</div>
             </div>
         </div>
     </div>
@@ -2025,5 +2025,16 @@
         selectCategoryPerEarn();
         selectCategoryPerDate();
         selectDashboardChart();
+    });
+</script>
+
+<script>
+    // Hyperlink to Rewards page
+    $(document).ready(function() {
+        $('.count_panel__link--js').click(function() {
+
+            var url = 'rewards';
+            $(location).attr('href', url);
+        });
     });
 </script>
