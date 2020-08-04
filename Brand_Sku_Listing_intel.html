@@ -5,7 +5,7 @@
 <link href="/o/gentelella-theme/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet" />
 <link href="/o/gentelella-theme/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet" />
 <link href="/o/gentelella-theme/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet" />
-<link rel="stylesheet" type="text/css" href="/documents/242830/531852/datatables.min.css/cb203e63-2d7a-df39-d49b-a14fc97b149c" />
+<!-- <link rel="stylesheet" type="text/css" href="/documents/242830/531852/datatables.min.css/cb203e63-2d7a-df39-d49b-a14fc97b149c" /> -->
 
 
 <!-- page content -->
@@ -341,8 +341,8 @@
 <script src="https://kit.fontawesome.com/d3400346f7.js" crossorigin="anonymous"></script>
 
 <!-- Datatables -->
-<!-- <script type="text/javascript" src="/documents/242830/531855/datatables.min.js/ebfb5c69-ac06-c04c-62f3-5e29607b200a"></script> -->
-<!-- Datatables -->
+<script type="text/javascript" src="/documents/242830/531855/datatables.min.js/ebfb5c69-ac06-c04c-62f3-5e29607b200a"></script>
+<!-- /Datatables -->
 
 <script>
     window.define = window.__define;
@@ -351,59 +351,6 @@
     window.__require = undefined;
 </script>
 
-<script>
-    $(document).ready(function() {
-        var handleDataTableButtons = function() {
-            if ($("#datatable-buttons").length) {
-                $("#datatable-buttons").DataTable({
-                    dom: "Bfrtip",
-                    buttons: [{
-                        extend: "copy",
-                        className: "btn-sm"
-                    }, {
-                        extend: "csv",
-                        className: "btn-sm"
-                    }, {
-                        extend: "excel",
-                        className: "btn-sm"
-                    }, {
-                        extend: "pdfHtml5",
-                        className: "btn-sm"
-                    }, {
-                        extend: "print",
-                        className: "btn-sm"
-                    }, ],
-                    responsive: true
-                });
-            }
-        };
-        var handleDataTableButtons = function() {
-            if ($("#datatable-buttons").length) {
-                $("#datatable-buttons").DataTable({
-                    "pageLength": 50,
-                    dom: "Bfrtip",
-                    buttons: [{
-                        extend: "copy",
-                        className: "btn-sm"
-                    }, {
-                        extend: "csv",
-                        className: "btn-sm"
-                    }, {
-                        extend: "excel",
-                        className: "btn-sm"
-                    }, {
-                        extend: "pdfHtml5",
-                        className: "btn-sm"
-                    }, {
-                        extend: "print",
-                        className: "btn-sm"
-                    }, ],
-                    responsive: true
-                });
-            }
-        };
-    });
-</script>
 
 <script>
     function initBrandSkuTable() {

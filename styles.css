@@ -22,8 +22,7 @@ a.paginate_button.current {
 
 a.paginate_button,
 #datatable-buttons_paginate a.paginate_button {
-    border-radius: 0;
-    margin-left: 0;
+    box-shadow: 1px 1px 4px #eee;
 }
 
 .auto_margin {
@@ -146,7 +145,7 @@ a.paginate_button,
 #datatable-buttons_info {
     float: right;
     /* margin-right: 15px; */
-    margin-top: -2.75em;
+    margin-top: 0 !important;
     font-size: 12px;
     max-width: 55%;
     text-align: right;
@@ -154,20 +153,21 @@ a.paginate_button,
 
 #datatable-buttons_length {
     display: block;
-    margin-top: 1em;
+    margin-top: 0.5em !important;
     font-size: 12px;
     width: 130px;
 }
 
 #datatable-buttons_length select {
-    height: 24px;
-    border-radius: 4px;
-    padding-left: 6px;
+    height: 26px;
+    border-radius: 4px !important;
+    padding-left: 6px !important;
     width: 41%;
+    border: 1px solid #999999;
 }
 
 #datatable-buttons_paginate {
-    margin-top: 0.5em;
+    margin-top: 0.5em !important;
     /* margin-bottom: 11px; */
     margin-left: 15px;
     float: left;
@@ -185,54 +185,65 @@ a.paginate_button,
     }
 }
 
-a#datatable-buttons_previous,
-a#datatable-buttons_next,
-.paginate_button {
-    border: 1px solid #dddddd;
-    background-color: #ffffff;
-    padding: 3px;
-    text-decoration: none;
+#datatable-buttons_paginate #datatable-buttons_previous,
+.dataTables_paginate a#datatable-buttons_previous,
+.dataTables_wrapper.no-footer .dataTables_paginate #datatable-buttons_paginate #datatable-buttons_previous {
+    border-radius: 4px 2px 2px 4px !important;
 }
 
-#datatable-buttons_previous,
-#datatable-buttons_paginate #datatable-buttons_previous {
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-}
-
-#datatable-buttons_next,
-#datatable-buttons_paginate #datatable-buttons_previous {
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-}
-
-#datatable-buttons_paginate a.paginate_button.current {
-    background: #337ab7 !important;
-    color: #ffffff !important;
-    border-color: #337ab7 !important;
-    padding-left: 0.5em !important;
-    padding-right: 0.5em !important;
-}
-
-a#datatable-buttons_previous,
-#datatable-buttons_paginate a#datatable-buttons_previous,
-a#datatable-buttons_next,
-#datatable-buttons_paginate a#datatable-buttons_next,
-.paginate_button,
-#datatable-buttons_paginate .paginate_button {
-    border: 1px solid #dddddd !important;
-    background-color: #ffffff !important;
-    padding: 3px !important;
-    text-decoration: none !important;
+a#datatable-buttons_next .dataTables_paginate a#datatable-buttons_next,
+.dataTables_wrapper.no-footer .dataTables_paginate #datatable-buttons_paginate #datatable-buttons_next {
+    border-radius: 2px 4px 4px 2px !important;
 }
 
 a.paginate_button:hover,
 a.paginate_button.current:hover,
 a#datatable-buttons_previous:hover,
-a#datatable-buttons_next:hover {
-    background: #e3e3e3;
-    color: #ffffff;
-    text-decoration: none;
+a#datatable-buttons_next:hover,
+.dataTables_wrapper.no-footer .dataTables_paginate .paginate_button:hover,
+.dataTables_wrapper.no-footer .dataTables_paginate .paginate_button.current:hover {
+    background: #e3e3e3 !important;
+    background-image: linear-gradient(0deg, #e3e3e3 0%, #f9f9f9 100%) !important;
+    color: #999999 !important;
+    text-decoration: none !important;
+    border: 1px solid #e3e3e3 !important;
+}
+
+.bottom .dataTables_paginate #datatable-buttons_paginate a.paginate_button.current,
+.dataTables_wrapper.no-footer .dataTables_paginate .paginate_button.current {
+    background: #337ab7 !important;
+    background-image: linear-gradient(0deg, #337ab7 0%, #8BC6EC 100%) !important;
+    color: #ffffff !important;
+    border-color: #8BC6EC !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
+.bottom .dataTables_paginate a#datatable-buttons_previous,
+.dataTables_paginate #datatable-buttons_paginate a#datatable-buttons_previous,
+.bottom .dataTables_paginate a#datatable-buttons_next,
+.dataTables_paginate #datatable-buttons_paginate a#datatable-buttons_next {
+    border: 1px solid #dddddd !important;
+    background-color: #ffffff;
+    padding: 3px !important;
+    text-decoration: none !important;
+}
+
+.bottom .dataTables_paginate a#datatable-buttons_previous.disabled,
+.bottom .dataTables_paginate a#datatable-buttons_next.disabled,
+.bottom .dataTables_paginate a#datatable-buttons_previous.disabled:hover,
+.bottom .dataTables_paginate a#datatable-buttons_next.disabled:hover {
+    background-color: #ffffff !important;
+    background-image: none !important;
+    color: #dddddd !important;
+}
+
+.dataTables_paginate .paginate_button,
+.dataTables_paginate #datatable-buttons_paginate .paginate_button {
+    border: 1px solid #dddddd !important;
+    background-color: #ffffff !important;
+    padding: 3px 8px !important;
+    text-decoration: none !important;
 }
 
 table.dataTable thead th,
