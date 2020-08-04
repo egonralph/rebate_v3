@@ -414,6 +414,12 @@ table.dataTable.no-footer,
     align-items: center;
 }
 
+.flex-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .form-check-label {
     top: -3px;
 }
@@ -536,7 +542,8 @@ input[type="search"] {
 }
 
 .nav.nav-pills {
-    margin-bottom: 0.8em;
+    margin-top: 1em;
+    margin-bottom: 2em;
 }
 
 .nav-pills .nav-link {
@@ -622,6 +629,15 @@ input[type="search"] {
 .overview-radio-panel {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.overview_title {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .panel {
@@ -757,7 +773,8 @@ input[type="search"] {
     margin-top: -0.15em;
 }
 
-#points-to-date-by-brand-category-main-chart td {
+#points-to-date-by-brand-category-main-chart__full_period td,
+#points-to-date-by-brand-category-main-chart__latest_period td {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }

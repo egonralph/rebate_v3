@@ -410,6 +410,12 @@ table.dataTable.no-footer,
     align-items: center;
 }
 
+.flex-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .form-check-label {
     top: -3px;
 }
@@ -512,6 +518,33 @@ input[type="search"] {
     margin-right: 15px;
 }
 
+#full_period,
+#month_by_month {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.nav.nav-pills {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.nav-pills .nav-link {
+    font-weight: 700;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: #21adfd;
+    background-image: linear-gradient(180deg, #21adfd 26%, #5bb0ff 51%, #007bff 80%);
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px #555;
+    border-radius: 10px;
+}
+
 .no_decoration {
     text-decoration: none;
 }
@@ -580,6 +613,15 @@ input[type="search"] {
 .overview-radio-panel {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.overview_title {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .panel {
