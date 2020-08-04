@@ -803,6 +803,46 @@ textarea.field.form-control {
     justify-content: space-around;
 }
 
+.progress-bar.bg-blue_grad {
+    background-color: #225dfb;
+    background-image: linear-gradient(0deg, #225dfb 0%, #415ef9 55%, #99adff 100%) !important;
+    color: #fff;
+    font-weight: 600;
+    font-size: 13px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+}
+
+.progress-bar.bg-green_grad {
+    background-color: #7fff7f;
+    background-image: linear-gradient(180deg, #7fff7f 0%, #5cb85c 50%, #037b03 100%);
+    color: #fff;
+    font-weight: 600;
+    font-size: 13px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+}
+
+.progress-bar.bg-orange_grad {
+    background-color: #ff6f06;
+    background-image: linear-gradient(0deg, #ff6f06 0%, #ed8e35 46%, #FFCC70 100%) !important;
+    color: #fff;
+    font-weight: 600;
+    font-size: 13px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+}
+
+.progress-bar.bg-red_grad {
+    background-color: #b90000;
+    background-image: linear-gradient(180deg, #fb7171 19%, #ff3a3a 56%, #b90000 100%);
+    color: #fff;
+    font-weight: 600;
+    font-size: 13px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+}
+
 .progress-bar_items {
     width: 100%;
     color: #555555 !important;
