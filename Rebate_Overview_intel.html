@@ -365,7 +365,7 @@
                         </div>
 
                         <div class="col-md-4 col-sm-4 col-xs-12">
-                            <div class="x_panel panel-rounded" style="min-height: 31.05em;">
+                            <div class="x_panel panel-rounded" style="min-height: 32.05em;">
                                 <div class="x_title overview_title">
                                     <h2 class="special-header__overall">Opportunities Earned <span class="overall_date">June 2020</span> <i class="fa fa-question-circle superscript" title="Statement of all points earned and missed last period.">&nbsp;</i></h2>
 
@@ -373,7 +373,7 @@
                                 </div>
 
                                 <div class="col-xs-12 flex-center">
-                                    <canvas height="250" width="250" class="circle_chart" id="echart_full_pie" aria-label="Sold vs Opportunities doughnut chart" role="img" style="padding: 1.45em;"></canvas>
+                                    <canvas height="300" class="circle_chart" id="echart_full_pie" aria-label="Sold vs Opportunities doughnut chart" role="img" style="padding: 1.45em;"></canvas>
                                 </div>
                             </div>
                         </div>
@@ -502,7 +502,7 @@
                         </div>
 
                         <div class="col-md-4 col-sm-4 col-xs-12">
-                            <div class="x_panel panel-rounded" style="min-height: 31.05em;">
+                            <div class="x_panel panel-rounded" style="min-height: 32.05em;">
                                 <div class="x_title overview_title">
                                     <h2 class="special-header__overall">Total Opportunities Earned <i class="fa fa-question-circle superscript" title="Statement of all points earned and missed this year.">&nbsp;</i></h2>
 
@@ -510,7 +510,7 @@
                                 </div>
 
                                 <div class="col-xs-12 flex-center">
-                                    <canvas height="250" width="250" class="circle_chart" id="echart_full_pie2" aria-label="Sold vs Opportunities doughnut chart" role="img" style="padding: 1.45em;"></canvas>
+                                    <canvas height="300" class="circle_chart" id="echart_full_pie2" aria-label="Sold vs Opportunities doughnut chart" role="img" style="padding: 1.45em;"></canvas>
                                 </div>
                             </div>
                         </div>
@@ -736,12 +736,21 @@
                 plugins: {
                     labels: {
                         render: 'percentage',
-                        fontColor: '#ffffff',
+                        fontColor: '#495057',
+                        fontStyle: 'bold',
                         fontFamily: '"Lucida Console", Monaco, monospace',
-                        precision: 1
+                        precision: 1,
+                        position: 'outside',
+                        textShadow: true,
+                        shadowBlur: 1,
+                        shadowOffsetX: 1,
+                        shadowOffsetY: 1,
+                        shadowColor: 'rgba(255, 255, 255,0.75)',
+                        outsidePadding: 8,
+                        textMargin: 8
                     }
                 },
-                cutoutPercentage: 69,
+                cutoutPercentage: 75,
                 responsive: false
             }
         });
@@ -810,12 +819,21 @@
                 plugins: {
                     labels: {
                         render: 'percentage',
-                        fontColor: '#ffffff',
+                        fontColor: '#495057',
+                        fontStyle: 'bold',
                         fontFamily: '"Lucida Console", Monaco, monospace',
-                        precision: 1
+                        precision: 1,
+                        position: 'outside',
+                        textShadow: true,
+                        shadowBlur: 1,
+                        shadowOffsetX: 1,
+                        shadowOffsetY: 1,
+                        shadowColor: 'rgba255, 255, 255,0.75)',
+                        outsidePadding: 8,
+                        textMargin: 8
                     }
                 },
-                cutoutPercentage: 69,
+                cutoutPercentage: 75,
                 responsive: false
             }
         });
@@ -829,7 +847,7 @@
         var options = {
             legend: false,
             responsive: false,
-            cutoutPercentage: 70,
+            cutoutPercentage: 75,
             tooltips: {
                 callbacks: {
                     afterLabel: function(tooltipItem, data) {
@@ -840,11 +858,18 @@
             plugins: {
                 labels: {
                     render: 'percentage',
-                    fontColor: '#333333',
+                    fontColor: '#495057',
                     fontStyle: 'bold',
                     fontFamily: '"Lucida Console", Monaco, monospace',
                     precision: 1,
-                    position: 'outside'
+                    position: 'outside',
+                    textShadow: true,
+                    shadowBlur: 1,
+                    shadowOffsetX: 1,
+                    shadowOffsetY: 1,
+                    shadowColor: 'rgba(255, 255, 255,0.75)',
+                    outsidePadding: 8,
+                    textMargin: 8
                 }
             },
         };
@@ -905,7 +930,7 @@
         var options = {
             legend: false,
             responsive: false,
-            cutoutPercentage: 70,
+            cutoutPercentage: 75,
             tooltips: {
                 callbacks: {
                     afterLabel: function(tooltipItem, data) {
@@ -916,11 +941,18 @@
             plugins: {
                 labels: {
                     render: 'percentage',
-                    fontColor: '#333333',
+                    fontColor: '#495057',
                     fontStyle: 'bold',
                     fontFamily: '"Lucida Console", Monaco, monospace',
                     precision: 1,
-                    position: 'outside'
+                    position: 'outside',
+                    textShadow: true,
+                    shadowBlur: 1,
+                    shadowOffsetX: 1,
+                    shadowOffsetY: 1,
+                    shadowColor: 'rgba(255, 255, 255,0.75)',
+                    outsidePadding: 8,
+                    textMargin: 8
                 }
             },
         };
