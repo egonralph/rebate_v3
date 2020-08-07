@@ -294,6 +294,12 @@ table.dataTable.no-footer,
     border-radius: 4px;
 }
 
+.date_filters_panel {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .dbbcl-rebate1 {
     background: #FF9143;
     border: 1px solid #FF9143;
