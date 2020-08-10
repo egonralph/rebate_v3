@@ -2989,7 +2989,7 @@
         function chooseRadioButtons() {
 
             initializeSelectedChart();
-            changeHistoricalHeader();
+            // changeHistoricalHeader();
 
             console.log('render default');
 
@@ -3003,7 +3003,7 @@
                     $("#brand_date_point_activity_graph").val("1");
                     $("#freq_point_activity_graph2").val("1");
                     initializeSelectedChart();
-                    changeHistoricalHeader();
+                    // changeHistoricalHeader();
 
                     console.log('render PTD');
                 }
@@ -3013,7 +3013,7 @@
                     $("#earn_point_activity_graph").val("1");
                     $("#freq_historic_sold_activity").val("1");
                     initializeHistoricalSoldChart();
-                    changeHistoricalHeader();
+                    // changeHistoricalHeader();
                     selecthistoricSoldChart();
                     console.log('render PTE');
                 }
@@ -3427,30 +3427,30 @@
             console.log('update chart_new function');
         }
 
-        function changeHistoricalHeader() {
-            $('#dash_ratio_container .radio_label').on('click', function(event) {
-                var historicalHeader = $('#daily_graph_i3 .historical_header--js');
-                var val = $(this).find('input').val();
+        // function changeHistoricalHeader() {
+        //     $('#dash_ratio_container .radio_label').on('click', function(event) {
+        //         var historicalHeader = $('#daily_graph_i3 .historical_header--js');
+        //         var val = $(this).find('input').val();
 
-                historicalHeader.text('Units Opportunities');
+        //         historicalHeader.text('Units Opportunities');
 
-                if (val == 'PTD') {
-                    historicalHeader.text('Units Opportunities');
-                    console.log('Units Opportunities test');
-                }
-                if (val == 'PTE') {
-                    historicalHeader.text('Units Earnings');
-                    console.log('Units Earnings Test');
-                }
-            });
-        };
+        //         if (val == 'PTD') {
+        //             historicalHeader.text('Units Opportunities');
+        //             console.log('Units Opportunities test');
+        //         }
+        //         if (val == 'PTE') {
+        //             historicalHeader.text('Units Earnings');
+        //             console.log('Units Earnings Test');
+        //         }
+        //     });
+        // };
 
         $(document).ready(function() {
             chooseSoldOutstandingRadio();
             chooseRadioButtons();
             chooseEarnVendorChbxNew();
             chooseEarnVendorChbx();
-            changeHistoricalHeader();
+            // changeHistoricalHeader();
             selectCategoryPerEarn();
             selectCategoryPerDate();
             selectDashboardChart();
