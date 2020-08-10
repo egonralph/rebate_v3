@@ -1309,6 +1309,13 @@ table td.no_border {
     margin-bottom: 1.5em;
 }
 
+.thumbnail .image.view.view-first.amazon_image {
+    min-height: 196px !important;
+    overflow: hidden;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
 .titled_component {
     text-align: left;
     font-weight: 600;
