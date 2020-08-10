@@ -509,6 +509,10 @@ input[type="search"] {
     float: right;
 }
 
+.intel_superscript {
+    font-size: 11px;
+}
+
 .left {
     float: left;
 }
@@ -815,9 +819,24 @@ textarea.field.form-control {
     display: block;
 }
 
+.prod_incentive_icon {
+    color: #faa700;
+    margin-right: 0.5em;
+}
+
 .product_incent_header {
     color: #555555;
     font-weight: bold;
+}
+
+.product_incent_header_pane {
+    color: #077a26;
+    font-weight: 700;
+}
+
+.product_incentive_pane {
+    margin-bottom: .5em;
+    font-size: 16px;
 }
 
 .product_list {
@@ -826,6 +845,11 @@ textarea.field.form-control {
 
 .product_list__header {
     margin-bottom: 0.8em;
+}
+
+.product_list__second,
+.short-text {
+    font-size: 12px;
 }
 
 
