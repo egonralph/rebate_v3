@@ -851,6 +851,10 @@ textarea.field.form-control {
     margin-bottom: 0.8em;
 }
 
+.product_list_rewards__contents {
+    margin-bottom: 1em;
+}
+
 .product_list__second,
 .short-text {
     font-size: 12px;
@@ -1019,6 +1023,12 @@ textarea.field.form-control {
 
 .radio-paragraph {
     margin-bottom: 0;
+}
+
+.rewards_image_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .rewards-points_icon {
@@ -1333,11 +1343,18 @@ table td.no_border {
 }
 
 .thumbnail .image.view.view-first.amazon_image {
-    min-height: 140px !important;
+    min-height: 145px !important;
     overflow: hidden;
     margin-top: 1em;
     margin-bottom: 1.5em;
     padding: 1em;
+    width: 50%;
+}
+
+.thumbnail .image.view.view-first.amazon_image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #aaa;
 }
 
 .titled_component {
