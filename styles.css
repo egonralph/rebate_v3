@@ -788,6 +788,10 @@ input[type="search"] {
     margin-top: -0.15em;
 }
 
+.points-rewards-margin {
+    margin-top: -0.5em;
+}
+
 #points-to-date-by-brand-category-main-chart__full_period td,
 #points-to-date-by-brand-category-main-chart__latest_period td {
     padding-top: 0.5em;
@@ -850,6 +854,20 @@ textarea.field.form-control {
 .product_list__second,
 .short-text {
     font-size: 12px;
+}
+
+.product_rewards_header_pane {
+    color: lightseagreen;
+    font-weight: 700;
+}
+
+.product_rewards_pane {
+    margin-bottom: .5em;
+    font-size: 16px;
+    text-align: center;
+    margin-left: -0.5em;
+    font-weight: 700;
+    color: #555555;
 }
 
 
@@ -1001,6 +1019,11 @@ textarea.field.form-control {
 
 .radio-paragraph {
     margin-bottom: 0;
+}
+
+.rewards-points_icon {
+    font-size: 16px;
+    color: lightseagreen;
 }
 
 .right {
@@ -1310,10 +1333,11 @@ table td.no_border {
 }
 
 .thumbnail .image.view.view-first.amazon_image {
-    min-height: 196px !important;
+    min-height: 140px !important;
     overflow: hidden;
     margin-top: 1em;
     margin-bottom: 1.5em;
+    padding: 1em;
 }
 
 .titled_component {
@@ -1325,6 +1349,11 @@ table td.no_border {
 .thumbnail_breakline {
     margin: -0.05em 1em 0 1em;
     border-color: #eeeeee;
+}
+
+.thumbnail.thumbnail_rewards {
+    height: 35.5em;
+    padding: 0.5em;
 }
 
 .tile_count .tile_stats_count {
