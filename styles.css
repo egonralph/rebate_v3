@@ -64,6 +64,11 @@ a.paginate_button,
     }
 }
 
+.claim_btn {
+    margin-top: 0.2em;
+    width: 20em;
+}
+
 .clearfix_small_height {
     height: 6px;
 }
@@ -790,6 +795,7 @@ input[type="search"] {
 
 .points-rewards-margin {
     margin-top: -0.5em;
+    margin-bottom: 0;
 }
 
 #points-to-date-by-brand-category-main-chart__full_period td,
@@ -845,10 +851,12 @@ textarea.field.form-control {
 
 .product_list {
     list-style-type: none;
+    padding-left: 0;
 }
 
 .product_list__header {
     margin-bottom: 0.8em;
+    font-size: 14px;
 }
 
 .product_list_rewards__contents {
@@ -857,7 +865,7 @@ textarea.field.form-control {
 
 .product_list__second,
 .short-text {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .product_rewards_header_pane {
@@ -1343,11 +1351,11 @@ table td.no_border {
 }
 
 .thumbnail .image.view.view-first.amazon_image {
-    min-height: 145px !important;
+    min-height: 165px !important;
     overflow: hidden;
     margin-top: 1em;
     margin-bottom: 1.5em;
-    padding: 1em;
+    padding: 0;
     width: 50%;
 }
 
