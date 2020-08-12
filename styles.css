@@ -861,6 +861,7 @@ textarea.field.form-control {
 
 .product_list_rewards__contents {
     margin-bottom: 1em;
+    padding-left: 0;
 }
 
 .product_list__second,
@@ -1033,6 +1034,12 @@ textarea.field.form-control {
     margin-bottom: 0;
 }
 
+.reward_shop_container {
+    display: flex;
+    align-items: center;
+    height: 7em;
+}
+
 .rewards_image_container {
     display: flex;
     align-items: center;
@@ -1042,6 +1049,19 @@ textarea.field.form-control {
 .rewards-points_icon {
     font-size: 16px;
     color: lightseagreen;
+}
+
+.rewards-shop_icon {
+    color: rgb(19, 172, 0);
+}
+
+.rewards-shop_icon:hover {
+    color: rgb(255, 255, 255);
+    color: rgb(19, 172, 0);
+}
+
+.shop-cart {
+    font-size: 18px;
 }
 
 .right {
