@@ -793,7 +793,7 @@ input[type="search"] {
     margin-top: -0.15em;
 }
 
-.points-rewards-margin {
+.points-rewards-margin.rewards-points_icon {
     margin-top: -0.5em;
     margin-bottom: 0;
 }
@@ -1370,7 +1370,7 @@ table td.no_border {
     margin-bottom: 1.5em;
 }
 
-.thumbnail .image.view.view-first.amazon_image {
+.thumbnail.thumbnail_rewards .image.view.view-first.amazon_image {
     min-height: 165px !important;
     overflow: hidden;
     margin-top: 1em;
