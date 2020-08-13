@@ -1034,10 +1034,55 @@ textarea.field.form-control {
     margin-bottom: 0;
 }
 
+.read-more-state {
+    display: none;
+}
+
+.read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+}
+
+.read-more-state:checked~.read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+}
+
+.read-more-state~.read-more-trigger:before {
+    content: 'Read more';
+}
+
+.read-more-state:checked~.read-more-trigger:before {
+    content: 'Read less';
+}
+
+.read-more-state~.read-more-wrap:after {
+    content: '...';
+}
+
+.read-more-state:checked~.read-more-wrap:after {
+    content: '';
+}
+
+.read-more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 .5em;
+    color: #1e5799;
+    font-size: .9em;
+    line-height: 2;
+    border: 1px solid #1e5799;
+    border-radius: .25em;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .reward_shop_container {
     display: flex;
     align-items: center;
-    height: 7em;
+    height: 4em;
 }
 
 .rewards_image_container {
@@ -1051,6 +1096,18 @@ textarea.field.form-control {
     color: lightseagreen;
 }
 
+.reward_shop_add {
+    border: 1px solid #16CA16;
+    background-color: #01f301;
+    background: -webkit-linear-gradient(to bottom, #01f301, #007b00);
+    background-image: linear-gradient(180deg, #01f301 0%, #007b00 100%);
+}
+
+.reward_shop_add_icon,
+.reward_shop_remove_icon {
+    color: #fff;
+}
+
 .rewards-shop_icon {
     color: rgb(19, 172, 0);
 }
@@ -1058,6 +1115,27 @@ textarea.field.form-control {
 .rewards-shop_icon:hover {
     color: rgb(255, 255, 255);
     color: rgb(19, 172, 0);
+}
+
+.reward_shop_ig {
+    width: 7em;
+}
+
+.reward_shop_input.form-control {
+    height: 1.99em !important;
+    text-align: center;
+    border-right: none;
+    border-left: none;
+    font-size: 12px;
+    font-weight: 600;
+    color: #007b00;
+}
+
+.reward_shop_remove {
+    border: 1px solid #bdc3c7;
+    background: #bdc3c7;
+    background: -webkit-linear-gradient(to bottom, #bdc3c7, #2c3e50);
+    background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
 }
 
 .shop-cart {
@@ -1371,7 +1449,9 @@ table td.no_border {
 }
 
 .thumbnail.thumbnail_rewards .image.view.view-first.amazon_image {
-    min-height: 165px !important;
+    max-height: 165px !important;
+    min-height: fit-content !important;
+    height: auto;
     overflow: hidden;
     margin-top: 1em;
     margin-bottom: 1.5em;
@@ -1398,7 +1478,7 @@ table td.no_border {
 
 .thumbnail.thumbnail_rewards {
     height: 35.5em;
-    padding: 0.5em;
+    margin: 0.5em;
 }
 
 .tile_count .tile_stats_count {
