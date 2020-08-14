@@ -138,6 +138,10 @@ a.paginate_button,
     margin-top: 0;
 }
 
+.dashboard__filter-mbm {
+    margin-top: 0.5em;
+}
+
 .dashboard__filter-rebate {
     margin-top: -1.5em;
     margin-bottom: 0;

@@ -169,7 +169,7 @@
                                 <div role="tabpanel" class="tab-pane fade in active" id="unit_pill">
                                     <div class="">
                                         <div class="col-lg-3 col-md-4 col-xs-6 date_filters_panel">
-                                            <div class="col-xs-12 dashboard_filter_panel dashboard__filter-historical">
+                                            <div class="col-xs-12 dashboard_filter_panel dashboard__filter-mbm">
 
                                                 <div class="col-md-6 col-sm-6 col-xs-6 dashboard_freq half_top_margin" id="rewards_units_vendor_dropdownmenu">
                                                     <div class="row">
@@ -559,7 +559,7 @@
                                 <div role="tabpanel" class="tab-pane fade" id="reward_pill">
                                     <div class="row">
                                         <div class="col-xs-12 date_filters_panel">
-                                            <div class="col-md-4 col-sm-5 col-xs-6 dashboard_filter_panel dashboard__filter-historical">
+                                            <div class="col-md-4 col-sm-5 col-xs-6 dashboard_filter_panel dashboard__filter-mbm">
                                                 <!-- <div class="col-md-6 col-sm-6 col-xs-6 dash_ratio_container" id="dash_ratio_container">
                                                     <div class="radio" id="point_to_earn_radio">
                                                         <label class="radio_label">
@@ -992,7 +992,7 @@
                                 <div role="tabpanel" class="tab-pane fade in active" id="percentage_pill">
                                     <div class="row">
                                         <div class="col-lg-3 col-md-4 col-xs-6 date_filters_panel">
-                                            <div class="col-xs-12 dashboard_filter_panel dashboard__filter-historical">
+                                            <div class="col-xs-12 dashboard_filter_panel dashboard__filter-mbm">
                                                 <div class="col-md-6 col-sm-6 col-xs-6 dashboard_freq half_top_margin" id="opportunities_percentage_vendor_dropdownmenu">
                                                     <div class="row">
                                                         <label class="titled_component one_margin_left">CPU Name &nbsp;</label>
@@ -1327,7 +1327,7 @@
                                 <div role="tabpanel" class="tab-pane fade" id="opportunities_reward_pill">
                                     <div class="row">
                                         <div class="col-xs-12 date_filters_panel">
-                                            <div class="col-md-4 col-sm-5 col-xs-6 dashboard_filter_panel dashboard__filter-historical">
+                                            <div class="col-md-4 col-sm-5 col-xs-6 dashboard_filter_panel dashboard__filter-mbm">
 
                                                 <div class="col-md-6 col-sm-6 col-xs-6 dashboard_freq" id="opportunities_rewards_vendor_combobox">
 
@@ -1846,7 +1846,10 @@
     <script>
         $(document).ready(function() {
             var options = {
-                legend: false,
+                legend: {
+                    display: true,
+                    position: 'top',
+                },
                 responsive: false,
                 scales: {
                     xAxes: [{
@@ -1969,7 +1972,10 @@
     <script>
         $(document).ready(function() {
             var options = {
-                legend: false,
+                legend: {
+                    display: true,
+                    position: 'top',
+                },
                 responsive: false,
                 scales: {
                     xAxes: [{
@@ -2037,7 +2043,10 @@
     <script>
         $(document).ready(function() {
             var options = {
-                legend: false,
+                legend: {
+                    display: true,
+                    position: 'top',
+                },
                 responsive: false,
                 scales: {
                     xAxes: [{
@@ -2160,7 +2169,10 @@
     <script>
         $(document).ready(function() {
             var options = {
-                legend: false,
+                legend: {
+                    display: true,
+                    position: 'top',
+                },
                 responsive: false,
                 scales: {
                     xAxes: [{
