@@ -63,6 +63,10 @@ a.paginate_button.current {
     padding-top: 3px;
 }
 
+.circle_chart_canvas {
+    padding: 1.45em;
+}
+
 @media (max-width: 991px) {
     .circle_chart_table {
         width: 60%;
@@ -73,6 +77,12 @@ a.paginate_button.current {
     }
     .points-by-brand-panel {
         height: 33em;
+    }
+}
+
+@media (max-width: 1366px) {
+    .circle_chart_canvas {
+        padding: 0.45em;
     }
 }
 
@@ -515,12 +525,12 @@ table.dataTable.no-footer,
     /* text-align: center; */
 }
 
-.header-pane__overall {
+.header-title__overall {
     margin-top: 0em;
 }
 
 @media (max-width:1366px) {
-    .header-pane__overall {
+    .header-title__overall {
         margin-top: -0.5em;
         margin-bottom: -0.5em;
     }
@@ -1546,8 +1556,8 @@ span.count_top {
     width: 42%;
 }
 
-.table_col_legend_label {
-    width: 25px;
+.table_col_earn_legend_label {
+    width: 20px;
 }
 
 .table-fixed {
@@ -1708,6 +1718,11 @@ table td.no_border {
     text-shadow: 1px 1px 4px #eee;
 }
 
+.tile_statistics_count_container {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr 1fr 1.1fr .9fr;
+}
+
 @media (max-width: 1366px) {
     /* .tile_count .tile_statistics_count {
         max-width: 19%;
@@ -1722,10 +1737,6 @@ table td.no_border {
         font-size: 28px;
         font-weight: 600;
         text-shadow: 1px 1px 4px #eee;
-    }
-    .tile_statistics_count_container {
-        display: grid;
-        grid-template-columns: .9fr 1.1fr 1fr 1.1fr .9fr;
     }
 }
 
@@ -1809,4 +1820,14 @@ ul.dropdown-menu>li:hover {
 
 .x_panel.tile.fixed_height_360 {
     margin-bottom: 0;
+}
+
+.x_panel.panel-rounded {
+    min-height: 32.05em;
+}
+
+@media (max-width) {
+    .x_panel.panel-rounded {
+        min-height: 28.05em;
+    }
 }
