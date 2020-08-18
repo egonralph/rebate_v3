@@ -55,6 +55,12 @@ a.paginate_button.current {
     border-color: #28a745;
 }
 
+.browser-default.custom-select.category,
+.browser-default.custom-select.country,
+.browser-default.custom-select.vendor {
+    font-size: 1.2rem;
+}
+
 .center {
     text-align: center;
 }
@@ -81,6 +87,10 @@ a.paginate_button.current {
 }
 
 @media (max-width: 1366px) {
+    .browser-default.custom-select.category,
+    .browser-default.custom-select.country {
+        width: 85%;
+    }
     .circle_chart_canvas {
         padding: 0.45em;
     }
@@ -153,7 +163,7 @@ a.paginate_button.current {
 
 .custom-select {
     background: #ffffff;
-    padding: .175rem 1.75rem .375rem .75rem;
+    padding: .175rem .75rem .175rem .75rem;
 }
 
 .dashboard_filter_panel {
@@ -173,9 +183,10 @@ a.paginate_button.current {
     margin-top: 0.5em;
 }
 
-.dashboard__filter-rebate {
-    margin-top: -1.5em;
-    margin-bottom: 0;
+.dashboard__filter-rb {
+    margin-top: -0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 15px;
 }
 
 .dashboard_freq {
@@ -520,7 +531,12 @@ table.dataTable.no-footer,
     margin-bottom: 0.5em;
 }
 
-.header-pane__historical {
+.header-title__brandSkuListing {
+    margin-top: -0.5em;
+    margin-bottom: -0.5em;
+}
+
+.header-title__historical {
     margin-top: 0;
     /* text-align: center; */
 }
@@ -534,26 +550,25 @@ table.dataTable.no-footer,
         margin-top: -0.5em;
         margin-bottom: -0.5em;
     }
-    .header-pane__historical {
+    .header-title__historical {
         margin-top: -0.5em;
         margin-bottom: -0.5em;
     }
 }
 
-.header-pane__products {
+.header-title__products {
     margin-top: -0.2em;
     margin-bottom: -0.5em;
 }
 
-.header-pane__rewards {
+.header-title__rewards {
     margin-top: -0.2em;
     margin-bottom: -0.5em;
 }
 
-.header-pane__quarter {
-    margin-top: -0.2em;
-    /*!important;*/
-    margin-bottom: -0.5em;
+.header-title__quarter {
+    margin-top: -1.55em;
+    margin-bottom: -1.3em;
 }
 
 .hidden {
@@ -851,12 +866,12 @@ input[type="search"] {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-.panel-section__brandSkuListing {
-    margin-top: 6em;
+.panel_section__brandSkuListing {
+    margin-top: 0.5em;
 }
 
-.panel-section__historical {
-    margin-top: 5.5em;
+.panel_section__historical {
+    margin-top: 0.5em;
 }
 
 .panel-section__overall {
@@ -864,16 +879,16 @@ input[type="search"] {
     margin-bottom: 0;
 }
 
-.panel-section__products {
-    margin-top: 9.5em;
+.panel_section__products {
+    margin-top: 0.5em;
 }
 
-.panel-section__rewards {
-    margin-top: 9.5em;
+.panel_section__rewards {
+    margin-top: 0.5em;
 }
 
-.panel-section__quarter {
-    margin-top: 5.5em;
+.panel_section__quarter {
+    margin-top: 0.5em;
 }
 
 .panel-sticky {
@@ -991,6 +1006,10 @@ textarea.field.form-control {
     border-radius: 10px;
     background-color: #aaaaaa;
 } */
+
+.progress {
+    min-height: 1.8rem;
+}
 
 .progress.progress_quarter {
     margin-bottom: 0;
@@ -1123,8 +1142,9 @@ textarea.field.form-control {
     margin-bottom: 20px;
 }
 
-.quater_earnings_icon {
-    font-size: 20px;
+.quater_earnings_icon,
+span.quater_earnings_icon {
+    font-size: 16px;
 }
 
 .qtd_rewards_icon,
@@ -1237,8 +1257,7 @@ textarea.field.form-control {
 }
 
 .reward_shop_input.form-control {
-    height: 1.99em;
-    /*!important;*/
+    height: 1.99em !important;
     text-align: center;
     border-right: none;
     border-left: none;
