@@ -59,6 +59,8 @@ a.paginate_button.current {
 .browser-default.custom-select.country,
 .browser-default.custom-select.vendor {
     font-size: 1.2rem;
+    width: 90%;
+    appearance: auto;
 }
 
 .center {
@@ -435,11 +437,11 @@ table.dataTable.no-footer,
 
 .dropdown-icon {
     float: right;
-    margin-top: -0.1em;
+    margin-top: -0em;
     margin-right: -0.2em;
-    color: #777777;
-    font-size: 18px;
-    font-weight: 800;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 500;
     transform: scale(0.9, 1);
 }
 
@@ -557,6 +559,11 @@ table.dataTable.no-footer,
 }
 
 .header-title__quarter {
+    margin-top: -0.5em;
+    margin-bottom: -0.5em;
+}
+
+.header-title__vendorView {
     margin-top: -0.5em;
     margin-bottom: -0.5em;
 }
