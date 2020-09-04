@@ -1628,7 +1628,8 @@ table td.no_border {
     border: none;
 }
 
-.pi_thumbnail {
+
+/* .pi_thumbnail {
     height: 18.5em;
 }
 
@@ -1654,7 +1655,7 @@ table td.no_border {
     .pi_thumbnail {
         height: 16.5em;
     }
-}
+} */
 
 .pi_thumbnail:hover {
     border: 1px solid #ddd;
