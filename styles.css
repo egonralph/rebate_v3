@@ -574,7 +574,10 @@ table.dataTable.no-footer,
 
 .incentive_header {
     margin-top: 1.5em;
+    margin-bottom: 1.5em;
     text-align: center;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .infografic-legend {
@@ -982,6 +985,12 @@ textarea.field.form-control {
 .product_list__second,
 .short-text {
     font-size: 14px;
+}
+
+.product_list__2columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1px 5px;
 }
 
 .product_rewards_header_pane {
@@ -1618,55 +1627,55 @@ table td.no_border {
     border: none;
 }
 
-.thumbnail {
-    height: 28.5em;
+.pi_thumbnail {
+    height: 18.5em;
 }
 
 @media (min-width: 1200px) and (max-width: 1450px) {
-    .thumbnail {
-        height: 24em;
+    .pi_thumbnail {
+        height: 15em;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
-    .thumbnail {
-        height: 23.5em;
+    .pi_thumbnail {
+        height: 14.5em;
     }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-    .thumbnail {
-        height: 24em;
+    .pi_thumbnail {
+        height: 15em;
     }
 }
 
 @media (max-width: 575px) {
-    .thumbnail {
-        height: 26.5em;
+    .pi_thumbnail {
+        height: 17.5em;
     }
 }
 
-.thumbnail:hover {
+.pi_thumbnail:hover {
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     /* margin: -1px; */
 }
 
-.thumbnail .caption {
+.pi_thumbnail .caption {
     background: none;
     padding-left: 2em;
 }
 
-.thumbnail .image,
-.incentive_header .thumbnail .image {
-    max-height: 87px;
+.pi_thumbnail .image,
+.incentive_header .pi_thumbnail .image {
+    max-height: 93px;
     overflow: hidden;
     margin-top: 1em;
     margin-bottom: 1.5em;
 }
 
-.thumbnail.thumbnail_rewards .image.view.view-first.amazon_image {
+.pi_thumbnail.thumbnail_rewards .image.view.view-first.amazon_image {
     max-height: 165px;
     /*!important;*/
     min-height: fit-content;
@@ -1679,7 +1688,7 @@ table td.no_border {
     width: 50%;
 }
 
-.thumbnail .image.view.view-first.amazon_image img {
+.pi_thumbnail .image.view.view-first.amazon_image img {
     width: 100%;
     border-radius: 10px;
     box-shadow: 2px 2px 4px #aaa;
@@ -1690,7 +1699,7 @@ table td.no_border {
     border-color: #eeeeee;
 }
 
-.thumbnail.thumbnail_rewards {
+.pi_thumbnail.thumbnail_rewards {
     height: 35.5em;
     margin: 0.5em;
 }
