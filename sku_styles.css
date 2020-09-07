@@ -22,11 +22,14 @@ a.paginate_button.next.disabled:hover {
 }
 
 a.paginate_button,
-#datatable-buttons_paginate a.paginate_button {
+#datatable-button_paginate a.paginate_button {
     padding-left: 0.5em;
     padding-right: 0.5em;
+    margin-right: 0.1em;
+    margin-left: 0.1em;
     font-size: 14px;
-    box-shadow: 1px 1px 4px #eee;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px #eeeeee;
 }
 
 a.paginate_button.current {
@@ -195,7 +198,7 @@ a.paginate_button.current {
     margin-top: 0.5em;
 }
 
-.bottom #datatable-buttons_info {
+.bottom #datatable-button_info {
     float: right;
     /* margin-right: 15px; */
     margin-top: 0;
@@ -204,14 +207,14 @@ a.paginate_button.current {
     text-align: right;
 }
 
-.bottom #datatable-buttons_length {
+.bottom #datatable-button_length {
     display: block;
     margin-top: 0.5em;
     font-size: 12px;
     width: 130px;
 }
 
-.bottom #datatable-buttons_length select {
+.bottom #datatable-button_length select {
     height: 26px;
     border-radius: 4px;
     padding-left: 6px;
@@ -219,41 +222,48 @@ a.paginate_button.current {
     border: 1px solid #999999;
 }
 
-.bottom #datatable-buttons_paginate {
-    margin-top: 0.5em;
+.bottom #datatable-button_paginate {
+    margin-top: 0.6em;
     margin-left: 15px;
     float: left;
 }
 
 @media (max-width: 690px) {
-    .bottom #datatable-buttons_info {
+    .bottom #datatable-button_info {
         max-width: 60%;
     }
-    .bottom #datatable-buttons_length {
+    .bottom #datatable-button_length {
         display: none;
     }
-    .bottom #datatable-buttons_paginate {
+    .bottom #datatable-button_paginate {
         margin-left: 0;
     }
 }
 
-#datatable-buttons_paginate #datatable-buttons_previous,
-.dataTables_paginate a#datatable-buttons_previous,
-.dataTables_wrapper.no-footer .dataTables_paginate #datatable-buttons_paginate #datatable-buttons_previous {
+.bootstrap-select>select.bs-select-hidden,
+select.bs-select-hidden,
+select.selectpicker {
+    display: inline-block;
+}
+
+#datatable-button_paginate #datatable-button_previous,
+.dataTables_paginate a#datatable-button_previous,
+.dataTables_wrapper.no-footer .dataTables_paginate #datatable-button_paginate #datatable-button_previous {
     border-radius: 4px 2px 2px 4px;
     /*!important;*/
 }
 
-a#datatable-buttons_next .dataTables_paginate a#datatable-buttons_next,
-.dataTables_wrapper.no-footer .dataTables_paginate #datatable-buttons_paginate #datatable-buttons_next {
+#datatable-button_paginate #datatable-button_next,
+.dataTables_paginate a#datatable-button_next,
+.dataTables_wrapper.no-footer .dataTables_paginate #datatable-button_paginate #datatable-button_next {
     border-radius: 2px 4px 4px 2px;
     /*!important;*/
 }
 
 a.paginate_button:hover,
 a.paginate_button.current:hover,
-a#datatable-buttons_previous:hover,
-a#datatable-buttons_next:hover,
+a#datatable-button_previous:hover,
+a#datatable-button_next:hover,
 .dataTables_wrapper.no-footer .dataTables_paginate .paginate_button:hover,
 .dataTables_wrapper.no-footer .dataTables_paginate .paginate_button.current:hover {
     background: #e3e3e3;
@@ -264,11 +274,11 @@ a#datatable-buttons_next:hover,
     /*!important;*/
     text-decoration: none;
     /*!important;*/
-    border: 1px solid #e3e3e3;
+    border: 1px solid #e3e3e3 !important;
     /*!important;*/
 }
 
-.bottom .dataTables_paginate #datatable-buttons_paginate a.paginate_button.current,
+.bottom .dataTables_paginate #datatable-button_paginate a.paginate_button.current,
 .dataTables_wrapper.no-footer .dataTables_paginate .paginate_button.current {
     background: #337ab7;
     /*!important;*/
@@ -276,46 +286,46 @@ a#datatable-buttons_next:hover,
     /*!important;*/
     color: #ffffff;
     /*!important;*/
-    border-color: #8BC6EC;
-    /*!important;*/
+    border-color: #8BC6EC !important;
     padding-left: 8px;
     /*!important;*/
     padding-right: 8px;
     /*!important;*/
 }
 
-.bottom .dataTables_paginate a#datatable-buttons_previous,
-.dataTables_paginate #datatable-buttons_paginate a#datatable-buttons_previous,
-.bottom .dataTables_paginate a#datatable-buttons_next,
-.dataTables_paginate #datatable-buttons_paginate a#datatable-buttons_next {
-    border: 1px solid #dddddd;
+.bottom .dataTables_paginate a#datatable-button_previous,
+.dataTables_paginate #datatable-button_paginate a#datatable-button_previous,
+.bottom .dataTables_paginate a#datatable-button_next,
+.dataTables_paginate #datatable-button_paginate a#datatable-button_next {
+    border: 1px solid #eeeeee;
     /*!important;*/
     background-color: #ffffff;
-    padding: 3px;
-    /*!important;*/
+    padding: 5px;
+    padding-left: 4px !important;
+    padding-right: 4px !important;
     text-decoration: none;
     /*!important;*/
 }
 
-.bottom .dataTables_paginate a#datatable-buttons_previous.disabled,
-.bottom .dataTables_paginate a#datatable-buttons_next.disabled,
-.bottom .dataTables_paginate a#datatable-buttons_previous.disabled:hover,
-.bottom .dataTables_paginate a#datatable-buttons_next.disabled:hover {
+.bottom .dataTables_paginate a#datatable-button_previous.disabled,
+.bottom .dataTables_paginate a#datatable-button_next.disabled,
+.bottom .dataTables_paginate a#datatable-button_previous.disabled:hover,
+.bottom .dataTables_paginate a#datatable-button_next.disabled:hover {
     background-color: #ffffff;
     /*!important;*/
     background-image: none;
     /*!important;*/
-    color: #dddddd;
+    color: #eeeeee;
     /*!important;*/
 }
 
 .dataTables_paginate .paginate_button,
-.dataTables_paginate #datatable-buttons_paginate .paginate_button {
-    border: 1px solid #dddddd;
+.dataTables_paginate #datatable-button_paginate .paginate_button {
+    border: 1px solid #eeeeee !important;
     /*!important;*/
     background-color: #ffffff;
     /*!important;*/
-    padding: 3px 8px;
+    padding: 4px 8px !important;
     /*!important;*/
     text-decoration: none;
     /*!important;*/
@@ -323,8 +333,8 @@ a#datatable-buttons_next:hover,
 
 table.dataTable thead th,
 table.dataTable thead td,
-#datatable-buttons.dataTable thead th,
-#datatable-buttons.dataTable thead td {
+#datatable-button.dataTable thead th,
+#datatable-button.dataTable thead td {
     margin: 0 auto;
     padding-top: 0;
     padding-bottom: 0;
@@ -333,7 +343,7 @@ table.dataTable thead td,
 }
 
 table.dataTable.no-footer,
-#datatable-buttons.dataTable.no-footer {
+#datatable-button.dataTable.no-footer {
     border: 1px solid #ddd;
 }
 
@@ -342,7 +352,7 @@ table.dataTable.no-footer,
 }
 
 @media (max-width: 768px) {
-    #datatable-buttons_filter {
+    #datatable-button_filter {
         display: inline-block;
         /*!important;*/
         width: 100%;

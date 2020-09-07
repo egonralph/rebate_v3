@@ -7,6 +7,12 @@
 <!-- bootstrap-daterangepicker -->
 <link href="/o/gentelella-theme/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
 
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+
 <!-- page content -->
 <div class="row tile_count">
 
@@ -461,7 +467,7 @@
                                                 Choose CPU Name
                                                 <i class="far fa-angle-down dropdown-icon" aria-hidden="true"></i>
                                             </button>
-                                            <ul class="dropdown-menu" id="date_brand_vendor_dd_menu">
+                                            <ul class="dropdown-menu selectpicker" id="date_brand_vendor_dd_menu">
                                                 <li class="dropdown_list">
                                                     <input type="checkbox" class="form-check-input dropdown_chbx" id="checkBrandDateVend1" checked>
                                                     <label class="form-check-label" for="checkBrandDateVend1">
@@ -548,7 +554,7 @@
                                         </div>
 
                                         <div class="row">
-                                            <select class="browser-default custom-select country" id="brand_date_point_activity_graph">
+                                            <select class="selectpicker browser-default custom-select country" id="brand_date_point_activity_graph">
                                                 <option value="1">Weekly</option>
                                                 <option value="2">Monthly</option>
                                                 <option value="3">Annual</option>
@@ -563,7 +569,7 @@
 
                                         <div class="row">
                                             <!-- if selected as weekly -->
-                                            <select class="browser-default custom-select country" id="freq_point_activity_graph2">
+                                            <select class="selectpicker browser-default custom-select country" id="freq_point_activity_graph2">
                                                 <option value="1">1<span class="select_superscript">st</span> week of
                                                     year
                                                 </option>
@@ -2197,5 +2203,187 @@
             var url = 'rewards';
             $(location).attr('href', url);
         });
+    });
+</script>
+
+<script>
+    $('select').selectpicker();
+    // All default plugin settings.
+
+    $('select').selectpicker({
+
+        // text for none selected
+
+        noneSelectedText: 'Nothing selected',
+
+        // text for no results
+
+        noneResultsText: 'No results matched {0}',
+
+        countSelectedText: function(numSelected, numTotal) {
+
+            return (numSelected == 1) ? "{0} item selected" : "{0} items selected";
+
+        },
+
+        // text for max options
+
+        maxOptionsText: function(numAll, numGroup) {
+
+            return [
+                (numAll == 1) ? 'Limit reached ({n} item max)' : 'Limit reached ({n} items max)',
+                (numGroup == 1) ? 'Group limit reached ({n} item max)' : 'Group limit reached ({n} items max)'
+
+            ];
+
+        },
+
+        // text for select all
+
+        selectAllText: 'Select All',
+
+        // text for deselect all
+
+        deselectAllText: 'Deselect All',
+
+        // enables done button
+
+        doneButton: false,
+
+        // text for done button
+
+        doneButtonText: 'Close',
+
+        // custom separator
+
+        multipleSeparator: ', ',
+
+        // basic class
+
+        styleBase: 'btn',
+
+        // button classes
+
+        style: classNames.BUTTONCLASS,
+
+
+
+        // 'auto' | integer | false
+
+        size: 'auto',
+
+        // title for dropdown select
+
+        title: null,
+
+
+
+        // values' | 'static' | 'count' | 'count > x'
+
+        selectedTextFormat: 'values',
+
+
+
+        // width
+
+        width: false,
+
+
+
+        // string | false
+
+        container: false,
+
+
+
+        // hides disabled options
+
+        hideDisabled: false,
+
+
+
+        // shows sub text
+
+        showSubtext: false,
+
+
+
+        // shows icons
+
+        showIcon: true,
+
+        // shows content
+
+        showContent: true,
+
+
+
+        // auto reposition to fit screen
+
+        dropupAuto: true,
+
+
+
+        // adds a header to the dropdown select
+
+        header: false,
+
+        // live filter options
+
+        liveSearch: false,
+
+        liveSearchPlaceholder: null,
+
+        liveSearchNormalize: false,
+
+        liveSearchStyle: 'contains',
+
+        // shows Select All & Deselect All
+
+        actionsBox: false,
+
+        // icon base
+
+        iconBase: 'glyphicon',
+
+        // tick icon
+
+        tickIcon: 'glyphicon-ok',
+
+
+
+        // shows tick
+
+        showTick: false,
+
+
+
+        // custom template
+
+        template: {
+
+            caret: '<span class="caret"></span>'
+
+        },
+
+        // integer | false
+        maxOptions: false,
+
+
+        // enables the device's native selectfor the dropdown select
+        mobile: false,
+
+        // if true, treats the tab character like the enter or space characters within the selectpicker dropdown.
+
+        selectOnTab: false,
+
+        // boolean | 'auto'
+        dropdownAlignRight: false,
+        // padding
+        windowPadding: 0,
+        // If enabled, the items in the dropdown will be rendered using virtualization (i.e. only the items that are within the viewport will be rendered).
+        // This drastically improves performance for selects with a large number of options.
+        // Set to an integer to only use virtualization if the select has at least that number of options.
+        virtual < a href = "https://www.jqueryscript.net/tags.php?/Scroll/" > Scroll < /a>: 600
     });
 </script>
