@@ -240,11 +240,12 @@ a.paginate_button.current {
     }
 }
 
-.bootstrap-select>select.bs-select-hidden,
+
+/* .bootstrap-select>select.bs-select-hidden,
 select.bs-select-hidden,
 select.selectpicker {
     display: inline-block !important;
-}
+} */
 
 #datatable-button_paginate #datatable-button_previous,
 .dataTables_paginate a#datatable-button_previous,
@@ -366,7 +367,8 @@ table.dataTable.no-footer,
 }
 
 #date_brand_vendor_dd_menu,
-#earn_vendor_dd_menu {
+#earn_vendor_dd_menu,
+#rewards_units_vendor_dd_menu {
     width: 100%;
     padding-top: 0.5em;
 }
@@ -489,8 +491,10 @@ table.dataTable.no-footer,
     justify-content: center;
 }
 
-#dropdownMenuVendor,
-#dropdownMenuBrandDateVendor {
+#dropdownMenuBrandDateVendor,
+#dropdownMenuOpportunitiesPercentage,
+#dropdownMenuRewardsUnits,
+#dropdownMenuVendor {
     background: #fff;
     color: #000000;
     border: 1px solid #ccc;
@@ -966,8 +970,9 @@ textarea.field.form-control {
 }
 
 .product_incentive_pane {
-    margin-bottom: .5em;
+    margin-bottom: 1em;
     font-size: 16px;
+    text-align: center;
 }
 
 .product_list {
@@ -994,6 +999,8 @@ textarea.field.form-control {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1px 5px;
+    margin-right: 4em;
+    margin-left: 4em;
 }
 
 .product_rewards_header_pane {
@@ -1103,6 +1110,21 @@ textarea.field.form-control {
     color: #fff;
     font-weight: 600;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.50);
+}
+
+.progress-bar_content_status {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    font-size: 12px;
+    z-index: 2;
+    padding: 0;
+    margin-left: -5px;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-shadow: 1px 1px 1px rgba(100, 100, 100, 0.90);
 }
 
 .progress-bar.progress__bg-blue {
@@ -1744,7 +1766,7 @@ table td.no_border {
 } */
 
 .tile_statistics_count .statistics_count__pane .count {
-    font-size: 36px;
+    font-size: 34px;
     font-weight: 600;
     text-shadow: 1px 1px 4px #eee;
 }

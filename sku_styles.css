@@ -967,8 +967,9 @@ processor_image {
 }
 
 .product_incentive_pane {
-    margin-bottom: .5em;
+    margin-bottom: 1em;
     font-size: 16px;
+    text-align: center;
 }
 
 .product_list {
@@ -995,6 +996,8 @@ processor_image {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1px 5px;
+    margin-right: 4em;
+    margin-left: 4em;
 }
 
 .product_rewards_header_pane {
@@ -1746,7 +1749,7 @@ table td.no_border {
 } */
 
 .tile_statistics_count .statistics_count__pane .count {
-    font-size: 36px;
+    font-size: 34px;
     font-weight: 600;
     text-shadow: 1px 1px 4px #eee;
 }
