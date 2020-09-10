@@ -1702,7 +1702,7 @@ table td.no_border {
 }
 
 .pi_thumbnail.thumbnail_rewards .image.view.view-first.amazon_image {
-    max-height: 165px;
+    max-height: 175px;
     /*!important;*/
     min-height: fit-content;
     /*!important;*/
