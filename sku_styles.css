@@ -526,6 +526,16 @@ table.dataTable.no-footer,
     width: 100%;
 }
 
+.full_left_text {
+    text-align: left;
+    width: 100%;
+}
+
+.full_right_text {
+    text-align: right;
+    width: 100%;
+}
+
 .half_margin_left {
     margin-left: 0.5em;
 }
@@ -1740,6 +1750,46 @@ table td.no_border {
     border: none;
 }
 
+table.tablesorter {
+    overflow: hidden;
+}
+
+.table.tablesorter thead td,
+.table.tablesorter thead th {
+    background: transparent;
+}
+
+td,
+th {
+    padding: 10px;
+    position: relative;
+    outline: 0;
+}
+
+body:not(.nohover) tbody tr:hover {
+    background-color: #ececec;
+    z-index: 1;
+}
+
+td:hover::after,
+thead th:not(:empty):hover::after,
+td:focus::after,
+thead th:not(:empty):focus::after {
+    content: '';
+    height: 10000px;
+    left: 0;
+    position: absolute;
+    top: -5000px;
+    width: 100%;
+    z-index: -1;
+}
+
+td:hover::after,
+th:hover::after {
+    background-color: #ececec;
+    color: #212529;
+}
+
 
 /* .pi_thumbnail {
     height: 18.5em;
@@ -1971,6 +2021,7 @@ ul.dropdown-menu>li:hover {
 
 .x_panel.tile.fixed_height_360 {
     margin-bottom: 0;
+    z-index: 0;
 }
 
 .x_panel.panel-rounded {
