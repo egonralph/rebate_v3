@@ -319,6 +319,12 @@ a#datatable-button_next:hover,
     /*!important;*/
 }
 
+.cpu_gen_title {
+    margin-top: 0.3em;
+    font-size: 14px;
+    color: #999;
+}
+
 .dataTables_paginate .paginate_button,
 .dataTables_paginate #datatable-button_paginate .paginate_button {
     border: 1px solid #eeeeee !important;
