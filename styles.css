@@ -995,9 +995,10 @@ textarea.field.form-control {
     font-weight: 700;
 }
 
-.product_incentive_pane {
+.product_incentive_pane,
+.product_incentive-pane {
     margin-bottom: 1em;
-    font-size: 16px;
+    font-size: 22px;
     text-align: center;
 }
 
@@ -1828,11 +1829,17 @@ th:hover::after {
     }
 } */
 
+.pi_thumbnail {
+    padding-top: 0.5em;
+    margin-top: 1em;
+}
+
 .pi_thumbnail:hover {
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     /* margin: -1px; */
+    border-top: none;
 }
 
 .pi_thumbnail .caption {
