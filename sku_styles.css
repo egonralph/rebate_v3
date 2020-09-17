@@ -1838,6 +1838,7 @@ th:hover::after {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     /* margin: -1px; */
     border-top: none;
+    border-bottom: none;
 }
 
 .pi_thumbnail .caption {
