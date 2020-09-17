@@ -140,8 +140,115 @@
                                 <a href="#opportunities_tab" aria-controls="opportunities_tab" role="tab" data-toggle="tab" class="nav-link">Opportunities</a>
                             </li>
                         </ul>
+
+                        <!-- Date Filter -->
+                        <div class="cpu_date_filters_panel">
+                            <div class="col-xs-12 dashboard_filter_panel">
+
+                                <div class="col-md-6 col-sm-6 col-xs-6" id="rewards_units_vendor_dropdownmenu">
+                                    <div class="dropdown">
+                                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuRewardsUnits" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Choose CPU Name
+                                        <i class="fa fa-angle-down dropdown-icons"
+                                            aria-hidden="true"></i>
+                                    </button>
+                                        <ul class="dropdown-menu" id="rewards_units_vendor_dd_menu">
+                                            <li class="dropdown_list">
+                                                <input type="checkbox" class="form-check-input dropdown_chbx" id="checkRewardsUnitsVend1" checked>
+                                                <label class="form-check-label" for="checkRewardsUnitsVend1">
+                                                Core<sup class="intel_superscript_sm">™</sup> i3
+                                            </label>
+                                                <span class="dropdown_menu_chart">
+                                                <i class="fa fa-minus fa-lg dropdown_menu_chart-icon1"
+                                                    aria-hidden="true"></i>
+                                            </span>
+                                            </li>
+                                            <li class="dropdown_list">
+                                                <input type="checkbox" class="form-check-input dropdown_chbx" id="checkRewardsUnitsVend2" checked>
+                                                <label class="form-check-label" for="checkRewardsUnitsVend2">
+                                                Core<sup class="intel_superscript_sm">™</sup> i5
+                                            </label>
+                                                <span class="dropdown_menu_chart">
+                                                <i class="fa fa-minus fa-lg dropdown_menu_chart-icon2"
+                                                    aria-hidden="true"></i>
+                                            </span>
+                                            </li>
+                                            <li class="dropdown_list">
+                                                <input type="checkbox" class="form-check-input dropdown_chbx" id="checkRewardsUnitsVend3" checked>
+                                                <label class="form-check-label" for="checkRewardsUnitsVend3">
+                                                Core<sup class="intel_superscript_sm">™</sup> i7
+                                            </label>
+                                                <span class="dropdown_menu_chart">
+                                                <i class="fa fa-minus fa-lg dropdown_menu_chart-icon3"
+                                                    aria-hidden="true"></i>
+                                            </span>
+                                            </li>
+                                            <li class="dropdown_list">
+                                                <input type="checkbox" class="form-check-input dropdown_chbx" id="checkRewardsUnitsVend4" checked>
+                                                <label class="form-check-label" for="checkRewardsUnitsVend4">
+                                                Core<sup class="intel_superscript_sm">™</sup> i9
+                                            </label>
+                                                <span class="dropdown_menu_chart">
+                                                <i class="fa fa-minus fa-lg dropdown_menu_chart-icon4"
+                                                    aria-hidden="true"></i>
+                                            </span>
+                                            </li>
+                                            <li class="dropdown_list">
+                                                <input type="checkbox" class="form-check-input dropdown_chbx" id="checkRewardsUnitsVend5" checked>
+                                                <label class="form-check-label" for="checkRewardsUnitsVend5">
+                                                Core<sup class="intel_superscript_sm">™</sup> m3
+                                            </label>
+                                                <span class="dropdown_menu_chart">
+                                                <i class="fa fa-minus fa-lg dropdown_menu_chart-icon5"
+                                                    aria-hidden="true"></i>
+                                            </span>
+                                            </li>
+                                            <li class="dropdown_list">
+                                                <input type="checkbox" class="form-check-input dropdown_chbx" id="checkRewardsUnitsVend6" checked>
+                                                <label class="form-check-label" for="checkRewardsUnitsVend6">
+                                                Pentium<sup class="intel_superscript_sm">®</sup> 
+                                            </label>
+                                                <span class="dropdown_menu_chart">
+                                                <i class="fa fa-minus fa-lg dropdown_menu_chart-icon6"
+                                                    aria-hidden="true"></i>
+                                            </span>
+                                            </li>
+                                            <li class="dropdown_list">
+                                                <input type="checkbox" class="form-check-input dropdown_chbx" id="checkRewardsUnitsVend7" checked>
+                                                <label class="form-check-label" for="checkRewardsUnitsVend7">
+                                                Xeon<sup class="intel_superscript_sm">®</sup>
+                                            </label>
+                                                <span class="dropdown_menu_chart">
+                                                <i class="fa fa-minus fa-lg dropdown_menu_chart-icon7"
+                                                    aria-hidden="true"></i>
+                                            </span>
+                                            </li>
+                                            <li class="not-sortable columns-li-padding dropdown-select-button-content">
+                                                <button class="btn btn-primary btn-xs btn-block select-category-btn" id="default_checkRewardsUnitsVend">Select
+                                                All</button>
+                                                <button class="btn btn-primary btn-xs btn-block select-category-btn" id="default_uncheckRewardsUnitsVend">Unselect
+                                                All</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6 col-xs-6" id="rewards_units_category_combobox">
+                                    <div class="range-calendar" id="monthByMonthDate">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <span id="rangeFromTo" class="d-none d-lg-inline">17 September 2019 - 17 September 2020</span>
+                                        <span id="rangeFromToSmall" class="d-lg-none">17 Sep 19 - 17 Sep 20</span>
+                                        <span class="hide" id="rangeFrom">17-09-2019</span>
+                                        <span class="hide" id="rangeTo">17-09-2020</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Date Filter -->
                     </div>
                     <!-- End navigation tabs  -->
+
+
 
                     <!-- Tab panes content-->
                     <div class="tab-content">
@@ -167,110 +274,7 @@
                                 <div class="tab-content">
                                     <!-- Rewards units pill -->
                                     <div role="tabpanel" class="tab-pane fade in active" id="unit_pill">
-                                        <div class="">
-                                            <div class="col-lg-4 col-md-4 col-xs-6 date_filters_panel">
-                                                <div class="col-xs-12 dashboard_filter_panel dashboard__filter-mbm">
 
-                                                    <div class="col-md-6 col-sm-6 col-xs-6 dashboard_freq half_top_margin" id="rewards_units_vendor_dropdownmenu">
-                                                        <div class="dropdown">
-                                                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuRewardsUnits" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            Choose CPU Name
-                                                            <i class="fa fa-angle-down dropdown-icon"
-                                                                aria-hidden="true"></i>
-                                                        </button>
-                                                            <ul class="dropdown-menu" id="rewards_units_vendor_dd_menu">
-                                                                <li class="dropdown_list">
-                                                                    <input type="checkbox" class="form-check-input dropdown_chbx" id="checkRewardsUnitsVend1" checked>
-                                                                    <label class="form-check-label" for="checkRewardsUnitsVend1">
-                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
-                                                                </label>
-                                                                    <span class="dropdown_menu_chart">
-                                                                    <i class="fa fa-minus fa-lg dropdown_menu_chart-icon1"
-                                                                        aria-hidden="true"></i>
-                                                                </span>
-                                                                </li>
-                                                                <li class="dropdown_list">
-                                                                    <input type="checkbox" class="form-check-input dropdown_chbx" id="checkRewardsUnitsVend2" checked>
-                                                                    <label class="form-check-label" for="checkRewardsUnitsVend2">
-                                                                    Core<sup class="intel_superscript_sm">™</sup> i5
-                                                                </label>
-                                                                    <span class="dropdown_menu_chart">
-                                                                    <i class="fa fa-minus fa-lg dropdown_menu_chart-icon2"
-                                                                        aria-hidden="true"></i>
-                                                                </span>
-                                                                </li>
-                                                                <li class="dropdown_list">
-                                                                    <input type="checkbox" class="form-check-input dropdown_chbx" id="checkRewardsUnitsVend3" checked>
-                                                                    <label class="form-check-label" for="checkRewardsUnitsVend3">
-                                                                    Core<sup class="intel_superscript_sm">™</sup> i7
-                                                                </label>
-                                                                    <span class="dropdown_menu_chart">
-                                                                    <i class="fa fa-minus fa-lg dropdown_menu_chart-icon3"
-                                                                        aria-hidden="true"></i>
-                                                                </span>
-                                                                </li>
-                                                                <li class="dropdown_list">
-                                                                    <input type="checkbox" class="form-check-input dropdown_chbx" id="checkRewardsUnitsVend4" checked>
-                                                                    <label class="form-check-label" for="checkRewardsUnitsVend4">
-                                                                    Core<sup class="intel_superscript_sm">™</sup> i9
-                                                                </label>
-                                                                    <span class="dropdown_menu_chart">
-                                                                    <i class="fa fa-minus fa-lg dropdown_menu_chart-icon4"
-                                                                        aria-hidden="true"></i>
-                                                                </span>
-                                                                </li>
-                                                                <li class="dropdown_list">
-                                                                    <input type="checkbox" class="form-check-input dropdown_chbx" id="checkRewardsUnitsVend5" checked>
-                                                                    <label class="form-check-label" for="checkRewardsUnitsVend5">
-                                                                    Core<sup class="intel_superscript_sm">™</sup> m3
-                                                                </label>
-                                                                    <span class="dropdown_menu_chart">
-                                                                    <i class="fa fa-minus fa-lg dropdown_menu_chart-icon5"
-                                                                        aria-hidden="true"></i>
-                                                                </span>
-                                                                </li>
-                                                                <li class="dropdown_list">
-                                                                    <input type="checkbox" class="form-check-input dropdown_chbx" id="checkRewardsUnitsVend6" checked>
-                                                                    <label class="form-check-label" for="checkRewardsUnitsVend6">
-                                                                    Pentium<sup class="intel_superscript_sm">®</sup> 
-                                                                </label>
-                                                                    <span class="dropdown_menu_chart">
-                                                                    <i class="fa fa-minus fa-lg dropdown_menu_chart-icon6"
-                                                                        aria-hidden="true"></i>
-                                                                </span>
-                                                                </li>
-                                                                <li class="dropdown_list">
-                                                                    <input type="checkbox" class="form-check-input dropdown_chbx" id="checkRewardsUnitsVend7" checked>
-                                                                    <label class="form-check-label" for="checkRewardsUnitsVend7">
-                                                                    Xeon<sup class="intel_superscript_sm">®</sup>
-                                                                </label>
-                                                                    <span class="dropdown_menu_chart">
-                                                                    <i class="fa fa-minus fa-lg dropdown_menu_chart-icon7"
-                                                                        aria-hidden="true"></i>
-                                                                </span>
-                                                                </li>
-                                                                <li class="not-sortable columns-li-padding dropdown-select-button-content">
-                                                                    <button class="btn btn-primary btn-xs btn-block select-category-btn" id="default_checkRewardsUnitsVend">Select
-                                                                    All</button>
-                                                                    <button class="btn btn-primary btn-xs btn-block select-category-btn" id="default_uncheckRewardsUnitsVend">Unselect
-                                                                    All</button>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-md-6 col-sm-6 col-xs-6 dashboard_freq" id="rewards_units_category_combobox">
-                                                        <div class="row">
-                                                            <select class="browser-default custom-select country" id="rewards_units_frequency">
-                                                            <option value="1">Weekly</option>
-                                                            <option value="2">Monthly</option>
-                                                            <option value="3">Annual</option>
-                                                        </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
 
                                         <!--Rewards Units graph render panel-->
                                         <div id="daily_graph_i3">
@@ -305,7 +309,7 @@
 
                                     <!-- Rewards rewards pill -->
                                     <div role="tabpanel" class="tab-pane fade" id="reward_pill">
-                                        <div class="">
+                                        <!-- <div class="">
                                             <div class="col-lg-4 col-md-4 col-xs-6 date_filters_panel">
                                                 <div class="col-xs-12 dashboard_filter_panel dashboard__filter-mbm">
 
@@ -408,7 +412,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
 
                                         <!--Rewards rewards graph render panel-->
                                         <div id="daily_graph_i3">
@@ -470,7 +474,7 @@
 
                                     <!-- Rewards units pill -->
                                     <div role="tabpanel" class="tab-pane fade in active" id="percentage_pill">
-                                        <div class="">
+                                        <!-- <div class="">
                                             <div class="col-lg-4 col-md-4 col-xs-6 date_filters_panel">
                                                 <div class="col-xs-12 dashboard_filter_panel dashboard__filter-mbm">
 
@@ -572,7 +576,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
 
                                         <!--Rewards Units graph render panel-->
                                         <div id="daily_graph_i3">
@@ -607,7 +611,7 @@
 
                                     <!-- Rewards rewards pill -->
                                     <div role="tabpanel" class="tab-pane fade" id="opportunities_reward_pill">
-                                        <div class="">
+                                        <!-- <div class="">
                                             <div class="col-lg-4 col-md-4 col-xs-6 date_filters_panel">
                                                 <div class="col-xs-12 dashboard_filter_panel dashboard__filter-mbm">
 
@@ -709,7 +713,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
 
                                         <!--Rewards rewards graph render panel-->
                                         <div id="daily_graph_i3">
