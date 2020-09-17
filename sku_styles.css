@@ -319,6 +319,18 @@ a#datatable-button_next:hover,
     /*!important;*/
 }
 
+.br_attainment_icon {
+    color: #9B59B6;
+}
+
+.br_earnings_icon {
+    color: #1abb9c;
+}
+
+.br_units_icon {
+    color: #faa700;
+}
+
 .cpu_gen_title {
     margin-top: 0.3em;
     font-size: 14px;
