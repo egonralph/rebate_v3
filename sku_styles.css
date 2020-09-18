@@ -1674,6 +1674,10 @@ span.count_top {
     }
 }
 
+.table_no_border td {
+    border: none;
+}
+
 .table thead th {
     vertical-align: inherit;
 }

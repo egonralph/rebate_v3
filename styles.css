@@ -1674,6 +1674,10 @@ span.count_top {
     }
 }
 
+.table_no_border td {
+    border: none;
+}
+
 .table thead th {
     vertical-align: inherit;
 }
@@ -1808,6 +1812,11 @@ table td.table_total_row--special {
 .no_border,
 table td.no_border {
     border: none;
+}
+
+.table-striped tbody tr:nth-of-type(odd) td,
+.table-striped tbody tr:nth-of-type(odd) th {
+    background-color: rgba(77, 230, 255, 0.1);
 }
 
 table.tablesorter {
