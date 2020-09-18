@@ -1302,6 +1302,7 @@ span.quater_earnings_icon {
 .rb_x_content {
     padding-left: 0;
     padding-right: 0;
+    z-index: 0;
 }
 
 .rbbcl-rebate1 {
@@ -1816,6 +1817,10 @@ table.tablesorter {
 .table.tablesorter thead td,
 .table.tablesorter thead th {
     background: transparent;
+}
+
+.tablesorter_content_index {
+    z-index: 0;
 }
 
 td,

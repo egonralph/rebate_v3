@@ -126,9 +126,9 @@
 
             <div class="panel-body panel-body__brandSkuListing">
                 <div class="x_panel">
-                    <div class="x_content">
+                    <div class="x_content tablesorter_content_index">
                         <div style="overflow-x:auto;">
-                            <table class="table table-striped table-bordered table-hover" data-page-size="50" id="datatable-button" style="width:100%">
+                            <table class="table table-striped table-bordered table-hover tablesorter" data-page-size="50" id="datatable-button" style="width:100%">
                                 <thead>
                                     <tr>
                                         <th style="width: 16%">Brand</th>
@@ -305,7 +305,9 @@
 
 <!-- Datatables -->
 <script type="text/javascript" src="/documents/242830/531855/datatables.min.js/"></script>
-<!-- /Datatables -->
+
+<!-- Tablesorter -->
+<script src="/documents/242830/531855/jquery.tablesorter.min.js/"></script>
 
 <script>
     window.define = window.__define;
@@ -353,5 +355,12 @@
 
     $(document).ready(function() {
         initBrandSkuTable();
+    });
+</script>
+
+<!-- initialization tablesorter plugin -->
+<script>
+    $(function() {
+        $("#datatable-button").tablesorter();
     });
 </script>
