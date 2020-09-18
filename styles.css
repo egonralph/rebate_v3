@@ -1065,7 +1065,7 @@ textarea.field.form-control {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1px 5px;
     margin-right: 4em;
-    margin-left: 4em;
+    margin-left: 6em;
 }
 
 .product_rewards_header_pane {
