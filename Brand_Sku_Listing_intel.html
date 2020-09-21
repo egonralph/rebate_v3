@@ -128,7 +128,7 @@
                 <div class="x_panel">
                     <div class="x_content tablesorter_content_index">
                         <div style="overflow-x:auto;">
-                            <table class="table table-bordered table-hover tablesorter" data-page-size="50" id="datatable-button" style="width:100%">
+                            <table class="table table-bordered table-hover tablesorter rbt_table" data-page-size="50" id="brand_sku_table" style="width:100%">
                                 <thead>
                                     <tr>
                                         <th style="width: 16%">Brand</th>
@@ -361,7 +361,7 @@
 
 <script>
     function initBrandSkuTable() {
-        var $table = $('#datatable-button');
+        var $table = $('#brand_sku_table');
         var table = $table.DataTable({
             order: [
                 [1, "asc"]
@@ -403,6 +403,6 @@
 <!-- initialization tablesorter plugin -->
 <script>
     $(function() {
-        $("#datatable-button").tablesorter();
+        $("#brand_sku_table").tablesorter();
     });
 </script>

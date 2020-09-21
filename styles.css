@@ -22,22 +22,17 @@ a.paginate_button.next.disabled:hover {
 }
 
 a.paginate_button,
-#datatable-button_paginate a.paginate_button {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+#datatable-button_paginate a.paginate_button,
+#brand_sku_table_paginate a.paginate_button {
     margin-right: 0.1em;
     margin-left: 0.1em;
+    padding: 0.5em 0.8em;
+    /*!important;*/
+    border-radius: 50%;
+    border: none;
+    /*!important;*/
     font-size: 14px;
-    border-radius: 4px;
     box-shadow: 1px 1px 4px #eeeeee;
-}
-
-a.paginate_button.current {
-    background: #337ab7;
-    color: #ffffff;
-    border-color: #337ab7;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
 }
 
 .auto_margin {
@@ -200,7 +195,8 @@ a.paginate_button.current {
     margin-top: 0.5em;
 }
 
-.bottom #datatable-button_info {
+.bottom #datatable-button_info,
+.bottom #brand_sku_table_info {
     float: right;
     /* margin-right: 15px; */
     margin-top: 0;
@@ -209,14 +205,16 @@ a.paginate_button.current {
     text-align: right;
 }
 
-.bottom #datatable-button_length {
+.bottom #datatable-button_length,
+.bottom #brand_sku_table_length {
     display: block;
     margin-top: 0.5em;
     font-size: 12px;
     width: 130px;
 }
 
-.bottom #datatable-button_length select {
+.bottom #datatable-button_length select,
+.bottom #brand_sku_table_length select {
     height: 26px;
     border-radius: 4px;
     padding-left: 6px;
@@ -224,20 +222,24 @@ a.paginate_button.current {
     border: 1px solid #999999;
 }
 
-.bottom #datatable-button_paginate {
+.bottom #datatable-button_paginate,
+.bottom #brand_sku_table_paginate {
     margin-top: 0.6em;
     margin-left: 15px;
     float: left;
 }
 
 @media (max-width: 690px) {
-    .bottom #datatable-button_info {
+    .bottom #datatable-button_info,
+    .bottom #brand_sku_table_info {
         max-width: 60%;
     }
-    .bottom #datatable-button_length {
+    .bottom #datatable-button_length,
+    .bottom #brand_sku_table_length {
         display: none;
     }
-    .bottom #datatable-button_paginate {
+    .bottom #datatable-button_paginate,
+    .bottom #brand_sku_table_paginate {
         margin-left: 0;
     }
 }
@@ -251,21 +253,43 @@ select.selectpicker {
 
 #datatable-button_paginate #datatable-button_previous,
 .dataTables_paginate a#datatable-button_previous,
-.dataTables_wrapper.no-footer .dataTables_paginate #datatable-button_paginate #datatable-button_previous {
-    border-radius: 4px 2px 2px 4px;
+.dataTables_wrapper.no-footer .dataTables_paginate #datatable-button_paginate #datatable-button_previous,
+#brand_sku_table_paginate #brand_sku_table_previous,
+.dataTables_paginate a#brand_sku_table_previous,
+.dataTables_wrapper.no-footer .dataTables_paginate #brand_sku_table_paginate #brand_sku_table_previous {
+    padding: 0.2em 0.6em 0.3em 0.5em;
     /*!important;*/
+    border-radius: 50%;
+    /*!important;*/
+    border: none;
+    /*!important;*/
+    background-color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
 }
 
 a#datatable-button_next .dataTables_paginate a#datatable-button_next,
-.dataTables_wrapper.no-footer .dataTables_paginate #datatable-button_paginate #datatable-button_next {
-    border-radius: 2px 4px 4px 2px;
+.dataTables_wrapper.no-footer .dataTables_paginate #datatable-button_paginate #datatable-button_next,
+#brand_sku_table_paginate #brand_sku_table_next,
+.dataTables_paginate a#brand_sku_table_next,
+.dataTables_wrapper.no-footer .dataTables_paginate #brand_sku_table_paginate #brand_sku_table_next {
+    padding: 0.2em 0.5em 0.3em 0.6em;
     /*!important;*/
+    border-radius: 50%;
+    /*!important;*/
+    border: none;
+    /*!important;*/
+    background-color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
 }
 
 a.paginate_button:hover,
 a.paginate_button.current:hover,
 a#datatable-button_previous:hover,
 a#datatable-button_next:hover,
+a#brand_sku_table_previous:hover,
+a#brand_sku_table_next:hover,
 .dataTables_wrapper.no-footer .dataTables_paginate .paginate_button:hover,
 .dataTables_wrapper.no-footer .dataTables_paginate .paginate_button.current:hover {
     background: #e3e3e3;
@@ -276,43 +300,39 @@ a#datatable-button_next:hover,
     /*!important;*/
     text-decoration: none;
     /*!important;*/
-    border: 1px solid #e3e3e3 !important;
+    border: none;
     /*!important;*/
 }
 
 .bottom .dataTables_paginate #datatable-button_paginate a.paginate_button.current,
+.bottom .dataTables_paginate #brand_sku_table_paginate a.paginate_button.current,
+#brand_sku_table_paginate a.paginate_button.current,
 .dataTables_wrapper.no-footer .dataTables_paginate .paginate_button.current {
-    background: #337ab7;
+    padding: 0.5em 0.8em;
     /*!important;*/
-    background-image: linear-gradient(0deg, #337ab7 0%, #8BC6EC 100%);
+    background: #ba8ce6;
+    /*!important;*/
+    background-image: linear-gradient(0deg, #727cf5 0%, #E0C3FC 100%);
     /*!important;*/
     color: #ffffff;
     /*!important;*/
-    border-color: #8BC6EC !important;
-    padding-left: 8px;
+    border: none;
     /*!important;*/
-    padding-right: 8px;
+    /* border-color: #ba8ce6 !important; */
+    /* padding-left: 8px; */
     /*!important;*/
-}
-
-.bottom .dataTables_paginate a#datatable-button_previous,
-.dataTables_paginate #datatable-button_paginate a#datatable-button_previous,
-.bottom .dataTables_paginate a#datatable-button_next,
-.dataTables_paginate #datatable-button_paginate a#datatable-button_next {
-    border: 1px solid #eeeeee;
-    /*!important;*/
-    background-color: #ffffff;
-    padding: 5px;
-    padding-left: 4px !important;
-    padding-right: 4px !important;
-    text-decoration: none;
+    /* padding-right: 8px; */
     /*!important;*/
 }
 
 .bottom .dataTables_paginate a#datatable-button_previous.disabled,
 .bottom .dataTables_paginate a#datatable-button_next.disabled,
 .bottom .dataTables_paginate a#datatable-button_previous.disabled:hover,
-.bottom .dataTables_paginate a#datatable-button_next.disabled:hover {
+.bottom .dataTables_paginate a#datatable-button_next.disabled:hover,
+.bottom .dataTables_paginate a#brand_sku_table_previous.disabled,
+.bottom .dataTables_paginate a#brand_sku_table_next.disabled,
+.bottom .dataTables_paginate a#brand_sku_table_previous.disabled:hover,
+.bottom .dataTables_paginate a#brand_sku_table_next.disabled:hover {
     background-color: #ffffff;
     /*!important;*/
     background-image: none;
@@ -354,31 +374,16 @@ a#datatable-button_next:hover,
 }
 
 .dataTables_paginate .paginate_button,
-.dataTables_paginate #datatable-button_paginate .paginate_button {
-    border: 1px solid #eeeeee !important;
+.dataTables_paginate #datatable-button_paginate .paginate_button,
+.dataTables_paginate #brand_sku_table_paginate .paginate_button {
+    border: none;
     /*!important;*/
     background-color: #ffffff;
     /*!important;*/
-    padding: 4px 8px !important;
+    padding: 0.5em 0.8em;
     /*!important;*/
     text-decoration: none;
     /*!important;*/
-}
-
-table.dataTable thead th,
-table.dataTable thead td,
-#datatable-button.dataTable thead th,
-#datatable-button.dataTable thead td {
-    margin: 0 auto;
-    padding-top: 0;
-    padding-bottom: 0;
-    border: none;
-    border-right: 1px solid #ddd;
-}
-
-table.dataTable.no-footer,
-#datatable-button.dataTable.no-footer {
-    border: 1px solid #ddd;
 }
 
 .dataTables_filter {
@@ -386,7 +391,8 @@ table.dataTable.no-footer,
 }
 
 @media (max-width: 768px) {
-    #datatable-button_filter {
+    #datatable-button_filter,
+    #brand_sku_table_filter {
         display: inline-block;
         /*!important;*/
         width: 100%;
@@ -1674,6 +1680,27 @@ span.count_top {
     }
 }
 
+table.dataTable thead td {
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+}
+
+table.dataTable thead th {
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+    border-bottom: 1px solid #eef2f7;
+}
+
+.rbt_table.dataTable.no-footer,
+#datatable-button.dataTable.no-footer,
+#brand_sku_table.dataTable.no-footer {
+    border: none;
+}
+
 .table_no_border td {
     border: none;
 }
@@ -1681,6 +1708,19 @@ span.count_top {
 .table thead th {
     vertical-align: inherit;
 }
+
+.table.rbt_table td,
+.table.rbt_table th {
+    border: 1px solid #eef2f7;
+    border-right: none;
+    color: #6c757d;
+}
+
+
+/* .table.rbt_table th.sorting.tablesorter-header {
+    border: none;
+    border-bottom: 1px solid #eef2f7;
+} */
 
 .table th.no_side_padd.two_rows_header,
 .table td:last-child,
