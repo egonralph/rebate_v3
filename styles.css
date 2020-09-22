@@ -360,7 +360,13 @@ a#brand_sku_table_next:hover,
 }
 
 .cpu-legend-icon {
-    color: #fff;
+    color: #ffffff;
+    height: 11px;
+    margin-bottom: 0.3em;
+}
+
+.cpu-legend-icon-dark {
+    color: #999999;
     height: 11px;
     margin-bottom: 0.3em;
 }
@@ -413,45 +419,52 @@ a#brand_sku_table_next:hover,
 }
 
 .dbbcl-rebate1 {
-    background: #FF9143;
-    border: 1px solid #FF9143;
+    background: #1f78b4;
+    border: 1px solid#1f78b4;
     float: right;
+    box-shadow: 2px 2px 2px #ddd;
 }
 
 .dbbcl-rebate2 {
-    background: #9B59B6;
-    border: 1px solid #9B59B6;
+    background: #b2df8a;
+    border: 1px solid #b2df8a;
     float: right;
+    box-shadow: 2px 2px 2px #ddd;
 }
 
 .dbbcl-rebate3 {
-    background: #E74C3C;
-    border: 1px solid #E74C3C;
+    background: #33a02c;
+    border: 1px solid#33a02c;
     float: right;
+    box-shadow: 2px 2px 2px #ddd;
 }
 
 .dbbcl-rebate4 {
-    background: #17a2b8;
-    border: 1px solid #17a2b8;
+    background: #fb9a99;
+    border: 1px solid#fb9a99;
     float: right;
+    box-shadow: 2px 2px 2px #ddd;
 }
 
 .dbbcl-rebate5 {
-    background: #28a745;
-    border: 1px solid #28a745;
+    background: #ff7f00;
+    border: 1px solid #ff7f00;
     float: right;
+    box-shadow: 2px 2px 2px #ddd;
 }
 
 .dbbcl-rebate6 {
-    background: #ffc107;
-    border: 1px solid #ffc107;
+    background: #b3de69;
+    border: 1px solid#b3de69;
     float: right;
+    box-shadow: 2px 2px 2px #ddd;
 }
 
 .dbbcl-rebate7 {
-    background: #3498DB;
-    border: 1px solid #3498DB;
+    background: #ffff99;
+    border: 1px solid#ffff99;
     float: right;
+    box-shadow: 2px 2px 2px #ddd;
 }
 
 #default_checkVend {
@@ -1287,45 +1300,52 @@ span.quater_earnings_icon {
 }
 
 .rbbcl-rebate1 {
-    background: #FF9143;
-    border: 1px solid #FF9143;
+    background: #1f78b4;
+    border: 1px solid#1f78b4;
     float: left;
+    box-shadow: 2px 2px 2px #ddd;
 }
 
 .rbbcl-rebate2 {
-    background: #9B59B6;
-    border: 1px solid #9B59B6;
+    background: #b2df8a;
+    border: 1px solid #b2df8a;
     float: left;
+    box-shadow: 2px 2px 2px #ddd;
 }
 
 .rbbcl-rebate3 {
-    background: #E74C3C;
-    border: 1px solid #E74C3C;
+    background: #33a02c;
+    border: 1px solid #33a02c;
     float: left;
+    box-shadow: 2px 2px 2px #ddd;
 }
 
 .rbbcl-rebate4 {
-    background: #17a2b8;
-    border: 1px solid #17a2b8;
+    background: #fb9a99;
+    border: 1px solid#fb9a99;
     float: left;
+    box-shadow: 2px 2px 2px #ddd;
 }
 
 .rbbcl-rebate5 {
-    background: #28a745;
-    border: 1px solid #28a745;
+    background: #ff7f00;
+    border: 1px solid #ff7f00;
     float: left;
+    box-shadow: 2px 2px 2px #ddd;
 }
 
 .rbbcl-rebate6 {
-    background: #ffc107;
-    border: 1px solid #ffc107;
+    background: #b3de69;
+    border: 1px solid #b3de69;
     float: left;
+    box-shadow: 2px 2px 2px #ddd;
 }
 
 .rbbcl-rebate7 {
-    background: #3498DB;
-    border: 1px solid #3498DB;
+    background: #ffff99;
+    border: 1px solid #ffff99;
     float: left;
+    box-shadow: 2px 2px 2px #ddd;
 }
 
 .read-more-state {
