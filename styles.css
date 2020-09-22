@@ -418,49 +418,49 @@ a#brand_sku_table_next:hover,
     align-items: center;
 }
 
-.dbbcl-rebate1 {
+.tablesorter .dbbcl-rebate1 {
     background: #1f78b4;
     border: 1px solid#1f78b4;
     float: right;
     box-shadow: 2px 2px 2px #ddd;
 }
 
-.dbbcl-rebate2 {
+.tablesorter .dbbcl-rebate2 {
     background: #b2df8a;
     border: 1px solid #b2df8a;
     float: right;
     box-shadow: 2px 2px 2px #ddd;
 }
 
-.dbbcl-rebate3 {
+.tablesorter .dbbcl-rebate3 {
     background: #33a02c;
     border: 1px solid#33a02c;
     float: right;
     box-shadow: 2px 2px 2px #ddd;
 }
 
-.dbbcl-rebate4 {
+.tablesorter .dbbcl-rebate4 {
     background: #fb9a99;
     border: 1px solid#fb9a99;
     float: right;
     box-shadow: 2px 2px 2px #ddd;
 }
 
-.dbbcl-rebate5 {
+.tablesorter .dbbcl-rebate5 {
     background: #ff7f00;
     border: 1px solid #ff7f00;
     float: right;
     box-shadow: 2px 2px 2px #ddd;
 }
 
-.dbbcl-rebate6 {
+.tablesorter .dbbcl-rebate6 {
     background: #b3de69;
     border: 1px solid#b3de69;
     float: right;
     box-shadow: 2px 2px 2px #ddd;
 }
 
-.dbbcl-rebate7 {
+.tablesorter .dbbcl-rebate7 {
     background: #ffff99;
     border: 1px solid#ffff99;
     float: right;
