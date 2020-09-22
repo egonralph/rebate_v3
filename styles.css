@@ -359,6 +359,12 @@ a#brand_sku_table_next:hover,
     width: 46em;
 }
 
+.cpu-legend-icon {
+    color: #fff;
+    height: 11px;
+    margin-bottom: 0.3em;
+}
+
 .dataTables_paginate .paginate_button,
 .dataTables_paginate #datatable-button_paginate .paginate_button,
 .dataTables_paginate #brand_sku_table_paginate .paginate_button {
