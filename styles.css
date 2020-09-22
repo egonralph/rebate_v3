@@ -16,9 +16,7 @@ a.disabled:hover,
 a.paginate_button.previous.disabled:hover,
 a.paginate_button.next.disabled:hover {
     color: #eeeeee;
-    /*!important;*/
     background: none;
-    /*!important;*/
 }
 
 a.paginate_button,
@@ -293,15 +291,10 @@ a#brand_sku_table_next:hover,
 .dataTables_wrapper.no-footer .dataTables_paginate .paginate_button:hover,
 .dataTables_wrapper.no-footer .dataTables_paginate .paginate_button.current:hover {
     background: #e3e3e3;
-    /*!important;*/
     background-image: linear-gradient(0deg, #e3e3e3 0%, #f9f9f9 100%);
-    /*!important;*/
     color: #999999;
-    /*!important;*/
     text-decoration: none;
-    /*!important;*/
     border: none;
-    /*!important;*/
 }
 
 .bottom .dataTables_paginate #datatable-button_paginate a.paginate_button.current,
@@ -311,18 +304,14 @@ a#brand_sku_table_next:hover,
     padding: 0.5em 0.8em;
     /*!important;*/
     background: #ba8ce6;
-    /*!important;*/
     background-image: linear-gradient(0deg, #727cf5 0%, #E0C3FC 100%);
     /*!important;*/
     color: #ffffff;
-    /*!important;*/
     border: none;
     /*!important;*/
-    /* border-color: #ba8ce6 !important; */
+    /* border-color: #ba8ce6; */
     /* padding-left: 8px; */
-    /*!important;*/
     /* padding-right: 8px; */
-    /*!important;*/
 }
 
 .bottom .dataTables_paginate a#datatable-button_previous.disabled,
@@ -334,11 +323,8 @@ a#brand_sku_table_next:hover,
 .bottom .dataTables_paginate a#brand_sku_table_previous.disabled:hover,
 .bottom .dataTables_paginate a#brand_sku_table_next.disabled:hover {
     background-color: #ffffff;
-    /*!important;*/
     background-image: none;
-    /*!important;*/
     color: #eeeeee;
-    /*!important;*/
 }
 
 .br_attainment_icon {
@@ -377,13 +363,10 @@ a#brand_sku_table_next:hover,
 .dataTables_paginate #datatable-button_paginate .paginate_button,
 .dataTables_paginate #brand_sku_table_paginate .paginate_button {
     border: none;
-    /*!important;*/
     background-color: #ffffff;
-    /*!important;*/
     padding: 0.5em 0.8em;
-    /*!important;*/
+    /*!important??????!!!!;*/
     text-decoration: none;
-    /*!important;*/
 }
 
 .dataTables_filter {
@@ -394,11 +377,9 @@ a#brand_sku_table_next:hover,
     #datatable-button_filter,
     #brand_sku_table_filter {
         display: inline-block;
-        /*!important;*/
         width: 100%;
         text-align: right;
         float: right;
-        /*!important;*/
     }
 }
 
@@ -672,7 +653,6 @@ input[type="search"] {
     padding: 6px;
     margin-top: 0px;
     font-family: Arial, 'FontAwesome';
-    /*!important;*/
 }
 
 .input_search_go {
@@ -716,21 +696,17 @@ input[type="search"] {
 
 #lineChartByBrand {
     width: 100%;
-    /*!important;*/
     height: 400px;
-    /*!important;*/
 }
 
 @media (max-width:991px) {
     #lineChartByBrand {
         height: 250px;
-        /*!important;*/
     }
 }
 
 .main_container .right_col {
     min-height: 90vh;
-    /*!important;*/
 }
 
 .margin_container {
@@ -771,7 +747,6 @@ input[type="search"] {
 
 .no_margin {
     margin: 0;
-    /*!important;*/
 }
 
 .no_margin_bottom {
@@ -868,12 +843,10 @@ input[type="search"] {
 
 .panel-body__overall {
     height: auto;
-    /*!important;*/
 }
 
 .panel-body__historical {
     height: auto;
-    /*!important;*/
 }
 
 .panel-body__quarter {
@@ -1116,7 +1089,6 @@ textarea.field.form-control {
 .progress-bar.bg-blue_grad {
     background-color: #225dfb;
     background-image: linear-gradient(0deg, #225dfb 0%, #415ef9 55%, #99adff 100%);
-    /*!important;*/
     color: #fff;
     font-weight: 600;
     font-size: 13px;
@@ -1138,7 +1110,6 @@ textarea.field.form-control {
 .progress-bar.bg-orange_grad {
     background-color: #ff6f06;
     background-image: linear-gradient(0deg, #ff6f06 0%, #ed8e35 46%, #FFCC70 100%);
-    /*!important;*/
     color: #fff;
     font-weight: 600;
     font-size: 13px;
@@ -1170,10 +1141,8 @@ textarea.field.form-control {
 .progress-bar_items {
     width: 100%;
     color: #555555;
-    /*!important;*/
     font-size: 13px;
     font-weight: 100;
-    /*!important;*/
     /* display: flex;
     justify-content: space-around; */
     align-items: center;
@@ -1181,7 +1150,6 @@ textarea.field.form-control {
     grid-template-columns: repeat(3, 1fr);
     padding: 0px 0 0 17em;
     text-shadow: none;
-    /*!important;*/
     z-index: 1;
     /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif */
 }
@@ -1543,7 +1511,6 @@ span.count_top {
 .statistics_count_container,
 .tile_statistics_count.statistics_count_container {
     margin-bottom: 0.8em;
-    /*!important;*/
 }
 
 .statistics_count_container--qtd .statistics_count__pane.statistics_count__pane--main {
@@ -1553,7 +1520,6 @@ span.count_top {
     border-radius: 10px;
     text-align: right;
     padding: 0.25em 1em 0.25em 0.25em;
-    /*!important;*/
     height: 6em;
     display: flex;
     align-items: center;
@@ -1565,7 +1531,6 @@ span.count_top {
 
 .statistics_count__icon {
     font-size: 40px;
-    /*!important;*/
 }
 
 .statistics_count__icon-pane {
@@ -1582,14 +1547,12 @@ span.count_top {
     border-radius: 10px;
     text-align: right;
     padding: 0.5em 0.25em;
-    /*!important;*/
     height: 6em;
 }
 
 .statistics_count__pane.statistics_count__pane--special {
     background: #ffffff;
     background-image: linear-gradient(0deg, #efefef 0%, #ffffff 10%, #ffffff 90%, #efefef 100%);
-    /*!important;*/
     border: #EAEAEA;
     padding: 0.5em .25em;
 }
@@ -1713,6 +1676,19 @@ table.dataTable thead th {
 .table.rbt_table th {
     border: 1px solid #eef2f7;
     border-right: none;
+    border-left: none;
+    color: #6c757d;
+}
+
+.table.rbt_table th {
+    border-bottom: 2px solid #eef2f7;
+}
+
+.table.rbt_table.dataTable td,
+.table.rbt_table.dataTable th {
+    border: 1px solid #eef2f7;
+    border-right: none;
+    border-left: none;
     color: #6c757d;
 }
 
@@ -1961,9 +1937,7 @@ th:hover::after {
 
 .pi_thumbnail.thumbnail_rewards .image.view.view-first.amazon_image {
     max-height: 175px;
-    /*!important;*/
     min-height: fit-content;
-    /*!important;*/
     height: auto;
     overflow: hidden;
     margin-top: 1em;
@@ -1999,7 +1973,6 @@ th:hover::after {
 
 .tile_count .tile_statistics_count {
     padding-left: 5px;
-    /*!important;*/
 }
 
 .tile_count .tile_statistics_count:before {
@@ -2011,12 +1984,10 @@ th:hover::after {
 
 .tile_count .tile_statistics_count:first-child {
     padding-left: 0;
-    /*!important;*/
 }
 
 .tile_count .tile_statistics_count.last-child {
     padding-right: 0;
-    /*!important;*/
 }
 
 
