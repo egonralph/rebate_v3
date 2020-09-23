@@ -2123,8 +2123,8 @@ ul.dropdown-menu>li:hover {
     width: 95%;
 }
 
-.widget_summary_table_left_panel {
-    width: 101px;
+.widget-summary-table-left-panel {
+    width: 65px;
     margin-right: 1em;
 }
 
