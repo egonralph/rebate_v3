@@ -1348,6 +1348,13 @@ span.quater_earnings_icon {
     box-shadow: 2px 2px 2px #ddd;
 }
 
+.rb_piechart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+}
+
 .read-more-state {
     display: none;
 }
@@ -2099,13 +2106,13 @@ ul.dropdown-menu>li:hover {
 
 .widget_summary_left_panel,
 .widget_summary__left_panel {
-    width: 160px;
+    width: 170px;
     margin-right: 1em;
 }
 
 .widget_summary_left_panel.left-legend-panel,
 .widget_summary__left_panel.left-legend-panel {
-    width: 156px;
+    width: 166px;
 }
 
 .widget_summary_right_panel {
