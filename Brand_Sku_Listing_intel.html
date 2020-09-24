@@ -127,16 +127,27 @@
             <div class="panel-body panel-body__brandSkuListing">
                 <div class="x_panel">
                     <div class="x_content tablesorter_content_index">
+                        <div class="bsl-legend">
+                            <div class="bsl-status-legend" data-toggle="tooltip" title="Completed">
+                                <i class="fa fa-check completed_status_icon_legend"></i> Completed
+                            </div>
+                            <div class="bsl-status-legend" data-toggle="tooltip" title="Opportunity">
+                                <i class="fa fa-times opportunity_status_icon_legend"></i> Opportunity
+                            </div>
+                        </div>
+
                         <div style="overflow-x:auto;">
                             <table class="table table-bordered table-hover tablesorter rbt_table" data-page-size="50" id="brand_sku_table" style="width:100%">
                                 <thead>
                                     <tr>
-                                        <th style="width: 16%">Brand</th>
-                                        <th style="width: 16%">Model No</th>
-                                        <th style="width: 18%">Form Factor</th>
-                                        <th style="width: 18%">First Earned</th>
-                                        <th style="width: 18%">Last Earned</th>
-                                        <th style="width: 14%">Status</th>
+                                        <th style="width: 14%">Brand</th>
+                                        <th style="width: 14%">Model No</th>
+                                        <th style="width: 14%">Form Factor</th>
+                                        <th style="width: 14%">First Earned</th>
+                                        <th style="width: 14%">Last Earned</th>
+                                        <th style="width: 12%">Unit Target</th>
+                                        <th style="width: 12%">Value Target</th>
+                                        <th style="width: 6%">Status</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -149,8 +160,12 @@
                                         <td>Mobile</td>
                                         <td>01 Jun 2020</td>
                                         <td>01 Sep 2020</td>
+                                        <td><input type="text" id="row-1-unit" name="row-1-unit" value="1"></td>
+                                        <td>$<input type="text" id="row-1-value" name="row-1-value" value="1"></td>
                                         <td>
-                                            <div class="progress-bar_content_status_op" data-toggle="tooltip" title="Opportunity">Opportunity</div>
+                                            <div class="bsl-status-content" data-toggle="tooltip" title="Opportunity">
+                                                <i class="fa fa-times opportunity_status_icon"></i>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -162,8 +177,12 @@
                                         <td>Mobile</td>
                                         <td>02 Jun 2020</td>
                                         <td>05 Sep 2020</td>
+                                        <td>2</td>
+                                        <td>$1</td>
                                         <td>
-                                            <div class="progress-bar_content_status_comp" data-toggle="tooltip" title="Completed">Completed</div>
+                                            <div class="bsl-status-content" data-toggle="tooltip" title="Completed">
+                                                <i class="fa fa-check completed_status_icon"></i>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -175,8 +194,12 @@
                                         <td>Desktop</td>
                                         <td>04 Jun 2020</td>
                                         <td>06 Sep 2020</td>
+                                        <td>3</td>
+                                        <td>$1</td>
                                         <td>
-                                            <div class="progress-bar_content_status_op" data-toggle="tooltip" title="Opportunity">Opportunity</div>
+                                            <div class="bsl-status-content" data-toggle="tooltip" title="Opportunity">
+                                                <i class="fa fa-times opportunity_status_icon"></i>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -188,8 +211,12 @@
                                         <td>Desktop</td>
                                         <td>10 Jul 2020</td>
                                         <td>02 Sep 2020</td>
+                                        <td>2</td>
+                                        <td>$2</td>
                                         <td>
-                                            <div class="progress-bar_content_status_comp" data-toggle="tooltip" title="Completed">Completed</div>
+                                            <div class="bsl-status-content" data-toggle="tooltip" title="Completed">
+                                                <i class="fa fa-check completed_status_icon"></i>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -201,8 +228,12 @@
                                         <td>Desktop</td>
                                         <td>20 Jun 2020</td>
                                         <td>03 Sep 2020</td>
+                                        <td>3</td>
+                                        <td>$3</td>
                                         <td>
-                                            <div class="progress-bar_content_status_op" data-toggle="tooltip" title="Opportunity">Opportunity</div>
+                                            <div class="bsl-status-content" data-toggle="tooltip" title="Opportunity">
+                                                <i class="fa fa-times opportunity_status_icon"></i>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -214,8 +245,12 @@
                                         <td>Mobile</td>
                                         <td>12 Jul 2020</td>
                                         <td>07 Sep 2020</td>
+                                        <td>1</td>
+                                        <td>$1</td>
                                         <td>
-                                            <div class="progress-bar_content_status_comp" data-toggle="tooltip" title="Completed">Completed</div>
+                                            <div class="bsl-status-content" data-toggle="tooltip" title="Completed">
+                                                <i class="fa fa-check completed_status_icon"></i>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -227,8 +262,12 @@
                                         <td>Mobile</td>
                                         <td>03 Aug 2020</td>
                                         <td>02 Sep 2020</td>
+                                        <td>4</td>
+                                        <td>$2</td>
                                         <td>
-                                            <div class="progress-bar_content_status_op" data-toggle="tooltip" title="Opportunity">Opportunity</div>
+                                            <div class="bsl-status-content" data-toggle="tooltip" title="Opportunity">
+                                                <i class="fa fa-times opportunity_status_icon"></i>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -240,8 +279,12 @@
                                         <td>Desktop</td>
                                         <td>20 Jul 2020</td>
                                         <td>04 Sep 2020</td>
+                                        <td>5</td>
+                                        <td>$1</td>
                                         <td>
-                                            <div class="progress-bar_content_status_comp" data-toggle="tooltip" title="Completed">Completed</div>
+                                            <div class="bsl-status-content" data-toggle="tooltip" title="Completed">
+                                                <i class="fa fa-check completed_status_icon"></i>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -253,8 +296,12 @@
                                         <td>Desktop</td>
                                         <td>31 Jun 2020</td>
                                         <td>06 Sep 2020</td>
+                                        <td>1</td>
+                                        <td>$2</td>
                                         <td>
-                                            <div class="progress-bar_content_status_op" data-toggle="tooltip" title="Opportunity">Opportunity</div>
+                                            <div class="bsl-status-content" data-toggle="tooltip" title="Opportunity">
+                                                <i class="fa fa-times opportunity_status_icon"></i>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -266,8 +313,12 @@
                                         <td>Mobile</td>
                                         <td>09 Jul 2020</td>
                                         <td>03 Sep 2020</td>
+                                        <td>2</td>
+                                        <td>$2</td>
                                         <td>
-                                            <div class="progress-bar_content_status_comp" data-toggle="tooltip" title="Completed">Completed</div>
+                                            <div class="bsl-status-content" data-toggle="tooltip" title="Completed">
+                                                <i class="fa fa-check completed_status_icon"></i>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -279,8 +330,12 @@
                                         <td>Mobile</td>
                                         <td>14 Aug 2020</td>
                                         <td>05 Sep 2020</td>
+                                        <td>3</td>
+                                        <td>$2</td>
                                         <td>
-                                            <div class="progress-bar_content_status_op" data-toggle="tooltip" title="Opportunity">Opportunity</div>
+                                            <div class="bsl-status-content" data-toggle="tooltip" title="Opportunity">
+                                                <i class="fa fa-times opportunity_status_icon"></i>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -292,8 +347,12 @@
                                         <td>Mobile</td>
                                         <td>19 Jun 2020</td>
                                         <td>07 Sep 2020</td>
+                                        <td>3</td>
+                                        <td>$4</td>
                                         <td>
-                                            <div class="progress-bar_content_status_comp" data-toggle="tooltip" title="Completed">Completed</div>
+                                            <div class="bsl-status-content" data-toggle="tooltip" title="Completed">
+                                                <i class="fa fa-check completed_status_icon"></i>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -305,8 +364,12 @@
                                         <td>Mobile</td>
                                         <td>22 Jul 2020</td>
                                         <td>31 Aug 2020</td>
+                                        <td>3</td>
+                                        <td>$3</td>
                                         <td>
-                                            <div class="progress-bar_content_status_op" data-toggle="tooltip" title="Opportunity">Opportunity</div>
+                                            <div class="bsl-status-content" data-toggle="tooltip" title="Opportunity">
+                                                <i class="fa fa-times opportunity_status_icon"></i>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -318,8 +381,12 @@
                                         <td>Mobile</td>
                                         <td>07 Jun 2020</td>
                                         <td>06 Sep 2020</td>
+                                        <td>5</td>
+                                        <td>$3</td>
                                         <td>
-                                            <div class="progress-bar_content_status_comp" data-toggle="tooltip" title="Completed">Completed</div>
+                                            <div class="bsl-status-content" data-toggle="tooltip" title="Completed">
+                                                <i class="fa fa-check completed_status_icon"></i>
+                                            </div>
                                         </td>
                                     </tr>
                                 </tbody>

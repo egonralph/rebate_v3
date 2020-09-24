@@ -24,10 +24,10 @@ a.paginate_button,
 #brand_sku_table_paginate a.paginate_button {
     margin-right: 0.1em;
     margin-left: 0.1em;
-    padding: 0.5em 0.8em;
+    padding: 0.5em 0.8em !important;
     /*!important;*/
     border-radius: 50%;
-    border: none;
+    border: none !important;
     /*!important;*/
     font-size: 14px;
     box-shadow: 1px 1px 4px #eeeeee;
@@ -82,6 +82,18 @@ a.paginate_button,
     font-size: 1.2rem;
     width: 90%;
     appearance: auto;
+}
+
+.bsl-legend {
+    width: 25%;
+    display: grid;
+    position: absolute;
+    grid-template-columns: 1fr 1fr;
+    margin-top: .5em;
+}
+
+.bsl-status-legend {
+    color: #6c757d;
 }
 
 .center {
@@ -280,11 +292,11 @@ select.selectpicker {
 #brand_sku_table_paginate #brand_sku_table_previous,
 .dataTables_paginate a#brand_sku_table_previous,
 .dataTables_wrapper.no-footer .dataTables_paginate #brand_sku_table_paginate #brand_sku_table_previous {
-    padding: 0.2em 0.6em 0.3em 0.5em;
+    padding: 0.2em 0.6em 0.3em 0.5em !important;
     /*!important;*/
-    border-radius: 50%;
+    border-radius: 50% !important;
     /*!important;*/
-    border: none;
+    border: none !important;
     /*!important;*/
     background-color: #ffffff;
     font-size: 18px;
@@ -296,11 +308,11 @@ a#datatable-button_next .dataTables_paginate a#datatable-button_next,
 #brand_sku_table_paginate #brand_sku_table_next,
 .dataTables_paginate a#brand_sku_table_next,
 .dataTables_wrapper.no-footer .dataTables_paginate #brand_sku_table_paginate #brand_sku_table_next {
-    padding: 0.2em 0.5em 0.3em 0.6em;
+    padding: 0.2em 0.5em 0.3em 0.6em !important;
     /*!important;*/
-    border-radius: 50%;
+    border-radius: 50% !important;
     /*!important;*/
-    border: none;
+    border: none !important;
     /*!important;*/
     background-color: #ffffff;
     font-size: 18px;
@@ -326,13 +338,13 @@ a#brand_sku_table_next:hover,
 .bottom .dataTables_paginate #brand_sku_table_paginate a.paginate_button.current,
 #brand_sku_table_paginate a.paginate_button.current,
 .dataTables_wrapper.no-footer .dataTables_paginate .paginate_button.current {
-    padding: 0.5em 0.8em;
+    padding: 0.5em 0.8em !important;
     /*!important;*/
     background: #ba8ce6;
-    background-image: linear-gradient(0deg, #727cf5 0%, #E0C3FC 100%);
+    background-image: linear-gradient(0deg, #727cf5 0%, #E0C3FC 100%) !important;
     /*!important;*/
     color: #ffffff;
-    border: none;
+    border: none !important;
     /*!important;*/
     /* border-color: #ba8ce6; */
     /* padding-left: 8px; */
@@ -366,6 +378,26 @@ a#brand_sku_table_next:hover,
 
 .br_units_icon {
     color: #1abb9c;
+}
+
+.bsl-status-content {
+    display: flex;
+    justify-content: center;
+    font-size: 8px;
+}
+
+.completed_status_icon {
+    padding: 0.4em;
+    border-radius: 50%;
+    background: rgba(91, 177, 91, .925);
+    color: #fff;
+}
+
+.completed_status_icon_legend {
+    padding: 0.2em;
+    border-radius: 50%;
+    background: rgba(91, 177, 91, .925);
+    color: #fff;
 }
 
 .cpu_gen_title {
@@ -837,6 +869,28 @@ input[type="search"] {
 
 .one_margin_right {
     margin-right: 1em;
+}
+
+.opportunity_status_icon {
+    padding: 0.2em 0.4em;
+    border-radius: 50%;
+    background: rgba(218, 78, 53, .925);
+    color: #fff;
+    font-size: 10px;
+}
+
+.opportunity_status_icon_legend {
+    padding-right: 0.25em;
+    padding-left: 0.25em;
+    font-size: 12px;
+    width: 1em;
+    border-radius: 50%;
+    background: rgba(218, 78, 53, .925);
+    color: #fff;
+}
+
+.bsl-status-legend .opportunity_status_icon_legend {
+    width: 1em;
 }
 
 .orange {
@@ -1736,7 +1790,7 @@ table.dataTable thead th {
 
 .table.rbt_table td,
 .table.rbt_table th {
-    border: 1px solid #eef2f7;
+    border-bottom: 1px solid #eef2f7;
     border-right: none;
     border-left: none;
     color: #6c757d;
@@ -1746,9 +1800,17 @@ table.dataTable thead th {
     border-bottom: 2px solid #eef2f7;
 }
 
-.table.rbt_table.dataTable td,
+.table.rbt_table.dataTable td {
+    border-top: none;
+    border-bottom: 1px solid #eef2f7;
+    border-right: none;
+    border-left: none;
+    color: #6c757d;
+}
+
 .table.rbt_table.dataTable th {
-    border: 1px solid #eef2f7;
+    border-top: 1px solid #eef2f7;
+    border-bottom: 2px solid #eef2f7;
     border-right: none;
     border-left: none;
     color: #6c757d;
