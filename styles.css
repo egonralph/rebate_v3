@@ -24,10 +24,10 @@ a.paginate_button,
 #brand_sku_table_paginate a.paginate_button {
     margin-right: 0.1em;
     margin-left: 0.1em;
-    padding: 0.5em 0.8em !important;
+    padding: 0.5em 0.8em;
     /*!important;*/
     border-radius: 50%;
-    border: none !important;
+    border: none;
     /*!important;*/
     font-size: 14px;
     box-shadow: 1px 1px 4px #eeeeee;
@@ -292,11 +292,11 @@ select.selectpicker {
 #brand_sku_table_paginate #brand_sku_table_previous,
 .dataTables_paginate a#brand_sku_table_previous,
 .dataTables_wrapper.no-footer .dataTables_paginate #brand_sku_table_paginate #brand_sku_table_previous {
-    padding: 0.2em 0.6em 0.3em 0.5em !important;
+    padding: 0.2em 0.6em 0.3em 0.5em;
     /*!important;*/
-    border-radius: 50% !important;
+    border-radius: 50%;
     /*!important;*/
-    border: none !important;
+    border: none;
     /*!important;*/
     background-color: #ffffff;
     font-size: 18px;
@@ -308,11 +308,11 @@ a#datatable-button_next .dataTables_paginate a#datatable-button_next,
 #brand_sku_table_paginate #brand_sku_table_next,
 .dataTables_paginate a#brand_sku_table_next,
 .dataTables_wrapper.no-footer .dataTables_paginate #brand_sku_table_paginate #brand_sku_table_next {
-    padding: 0.2em 0.5em 0.3em 0.6em !important;
+    padding: 0.2em 0.5em 0.3em 0.6em;
     /*!important;*/
-    border-radius: 50% !important;
+    border-radius: 50%;
     /*!important;*/
-    border: none !important;
+    border: none;
     /*!important;*/
     background-color: #ffffff;
     font-size: 18px;
@@ -338,13 +338,13 @@ a#brand_sku_table_next:hover,
 .bottom .dataTables_paginate #brand_sku_table_paginate a.paginate_button.current,
 #brand_sku_table_paginate a.paginate_button.current,
 .dataTables_wrapper.no-footer .dataTables_paginate .paginate_button.current {
-    padding: 0.5em 0.8em !important;
+    padding: 0.5em 0.8em;
     /*!important;*/
     background: #ba8ce6;
-    background-image: linear-gradient(0deg, #727cf5 0%, #E0C3FC 100%) !important;
+    background-image: linear-gradient(0deg, #727cf5 0%, #E0C3FC 100%);
     /*!important;*/
     color: #ffffff;
-    border: none !important;
+    border: none;
     /*!important;*/
     /* border-color: #ba8ce6; */
     /* padding-left: 8px; */
@@ -1778,6 +1778,58 @@ table.dataTable thead th {
 #datatable-button.dataTable.no-footer,
 #brand_sku_table.dataTable.no-footer {
     border: none;
+}
+
+.table-input {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0.2rem 0.5rem;
+    height: 20px;
+}
+
+.table td.table-input-column {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.table-input-column .input-group .form-control.table-input {
+    border-radius: 4px 0 0 4px;
+    padding: 0.2rem 0.5rem;
+    height: 19px !important;
+    font-size: 14px;
+}
+
+.table-input-column .input-group .input-group-append button {
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0;
+}
+
+.table-input-column.value-left {
+    display: grid;
+    grid-template-columns: 0.06fr 1fr;
+}
+
+.table-input-column.value-left span {
+    line-height: 25px;
+}
+
+.table-input-column.value-right {
+    display: grid;
+    grid-template-columns: 1fr 0.06fr;
+}
+
+.table-input-save-icon {
+    font-size: 16px;
+}
+
+.table-input-value-left {
+    margin-left: 0;
+}
+
+.table-input-value-right {
+    margin-right: 0.3em;
 }
 
 .table_no_border td {
