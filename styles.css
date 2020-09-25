@@ -201,6 +201,10 @@ a.paginate_button,
     padding: .175rem .75rem .175rem .75rem;
 }
 
+.d-flex {
+    display: flex;
+}
+
 .dashboard_filter_panel {
     margin-bottom: 1em;
     padding-top: 0.5em;
@@ -897,6 +901,10 @@ input[type="search"] {
     color: #f1a50d;
 }
 
+.overview-icon-container.flex-center svg.fa-handshake {
+    height: 38px;
+}
+
 .overview-panel {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -1351,16 +1359,12 @@ span.quater_earnings_icon {
     margin-top: -0.3em;
 }
 
-.qtd_rewards_icon,
-.one_margin_right.points-margin.qtd_rewards_icon {
-    font-size: 32px;
-}
-
-@media (max-width:1366px) {
-    .qtd_rewards_icon,
-    .one_margin_right.points-margin.qtd_rewards_icon {
-        font-size: 20px;
-    }
+.qtd_rewards_icon {
+    font-size: 20px;
+    margin-right: 1em;
+    margin-top: -0.15em;
+    margin-bottom: 0;
+    margin-left: 0;
 }
 
 .radio+.historical-charts,
@@ -1371,6 +1375,10 @@ span.quater_earnings_icon {
 
 .radio-paragraph {
     margin-bottom: 0;
+}
+
+.radius-round {
+    border-radius: 50%;
 }
 
 .rb_brand_category_legend-rebate {
@@ -1634,26 +1642,31 @@ span.count_top {
 }
 
 .statistics_count_container--qtd .statistics_count__pane.statistics_count__pane--main {
-    background-color: #b0e4f7;
-    background-image: -webkit-linear-gradient(180deg, #CDEFFD 0%, #a3d3e4 12%, #ffffff 50%, #a3d3e4 88%, #CDEFFD 100%);
-    background-image: linear-gradient(180deg, #CDEFFD 0%, #a3d3e4 12%, #ffffff 50%, #a3d3e4 88%, #CDEFFD 100%);
-    border-radius: 10px;
-    text-align: right;
     padding: 0.25em 1em 0.25em 0.25em;
-    height: 6em;
+    background: rgba(61, 164, 250, 0.25)!important;
+    border-radius: .25rem;
+    border-width: 0;
+    text-align: right;
+    height: 100%;
     display: flex;
     align-items: center;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
 .statistics_count__content {
     text-align: center;
 }
 
-.statistics_count__icon {
-    font-size: 40px;
+.statistics-count-icon {
+    font-size: 28px;
 }
 
-.statistics_count__icon-pane {
+.statistics-count-icon.c-chart {
+    font-size: 60px;
+    color: purple;
+}
+
+.statistics-count-icon-pane {
     display: flex;
     align-items: center;
     height: 5em;
@@ -1661,20 +1674,25 @@ span.count_top {
 }
 
 .statistics_count__pane {
-    background: #EAEAEA;
-    background: -webkit-linear-gradient(to top, #EAEAEA, #DBDBDB, #F2F2F2, #EAEAEA);
-    background: linear-gradient(to top, #EAEAEA, #DBDBDB, #F2F2F2, #EAEAEA);
-    border-radius: 10px;
-    text-align: right;
     padding: 0.5em 0.25em;
-    height: 6em;
+    background: #ffffff;
+    border-radius: .25rem;
+    border-width: 0;
+    text-align: right;
+    height: 100% !important;
+    position: relative;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.statistics_count__pane.d-flex {
+    align-items: center;
 }
 
 .statistics_count__pane.statistics_count__pane--special {
-    background: #ffffff;
-    background-image: linear-gradient(0deg, #efefef 0%, #ffffff 10%, #ffffff 90%, #efefef 100%);
-    border: #EAEAEA;
     padding: 0.5em .25em;
+    background: #ffffff;
+    border-width: 0;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
 .statistics_count__pane--special span.statistics_count__time,
@@ -1722,10 +1740,7 @@ span.count_top {
         text-align: center;
         max-width: 83.33333%;
     }
-    .statistics_count__icon {
-        font-size: 28px;
-    }
-    .statistics_count__icon-pane {
+    .statistics-count-icon-pane {
         max-width: 16.66667%;
         display: flex;
         align-items: center;
@@ -2151,6 +2166,11 @@ th:hover::after {
     border-radius: 4px;
 }
 
+.tile_count {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
 .tile_count .tile_statistics_count {
     padding-left: 5px;
 }
@@ -2170,19 +2190,6 @@ th:hover::after {
     padding-right: 0;
 }
 
-
-/* .tile_count .tile_statistics_count {
-    max-width: 18.75%;
-}
-
-.tile_count .tile_statistics_count.statistics_count_container--vendor {
-    max-width: 20.75%;
-}
-
-.tile_count .tile_statistics_count.statistics_count_container.statistics_count_container--qtd {
-    max-width: 23%;
-} */
-
 .tile_statistics_count .statistics_count__pane .count {
     font-size: 34px;
     font-weight: 600;
@@ -2195,15 +2202,6 @@ th:hover::after {
 }
 
 @media (max-width: 1366px) {
-    /* .tile_count .tile_statistics_count {
-        max-width: 19%;
-    }
-    .tile_count .tile_statistics_count.statistics_count_container--vendor {
-        max-width: 20.05%;
-    }
-    .tile_count .tile_statistics_count.statistics_count_container.statistics_count_container--qtd {
-        max-width: 24%;
-    } */
     .tile_statistics_count .statistics_count__pane .count {
         font-size: 28px;
         font-weight: 600;
