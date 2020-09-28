@@ -82,8 +82,9 @@
 
         <div class="tile_statistics_count statistics_count_container">
             <div class="statistics_count__pane d-flex">
-                <div class="col-xs-3 statistics-count-icon-pane">
-                    <i class="fad fa-spinner-third statistics-count-icon c-chart"></i>
+                <div class="col-xs-3 statistics-count-icon-pane text-center pos-rel">
+                    <!-- <i class="fad fa-spinner-third statistics-count-icon c-chart"></i> -->
+                    <canvas id="missedOppPiechart" height="75" width="75"></canvas>
                     <span class="position-center text-dark-tp3 text-95 center">
                         <b>$2,960</b>
                      </span>
@@ -91,7 +92,7 @@
 
                 <div class="col-xs-9 statistics_count__content">
                     <span class="text-dark-tp3 bold">Current Missed Opportunity</span>
-                    <div class="text-dark-tp4 text-110">414 units remaining</div>
+                    <div class="text-dark-tp4 text-110">43 units remaining</div>
                 </div>
             </div>
         </div>
@@ -148,10 +149,10 @@
                                 <div class="col-md-6 col-sm-6 col-xs-6" id="rewards_units_vendor_dropdownmenu">
                                     <div class="dropdown">
                                         <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuRewardsUnits" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Choose CPU Name
-                                        <i class="fa fa-angle-down dropdown-icons"
-                                            aria-hidden="true"></i>
-                                    </button>
+                                            Choose CPU Name
+                                            <i class="fa fa-angle-down dropdown-icons"
+                                                aria-hidden="true"></i>
+                                        </button>
                                         <ul class="dropdown-menu" id="rewards_units_vendor_dd_menu">
                                             <li class="dropdown_list">
                                                 <input type="checkbox" class="form-check-input dropdown_chbx" id="checkRewardsUnitsVend1" checked>
@@ -886,6 +887,7 @@
 <!-- <script src="/documents/242830/531855/chartjs-plugin-labels.min.js/0d1b66e8-7507-b7b2-109c-4a088f26c93c"></script> -->
 <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/emn178/chartjs-plugin-labels/src/chartjs-plugin-labels.js"></script> -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
 <!-- function that analyzes the numerical content of the graph -->
 <script>
     if (location.protocol != 'file:') {
@@ -927,7 +929,73 @@
 </script>
 <!-- /Skycons -->
 
+<!-- // count panel missed pie chart -->
+<script>
+    $(document).ready(function() {
+        var options = {
+            legend: false,
+            responsive: false
+        };
+        var dataArray = [48, 52],
+            total = dataArray.reduce((accumulator, currentValue) => accumulator + currentValue),
+            labelCallback = dataArray.map(value => Math.round((value / total) * 100) + '%');
 
+        fullPie = new Chart(document.getElementById("missedOppPiechart"), {
+            type: 'doughnut',
+            tooltipFillColor: "rgba(51, 51, 51, 0.55)",
+            data: {
+                labels: [
+                    "Opportunities",
+                    "Earnings",
+                    // "",
+                ],
+                datasets: [{
+                    data: [48, 52],
+                    borderWidth: 1,
+                    weight: 1,
+                    backgroundColor: [
+                        "#aa96fa",
+                        "#3400ff",
+                    ],
+                    hoverBackgroundColor: [
+                        "#9785de",
+                        "#2f02de",
+                    ],
+                    hoverBorderColor: [
+                        "#9785de",
+                        "#2f02de",
+                    ]
+                }]
+            },
+            options: {
+                legend: {
+                    display: false,
+                },
+
+                plugins: {
+                    labels: {
+                        render: 'percentage',
+                        fontColor: '#111111',
+                        // fontStyle: 'bold',
+                        fontSize: '8',
+                        fontFamily: '"Lucida Console", Monaco, monospace',
+                        precision: 1,
+                        textShadow: true,
+                        shadowBlur: 1,
+                        shadowOffsetX: 1,
+                        shadowOffsetY: 1,
+                        // shadowColor: 'rgba(2, 0, 0, 1)',
+                        outsidePadding: 4,
+                        textMargin: 4
+                    }
+                },
+                cutoutPercentage: 70,
+                responsive: false
+            }
+        });
+    });
+</script>
+<!-- // count panel missed pie chart -->
 
 <!-- Stacked bar Chart initialization -->
 <script>

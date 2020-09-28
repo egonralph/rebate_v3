@@ -101,7 +101,11 @@ a.paginate_button,
 }
 
 .bsl-table-val {
-    margin-left: 0.7em;
+    margin-left: 0.2em;
+}
+
+.btn-primary.target-save-btn {
+    background: #2c87d3;
 }
 
 .center {
@@ -206,6 +210,11 @@ a.paginate_button,
 .custom-select {
     background: #ffffff;
     padding: .175rem .75rem .175rem .75rem;
+}
+
+select.custom-select.target-type-js {
+    width: 50%;
+    height: 18px;
 }
 
 .d-flex {
@@ -345,7 +354,7 @@ a#brand_sku_table_next:hover,
     padding: 0.5em 0.8em;
     /*!important;*/
     background: #ba8ce6;
-    background-image: linear-gradient(0deg, #727cf5 0%, #E0C3FC 100%);
+    background-image: linear-gradient(0deg, #727cf5 0%, #E0C3FC 100%) !important;
     /*!important;*/
     color: #ffffff;
     border: none;
@@ -1647,7 +1656,7 @@ span.count_top {
 
 .statistics_count_container,
 .tile_statistics_count.statistics_count_container {
-    margin-bottom: 0.8em;
+    margin-bottom: 3em;
 }
 
 .statistics_count_container--qtd .statistics_count__pane.statistics_count__pane--main {
