@@ -50,7 +50,7 @@
 
 
                 </div>
-                <div class="col-xs-3 center count_panel__link count_panel__link--js" data-toogle="tooltip" title="Go to Rewards page">
+                <div class="col-xs-3 center count-panel-link count-panel-link--js" data-toogle="tooltip" title="Go to Rewards page">
                     <span class="count_spend_points">
                         <a href="rewards" class="count_spend_points__link">Spend Rewards</a>
                     </span>
@@ -127,27 +127,18 @@
             <div class="panel-body panel-body__brandSkuListing">
                 <div class="x_panel">
                     <div class="x_content tablesorter_content_index">
-                        <div class="bsl-legend">
-                            <div class="bsl-status-legend" data-toggle="tooltip" title="Completed">
-                                <i class="fa fa-check completed_status_icon_legend"></i> Completed
-                            </div>
-                            <div class="bsl-status-legend" data-toggle="tooltip" title="Opportunity">
-                                <i class="fa fa-times opportunity_status_icon_legend"></i> Opportunity
-                            </div>
-                        </div>
-
                         <div style="overflow-x:auto;">
                             <table class="table table-bordered table-hover tablesorter rbt_table" data-page-size="50" id="brand_sku_table" style="width:100%">
                                 <thead>
                                     <tr>
-                                        <th style="width: 14%">Brand</th>
-                                        <th style="width: 14%">Model No</th>
-                                        <th style="width: 14%">Form Factor</th>
-                                        <th style="width: 14%">First Earned</th>
-                                        <th style="width: 14%">Last Earned</th>
+                                        <th style="width: 13%">Brand</th>
+                                        <th style="width: 13%">Model No</th>
+                                        <th style="width: 13%">Form Factor</th>
+                                        <th style="width: 13%">First Earned</th>
+                                        <th style="width: 13%">Last Earned</th>
                                         <th style="width: 12%">Unit Target</th>
                                         <th style="width: 12%">Value Target</th>
-                                        <th style="width: 6%">Status</th>
+                                        <th style="width: 11%">Status</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -164,7 +155,7 @@
                                             <div class="input-group" style="margin-bottom: 0;">
                                                 <input class="form-control table-input" type="text" id="row-1-unit" name="row-1-unit" value="1">
                                                 <div class="input-group-append">
-                                                    <button class="btn btn-outline-secondary" type="button" id="button-addon-unit1">
+                                                    <button class="btn btn-primary" type="button" id="button-addon-unit1">
                                                         <i class="fas fa-save table-input-save-icon"></i>
                                                     </button>
                                                 </div>
@@ -175,7 +166,7 @@
                                             <div class="input-group" style="margin-bottom: 0;">
                                                 <input class="form-control table-input table-input-value-left" type="text" id="row-1-value" name="row-1-value" value="1">
                                                 <div class="input-group-append">
-                                                    <button class="btn btn-outline-secondary" type="button" id="button-addon-value1">
+                                                    <button class="btn btn-primary" type="button" id="button-addon-value1">
                                                         <i class="fas fa-save table-input-save-icon"></i>
                                                     </button>
                                                 </div>
@@ -183,7 +174,7 @@
                                         </td>
                                         <td>
                                             <div class="bsl-status-content" data-toggle="tooltip" title="Opportunity">
-                                                <i class="fa fa-times opportunity_status_icon"></i>
+                                                <i class="opportunity_status_icon"></i> Opportunity
                                             </div>
                                         </td>
                                     </tr>
@@ -200,7 +191,7 @@
                                             <div class="input-group" style="margin-bottom: 0;">
                                                 <input class="form-control table-input" type="text" id="row-2-unit" name="row-2-unit" value="2">
                                                 <div class="input-group-append">
-                                                    <button class="btn btn-outline-secondary" type="button" id="button-addon-unit1">
+                                                    <button class="btn btn-primary" type="button" id="button-addon-unit1">
                                                         <i class="fas fa-save table-input-save-icon"></i>
                                                     </button>
                                                 </div>
@@ -211,7 +202,7 @@
                                             <div class="input-group" style="margin-bottom: 0;">
                                                 <input class="form-control table-input table-input-value-left" type="text" id="row-2-value" name="row-2-value" value="1">
                                                 <div class="input-group-append">
-                                                    <button class="btn btn-outline-secondary" type="button" id="button-addon-value2">
+                                                    <button class="btn btn-primary" type="button" id="button-addon-value2">
                                                         <i class="fas fa-save table-input-save-icon"></i>
                                                     </button>
                                                 </div>
@@ -219,7 +210,7 @@
                                         </td>
                                         <td>
                                             <div class="bsl-status-content" data-toggle="tooltip" title="Completed">
-                                                <i class="fa fa-check completed_status_icon"></i>
+                                                <i class="completed_status_icon"></i> Completed
                                             </div>
                                         </td>
                                     </tr>
@@ -232,11 +223,11 @@
                                         <td>Desktop</td>
                                         <td>04 Jun 2020</td>
                                         <td>06 Sep 2020</td>
-                                        <td>3</td>
-                                        <td>$ 1</td>
+                                        <td><span class="bsl-table-unit">3</span></td>
+                                        <td>$<span class="bsl-table-val">1</span></td>
                                         <td>
                                             <div class="bsl-status-content" data-toggle="tooltip" title="Opportunity">
-                                                <i class="fa fa-times opportunity_status_icon"></i>
+                                                <i class="opportunity_status_icon"></i> Opportunity
                                             </div>
                                         </td>
                                     </tr>
@@ -253,16 +244,16 @@
                                             <div class="input-group" style="margin-bottom: 0;">
                                                 <input class="form-control table-input" type="text" id="row-4-unit" name="row-4-unit" value="2">
                                                 <div class="input-group-append">
-                                                    <button class="btn btn-outline-secondary" type="button" id="button-addon-unit1">
+                                                    <button class="btn btn-primary" type="button" id="button-addon-unit1">
                                                         <i class="fas fa-save table-input-save-icon"></i>
                                                     </button>
                                                 </div>
                                             </div>
                                         </td>
-                                        <td>$2</td>
+                                        <td>$<span class="bsl-table-val">2</span></td>
                                         <td>
                                             <div class="bsl-status-content" data-toggle="tooltip" title="Completed">
-                                                <i class="fa fa-check completed_status_icon"></i>
+                                                <i class="completed_status_icon"></i> Completed
                                             </div>
                                         </td>
                                     </tr>
@@ -275,13 +266,13 @@
                                         <td>Desktop</td>
                                         <td>20 Jun 2020</td>
                                         <td>03 Sep 2020</td>
-                                        <td>3</td>
+                                        <td><span class="bsl-table-unit">3</span></td>
                                         <td class="table-input-column value-left">
                                             <span>$</span>
                                             <div class="input-group" style="margin-bottom: 0;">
                                                 <input class="form-control table-input table-input-value-left" type="text" id="row-5-value" name="row-5-value" value="3">
                                                 <div class="input-group-append">
-                                                    <button class="btn btn-outline-secondary" type="button" id="button-addon-value5">
+                                                    <button class="btn btn-primary" type="button" id="button-addon-value5">
                                                         <i class="fas fa-save table-input-save-icon"></i>
                                                     </button>
                                                 </div>
@@ -289,7 +280,7 @@
                                         </td>
                                         <td>
                                             <div class="bsl-status-content" data-toggle="tooltip" title="Opportunity">
-                                                <i class="fa fa-times opportunity_status_icon"></i>
+                                                <i class="opportunity_status_icon"></i> Opportunity
                                             </div>
                                         </td>
                                     </tr>
@@ -302,11 +293,11 @@
                                         <td>Mobile</td>
                                         <td>12 Jul 2020</td>
                                         <td>07 Sep 2020</td>
-                                        <td>1</td>
-                                        <td>$ 1</td>
+                                        <td><span class="bsl-table-unit">1</span></td>
+                                        <td>$<span class="bsl-table-val">1</span></td>
                                         <td>
                                             <div class="bsl-status-content" data-toggle="tooltip" title="Completed">
-                                                <i class="fa fa-check completed_status_icon"></i>
+                                                <i class="completed_status_icon"></i> Completed
                                             </div>
                                         </td>
                                     </tr>
@@ -323,7 +314,7 @@
                                             <div class="input-group" style="margin-bottom: 0;">
                                                 <input class="form-control table-input" type="text" id="row-7-unit" name="row-7-unit" value="4">
                                                 <div class="input-group-append">
-                                                    <button class="btn btn-outline-secondary" type="button" id="button-addon-unit1">
+                                                    <button class="btn btn-primary" type="button" id="button-addon-unit1">
                                                         <i class="fas fa-save table-input-save-icon"></i>
                                                     </button>
                                                 </div>
@@ -334,7 +325,7 @@
                                             <div class="input-group" style="margin-bottom: 0;">
                                                 <input class="form-control table-input table-input-value-left" type="text" id="row-7-value" name="row-7-value" value="2">
                                                 <div class="input-group-append">
-                                                    <button class="btn btn-outline-secondary" type="button" id="button-addon-value7">
+                                                    <button class="btn btn-primary" type="button" id="button-addon-value7">
                                                         <i class="fas fa-save table-input-save-icon"></i>
                                                     </button>
                                                 </div>
@@ -342,7 +333,7 @@
                                         </td>
                                         <td>
                                             <div class="bsl-status-content" data-toggle="tooltip" title="Opportunity">
-                                                <i class="fa fa-times opportunity_status_icon"></i>
+                                                <i class="opportunity_status_icon"></i> Opportunity
                                             </div>
                                         </td>
                                     </tr>
@@ -355,11 +346,11 @@
                                         <td>Desktop</td>
                                         <td>20 Jul 2020</td>
                                         <td>04 Sep 2020</td>
-                                        <td>5</td>
-                                        <td>$ 1</td>
+                                        <td><span class="bsl-table-unit">5</span></td>
+                                        <td>$<span class="bsl-table-val">1</span></td>
                                         <td>
                                             <div class="bsl-status-content" data-toggle="tooltip" title="Completed">
-                                                <i class="fa fa-check completed_status_icon"></i>
+                                                <i class="completed_status_icon"></i> Completed
                                             </div>
                                         </td>
                                     </tr>
@@ -376,7 +367,7 @@
                                             <div class="input-group" style="margin-bottom: 0;">
                                                 <input class="form-control table-input" type="text" id="row-9-unit" name="row-9-unit" value="1">
                                                 <div class="input-group-append">
-                                                    <button class="btn btn-outline-secondary" type="button" id="button-addon-unit1">
+                                                    <button class="btn btn-primary" type="button" id="button-addon-unit1">
                                                         <i class="fas fa-save table-input-save-icon"></i>
                                                     </button>
                                                 </div>
@@ -387,7 +378,7 @@
                                             <div class="input-group" style="margin-bottom: 0;">
                                                 <input class="form-control table-input table-input-value-left" type="text" id="row-9-value" name="row-9-value" value="2">
                                                 <div class="input-group-append">
-                                                    <button class="btn btn-outline-secondary" type="button" id="button-addon-value9">
+                                                    <button class="btn btn-primary" type="button" id="button-addon-value9">
                                                         <i class="fas fa-save table-input-save-icon"></i>
                                                     </button>
                                                 </div>
@@ -395,7 +386,7 @@
                                         </td>
                                         <td>
                                             <div class="bsl-status-content" data-toggle="tooltip" title="Opportunity">
-                                                <i class="fa fa-times opportunity_status_icon"></i>
+                                                <i class="opportunity_status_icon"></i> Opportunity
                                             </div>
                                         </td>
                                     </tr>
@@ -412,7 +403,7 @@
                                             <div class="input-group" style="margin-bottom: 0;">
                                                 <input class="form-control table-input" type="text" id="row-10-unit" name="row-10-unit" value="2">
                                                 <div class="input-group-append">
-                                                    <button class="btn btn-outline-secondary" type="button" id="button-addon-unit1">
+                                                    <button class="btn btn-primary" type="button" id="button-addon-unit1">
                                                         <i class="fas fa-save table-input-save-icon"></i>
                                                     </button>
                                                 </div>
@@ -423,7 +414,7 @@
                                             <div class="input-group" style="margin-bottom: 0;">
                                                 <input class="form-control table-input table-input-value-left" type="text" id="row-10-value" name="row-10-value" value="2">
                                                 <div class="input-group-append">
-                                                    <button class="btn btn-outline-secondary" type="button" id="button-addon-value10">
+                                                    <button class="btn btn-primary" type="button" id="button-addon-value10">
                                                         <i class="fas fa-save table-input-save-icon"></i>
                                                     </button>
                                                 </div>
@@ -431,7 +422,7 @@
                                         </td>
                                         <td>
                                             <div class="bsl-status-content" data-toggle="tooltip" title="Completed">
-                                                <i class="fa fa-check completed_status_icon"></i>
+                                                <i class="completed_status_icon"></i> Completed
                                             </div>
                                         </td>
                                     </tr>
@@ -444,11 +435,11 @@
                                         <td>Mobile</td>
                                         <td>14 Aug 2020</td>
                                         <td>05 Sep 2020</td>
-                                        <td>3</td>
-                                        <td>$ 2</td>
+                                        <td><span class="bsl-table-unit">3</span></td>
+                                        <td>$<span class="bsl-table-val">2</span></td>
                                         <td>
                                             <div class="bsl-status-content" data-toggle="tooltip" title="Opportunity">
-                                                <i class="fa fa-times opportunity_status_icon"></i>
+                                                <i class="opportunity_status_icon"></i> Opportunity
                                             </div>
                                         </td>
                                     </tr>
@@ -461,11 +452,11 @@
                                         <td>Mobile</td>
                                         <td>19 Jun 2020</td>
                                         <td>07 Sep 2020</td>
-                                        <td>3</td>
-                                        <td>$ 4</td>
+                                        <td><span class="bsl-table-unit">3</span></td>
+                                        <td>$<span class="bsl-table-val">4</span></td>
                                         <td>
                                             <div class="bsl-status-content" data-toggle="tooltip" title="Completed">
-                                                <i class="fa fa-check completed_status_icon"></i>
+                                                <i class="completed_status_icon"></i> Completed
                                             </div>
                                         </td>
                                     </tr>
@@ -482,7 +473,7 @@
                                             <div class="input-group" style="margin-bottom: 0;">
                                                 <input class="form-control table-input" type="text" id="row-13-unit" name="row-13-unit" value="3">
                                                 <div class="input-group-append">
-                                                    <button class="btn btn-outline-secondary" type="button" id="button-addon-unit1">
+                                                    <button class="btn btn-primary" type="button" id="button-addon-unit1">
                                                         <i class="fas fa-save table-input-save-icon"></i>
                                                     </button>
                                                 </div>
@@ -493,7 +484,7 @@
                                             <div class="input-group" style="margin-bottom: 0;">
                                                 <input class="form-control table-input table-input-value-left" type="text" id="row-13-value" name="row-13-value" value="3">
                                                 <div class="input-group-append">
-                                                    <button class="btn btn-outline-secondary" type="button" id="button-addon-value13">
+                                                    <button class="btn btn-primary" type="button" id="button-addon-value13">
                                                         <i class="fas fa-save table-input-save-icon"></i>
                                                     </button>
                                                 </div>
@@ -501,7 +492,7 @@
                                         </td>
                                         <td>
                                             <div class="bsl-status-content" data-toggle="tooltip" title="Opportunity">
-                                                <i class="fa fa-times opportunity_status_icon"></i>
+                                                <i class="opportunity_status_icon"></i> Opportunity
                                             </div>
                                         </td>
                                     </tr>
@@ -518,7 +509,7 @@
                                             <div class="input-group" style="margin-bottom: 0;">
                                                 <input class="form-control table-input" type="text" id="row-14-unit" name="row-14-unit" value="5">
                                                 <div class="input-group-append">
-                                                    <button class="btn btn-outline-secondary" type="button" id="button-addon-unit1">
+                                                    <button class="btn btn-primary" type="button" id="button-addon-unit1">
                                                         <i class="fas fa-save table-input-save-icon"></i>
                                                     </button>
                                                 </div>
@@ -529,7 +520,7 @@
                                             <div class="input-group" style="margin-bottom: 0;">
                                                 <input class="form-control table-input table-input-value-left" type="text" id="row-14-value" name="row-14-value" value="3">
                                                 <div class="input-group-append">
-                                                    <button class="btn btn-outline-secondary" type="button" id="button-addon-value14">
+                                                    <button class="btn btn-primary" type="button" id="button-addon-value14">
                                                         <i class="fas fa-save table-input-save-icon"></i>
                                                     </button>
                                                 </div>
@@ -537,7 +528,7 @@
                                         </td>
                                         <td>
                                             <div class="bsl-status-content" data-toggle="tooltip" title="Completed">
-                                                <i class="fa fa-check completed_status_icon"></i>
+                                                <i class="completed_status_icon"></i> Completed
                                             </div>
                                         </td>
                                     </tr>
@@ -607,7 +598,7 @@
 <script>
     // Hyperlink to Rewards page
     $(document).ready(function() {
-        $('.count_panel__link--js').click(function() {
+        $('.count-panel-link--js').click(function() {
 
             var url = 'rewards';
             $(location).attr('href', url);
