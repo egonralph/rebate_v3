@@ -66,6 +66,10 @@ a.paginate_button,
     padding-right: 15px;
 }
 
+body .container.body .right_col {
+    background: #e4e6e9;
+}
+
 .bold {
     font-weight: 600;
 }
@@ -820,6 +824,13 @@ input[type="search"] {
     margin-bottom: 1em;
 }
 
+.nav-pills.right-filter,
+.right-filter {
+    padding-top: 2px;
+    margin-bottom: 0 !important;
+    border-bottom: none;
+}
+
 .nav-pills .nav-link {
     font-weight: 700;
     text-shadow: 1px 1px 1px #fff;
@@ -1110,7 +1121,7 @@ input[type="search"] {
 }
 
 .portlet-content.portlet-content-editable {
-    background: #f7f7f7;
+    background: #e4e6e9;
 }
 
 #portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_ADfRxg4nl5g7,
@@ -1660,7 +1671,7 @@ span.count_top {
 }
 
 .statistics_count_container--qtd .statistics_count__pane.statistics_count__pane--main {
-    padding: 0.25em 1em 0.25em 0.25em;
+    padding: 0.25em 1em;
     background: #ffffff!important;
     border-radius: .25rem;
     border-width: 0;
@@ -1745,7 +1756,7 @@ span.count_top {
 
 @media (max-width: 1366px) {
     .statistics_count_container--qtd .statistics_count__pane.statistics_count__pane--main {
-        padding: 0.25em .5em 0.25em 0.25em;
+        padding: 0.25em .5em;
     }
     .statistics_count__pane--special span.statistics_count__time,
     .statistics_count__time {

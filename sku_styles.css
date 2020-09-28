@@ -1660,7 +1660,7 @@ span.count_top {
 }
 
 .statistics_count_container--qtd .statistics_count__pane.statistics_count__pane--main {
-    padding: 0.25em 1em 0.25em 0.25em;
+    padding: 0.25em 1em;
     background: #ffffff!important;
     border-radius: .25rem;
     border-width: 0;
@@ -1745,7 +1745,7 @@ span.count_top {
 
 @media (max-width: 1366px) {
     .statistics_count_container--qtd .statistics_count__pane.statistics_count__pane--main {
-        padding: 0.25em .5em 0.25em 0.25em;
+        padding: 0.25em .5em;
     }
     .statistics_count__pane--special span.statistics_count__time,
     .statistics_count__time {
