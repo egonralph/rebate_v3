@@ -66,6 +66,10 @@ a.paginate_button,
     padding-right: 15px;
 }
 
+body .container.body .right_col {
+    background: #e4e6e9;
+}
+
 .bold {
     font-weight: 600;
 }
@@ -810,14 +814,21 @@ input[type="search"] {
 #full_period,
 #month_by_month {
     text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 0em;
+    margin-bottom: 0em;
 }
 
 .nav.nav-pills,
 .nav.nav-pills.ro {
-    margin-top: 0;
+    margin-top: 0.2em;
     margin-bottom: 1em;
+}
+
+.nav-pills.right-filter,
+.right-filter {
+    padding-top: 2px;
+    margin-bottom: 0 !important;
+    border-bottom: none;
 }
 
 .nav-pills .nav-link {
@@ -825,14 +836,17 @@ input[type="search"] {
     text-shadow: 1px 1px 1px #fff;
 }
 
-.nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
-    background-color: #21adfd;
-    background-image: linear-gradient(180deg, #21adfd 26%, #5bb0ff 51%, #007bff 80%);
-    color: #fff;
+.nav-pills.right-filter .nav-link.active,
+.nav-pills.right-filter .show>.nav-link {
+    background: #c6ddf7;
+    color: #205ba2;
     font-weight: 700;
-    text-shadow: 1px 1px 1px #555;
-    border-radius: 10px;
+    border-radius: 5px;
+    text-shadow: none;
+}
+
+.nav.nav-pills.right-filter .nav-link {
+    padding: 10px;
 }
 
 .no_decoration {
@@ -887,6 +901,10 @@ input[type="search"] {
 
 .one_margin_right {
     margin-right: 1em;
+}
+
+.oppo-earning-panel {
+    padding-left: 5px;
 }
 
 .opportunity_status_icon {
@@ -1036,6 +1054,11 @@ input[type="search"] {
     padding: 5px;
 }
 
+.panel-heading+.panel-body.panel-body__overall {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .panel-heading.panel-sticky.flex-header,
 .panel-heading.panel-sticky.flex_header {
     overflow: hidden;
@@ -1110,7 +1133,11 @@ input[type="search"] {
 }
 
 .portlet-content.portlet-content-editable {
-    background: #f7f7f7;
+    background: #e4e6e9;
+}
+
+.portlet-decorate .portlet-content {
+    background: transparent;
 }
 
 #portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_ADfRxg4nl5g7,
@@ -1120,6 +1147,28 @@ textarea.field.form-control {
 
 .pos-rel {
     position: relative;
+}
+
+.position-center {
+    position: absolute;
+    top: 38%;
+    left: 10px;
+    right: 10px;
+}
+
+.position-center-op {
+    position: absolute;
+    top: 31%;
+    left: 10px;
+    right: 10px;
+}
+
+.position-center-count-chart {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    font-size: 1.1rem;
+    text-align: center;
 }
 
 .processor_image {
@@ -1511,6 +1560,11 @@ span.quater_earnings_icon {
     border: 1px solid #1e5799;
     border-radius: .25em;
     font-family: 'Montserrat', sans-serif;
+}
+
+.rewards-earned-panel {
+    padding-right: 0px;
+    border-right: 5px solid #e4e6e9;
 }
 
 .reward_shop_container {

@@ -84,15 +84,15 @@
             <div class="statistics_count__pane d-flex">
                 <div class="col-xs-3 statistics-count-icon-pane text-center pos-rel">
                     <!-- <i class="fad fa-spinner-third statistics-count-icon c-chart"></i> -->
-                    <canvas id="missedOppPiechart" height="75" width="75" style="padding: 0.2em;"></canvas>
-                    <span class="position-center text-dark-tp3 text-95 center">
+                    <canvas id="missedOppPiechart" height="78" width="78" style="padding: 0.2em;"></canvas>
+                    <span class="position-center-count-chart text-dark-tp3">
                         <b>$2,960</b>
                      </span>
                 </div>
 
                 <div class="col-xs-9 statistics_count__content">
                     <span class="text-dark-tp3 bold">Current Missed Opportunity</span>
-                    <div class="text-dark-tp4 text-110">43 units remaining</div>
+                    <div class="text-dark-tp4 text-110">45 units remaining</div>
                 </div>
             </div>
         </div>
@@ -145,8 +145,8 @@
                     <!-- Tab panes -->
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane fade in active" id="latest_period">
-                            <div class="col-md-8 col-sm-8 col-xs-12">
-                                <div class="x_panel tile fixed_height_360 overflow_hidden points-by-brand-panel panel-rounded">
+                            <div class="col-md-8 col-sm-8 col-xs-12 rewards-earned-panel">
+                                <div class="x_panel tile fixed_height_360 overflow_hidden points-by-brand-panel no_border">
                                     <div class="x_title overview_title">
                                         <h2 class="special-header__overall">Rewards Earned <span class="overall_date">Aug 2020</span> <i class="fa fa-question-circle superscript" title="Rewards earned last period">&nbsp;</i></h2>
 
@@ -269,24 +269,24 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-4 col-sm-4 col-xs-12">
-                                <div class="x_panel panel-rounded">
+                            <div class="col-md-4 col-sm-4 col-xs-12 oppo-earning-panel">
+                                <div class="x_panel no_border">
                                     <div class="x_title overview_title">
                                         <h2 class="special-header__overall">Opportunities Earning <span class="overall_date">Aug 2020</span> <i class="fa fa-question-circle superscript" title="Statement of all points earned and missed last period.">&nbsp;</i></h2>
                                         <div class="clearfix">&nbsp;</div>
                                     </div>
 
                                     <div class="text-center pos-rel">
-                                        <canvas height="240" width="500" class="circle_chart circle_chart_canvas" id="echart_full_pie" aria-label="Sold vs Opportunities doughnut chart" role="img" style="padding:1em;"></canvas>
-                                        <span class="position-center h3">45 Units</span>
+                                        <canvas height="300" class="circle_chart circle_chart_canvas" id="echart_full_pie" aria-label="Sold vs Opportunities doughnut chart" role="img" style="padding:1em;"></canvas>
+                                        <span class="position-center-op h3">45 Units</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div role="tabpanel" class="tab-pane fade" id="full_period">
-                            <div class="col-md-8 col-sm-8 col-xs-12">
-                                <div class="x_panel tile fixed_height_360 overflow_hidden points-by-brand-panel panel-rounded">
+                            <div class="col-md-8 col-sm-8 col-xs-12 rewards-earned-panel">
+                                <div class="x_panel tile fixed_height_360 overflow_hidden points-by-brand-panel no_border">
                                     <div class="x_title overview_title">
                                         <h2 class="special-header__overall">Total Rewards Earned <i class="fa fa-question-circle superscript" title="Total Earnings this year">&nbsp;</i></h2>
 
@@ -410,7 +410,7 @@
                             </div>
 
                             <div class="col-md-4 col-sm-4 col-xs-12">
-                                <div class="x_panel panel-rounded">
+                                <div class="x_panel no_border">
                                     <div class="x_title overview_title">
                                         <h2 class="special-header__overall">Total Opportunities Earning <i class="fa fa-question-circle superscript" title="Statement of all points earned and missed this year.">&nbsp;</i></h2>
 
@@ -418,8 +418,8 @@
                                     </div>
 
                                     <div class="text-center pos-rel">
-                                        <canvas height="240" width="500" class="circle_chart circle_chart_canvas" id="echart_full_pie2" aria-label="Sold vs Opportunities doughnut chart" role="img" style="padding:1em;"></canvas>
-                                        <span class="position-center h3">86 Units</span>
+                                        <canvas height="300" class="circle_chart circle_chart_canvas" id="echart_full_pie2" aria-label="Sold vs Opportunities doughnut chart" role="img" style="padding:1em;"></canvas>
+                                        <span class="position-center-op h3">86 Units</span>
                                     </div>
                                 </div>
                             </div>
@@ -619,8 +619,9 @@
                 legend: {
                     display: false,
                 },
-                enabled: false,
-
+                tooltips: {
+                    enabled: false,
+                },
                 plugins: {
                     labels: {
                         render: 'percentage',
@@ -640,7 +641,7 @@
                         textMargin: 4
                     }
                 },
-                cutoutPercentage: 65,
+                cutoutPercentage: 62,
                 responsive: false
             }
         });
@@ -681,6 +682,11 @@
                     shadowColor: 'rgba(255, 255, 255,0.75)',
                     outsidePadding: 8,
                     textMargin: 8
+                },
+                beforeInit: function(chart, options) {
+                    chart.legend.afterFit = function() {
+                        this.height = this.height + 50;
+                    };
                 }
             },
         };
@@ -769,6 +775,11 @@
                     shadowColor: 'rgba(255, 255, 255,0.75)',
                     outsidePadding: 8,
                     textMargin: 8
+                },
+                beforeInit: function(chart, options) {
+                    chart.legend.afterFit = function() {
+                        this.height = this.height + 50;
+                    };
                 }
             },
         };

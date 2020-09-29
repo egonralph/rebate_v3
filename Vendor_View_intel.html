@@ -81,15 +81,15 @@
             <div class="statistics_count__pane d-flex">
                 <div class="col-xs-3 statistics-count-icon-pane text-center pos-rel">
                     <!-- <i class="fad fa-spinner-third statistics-count-icon c-chart"></i> -->
-                    <canvas id="missedOppPiechart" height="75" width="75"></canvas>
-                    <span class="position-center text-dark-tp3 text-95 center">
+                    <canvas id="missedOppPiechart" height="78" width="78" style="padding: 0.2em;"></canvas>
+                    <span class="position-center-count-chart text-dark-tp3">
                         <b>$2,960</b>
                      </span>
                 </div>
 
                 <div class="col-xs-9 statistics_count__content">
                     <span class="text-dark-tp3 bold">Current Missed Opportunity</span>
-                    <div class="text-dark-tp4 text-110">43 units remaining</div>
+                    <div class="text-dark-tp4 text-110">45 units remaining</div>
                 </div>
             </div>
         </div>
@@ -760,60 +760,55 @@
 
         fullPie = new Chart(document.getElementById("missedOppPiechart"), {
             type: 'doughnut',
-            tooltipFillColor: "rgba(51, 51, 51, 0.55)",
             data: {
                 labels: [
                     "Opportunities",
                     "Earnings",
-                    // "",
                 ],
                 datasets: [{
                     data: [48, 52],
                     borderWidth: 1,
                     weight: 1,
                     backgroundColor: [
-                        "#aa96fa",
-                        "#3400ff",
+                        "#ac56b0",
+                        "#83008a",
                     ],
-                    hoverBackgroundColor: [
-                        "#9785de",
-                        "#2f02de",
-                    ],
-                    hoverBorderColor: [
-                        "#9785de",
-                        "#2f02de",
-                    ]
                 }]
             },
             options: {
                 legend: {
                     display: false,
                 },
-
+                tooltips: {
+                    enabled: false,
+                },
                 plugins: {
                     labels: {
                         render: 'percentage',
-                        fontColor: '#111111',
+                        fontColor: '#ffffff',
                         // fontStyle: 'bold',
-                        fontSize: '8',
+                        anchor: 'start',
+                        align: 'bottom',
+                        fontSize: '9',
                         fontFamily: '"Lucida Console", Monaco, monospace',
                         precision: 1,
                         textShadow: true,
                         shadowBlur: 1,
                         shadowOffsetX: 1,
                         shadowOffsetY: 1,
-                        // shadowColor: 'rgba(2, 0, 0, 1)',
+                        shadowColor: 'rgba(0, 0, 0, 0.75)',
                         outsidePadding: 4,
                         textMargin: 4
                     }
                 },
-                cutoutPercentage: 70,
+                cutoutPercentage: 62,
                 responsive: false
             }
         });
     });
 </script>
 <!-- // count panel missed pie chart -->
+
 <script>
     Chart.defaults.global.legend = {
         display: false

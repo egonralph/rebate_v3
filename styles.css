@@ -358,7 +358,7 @@ a#brand_sku_table_next:hover,
     padding: 0.5em 0.8em;
     /*!important;*/
     background: #ba8ce6;
-    background-image: linear-gradient(0deg, #727cf5 0%, #E0C3FC 100%) !important;
+    background-image: linear-gradient(0deg, #727cf5 0%, #E0C3FC 100%);
     /*!important;*/
     color: #ffffff;
     border: none;
@@ -814,8 +814,8 @@ input[type="search"] {
 #full_period,
 #month_by_month {
     text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 0em;
+    margin-bottom: 0em;
 }
 
 .nav.nav-pills,
@@ -901,6 +901,10 @@ input[type="search"] {
 
 .one_margin_right {
     margin-right: 1em;
+}
+
+.oppo-earning-panel {
+    padding-left: 5px;
 }
 
 .opportunity_status_icon {
@@ -1050,6 +1054,11 @@ input[type="search"] {
     padding: 5px;
 }
 
+.panel-heading+.panel-body.panel-body__overall {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .panel-heading.panel-sticky.flex-header,
 .panel-heading.panel-sticky.flex_header {
     overflow: hidden;
@@ -1143,6 +1152,13 @@ textarea.field.form-control {
 .position-center {
     position: absolute;
     top: 38%;
+    left: 10px;
+    right: 10px;
+}
+
+.position-center-op {
+    position: absolute;
+    top: 31%;
     left: 10px;
     right: 10px;
 }
@@ -1544,6 +1560,11 @@ span.quater_earnings_icon {
     border: 1px solid #1e5799;
     border-radius: .25em;
     font-family: 'Montserrat', sans-serif;
+}
+
+.rewards-earned-panel {
+    padding-right: 0px;
+    border-right: 5px solid #e4e6e9;
 }
 
 .reward_shop_container {
