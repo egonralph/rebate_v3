@@ -159,7 +159,10 @@
                                     <div class="x_content">
                                         <div class="total_earnings_section">
                                             <div class="total_earnings_chart_section">
-                                                <canvas height="220" class="circle_chart" id="canvas1" style="display: inline-block;"></canvas>
+                                                <div class="text-center pos-rel">
+                                                    <canvas height="220" class="circle_chart" id="canvas1" style="display: inline-block;"></canvas>
+                                                    <span class="position-center h3">$ 3,010</span>
+                                                </div>
                                             </div>
 
                                             <div class="total_earnings_legend_section">
@@ -270,12 +273,12 @@
                                 <div class="x_panel panel-rounded">
                                     <div class="x_title overview_title">
                                         <h2 class="special-header__overall">Opportunities Earning <span class="overall_date">Aug 2020</span> <i class="fa fa-question-circle superscript" title="Statement of all points earned and missed last period.">&nbsp;</i></h2>
-
                                         <div class="clearfix">&nbsp;</div>
                                     </div>
 
-                                    <div class="col-xs-12 flex-center">
-                                        <canvas height="250" width="500" class="circle_chart circle_chart_canvas" id="echart_full_pie" aria-label="Sold vs Opportunities doughnut chart" role="img" style="padding:1em;"></canvas>
+                                    <div class="text-center pos-rel">
+                                        <canvas height="240" width="500" class="circle_chart circle_chart_canvas" id="echart_full_pie" aria-label="Sold vs Opportunities doughnut chart" role="img" style="padding:1em;"></canvas>
+                                        <span class="position-center h3">45 Units</span>
                                     </div>
                                 </div>
                             </div>
@@ -296,7 +299,10 @@
                                     <div class="x_content">
                                         <div class="total_earnings_section">
                                             <div class="total_earnings_chart_section">
-                                                <canvas height="220" class="circle_chart" id="canvas2" style="display: inline-block;"></canvas>
+                                                <div class="text-center pos-rel">
+                                                    <canvas height="220" class="circle_chart" id="canvas2" style="display: inline-block;"></canvas>
+                                                    <span class="position-center h3">$ 35,162</span>
+                                                </div>
                                             </div>
 
                                             <div class="total_earnings_legend_section">
@@ -411,8 +417,9 @@
                                         <div class="clearfix">&nbsp;</div>
                                     </div>
 
-                                    <div class="col-xs-12 flex-center">
-                                        <canvas height="300" class="circle_chart circle_chart_canvas" id="echart_full_pie2" aria-label="Sold vs Opportunities doughnut chart" role="img"></canvas>
+                                    <div class="text-center pos-rel">
+                                        <canvas height="240" width="500" class="circle_chart circle_chart_canvas" id="echart_full_pie2" aria-label="Sold vs Opportunities doughnut chart" role="img" style="padding:1em;"></canvas>
+                                        <span class="position-center h3">86 Units</span>
                                     </div>
                                 </div>
                             </div>
@@ -593,35 +600,26 @@
 
         fullPie = new Chart(document.getElementById("missedOppPiechart"), {
             type: 'doughnut',
-            tooltipFillColor: "rgba(51, 51, 51, 0.55)",
             data: {
                 labels: [
                     "Opportunities",
                     "Earnings",
-                    // "",
                 ],
                 datasets: [{
                     data: [48, 52],
                     borderWidth: 1,
                     weight: 1,
                     backgroundColor: [
-                        "#aa96fa",
-                        "#3400ff",
+                        "#ac56b0",
+                        "#83008a",
                     ],
-                    hoverBackgroundColor: [
-                        "#9785de",
-                        "#2f02de",
-                    ],
-                    hoverBorderColor: [
-                        "#9785de",
-                        "#2f02de",
-                    ]
                 }]
             },
             options: {
                 legend: {
                     display: false,
                 },
+                enabled: false,
 
                 plugins: {
                     labels: {
@@ -629,6 +627,7 @@
                         fontColor: '#ffffff',
                         // fontStyle: 'bold',
                         anchor: 'start',
+                        align: 'bottom',
                         fontSize: '9',
                         fontFamily: '"Lucida Console", Monaco, monospace',
                         precision: 1,
@@ -641,7 +640,7 @@
                         textMargin: 4
                     }
                 },
-                cutoutPercentage: 70,
+                cutoutPercentage: 65,
                 responsive: false
             }
         });
@@ -649,31 +648,31 @@
 </script>
 <!-- // count panel missed pie chart -->
 
-<!--Opportunities per CPU-->
+<!--Opportunities Earning per CPU-->
 <script>
     $(document).ready(function() {
         var options = {
             legend: {
                 display: true,
-                position: 'right',
+                position: 'bottom',
                 align: 'middle'
             },
             responsive: false,
             cutoutPercentage: 75,
             tooltips: {
                 callbacks: {
-                    Label: function(tooltipItem, data) {
-                        return '%';
+                    afterLabel: function(tooltipItem, data) {
+                        return 'units';
                     }
                 },
             },
             plugins: {
                 labels: {
-                    render: 'value',
+                    render: 'percentage',
                     fontColor: '#495057',
                     fontStyle: 'bold',
                     fontFamily: '"Lucida Console", Monaco, monospace',
-                    precision: 1,
+                    precision: 0,
                     position: 'outside',
                     textShadow: true,
                     shadowBlur: 1,
@@ -734,92 +733,95 @@
         });
     });
 </script>
-<!-- end ooprtunities per CPU -->
+<!-- end oprtunities Earning per CPU -->
 
 
-<!-- // Total chartFullPie -->
+<!-- // Total chartFullPie per CPU-->
 <script>
     $(document).ready(function() {
         var options = {
-            legend: false,
-            responsive: false
+            legend: {
+                display: true,
+                position: 'bottom',
+                align: 'middle'
+            },
+            responsive: false,
+            cutoutPercentage: 75,
+            tooltips: {
+                callbacks: {
+                    afterLabel: function(tooltipItem, data) {
+                        return 'units';
+                    }
+                },
+            },
+            plugins: {
+                labels: {
+                    render: 'percentage',
+                    fontColor: '#495057',
+                    fontStyle: 'bold',
+                    fontFamily: '"Lucida Console", Monaco, monospace',
+                    precision: 0,
+                    position: 'outside',
+                    textShadow: true,
+                    shadowBlur: 1,
+                    shadowOffsetX: 1,
+                    shadowOffsetY: 1,
+                    shadowColor: 'rgba(255, 255, 255,0.75)',
+                    outsidePadding: 8,
+                    textMargin: 8
+                }
+            },
         };
-        var dataArray = [68, 32],
-            total = dataArray.reduce((accumulator, currentValue) => accumulator + currentValue),
-            labelCallback = dataArray.map(value => Math.round((value / total) * 100) + '%');
 
-        fullPie = new Chart(document.getElementById("echart_full_pie2"), {
+        new Chart(document.getElementById("echart_full_pie2"), {
             type: 'doughnut',
             tooltipFillColor: "rgba(51, 51, 51, 0.55)",
             data: {
                 labels: [
-                    "Opportunities",
-                    "Earnings",
-                    // "",
+                    "Core i3",
+                    "Core i5",
+                    "Core i7",
+                    "Core i9",
+                    "Core m3",
+                    "Pentium",
+                    "Xeon"
                 ],
                 datasets: [{
-                    data: [68, 32],
-                    borderWidth: 1,
-                    weight: 1,
+                    data: [15, 21, 18, 11, 1, 17, 3],
                     backgroundColor: [
-                        "#67a2db",
-                        "#01407d",
-                        // "#c9cdd1",
+                        "#1f78b4",
+                        "#b2df8a",
+                        "#33a02c",
+                        "#fb9a99",
+                        "#ff7f00",
+                        "#b3de69",
+                        "#ffff99"
                     ],
                     hoverBackgroundColor: [
-                        "#5e9edb",
-                        "#00386e",
-                        // "#c9cdd1",
+                        "#1871ad",
+                        "#a3d479",
+                        "#279120",
+                        "#e67b7a",
+                        "#e87400",
+                        "#9dc951",
+                        "#e3e371"
                     ],
                     hoverBorderColor: [
-                        "#5e9edb",
-                        "#00386e",
-                        //  "#c9cdd1",
+                        "#1871ad",
+                        "#a3d479",
+                        "#279120",
+                        "#e67b7a",
+                        "#e87400",
+                        "#9dc951",
+                        "#e3e371"
                     ]
                 }]
             },
-            options: {
-                legend: {
-                    display: true,
-                    position: 'top',
-                },
-                title: {
-                    display: true,
-                    text: 'Earnings vs Opportunities',
-                    fontColor: 'rgba(30,144,255,0.8)',
-                    position: 'bottom',
-                },
-                tooltips: {
-                    callbacks: {
-                        afterLabel: function(tooltipItem, data) {
-                            return '%';
-                        }
-                    },
-                },
-                plugins: {
-                    labels: {
-                        render: 'percentage',
-                        fontColor: '#495057',
-                        fontStyle: 'bold',
-                        fontFamily: '"Lucida Console", Monaco, monospace',
-                        precision: 1,
-                        position: 'outside',
-                        textShadow: true,
-                        shadowBlur: 1,
-                        shadowOffsetX: 1,
-                        shadowOffsetY: 1,
-                        shadowColor: 'rgba255, 255, 255,0.75)',
-                        outsidePadding: 8,
-                        textMargin: 8
-                    }
-                },
-                cutoutPercentage: 75,
-                responsive: false
-            }
+            options: options
         });
     });
 </script>
-<!-- End of Total chartFullPie -->
+<!-- End of Total chartFullPie per CPU -->
 
 <!-- Doughnut Chart -->
 <script>
@@ -831,7 +833,7 @@
             tooltips: {
                 callbacks: {
                     afterLabel: function(tooltipItem, data) {
-                        return '%';
+                        return '$';
                     }
                 },
             },
@@ -841,7 +843,7 @@
                     fontColor: '#495057',
                     fontStyle: 'bold',
                     fontFamily: '"Lucida Console", Monaco, monospace',
-                    precision: 1,
+                    precision: 0,
                     position: 'outside',
                     textShadow: true,
                     shadowBlur: 1,
@@ -868,7 +870,7 @@
                     "Xeon"
                 ],
                 datasets: [{
-                    data: [19, 25, 10, 16, 7, 15, 8],
+                    data: [894, 1256, 561, 110, 7, 172, 10],
                     backgroundColor: [
                         "#1f78b4",
                         "#b2df8a",
@@ -914,7 +916,7 @@
             tooltips: {
                 callbacks: {
                     afterLabel: function(tooltipItem, data) {
-                        return '%';
+                        return '$';
                     }
                 },
             },
@@ -924,7 +926,7 @@
                     fontColor: '#495057',
                     fontStyle: 'bold',
                     fontFamily: '"Lucida Console", Monaco, monospace',
-                    precision: 1,
+                    precision: 0,
                     position: 'outside',
                     textShadow: true,
                     shadowBlur: 1,
@@ -951,7 +953,7 @@
                     "Xeon"
                 ],
                 datasets: [{
-                    data: [14, 29, 22, 12, 1, 18, 4],
+                    data: [1894, 29233, 3406, 220, 35, 354, 20],
                     backgroundColor: [
                         "#1f78b4",
                         "#b2df8a",
@@ -1006,46 +1008,6 @@
     }
 </script>
 
-<!-- doughnutChart with percentage inside -->
-<!-- <script>
-
-    function createChart(id, type, options) {
-      var data = {
-        labels: ['Sold', 'Opportunities'],
-        datasets: [
-          {
-            label: 'My First dataset',
-            data: [1000, 2000],
-            backgroundColor: [
-              '#67a2db',
-              '#01407d'
-            ]
-          }
-        ]
-      };
-
-      new Chart(document.getElementById(id), {
-        type: type,
-        data: data,
-        options: options
-      });
-    }
-
-
-    ['doughnut'].forEach(function (type) {
-      createChart(type + '-canvas2', type, {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          labels: {
-            render: 'percentage',
-            fontColor: ['white', 'white', 'white'],
-            precision: 2
-          }
-        }
-      });
-    });
-</script> -->
 <!-- bootstrap-daterangepicker -->
 <script>
     $(document).ready(function() {
