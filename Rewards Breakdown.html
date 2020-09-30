@@ -115,7 +115,7 @@
     <div class="row">
         <div class="col-xs-12">
             <div class="panel panel-default panel_section__quarter">
-                <div class="panel-heading panel-sticky">
+                <div class="panel-heading">
                     <div class="row">
                         <div class="col-xs-12 header-title__quarter">
                             <h2 class="bold section_main_header pull-left">
@@ -124,12 +124,12 @@
                                     <i class="fad fa-bullseye fa-stack-1x bullseye" data-fa-transform="shrink-4 up-3"></i>
                                     <i class="fas fa-hand-pointer fa-stack-1x hand-pointer"
                                         data-fa-transform="shrink-2 down-3 right-2"></i>
-                                </span> Monthly Earnings
+                                </span> Latest Year Earnings
                             </h2>
 
                             <div class="pos-rel pull-right">
                                 <!-- navigation pills  -->
-                                <ul class="nav nav-pills right-filter pull-left" role="tablist">
+                                <ul class="nav nav-pills ro right-filter pull-left" role="tablist">
                                     <li class="nav-item">
                                         <a href="#rewardsBreakdownSoldSection" aria-controls="latest_period" role="tab" data-toggle="tab" class="nav-link active">Units Earned</a>
                                     </li>
@@ -197,14 +197,13 @@
 
                         <!-- Units sold section -->
                         <div role="tabpanel" class="tab-pane fade in active" id="rewardsBreakdownSoldSection">
-                            <!-- <div class="hide" id="sold_section"> -->
-                            <div class="x_panel tile fixed_height_360 panel-rounded">
-                                <div class="x_title">
-                                    <h2>Units Earned</h2>
-                                    <div class="clearfix">&nbsp;</div>
-                                </div>
+                            <div class="col-md-8 col-sm-8 col-xs-12 rewards-earned-panel">
+                                <div class="x_panel tile fixed_height_360 no_border">
+                                    <div class="x_title">
+                                        <h2>Units Earned</h2>
+                                        <div class="clearfix">&nbsp;</div>
+                                    </div>
 
-                                <div class="col-xs-8">
                                     <div class="infografic-legend">
                                         <div class="widget_summary">
                                             <div class="w_left widget_summary__left_panel left-legend-panel"></div>
@@ -1591,562 +1590,607 @@
 
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="col-xs-4 rb_piechart">
-                                    <canvas class="circle_chart" id="earningPie" height="280" width="=320" style="display: inline-block;"></canvas>
+                                    <div class="summary-items-panel">
+                                        <div class="widget_summary">
+                                            <div class="w_left widget_summary__left_panel left-legend-panel"></div>
+                                            <div class="w_center widget_summary_right_panel right_legend-panel">
+                                                <hr>
+                                                <ul class="infografic-legend__list">
+                                                    <li class="one_margin_right title-icon">
+                                                        <i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>1,397
+                                                    </li>
+                                                    <li>
+                                                        <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>$35,162</li>
+                                                    <li class="legend_progress_item2"></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-
                             </div>
-                            <!-- </div> -->
+
+                            <div class="col-md-4 col-sm-4 col-xs-12 oppo-earning-panel">
+                                <div class="x_panel no_border">
+                                    <div class="x_title overview_title">
+                                        <h2>Earnings per cpu</h2>
+                                    </div>
+                                    <div class="text-center pos-rel">
+                                        <canvas class="circle_chart" id="earningPie" height="300" style="display: inline-block;"></canvas>
+                                        <span class="position-center h3">$ 35,162</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <!-- //Units sold section -->
 
                         <!-- Units Opportunities section -->
                         <div role="tabpanel" class="tab-pane fade" id="rewardsBreakdownOutstandingSection">
-                            <div class="" id="outstanding_section">
-                                <div class="x_panel tile fixed_height_360 panel-rounded">
+                            <div class="col-md-8 col-sm-8 col-xs-12 rewards-earned-panel">
+                                <div class="x_panel tile fixed_height_360 no_border">
                                     <div class="x_title">
                                         <h2>Missed Opportunities </h2>
-
                                         <div class="clearfix">&nbsp;</div>
                                     </div>
 
-                                    <div class="col-xs-8">
-                                        <div class="infografic-legend">
-                                            <div class="widget_summary">
-                                                <div class="w_left widget_summary__left_panel left-legend-panel"></div>
-                                                <div class="w_center widget_summary_right_panel right_legend-panel">
-                                                    <ul class="infografic-legend__list">
-                                                        <li><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>Total Units
-                                                        </li>
-                                                        <li>
-                                                            <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>Potential Earnings
-                                                        </li>
-                                                        <li class="legend_progress_item2"><i class="fad fa-handshake one_margin_right br_opportunities_icon" aria-hidden="true"></i>Opportunities</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                                            <div class="x_content rb_x_content">
-
-                                                <!-- CPU Core i9  83% / 66 Units-->
-                                                <div class="widget_summary" role="tab" id="headingFour">
-                                                    <div class="w_left widget_summary__left_panel widget_summary--collapse-label" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                                                        <div class="widget_summary__left_panel-item">
-                                                            <div class="rb_brand_category_legend-rebate rbbcl-rebate4"></div>
-                                                            <a role="button" title="show / hide outstanding units">
-                            Core<sup class="intel_superscript_sm">™</sup> i9</a>
-                                                            <i class="fa fa-angle-right collapse_icon"></i>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="w_center widget_summary_right_panel">
-                                                        <div class="progress_units">
-                                                            <div class="progress-bar_items">
-                                                                <div><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>5
-                                                                </div>
-
-                                                                <div>
-                                                                    <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>$66
-                                                                </div>
-
-                                                                <div class="progress progress_quarter">
-                                                                    <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="83" class="progress-bar bg-red_grad" role="progressbar" style="width: 83.34%;">
-                                                                    </div>
-                                                                    <div class="progress-bar_content"><i class="fas fa-handshake one_margin_right" aria-hidden="true"></i>83%</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="clearfix">&nbsp;</div>
-                                                </div>
-
-                                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                                                    <div class="panel-body panel-body_progress-collapse">
-                                                        <div class=" widget-summary-table-left-panel hidden"></div>
-                                                        <table class="table rbt_table table-hover panel-collapse-table table-fixed tablesorter table_no_border tablesorter_content_index">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th class="table_col_4"></th>
-                                                                    <th class="table_col_18">CPU Name</th>
-                                                                    <th class="table_col_18">Model Number</th>
-                                                                    <th class="table_col_18">Earnings</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>1.</td>
-                                                                    <td>
-                                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate4">
-                                                                            <i class="fal fa-microchip cpu-legend-icon"></i>
-                                                                        </div>
-                                                                        Core<sup class="intel_superscript_sm">™</sup> i9
-                                                                    </td>
-                                                                    <td>10900X</td>
-                                                                    <td>$27</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>2.</td>
-                                                                    <td>
-                                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate4">
-                                                                            <i class="fal fa-microchip cpu-legend-icon"></i>
-                                                                        </div>
-                                                                        Core<sup class="intel_superscript_sm">™</sup> i9
-                                                                    </td>
-                                                                    <td>9980HK</td>
-                                                                    <td>$24</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>3.</td>
-                                                                    <td>
-                                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate4">
-                                                                            <i class="fal fa-microchip cpu-legend-icon"></i>
-                                                                        </div>
-                                                                        Core<sup class="intel_superscript_sm">™</sup> i9
-                                                                    </td>
-                                                                    <td>9900K</td>
-                                                                    <td>$7</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>4.</td>
-                                                                    <td>
-                                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate4">
-                                                                            <i class="fal fa-microchip cpu-legend-icon"></i>
-                                                                        </div>
-                                                                        Core<sup class="intel_superscript_sm">™</sup> i9
-                                                                    </td>
-                                                                    <td>9900KS</td>
-                                                                    <td>$6</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>5.</td>
-                                                                    <td>
-                                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate4">
-                                                                            <i class="fal fa-microchip cpu-legend-icon"></i>
-                                                                        </div>
-                                                                        Core<sup class="intel_superscript_sm">™</sup> i9
-                                                                    </td>
-                                                                    <td>9880H </td>
-                                                                    <td>$2</td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                                <!-- /CPU Core i9 -->
-
-                                                <!-- CPU Xeon 50% / 31 Units-->
-                                                <div class="widget_summary" role="tab" id="headingSeven">
-                                                    <div class="w_left widget_summary__left_panel widget_summary--collapse-label" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
-                                                        <div class="widget_summary__left_panel-item">
-                                                            <div class="rb_brand_category_legend-rebate rbbcl-rebate7"></div>
-                                                            <a role="button" title="show / hide Opportunities units">
-                            Xeon<sup class="intel_superscript_sm">®</sup></a>
-                                                            <i class="fa fa-angle-right collapse_icon"></i>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="w_center widget_summary_right_panel">
-                                                        <div class="progress_units">
-                                                            <div class="progress-bar_items">
-                                                                <div><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>1
-                                                                </div>
-
-                                                                <div>
-                                                                    <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>$31
-                                                                </div>
-
-                                                                <div class="progress progress_quarter">
-                                                                    <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" class="progress-bar bg-red_grad" role="progressbar" style="width: 50%;">
-                                                                    </div>
-                                                                    <div class="progress-bar_content"><i class="fas fa-handshake one_margin_right" aria-hidden="true"></i>50%</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="clearfix">&nbsp;</div>
-                                                </div>
-
-                                                <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
-                                                    <div class="panel-body panel-body_progress-collapse">
-                                                        <div class=" widget-summary-table-left-panel hidden"></div>
-                                                        <table class="table rbt_table table-hover panel-collapse-table table-fixed tablesorter table_no_border tablesorter_content_index">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th class="table_col_4"></th>
-                                                                    <th class="table_col_18">CPU Name</th>
-                                                                    <th class="table_col_18">Model Number</th>
-                                                                    <th class="table_col_18">Earnings</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>1.</td>
-                                                                    <td>
-                                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate7">
-                                                                            <i class="fal fa-microchip cpu-legend-icon-dark"></i>
-                                                                        </div>
-                                                                        Xeon<sup class="intel_superscript_sm">®</sup>
-                                                                    </td>
-                                                                    <td>N4200</td>
-                                                                    <td>$31</td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                                <!-- /CPU Xeon -->
-
-                                                <!-- CPU Core m3 50% / 26 Units-->
-                                                <div class="widget_summary" role="tab" id="headingFive">
-                                                    <div class="w_left widget_summary__left_panel widget_summary--collapse-label" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                                                        <div class="widget_summary__left_panel-item">
-                                                            <div class="rb_brand_category_legend-rebate rbbcl-rebate5"></div>
-                                                            <a role="button" title="show / hide outstanding units">
-                            Core<sup class="intel_superscript_sm">™</sup> m3</a>
-                                                            <i class="fa fa-angle-right collapse_icon"></i>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="w_center widget_summary_right_panel">
-                                                        <div class="progress_units">
-                                                            <div class="progress-bar_items">
-                                                                <div><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>2
-                                                                </div>
-
-                                                                <div>
-                                                                    <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>$26
-                                                                </div>
-
-                                                                <div class="progress progress_quarter">
-                                                                    <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" class="progress-bar bg-red_grad" role="progressbar" style="width: 50%;">
-                                                                    </div>
-                                                                    <div class="progress-bar_content"><i class="fas fa-handshake one_margin_right" aria-hidden="true"></i>50%</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="clearfix">&nbsp;</div>
-                                                </div>
-
-                                                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                                                    <div class="panel-body panel-body_progress-collapse">
-                                                        <div class=" widget-summary-table-left-panel hidden"></div>
-                                                        <table class="table rbt_table table-hover panel-collapse-table table-fixed tablesorter table_no_border tablesorter_content_index">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th class="table_col_4"></th>
-                                                                    <th class="table_col_18">CPU Name</th>
-                                                                    <th class="table_col_18">Model Number</th>
-                                                                    <th class="table_col_18">Earnings</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>1.</td>
-                                                                    <td>
-                                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate5">
-                                                                            <i class="fal fa-microchip cpu-legend-icon"></i>
-                                                                        </div>
-                                                                        Core<sup class="intel_superscript_sm">™</sup> m3
-                                                                    </td>
-                                                                    <td>6Y30</td>
-                                                                    <td>$25</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>2.</td>
-                                                                    <td>
-                                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate5">
-                                                                            <i class="fal fa-microchip cpu-legend-icon"></i>
-                                                                        </div>
-                                                                        Core<sup class="intel_superscript_sm">™</sup> m3
-                                                                    </td>
-                                                                    <td>8100Y</td>
-                                                                    <td>$1</td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                                <!-- /CPU Core m3 -->
-
-                                                <!-- CPU Core i5 9% / 32 Units-->
-                                                <div class="widget_summary" role="tab" id="headingTwo">
-                                                    <div class="w_left widget_summary__left_panel widget_summary--collapse-label" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                                        <div class="widget_summary__left_panel-item">
-                                                            <div class="rb_brand_category_legend-rebate rbbcl-rebate2"></div>
-                                                            <a role="button" title="show / hide outstanding units">
-                            Core<sup class="intel_superscript_sm">™</sup> i5</a>
-                                                            <i class="fa fa-angle-right collapse_icon"></i>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="w_center widget_summary_right_panel">
-                                                        <div class="progress_units">
-                                                            <div class="progress-bar_items">
-                                                                <div><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>2
-                                                                </div>
-
-                                                                <div>
-                                                                    <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>$32
-                                                                </div>
-
-                                                                <div class="progress progress_quarter">
-                                                                    <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="9" class="progress-bar bg-yellow_grad" role="progressbar" style="width: 9.09%;">
-                                                                    </div>
-                                                                    <div class="progress-bar_content"><i class="fas fa-handshake one_margin_right" aria-hidden="true"></i>9%</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="clearfix">&nbsp;</div>
-                                                </div>
-
-                                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                                    <div class="panel-body panel-body_progress-collapse">
-                                                        <div class=" widget-summary-table-left-panel hidden"></div>
-                                                        <table class="table rbt_table table-hover panel-collapse-table table-fixed tablesorter table_no_border tablesorter_content_index">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th class="table_col_4"></th>
-                                                                    <th class="table_col_18">CPU Name</th>
-                                                                    <th class="table_col_18">Model Number</th>
-                                                                    <th class="table_col_18">Earnings</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>1.</td>
-                                                                    <td>
-                                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate2">
-                                                                            <i class="fal fa-microchip cpu-legend-icon"></i>
-                                                                        </div>
-                                                                        Core<sup class="intel_superscript_sm">™</sup> i5
-                                                                    </td>
-                                                                    <td>8400</td>
-                                                                    <td>$28</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>2.</td>
-                                                                    <td>
-                                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate2">
-                                                                            <i class="fal fa-microchip cpu-legend-icon"></i>
-                                                                        </div>
-                                                                        Core<sup class="intel_superscript_sm">™</sup> i5
-                                                                    </td>
-                                                                    <td>8265U</td>
-                                                                    <td>$4</td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                                <!-- /CPU Core i5 -->
-
-                                                <!-- CPU Core i3 9% / 22 Units-->
-                                                <div class="widget_summary" role="tab" id="headingOne">
-                                                    <div class="w_left widget_summary__left_panel widget_summary--collapse-label" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                        <div class="widget_summary__left_panel-item">
-                                                            <div class="rb_brand_category_legend-rebate rbbcl-rebate1"></div>
-                                                            <a role="button" title="show / hide outstanding units">
-                            Core<sup class="intel_superscript_sm">™</sup> i3</a>
-                                                            <i class="fa fa-angle-right collapse_icon"></i>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="w_center widget_summary_right_panel">
-                                                        <div class="progress_units">
-                                                            <div class="progress-bar_items">
-                                                                <div><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>3
-                                                                </div>
-
-                                                                <div>
-                                                                    <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>$22
-                                                                </div>
-
-                                                                <div class="progress progress_quarter">
-                                                                    <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="9" class="progress-bar bg-yellow_grad" role="progressbar" style="width: 8.57%;">
-                                                                    </div>
-                                                                    <div class="progress-bar_content"><i class="fas fa-handshake one_margin_right" aria-hidden="true"></i>9%</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="clearfix">&nbsp;</div>
-                                                </div>
-
-                                                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                                                    <div class="panel-body panel-body_progress-collapse">
-                                                        <div class=" widget-summary-table-left-panel hidden"></div>
-                                                        <table class="table rbt_table table-hover panel-collapse-table table-fixed tablesorter table_no_border tablesorter_content_index">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th class="table_col_4"></th>
-                                                                    <th class="table_col_18">CPU Name</th>
-                                                                    <th class="table_col_18">Model Number</th>
-                                                                    <th class="table_col_18">Earnings</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>1.</td>
-                                                                    <td>
-                                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate1">
-                                                                            <i class="fal fa-microchip cpu-legend-icon"></i>
-                                                                        </div>
-                                                                        Core<sup class="intel_superscript_sm">™</sup> i3
-                                                                    </td>
-                                                                    <td>8145U</td>
-                                                                    <td>$10</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>2.</td>
-                                                                    <td>
-                                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate1">
-                                                                            <i class="fal fa-microchip cpu-legend-icon"></i>
-                                                                        </div>
-                                                                        Core<sup class="intel_superscript_sm">™</sup> i3
-                                                                    </td>
-                                                                    <td>10110U</td>
-                                                                    <td>$7</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>3.</td>
-                                                                    <td>
-                                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate1">
-                                                                            <i class="fal fa-microchip cpu-legend-icon"></i>
-                                                                        </div>
-                                                                        Core<sup class="intel_superscript_sm">™</sup> i3
-                                                                    </td>
-                                                                    <td>9350K</td>
-                                                                    <td>$5</td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                                <!-- /CPU Core i3 -->
-
-                                                <!-- CPU Core i7 3% / 38 Units-->
-                                                <div class="widget_summary" role="tab" id="headingThree">
-                                                    <div class="w_left widget_summary__left_panel widget_summary--collapse-label" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                                        <div class="widget_summary__left_panel-item">
-                                                            <div class="rb_brand_category_legend-rebate rbbcl-rebate3"></div>
-                                                            <a role="button" title="show / hide outstanding units">
-                            Core<sup class="intel_superscript_sm">™</sup> i7</a>
-                                                            <i class="fa fa-angle-right collapse_icon"></i>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="w_center widget_summary_right_panel">
-                                                        <div class="progress_units">
-                                                            <div class="progress-bar_items">
-                                                                <div><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>1
-                                                                </div>
-
-                                                                <div>
-                                                                    <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>$38
-                                                                </div>
-
-                                                                <div class="progress progress_quarter">
-                                                                    <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="3" class="progress-bar bg-yellow_grad" role="progressbar" style="width: 2.56%;">
-                                                                    </div>
-                                                                    <div class="progress-bar_content"><i class="fas fa-handshake one_margin_right" aria-hidden="true"></i>3%</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="clearfix">&nbsp;</div>
-                                                </div>
-
-                                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                                    <div class="panel-body panel-body_progress-collapse">
-                                                        <div class=" widget-summary-table-left-panel hidden"></div>
-                                                        <table class="table rbt_table table-hover panel-collapse-table table-fixed tablesorter table_no_border tablesorter_content_index">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th class="table_col_4"></th>
-                                                                    <th class="table_col_18">CPU Name</th>
-                                                                    <th class="table_col_18">Model Number</th>
-                                                                    <th class="table_col_18">Earnings</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>1.</td>
-                                                                    <td>
-                                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate3">
-                                                                            <i class="fal fa-microchip cpu-legend-icon"></i>
-                                                                        </div>
-                                                                        Core<sup class="intel_superscript_sm">™</sup> i7
-                                                                    </td>
-                                                                    <td>8565U</td>
-                                                                    <td>$38</td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                                <!-- /CPU Core i7 -->
-
-                                                <!-- CPU Pentium 0% / 0 Unit-->
-                                                <div class="widget_summary" role="tab" id="headingSix">
-                                                    <div class="w_left widget_summary__left_panel widget_summary--collapse-label" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
-                                                        <div class="widget_summary__left_panel-item">
-                                                            <div class="rb_brand_category_legend-rebate rbbcl-rebate6"></div>
-                                                            <a role="button" title="show / hide Opportunities units">
-                            Pentium<sup class="intel_superscript_sm">®</sup> Gold</a>
-                                                            <i class="fa fa-angle-right collapse_icon"></i>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="w_center widget_summary_right_panel">
-                                                        <div class="progress_units">
-                                                            <div class="progress-bar_items">
-                                                                <div><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>0
-                                                                </div>
-
-                                                                <div>
-                                                                    <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>$0
-                                                                </div>
-
-                                                                <div class="progress progress_quarter">
-                                                                    <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar bg-green_grad" role="progressbar" style="width: 100%;">
-                                                                    </div>
-                                                                    <div class="progress-bar_content progress-bar_content__completed">
-                                                                        <i class="fas fa-handshake progress-bar_icon__completed" aria-hidden="true"></i>
-                                                                        <div class="full_center_text">COMPLETED</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="clearfix">&nbsp;</div>
-                                                </div>
-
-                                                <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-                                                    <div class="panel-body panel-body_progress-collapse panel-body_progress-collapse--empty-container">
-                                                        <h5 class="panel-collapse-heading">There are no opportunity products</h5>
-                                                    </div>
-                                                </div>
-                                                <!-- /CPU Pentium -->
-
+                                    <div class="infografic-legend">
+                                        <div class="widget_summary">
+                                            <div class="w_left widget_summary__left_panel left-legend-panel"></div>
+                                            <div class="w_center widget_summary_right_panel right_legend-panel">
+                                                <ul class="infografic-legend__list">
+                                                    <li><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>Total Units
+                                                    </li>
+                                                    <li>
+                                                        <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>Potential Earnings
+                                                    </li>
+                                                    <li class="legend_progress_item2"><i class="fad fa-handshake one_margin_right br_opportunities_icon" aria-hidden="true"></i>Opportunities</li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="col-xs-4 rb_piechart">
-                                        <canvas class="circle_chart" id="lossPie" height="280" width="=320" style="display: inline-block;" \></canvas>
+                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="x_content rb_x_content">
+
+                                            <!-- CPU Core i9  83% / 66 Units-->
+                                            <div class="widget_summary" role="tab" id="headingFour">
+                                                <div class="w_left widget_summary__left_panel widget_summary--collapse-label" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                                    <div class="widget_summary__left_panel-item">
+                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate4"></div>
+                                                        <a role="button" title="show / hide outstanding units">Core<sup class="intel_superscript_sm">™</sup> i9</a>
+                                                        <i class="fa fa-angle-right collapse_icon"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="w_center widget_summary_right_panel">
+                                                    <div class="progress_units">
+                                                        <div class="progress-bar_items">
+                                                            <div><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>5
+                                                            </div>
+
+                                                            <div>
+                                                                <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>$66
+                                                            </div>
+
+                                                            <div class="progress progress_quarter">
+                                                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="83" class="progress-bar bg-red_grad" role="progressbar" style="width: 83.34%;">
+                                                                </div>
+                                                                <div class="progress-bar_content"><i class="fas fa-handshake one_margin_right" aria-hidden="true"></i>83%</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="clearfix">&nbsp;</div>
+                                            </div>
+
+                                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                                <div class="panel-body panel-body_progress-collapse">
+                                                    <div class=" widget-summary-table-left-panel hidden"></div>
+                                                    <table class="table rbt_table table-hover panel-collapse-table table-fixed tablesorter table_no_border tablesorter_content_index">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="table_col_4"></th>
+                                                                <th class="table_col_18">CPU Name</th>
+                                                                <th class="table_col_18">Model Number</th>
+                                                                <th class="table_col_18">Earnings</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate4">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i9
+                                                                </td>
+                                                                <td>10900X</td>
+                                                                <td>$27</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate4">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i9
+                                                                </td>
+                                                                <td>9980HK</td>
+                                                                <td>$24</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate4">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i9
+                                                                </td>
+                                                                <td>9900K</td>
+                                                                <td>$7</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>4.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate4">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i9
+                                                                </td>
+                                                                <td>9900KS</td>
+                                                                <td>$6</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>5.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate4">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i9
+                                                                </td>
+                                                                <td>9880H </td>
+                                                                <td>$2</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- /CPU Core i9 -->
+
+                                            <!-- CPU Xeon 50% / 31 Units-->
+                                            <div class="widget_summary" role="tab" id="headingSeven">
+                                                <div class="w_left widget_summary__left_panel widget_summary--collapse-label" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                                                    <div class="widget_summary__left_panel-item">
+                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate7"></div>
+                                                        <a role="button" title="show / hide Opportunities units">
+                            Xeon<sup class="intel_superscript_sm">®</sup></a>
+                                                        <i class="fa fa-angle-right collapse_icon"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="w_center widget_summary_right_panel">
+                                                    <div class="progress_units">
+                                                        <div class="progress-bar_items">
+                                                            <div><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>1
+                                                            </div>
+
+                                                            <div>
+                                                                <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>$31
+                                                            </div>
+
+                                                            <div class="progress progress_quarter">
+                                                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" class="progress-bar bg-red_grad" role="progressbar" style="width: 50%;">
+                                                                </div>
+                                                                <div class="progress-bar_content"><i class="fas fa-handshake one_margin_right" aria-hidden="true"></i>50%</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="clearfix">&nbsp;</div>
+                                            </div>
+
+                                            <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                                                <div class="panel-body panel-body_progress-collapse">
+                                                    <div class=" widget-summary-table-left-panel hidden"></div>
+                                                    <table class="table rbt_table table-hover panel-collapse-table table-fixed tablesorter table_no_border tablesorter_content_index">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="table_col_4"></th>
+                                                                <th class="table_col_18">CPU Name</th>
+                                                                <th class="table_col_18">Model Number</th>
+                                                                <th class="table_col_18">Earnings</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate7">
+                                                                        <i class="fal fa-microchip cpu-legend-icon-dark"></i>
+                                                                    </div>
+                                                                    Xeon<sup class="intel_superscript_sm">®</sup>
+                                                                </td>
+                                                                <td>N4200</td>
+                                                                <td>$31</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- /CPU Xeon -->
+
+                                            <!-- CPU Core m3 50% / 26 Units-->
+                                            <div class="widget_summary" role="tab" id="headingFive">
+                                                <div class="w_left widget_summary__left_panel widget_summary--collapse-label" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                                    <div class="widget_summary__left_panel-item">
+                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate5"></div>
+                                                        <a role="button" title="show / hide outstanding units">
+                            Core<sup class="intel_superscript_sm">™</sup> m3</a>
+                                                        <i class="fa fa-angle-right collapse_icon"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="w_center widget_summary_right_panel">
+                                                    <div class="progress_units">
+                                                        <div class="progress-bar_items">
+                                                            <div><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>2
+                                                            </div>
+
+                                                            <div>
+                                                                <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>$26
+                                                            </div>
+
+                                                            <div class="progress progress_quarter">
+                                                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" class="progress-bar bg-red_grad" role="progressbar" style="width: 50%;">
+                                                                </div>
+                                                                <div class="progress-bar_content"><i class="fas fa-handshake one_margin_right" aria-hidden="true"></i>50%</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="clearfix">&nbsp;</div>
+                                            </div>
+
+                                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                                <div class="panel-body panel-body_progress-collapse">
+                                                    <div class=" widget-summary-table-left-panel hidden"></div>
+                                                    <table class="table rbt_table table-hover panel-collapse-table table-fixed tablesorter table_no_border tablesorter_content_index">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="table_col_4"></th>
+                                                                <th class="table_col_18">CPU Name</th>
+                                                                <th class="table_col_18">Model Number</th>
+                                                                <th class="table_col_18">Earnings</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate5">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> m3
+                                                                </td>
+                                                                <td>6Y30</td>
+                                                                <td>$25</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate5">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> m3
+                                                                </td>
+                                                                <td>8100Y</td>
+                                                                <td>$1</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- /CPU Core m3 -->
+
+                                            <!-- CPU Core i5 9% / 32 Units-->
+                                            <div class="widget_summary" role="tab" id="headingTwo">
+                                                <div class="w_left widget_summary__left_panel widget_summary--collapse-label" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                    <div class="widget_summary__left_panel-item">
+                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate2"></div>
+                                                        <a role="button" title="show / hide outstanding units">
+                            Core<sup class="intel_superscript_sm">™</sup> i5</a>
+                                                        <i class="fa fa-angle-right collapse_icon"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="w_center widget_summary_right_panel">
+                                                    <div class="progress_units">
+                                                        <div class="progress-bar_items">
+                                                            <div><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>2
+                                                            </div>
+
+                                                            <div>
+                                                                <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>$32
+                                                            </div>
+
+                                                            <div class="progress progress_quarter">
+                                                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="9" class="progress-bar bg-yellow_grad" role="progressbar" style="width: 9.09%;">
+                                                                </div>
+                                                                <div class="progress-bar_content"><i class="fas fa-handshake one_margin_right" aria-hidden="true"></i>9%</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="clearfix">&nbsp;</div>
+                                            </div>
+
+                                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                <div class="panel-body panel-body_progress-collapse">
+                                                    <div class=" widget-summary-table-left-panel hidden"></div>
+                                                    <table class="table rbt_table table-hover panel-collapse-table table-fixed tablesorter table_no_border tablesorter_content_index">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="table_col_4"></th>
+                                                                <th class="table_col_18">CPU Name</th>
+                                                                <th class="table_col_18">Model Number</th>
+                                                                <th class="table_col_18">Earnings</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate2">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i5
+                                                                </td>
+                                                                <td>8400</td>
+                                                                <td>$28</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate2">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i5
+                                                                </td>
+                                                                <td>8265U</td>
+                                                                <td>$4</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- /CPU Core i5 -->
+
+                                            <!-- CPU Core i3 9% / 22 Units-->
+                                            <div class="widget_summary" role="tab" id="headingOne">
+                                                <div class="w_left widget_summary__left_panel widget_summary--collapse-label" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    <div class="widget_summary__left_panel-item">
+                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate1"></div>
+                                                        <a role="button" title="show / hide outstanding units">
+                            Core<sup class="intel_superscript_sm">™</sup> i3</a>
+                                                        <i class="fa fa-angle-right collapse_icon"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="w_center widget_summary_right_panel">
+                                                    <div class="progress_units">
+                                                        <div class="progress-bar_items">
+                                                            <div><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>3
+                                                            </div>
+
+                                                            <div>
+                                                                <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>$22
+                                                            </div>
+
+                                                            <div class="progress progress_quarter">
+                                                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="9" class="progress-bar bg-yellow_grad" role="progressbar" style="width: 8.57%;">
+                                                                </div>
+                                                                <div class="progress-bar_content"><i class="fas fa-handshake one_margin_right" aria-hidden="true"></i>9%</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="clearfix">&nbsp;</div>
+                                            </div>
+
+                                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                                <div class="panel-body panel-body_progress-collapse">
+                                                    <div class=" widget-summary-table-left-panel hidden"></div>
+                                                    <table class="table rbt_table table-hover panel-collapse-table table-fixed tablesorter table_no_border tablesorter_content_index">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="table_col_4"></th>
+                                                                <th class="table_col_18">CPU Name</th>
+                                                                <th class="table_col_18">Model Number</th>
+                                                                <th class="table_col_18">Earnings</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate1">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
+                                                                </td>
+                                                                <td>8145U</td>
+                                                                <td>$10</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate1">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
+                                                                </td>
+                                                                <td>10110U</td>
+                                                                <td>$7</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate1">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
+                                                                </td>
+                                                                <td>9350K</td>
+                                                                <td>$5</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- /CPU Core i3 -->
+
+                                            <!-- CPU Core i7 3% / 38 Units-->
+                                            <div class="widget_summary" role="tab" id="headingThree">
+                                                <div class="w_left widget_summary__left_panel widget_summary--collapse-label" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                                    <div class="widget_summary__left_panel-item">
+                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate3"></div>
+                                                        <a role="button" title="show / hide outstanding units">
+                            Core<sup class="intel_superscript_sm">™</sup> i7</a>
+                                                        <i class="fa fa-angle-right collapse_icon"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="w_center widget_summary_right_panel">
+                                                    <div class="progress_units">
+                                                        <div class="progress-bar_items">
+                                                            <div><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>1
+                                                            </div>
+
+                                                            <div>
+                                                                <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>$38
+                                                            </div>
+
+                                                            <div class="progress progress_quarter">
+                                                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="3" class="progress-bar bg-yellow_grad" role="progressbar" style="width: 2.56%;">
+                                                                </div>
+                                                                <div class="progress-bar_content"><i class="fas fa-handshake one_margin_right" aria-hidden="true"></i>3%</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="clearfix">&nbsp;</div>
+                                            </div>
+
+                                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                <div class="panel-body panel-body_progress-collapse">
+                                                    <div class=" widget-summary-table-left-panel hidden"></div>
+                                                    <table class="table rbt_table table-hover panel-collapse-table table-fixed tablesorter table_no_border tablesorter_content_index">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="table_col_4"></th>
+                                                                <th class="table_col_18">CPU Name</th>
+                                                                <th class="table_col_18">Model Number</th>
+                                                                <th class="table_col_18">Earnings</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate3">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i7
+                                                                </td>
+                                                                <td>8565U</td>
+                                                                <td>$38</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- /CPU Core i7 -->
+
+                                            <!-- CPU Pentium 0% / 0 Unit-->
+                                            <div class="widget_summary" role="tab" id="headingSix">
+                                                <div class="w_left widget_summary__left_panel widget_summary--collapse-label" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                                    <div class="widget_summary__left_panel-item">
+                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate6"></div>
+                                                        <a role="button" title="show / hide Opportunities units">
+                            Pentium<sup class="intel_superscript_sm">®</sup> Gold</a>
+                                                        <i class="fa fa-angle-right collapse_icon"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="w_center widget_summary_right_panel">
+                                                    <div class="progress_units">
+                                                        <div class="progress-bar_items">
+                                                            <div><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>0
+                                                            </div>
+
+                                                            <div>
+                                                                <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>$0
+                                                            </div>
+
+                                                            <div class="progress progress_quarter">
+                                                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar bg-green_grad" role="progressbar" style="width: 100%;">
+                                                                </div>
+                                                                <div class="progress-bar_content progress-bar_content__completed">
+                                                                    <i class="fas fa-handshake progress-bar_icon__completed" aria-hidden="true"></i>
+                                                                    <div class="full_center_text">COMPLETED</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="clearfix">&nbsp;</div>
+                                            </div>
+
+                                            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                                <div class="panel-body panel-body_progress-collapse panel-body_progress-collapse--empty-container">
+                                                    <h5 class="panel-collapse-heading">There are no opportunity products</h5>
+                                                </div>
+                                            </div>
+                                            <!-- /CPU Pentium -->
+
+                                        </div>
+                                    </div>
+
+                                    <div class="summary-items-panel">
+                                        <div class="widget_summary">
+                                            <div class="w_left widget_summary__left_panel left-legend-panel"></div>
+                                            <div class="w_center widget_summary_right_panel right_legend-panel">
+                                                <hr>
+                                                <ul class="infografic-legend__list">
+                                                    <li class="one_margin_right title-icon">
+                                                        <i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>14
+                                                    </li>
+                                                    <li>
+                                                        <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>$215</li>
+                                                    <li class="legend_progress_item2"></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-4 col-xs-12 oppo-earning-panel">
+                                <div class="x_panel no_border">
+                                    <div class="x_title overview_title">
+                                        <h3>Missed Potential Earnings</h3>
+                                    </div>
+
+                                    <div class="text-center pos-rel">
+                                        <canvas class="circle_chart" id="lossPie" height="300" style="display: inline-block;"></canvas>
+                                        <span class="position-center h3">$ 215</span>
                                     </div>
                                 </div>
                             </div>
@@ -2475,9 +2519,9 @@
         var options = {
             legend: {
                 display: true,
-                position: 'top',
+                position: 'bottom',
             },
-            responsive: true,
+            responsive: false,
             maintainAspectRatio: false,
             cutoutPercentage: 80,
             plugins: {
@@ -2555,9 +2599,9 @@
         var options = {
             legend: {
                 display: true,
-                position: 'top',
+                position: 'bottom',
             },
-            responsive: true,
+            responsive: false,
             maintainAspectRatio: false,
             cutoutPercentage: 80,
             plugins: {

@@ -66,6 +66,21 @@ a.paginate_button,
     padding-right: 15px;
 }
 
+ul.right-filter+.blue-date-filter {
+    padding-top: 2px;
+}
+
+ul.right-filter+.blue-date-filter .dropdown-toggle {
+    line-height: 29px;
+    font-size: 100%;
+    background: #3da4fa;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+
 body .container.body .right_col {
     background: #e4e6e9;
 }
@@ -819,6 +834,7 @@ input[type="search"] {
 }
 
 .nav.nav-pills,
+.nav.nav-pills.rb,
 .nav.nav-pills.ro {
     margin-top: 0em;
     margin-bottom: 1em;
@@ -834,6 +850,16 @@ input[type="search"] {
 .nav-pills .nav-link {
     font-weight: 700;
     text-shadow: 1px 1px 1px #fff;
+}
+
+.nav-pills .nav-link:hover {
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px #cbced1;
+}
+
+.nav.nav-pills.right-filter .nav-item+.nav-item {
+    margin-right: 0.2em;
+    margin-left: 0.5em;
 }
 
 .nav-pills.right-filter .nav-link.active,
@@ -1423,7 +1449,7 @@ textarea.field.form-control {
 .quater_earnings_icon,
 span.quater_earnings_icon {
     font-size: 16px;
-    margin-top: -0.65em;
+    margin-top: -0.7em;
 }
 
 .qtd_rewards_icon {
@@ -2242,6 +2268,11 @@ td span.bsl-table-val {
     cursor: pointer;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+.rewardsbreakdown-portlet .right-filter,
+.portlet-decorate.portlet-journal-content .right-filter {
+    margin-right: 20px;
 }
 
 .text-180 {
