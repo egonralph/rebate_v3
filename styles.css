@@ -719,7 +719,7 @@ a#brand_sku_table_next:hover,
 }
 
 .header-title__rewards {
-    margin-top: -0.2em;
+    margin-top: -0.5em;
     margin-bottom: -0.5em;
 }
 
@@ -933,6 +933,10 @@ input[type="search"] {
     padding-left: 5px;
 }
 
+.oppo-earning-panel .x_panel {
+    margin-bottom: 0;
+}
+
 .opportunity_status_icon {
     margin-right: 1em;
     margin-left: 1em;
@@ -1015,13 +1019,14 @@ input[type="search"] {
     height: auto;
 }
 
-.panel-body__quarter {
-    height: 488px;
+.panel-body__quarter,
+.panel-body-quarter {
+    height: auto;
 }
 
 @media (max-width: 991px) {
     .panel-body__quarter {
-        height: 430px;
+        /* height: 430px; */
     }
     .panel-body__historical {
         height: 510px;
@@ -1080,7 +1085,9 @@ input[type="search"] {
     padding: 5px;
 }
 
-.panel-heading+.panel-body.panel-body__overall {
+.panel-heading+.panel-body.panel-body__overall,
+.panel-heading+.panel-body.panel-body__quarter,
+.panel-heading+.panel-body.panel-body-quarter {
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -1104,12 +1111,13 @@ input[type="search"] {
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, .075) !important;
 }
 
-.panel_section__historical,
-.panel-section__overall,
-.panel_section__products,
-.panel_section__rewards,
-.panel_section__quarter {
-    margin: 0 0.5rem;
+.panel.panel_section__historical,
+.panel.panel-section__overall,
+.panel.panel_section__products,
+.panel.panel_section__rewards,
+.panel.panel_section__quarter,
+.panel.panel_section-quarter {
+    margin: 0 0.5rem 2.5em 0.5rem;
     border: none;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, .075) !important;
 }
@@ -1450,6 +1458,7 @@ textarea.field.form-control {
 span.quater_earnings_icon {
     font-size: 16px;
     margin-top: -0.7em;
+    margin-bottom: -0.7em;
 }
 
 .qtd_rewards_icon {

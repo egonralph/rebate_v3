@@ -114,7 +114,7 @@
     <!-- quarter panel section -->
     <div class="row">
         <div class="col-xs-12">
-            <div class="panel panel-default panel_section__quarter">
+            <div class="panel panel-default panel_section-quarter">
                 <div class="panel-heading">
                     <div class="row">
                         <div class="col-xs-12 header-title__quarter">
@@ -191,7 +191,7 @@
                     </div>
                 </div>
 
-                <div class="panel-body panel-body__quarter">
+                <div class="panel-body panel-body-quarter">
                     <!-- Tab panes -->
                     <div class="tab-content">
 
@@ -199,9 +199,8 @@
                         <div role="tabpanel" class="tab-pane fade in active" id="rewardsBreakdownSoldSection">
                             <div class="col-md-8 col-sm-8 col-xs-12 rewards-earned-panel">
                                 <div class="x_panel tile fixed_height_360 no_border">
-                                    <div class="x_title">
-                                        <h2>Units Earned</h2>
-                                        <div class="clearfix">&nbsp;</div>
+                                    <div class="x_title overview_title">
+                                        <h2 class="special-header__overall">Units Earned</h2>
                                     </div>
 
                                     <div class="infografic-legend">
@@ -1613,11 +1612,11 @@
                             <div class="col-md-4 col-sm-4 col-xs-12 oppo-earning-panel">
                                 <div class="x_panel no_border">
                                     <div class="x_title overview_title">
-                                        <h2>Earnings per cpu</h2>
+                                        <h2 class="special-header__overall">Earnings per cpu</h2>
                                     </div>
                                     <div class="text-center pos-rel">
-                                        <canvas class="circle_chart" id="earningPie" height="300" style="display: inline-block;"></canvas>
-                                        <span class="position-center h3">$ 35,162</span>
+                                        <canvas class="circle_chart" id="earningPie" height="300" style="padding:1em;"></canvas>
+                                        <span class="position-center-op h3">$ 35,162</span>
                                     </div>
                                 </div>
                             </div>
@@ -1628,9 +1627,8 @@
                         <div role="tabpanel" class="tab-pane fade" id="rewardsBreakdownOutstandingSection">
                             <div class="col-md-8 col-sm-8 col-xs-12 rewards-earned-panel">
                                 <div class="x_panel tile fixed_height_360 no_border">
-                                    <div class="x_title">
-                                        <h2>Missed Opportunities </h2>
-                                        <div class="clearfix">&nbsp;</div>
+                                    <div class="x_title overview_title">
+                                        <h2 class="special-header__overall">Missed Opportunities </h2>
                                     </div>
 
                                     <div class="infografic-legend">
@@ -2185,12 +2183,12 @@
                             <div class="col-md-4 col-sm-4 col-xs-12 oppo-earning-panel">
                                 <div class="x_panel no_border">
                                     <div class="x_title overview_title">
-                                        <h3>Missed Potential Earnings</h3>
+                                        <h2 class="special-header__overall">Missed Potential Earnings</h2>
                                     </div>
 
                                     <div class="text-center pos-rel">
-                                        <canvas class="circle_chart" id="lossPie" height="300" style="display: inline-block;"></canvas>
-                                        <span class="position-center h3">$ 215</span>
+                                        <canvas class="circle_chart" id="lossPie" height="300" style="padding:1em;"></canvas>
+                                        <span class="position-center-op h3">$ 215</span>
                                     </div>
                                 </div>
                             </div>
@@ -2523,7 +2521,14 @@
             },
             responsive: false,
             maintainAspectRatio: false,
-            cutoutPercentage: 80,
+            cutoutPercentage: 75,
+            tooltips: {
+                callbacks: {
+                    afterLabel: function(tooltipItem, data) {
+                        return '$';
+                    }
+                },
+            },
             plugins: {
                 labels: {
                     render: 'percentage',
@@ -2603,7 +2608,14 @@
             },
             responsive: false,
             maintainAspectRatio: false,
-            cutoutPercentage: 80,
+            cutoutPercentage: 75,
+            tooltips: {
+                callbacks: {
+                    afterLabel: function(tooltipItem, data) {
+                        return '$';
+                    }
+                },
+            },
             plugins: {
                 labels: {
                     render: 'percentage',

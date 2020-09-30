@@ -66,6 +66,21 @@ a.paginate_button,
     padding-right: 15px;
 }
 
+ul.right-filter+.blue-date-filter {
+    padding-top: 2px;
+}
+
+ul.right-filter+.blue-date-filter .dropdown-toggle {
+    line-height: 29px;
+    font-size: 100%;
+    background: #3da4fa;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+
 body .container.body .right_col {
     background: #e4e6e9;
 }
@@ -699,12 +714,12 @@ a#brand_sku_table_next:hover,
 }
 
 .header-title__products {
-    margin-top: -0.2em;
+    margin-top: -0.5em;
     margin-bottom: -0.5em;
 }
 
 .header-title__rewards {
-    margin-top: -0.2em;
+    margin-top: -0.5em;
     margin-bottom: -0.5em;
 }
 
@@ -819,8 +834,9 @@ input[type="search"] {
 }
 
 .nav.nav-pills,
+.nav.nav-pills.rb,
 .nav.nav-pills.ro {
-    margin-top: 0.2em;
+    margin-top: 0em;
     margin-bottom: 1em;
 }
 
@@ -834,6 +850,16 @@ input[type="search"] {
 .nav-pills .nav-link {
     font-weight: 700;
     text-shadow: 1px 1px 1px #fff;
+}
+
+.nav-pills .nav-link:hover {
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px #cbced1;
+}
+
+.nav.nav-pills.right-filter .nav-item+.nav-item {
+    margin-right: 0.2em;
+    margin-left: 0.5em;
 }
 
 .nav-pills.right-filter .nav-link.active,
@@ -905,6 +931,10 @@ input[type="search"] {
 
 .oppo-earning-panel {
     padding-left: 5px;
+}
+
+.oppo-earning-panel .x_panel {
+    margin-bottom: 0;
 }
 
 .opportunity_status_icon {
@@ -989,13 +1019,14 @@ input[type="search"] {
     height: auto;
 }
 
-.panel-body__quarter {
-    height: 488px;
+.panel-body__quarter,
+.panel-body-quarter {
+    height: auto;
 }
 
 @media (max-width: 991px) {
     .panel-body__quarter {
-        height: 430px;
+        /* height: 430px; */
     }
     .panel-body__historical {
         height: 510px;
@@ -1041,7 +1072,7 @@ input[type="search"] {
     border-bottom: 1px solid transparent;
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
-    height: 50px;
+    height: 46px !important;
 }
 
 .panel-heading+.panel-body {
@@ -1054,7 +1085,9 @@ input[type="search"] {
     padding: 5px;
 }
 
-.panel-heading+.panel-body.panel-body__overall {
+.panel-heading+.panel-body.panel-body__overall,
+.panel-heading+.panel-body.panel-body__quarter,
+.panel-heading+.panel-body.panel-body-quarter {
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -1078,12 +1111,13 @@ input[type="search"] {
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, .075) !important;
 }
 
-.panel_section__historical,
-.panel-section__overall,
-.panel_section__products,
-.panel_section__rewards,
-.panel_section__quarter {
-    margin: 0 0.5rem;
+.panel.panel_section__historical,
+.panel.panel-section__overall,
+.panel.panel_section__products,
+.panel.panel_section__rewards,
+.panel.panel_section__quarter,
+.panel.panel_section-quarter {
+    margin: 0 0.5rem 2.5em 0.5rem;
     border: none;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, .075) !important;
 }
@@ -1423,7 +1457,8 @@ textarea.field.form-control {
 .quater_earnings_icon,
 span.quater_earnings_icon {
     font-size: 16px;
-    margin-top: -0.3em;
+    margin-top: -0.7em;
+    margin-bottom: -0.7em;
 }
 
 .qtd_rewards_icon {
@@ -2244,6 +2279,11 @@ td span.bsl-table-val {
     border-radius: 4px;
 }
 
+.rewardsbreakdown-portlet .right-filter,
+.portlet-decorate.portlet-journal-content .right-filter {
+    margin-right: 20px;
+}
+
 .text-180 {
     font-size: 1.8em !important;
 }
@@ -2259,6 +2299,8 @@ td span.bsl-table-val {
 .tile_count {
     margin-bottom: 0px;
     margin-top: 0px;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .tile_count .tile_statistics_count {
