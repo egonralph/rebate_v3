@@ -26,7 +26,7 @@ a.paginate_button,
     margin-left: 0.1em;
     padding: 0.5em 0.8em !important;
     /*!important;*/
-    border-radius: 50%;
+    border-radius: 50% !important;
     border: none !important;
     /*!important;*/
     font-size: 14px;
@@ -79,6 +79,10 @@ ul.right-filter+.blue-date-filter .dropdown-toggle {
     padding: 5px 15px;
     border-radius: 5px;
     margin-bottom: 0;
+}
+
+.blue-text {
+    color: #2c87d3;
 }
 
 body .container.body .right_col {
@@ -1805,7 +1809,7 @@ span.count_top {
 }
 
 .statistics_count__pane.statistics_count__pane--special {
-    padding: 0.5em .25em;
+    padding: 1.5em .5em;
     background: #ffffff;
     border-width: 0;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
@@ -2338,7 +2342,7 @@ td span.bsl-table-val {
 
 .tile_statistics_count_container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1.2fr 1.2fr 1.3fr 1.2fr;
     column-gap: 1em;
 }
 

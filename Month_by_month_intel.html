@@ -35,8 +35,7 @@
 
         <div class="tile_statistics_count statistics_count_container statistics_count_container--qtd">
             <div class="statistics_count__pane statistics_count__pane--main">
-                <div class="col-xs-2 statistics-count-icon-pane">
-                    <!-- <i class="fad fa-money-bill-wave statistics-count-icon"></i> -->
+                <div>
                     <span class="overview-icon-container d-inline-block bgc-green-d1 p-3 radius-round text-center border-4 brc-green-l2 text-white pos-rel flex-center">
                         <span class="fa-stack fa-1x qtd_rewards_icon">
                             <i class="fal fa-braille fa-stack-1x braille" data-fa-transform="up-2"></i>
@@ -46,16 +45,13 @@
                     </span>
                 </div>
 
-                <div class="col-xs-7 statistics_count_title_qtd">
+                <div class="ml-3">
                     <div class="text-dark-tp3 text-180">$1,447</div>
-                    <span class="text-95">Rewards Balance</span>
-
-
-                </div>
-                <div class="col-xs-3 center count-panel-link count-panel-link--js" data-toogle="tooltip" title="Go to Rewards page">
-                    <span class="count_spend_points">
-                        <a href="rewards" class="count_spend_points__link">Spend Rewards</a>
-                    </span>
+                    <div class="text-95">
+                        <a href="rewards" class="blue-text" data-toogle="tooltip" title="Go to Rewards page">Rewards Balance
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -82,17 +78,19 @@
 
         <div class="tile_statistics_count statistics_count_container">
             <div class="statistics_count__pane d-flex">
-                <div class="col-xs-3 statistics-count-icon-pane text-center pos-rel">
-                    <!-- <i class="fad fa-spinner-third statistics-count-icon c-chart"></i> -->
-                    <canvas id="missedOppPiechart" height="78" width="78" style="padding: 0.2em;"></canvas>
-                    <span class="position-center-count-chart text-dark-tp3">
-                        <b>$2,960</b>
-                     </span>
+                <div class="col-xs-3 statistics-count-icon-pane">
+                    <span class="overview-icon-container d-inline-block bgc-primary p-3 radius-round text-center border-4 brc-primary-l2 text-white flex-center">
+                        <i class="fad fa-chart-line statistics-count-icon"></i>
+                    </span>
                 </div>
 
                 <div class="col-xs-9 statistics_count__content">
-                    <span class="text-dark-tp3 bold">Current Missed Opportunity</span>
-                    <div class="text-dark-tp4 text-110">45 units remaining</div>
+                    <div class="pos-rel">
+                        <span class="text-red text-180" style="color: #da4e35ec">$2,960</span>
+                        <span style="color: #da4e35ec">(45 units)</span>
+                    </div>
+
+                    <span class="text-95">Current Missed Opportunity</span>
                 </div>
             </div>
         </div>
@@ -930,7 +928,7 @@
 <!-- /Skycons -->
 
 <!-- // count panel missed pie chart -->
-<script>
+<!-- <script>
     $(document).ready(function() {
         var options = {
             legend: false,
@@ -988,7 +986,7 @@
             }
         });
     });
-</script>
+</script> -->
 <!-- // count panel missed pie chart -->
 
 <!-- Stacked bar Chart initialization -->
