@@ -827,6 +827,7 @@ input[type="search"] {
 }
 
 #full_period,
+#full_periods,
 #month_by_month {
     text-align: center;
     margin-top: 0em;
@@ -1193,6 +1194,13 @@ textarea.field.form-control {
 .position-center-op {
     position: absolute;
     top: 31%;
+    left: 10px;
+    right: 10px;
+}
+
+.position-center-ro {
+    position: absolute;
+    top: 35%;
     left: 10px;
     right: 10px;
 }

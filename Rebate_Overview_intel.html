@@ -123,7 +123,7 @@
                     <div class="row">
                         <div class="col-xs-12 header-title__overall">
                             <h2 class="bold section_main_header pull-left">
-                                <i class="fad fa-hand-holding-usd half_margin_right"></i> Total Overall Earnings
+                                <i class="fad fa-hand-holding-usd half_margin_right"></i> Earnings Overview
                             </h2>
 
                             <!-- navigation pills  -->
@@ -132,7 +132,7 @@
                                     <a href="#latest_period" aria-controls="latest_period" role="tab" data-toggle="tab" class="nav-link active">Latest Period</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#full_period" aria-controls="full_period" role="tab" data-toggle="tab" class="nav-link">Full Period</a>
+                                    <a href="#full_periods" aria-controls="full_periods" role="tab" data-toggle="tab" class="nav-link">Full Period</a>
                                 </li>
                             </ul>
                             <!-- End navigation pills  -->
@@ -233,7 +233,7 @@
                                                             </td>
                                                             <td class="no_border full_left_text">Core<sup class="intel_superscript_sm">™</sup> m3</td>
                                                             <td class="no_border full_center_text">17</td>
-                                                            <td class="no_border full_center_text">$7</td>
+                                                            <td class="no_border full_center_text">$17</td>
                                                             <td class="no_border full_center_text">1</td>
                                                             <td class="no_border full_center_text">7%</td>
                                                         </tr>
@@ -277,14 +277,14 @@
                                     </div>
 
                                     <div class="text-center pos-rel">
-                                        <canvas height="300" class="circle_chart circle_chart_canvas" id="echart_full_pie" aria-label="Sold vs Opportunities doughnut chart" role="img" style="padding:1em;"></canvas>
-                                        <span class="position-center-op h3">45 Units</span>
+                                        <canvas height="300" width="430" class="circle_chart circle_chart_canvas" id="echart_full_pie" aria-label="Sold vs Opportunities doughnut chart" role="img"></canvas>
+                                        <span class="position-center-ro h3">45 Units</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div role="tabpanel" class="tab-pane fade" id="full_period">
+                        <div role="tabpanel" class="tab-pane fade" id="full_periods">
                             <div class="col-md-8 col-sm-8 col-xs-12 rewards-earned-panel">
                                 <div class="x_panel tile fixed_height_360 overflow_hidden points-by-brand-panel no_border">
                                     <div class="x_title overview_title">
@@ -418,8 +418,8 @@
                                     </div>
 
                                     <div class="text-center pos-rel">
-                                        <canvas height="300" class="circle_chart circle_chart_canvas" id="echart_full_pie2" aria-label="Sold vs Opportunities doughnut chart" role="img" style="padding:1em;"></canvas>
-                                        <span class="position-center-op h3">86 Units</span>
+                                        <canvas height="300" width="430" class="circle_chart circle_chart_canvas" id="echart_full_pie2" aria-label="Sold vs Opportunities doughnut chart" role="img"></canvas>
+                                        <span class="position-center-ro h3">86 Units</span>
                                     </div>
                                 </div>
                             </div>
@@ -430,6 +430,1999 @@
             </div>
         </div>
     </div>
+
+    <!-- Current Earning panel-->
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="panel panel-default panel_section-quarter">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-12 header-title__quarter">
+                            <h2 class="bold section_main_header pull-left">
+                                <span class="fa-stack fa-1x quater_earnings_icon">
+                                    <i class="fal fa-braille fa-stack-1x braille" data-fa-transform="up-6"></i>
+                                    <i class="fad fa-bullseye fa-stack-1x bullseye" data-fa-transform="shrink-4 up-3"></i>
+                                    <i class="fas fa-hand-pointer fa-stack-1x hand-pointer"
+                                        data-fa-transform="shrink-2 down-3 right-2"></i>
+                                </span> Earning Overview Breakdown
+                            </h2>
+
+                            <div class="pos-rel pull-right">
+                                <!-- navigation pills  -->
+                                <ul class="nav nav-pills ro right-filter pull-left" role="tablist">
+                                    <li class="nav-item">
+                                        <a href="#rewardsBreakdownSoldSection" aria-controls="latest_period" role="tab" data-toggle="tab" class="nav-link active">Units Earned</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#rewardsBreakdownOutstandingSection" aria-controls="full_periods" role="tab" data-toggle="tab" class="nav-link">Missed Opportunitites</a>
+                                    </li>
+                                </ul>
+                                <!-- End navigation pills  -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel-body panel-body-quarter">
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+
+                        <!-- Units sold section -->
+                        <div role="tabpanel" class="tab-pane fade in active" id="rewardsBreakdownSoldSection">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="x_panel tile fixed_height_360 no_border">
+                                    <div class="x_title overview_title">
+                                        <h2 class="special-header__overall">Units Earned</h2>
+                                    </div>
+
+                                    <div class="infografic-legend">
+                                        <div class="widget_summary">
+                                            <div class="w_left widget_summary__left_panel left-legend-panel"></div>
+                                            <div class="w_center widget_summary_right_panel right_legend-panel">
+                                                <ul class="infografic-legend__list">
+                                                    <li><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>Units
+                                                    </li>
+                                                    <li>
+                                                        <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>Earnings
+                                                    </li>
+                                                    <li class="legend_progress_item2"><i class="fad fa-hand-holding-usd one_margin_right br_attainment_icon" aria-hidden="true"></i>Achivements</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="x_content rb_x_content">
+
+                                            <!-- CPU Core i7 97% / 3406 Units -->
+                                            <div class="widget_summary" role="tab" id="headingThreeSold">
+                                                <div class="w_left widget_summary__left_panel widget_summary--collapse-label" data-toggle="collapse" data-parent="#accordion" href="#collapseThreeSold" aria-expanded="true" aria-controls="collapseThreeSold">
+                                                    <div class="widget_summary__left_panel-item">
+                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate3"></div>
+                                                        <a role="button" title="show / hide sold units">Core<sup class="intel_superscript_sm">™</sup> i7</a>
+                                                        <i class="fa fa-angle-right collapse_icon"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="w_center widget_summary_right_panel">
+                                                    <div class="progress_units">
+                                                        <div class="progress-bar_items">
+                                                            <div><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>94
+                                                            </div>
+
+                                                            <div>
+                                                                <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>$561
+                                                            </div>
+
+                                                            <div class="progress progress_quarter">
+                                                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="97" class="progress-bar bg-yellow_grad" role="progressbar" style="width: 97.44%;">
+                                                                </div>
+                                                                <div class="progress-bar_content"><i class="fas fa-hand-holding-usd one_margin_right" aria-hidden="true"></i>97%</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="clearfix">&nbsp;</div>
+                                            </div>
+
+                                            <div id="collapseThreeSold" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThreeSold">
+                                                <div class="panel-body panel-body_progress-collapse">
+                                                    <div class=" widget-summary-table-left-panel hidden"></div>
+                                                    <table class="table rbt_table table-hover panel-collapse-table table-fixed tablesorter table_no_border tablesorter_content_index">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="table_col_4"></th>
+                                                                <th class="table_col_12">CPU Name</th>
+                                                                <th class="table_col_12">Model Number</th>
+                                                                <th class="table_col_18">Model Name</th>
+                                                                <th class="table_col_18">Vendor</th>
+                                                                <th class="table_col_12">Quantity</th>
+                                                                <th class="table_col_12">Earnings per Units</th>
+                                                                <th class="table_col_12">Total Earnings</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate3">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i7
+                                                                </td>
+                                                                <td>8700</td>
+                                                                <td>Nitro N50-600</td>
+                                                                <td>Net-On-net</td>
+                                                                <td>22</td>
+                                                                <td>$9</td>
+                                                                <td>$198</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate3">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i7
+                                                                </td>
+                                                                <td>9750H</td>
+                                                                <td>MacBook Pro</td>
+                                                                <td>Net-On-net</td>
+                                                                <td>24</td>
+                                                                <td>$7</td>
+                                                                <td>$168</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate3">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i7
+                                                                </td>
+                                                                <td>9700</td>
+                                                                <td>Pavilion TP01-0026no</td>
+                                                                <td>Net-On-net</td>
+                                                                <td>28</td>
+                                                                <td>$3</td>
+                                                                <td>$84</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>4.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate3">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i7
+                                                                </td>
+                                                                <td>8550U</td>
+                                                                <td>Yoga C930-13IKB</td>
+                                                                <td>Net-On-net</td>
+                                                                <td>8</td>
+                                                                <td>$9</td>
+                                                                <td>$72</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>5.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate3">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i7
+                                                                </td>
+                                                                <td>9700</td>
+                                                                <td>Legion T530-28ICB</td>
+                                                                <td>Net-On-net</td>
+                                                                <td>12</td>
+                                                                <td>$3</td>
+                                                                <td>$36</td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td colspan="4" class="table_total_row"></td>
+                                                                <td class="table_total_row--special">Total</td>
+                                                                <td class="table_total_row">94</td>
+                                                                <td class="table_total_row"></td>
+                                                                <td class="table_total_row">$561</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- /CPU Core i7 -->
+
+                                            <!-- CPU Core i5 91% / 29,233 Units -->
+                                            <div class="widget_summary" role="tab" id="headingTwoSold">
+                                                <div class="w_left widget_summary__left_panel widget_summary--collapse-label" data-toggle="collapse" data-parent="#accordion" href="#collapseTwoSold" aria-expanded="true" aria-controls="collapseTwoSold">
+                                                    <div class="widget_summary__left_panel-item">
+                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate2"></div>
+                                                        <a role="button" title="show / hide sold units">Core<sup class="intel_superscript_sm">™</sup> i5</a>
+                                                        <i class="fa fa-angle-right collapse_icon"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="w_center widget_summary_right_panel">
+                                                    <div class="progress_units">
+                                                        <div class="progress-bar_items">
+                                                            <div><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>341
+                                                            </div>
+
+                                                            <div>
+                                                                <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>$1,256
+                                                            </div>
+
+                                                            <div class="progress progress_quarter">
+                                                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="91" class="progress-bar bg-yellow_grad" role="progressbar" style="width: 90.91%;">
+                                                                </div>
+                                                                <div class="progress-bar_content"><i class="fas fa-hand-holding-usd one_margin_right" aria-hidden="true"></i>91%</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="clearfix">&nbsp;</div>
+                                            </div>
+
+                                            <div id="collapseTwoSold" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwoSold">
+                                                <div class="panel-body panel-body_progress-collapse">
+                                                    <div class=" widget-summary-table-left-panel hidden"></div>
+                                                    <table class="table rbt_table table-hover panel-collapse-table table-fixed tablesorter table_no_border tablesorter_content_index">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="table_col_4"></th>
+                                                                <th class="table_col_12">CPU Name</th>
+                                                                <th class="table_col_12">Model Number</th>
+                                                                <th class="table_col_18">Model Name</th>
+                                                                <th class="table_col_18">Vendor</th>
+                                                                <th class="table_col_12">Quantity</th>
+                                                                <th class="table_col_12">Earnings per Units</th>
+                                                                <th class="table_col_12">Total Earnings</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate2">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i5
+                                                                </td>
+                                                                <td>8210Y</td>
+                                                                <td>MacBook Air</td>
+                                                                <td>Net-On-net</td>
+                                                                <td>154</td>
+                                                                <td>$2</td>
+                                                                <td>$308</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate2">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i5
+                                                                </td>
+                                                                <td>8257U</td>
+                                                                <td>MacBook Pro</td>
+                                                                <td>Net-On-net</td>
+                                                                <td>76</td>
+                                                                <td>$4</td>
+                                                                <td>$304</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate2">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i5
+                                                                </td>
+                                                                <td>9400</td>
+                                                                <td>ROG Strix GL10CS</td>
+                                                                <td>Net-On-net</td>
+                                                                <td>42</td>
+                                                                <td>$5</td>
+                                                                <td>$210</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>4.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate2">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i5
+                                                                </td>
+                                                                <td>1035G1</td>
+                                                                <td>HP 14s-dq1115no</td>
+                                                                <td>Net-On-net</td>
+                                                                <td>31</td>
+                                                                <td>$6</td>
+                                                                <td>$186</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>5.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate2">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i5
+                                                                </td>
+                                                                <td>9400</td>
+                                                                <td>IdeaCentre 510S-07ICB</td>
+                                                                <td>Net-On-net</td>
+                                                                <td>19</td>
+                                                                <td>$6</td>
+                                                                <td>$114</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>6.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate2">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i5
+                                                                </td>
+                                                                <td>8500</td>
+                                                                <td>iMac</td>
+                                                                <td>Net-On-net</td>
+                                                                <td>7</td>
+                                                                <td>$10</td>
+                                                                <td>$70</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>7.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate2">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i5
+                                                                </td>
+                                                                <td>7360U</td>
+                                                                <td>MacBook Pro</td>
+                                                                <td>Net-On-net</td>
+                                                                <td>10</td>
+                                                                <td>$4</td>
+                                                                <td>$40</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>8.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate2">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i5
+                                                                </td>
+                                                                <td>8250U</td>
+                                                                <td>HP 24-f0020no All-In-One</td>
+                                                                <td>Net-On-net</td>
+                                                                <td>2</td>
+                                                                <td>$12</td>
+                                                                <td>$24</td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td colspan="4" class="table_total_row"></td>
+                                                                <td class="table_total_row--special">Total</td>
+                                                                <td class="table_total_row">341</td>
+                                                                <td class="table_total_row"></td>
+                                                                <td class="table_total_row">$1256</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- /CPU Core i5 -->
+
+                                            <!-- CPU Core i3 91% / 1894 Units -->
+                                            <div class="widget_summary" role="tab" id="headingOneSold">
+                                                <div class="w_left widget_summary__left_panel widget_summary--collapse-label" data-toggle="collapse" data-parent="#accordion" href="#collapseOneSold" aria-expanded="true" aria-controls="collapseOneSold">
+                                                    <div class="widget_summary__left_panel-item">
+                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate1"></div>
+                                                        <a role="button" title="show / hide sold units">Core<sup class="intel_superscript_sm">™</sup> i3</a>
+                                                        <i class="fa fa-angle-right collapse_icon"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="w_center widget_summary_right_panel">
+                                                    <div class="progress_units">
+                                                        <div class="progress-bar_items">
+                                                            <div><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>128
+                                                            </div>
+
+                                                            <div>
+                                                                <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>$894
+                                                            </div>
+
+                                                            <div class="progress progress_quarter">
+                                                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="91" class="progress-bar bg-yellow_grad" role="progressbar" style="width: 91.43%;">
+                                                                </div>
+                                                                <div class="progress-bar_content"><i class="fas fa-hand-holding-usd one_margin_right" aria-hidden="true"></i>91%</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="clearfix">&nbsp;</div>
+                                            </div>
+
+                                            <div id="collapseOneSold" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOneSold">
+                                                <div class="panel-body panel-body_progress-collapse">
+                                                    <div class=" widget-summary-table-left-panel hidden"></div>
+                                                    <table class="table rbt_table table-hover panel-collapse-table table-fixed tablesorter table_no_border tablesorter_content_index">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="table_col_4"></th>
+                                                                <th class="table_col_12">CPU Name</th>
+                                                                <th class="table_col_12">Model Number</th>
+                                                                <th class="table_col_18">Model Name</th>
+                                                                <th class="table_col_18">Vendor</th>
+                                                                <th class="table_col_12">Quantity</th>
+                                                                <th class="table_col_12">Earnings per Units</th>
+                                                                <th class="table_col_12">Total Earnings</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate1">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
+                                                                </td>
+                                                                <td>8100</td>
+                                                                <td>IdeaCentre T540-15ICB</td>
+                                                                <td>Net-On-net</td>
+                                                                <td>24</td>
+                                                                <td>$15</td>
+                                                                <td>$360</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate1">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
+                                                                </td>
+                                                                <td>8100</td>
+                                                                <td>Aspire XC-885</td>
+                                                                <td>Net-On-net</td>
+                                                                <td>31</td>
+                                                                <td>$86</td>
+                                                                <td>$186</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate1">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
+                                                                </td>
+                                                                <td>8100</td>
+                                                                <td>Pavilion Gaming 690-0035no</td>
+                                                                <td>Net-On-net</td>
+                                                                <td>21</td>
+                                                                <td>$5</td>
+                                                                <td>$105</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>4.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate1">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
+                                                                </td>
+                                                                <td>8100</td>
+                                                                <td>Mac mini</td>
+                                                                <td>Net-On-net</td>
+                                                                <td>18</td>
+                                                                <td>$5</td>
+                                                                <td>$90</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>5.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate1">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
+                                                                </td>
+                                                                <td>8100</td>
+                                                                <td>iMac</td>
+                                                                <td>Net-On-net</td>
+                                                                <td>8</td>
+                                                                <td>$6</td>
+                                                                <td>$48</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>6.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate1">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
+                                                                </td>
+                                                                <td>8100</td>
+                                                                <td>iMac micro</td>
+                                                                <td>Net-On-net</td>
+                                                                <td>15</td>
+                                                                <td>$3</td>
+                                                                <td>$45</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>7.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate1">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
+                                                                </td>
+                                                                <td>8100</td>
+                                                                <td>Pavilion Gaming 690-0028no</td>
+                                                                <td>Net-On-net</td>
+                                                                <td>9</td>
+                                                                <td>$4</td>
+                                                                <td>$36</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>8.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate1">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
+                                                                </td>
+                                                                <td>8100</td>
+                                                                <td>Aspire XC-657</td>
+                                                                <td>Net-On-net</td>
+                                                                <td>2</td>
+                                                                <td>$12</td>
+                                                                <td>$24</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="4" class="table_total_row"></td>
+                                                                <td class="table_total_row--special">Total</td>
+                                                                <td class="table_total_row">128</td>
+                                                                <td class="table_total_row"></td>
+                                                                <td class="table_total_row">$894</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- /CPU Core i3 -->
+
+                                            <!-- CPU Core m3 50% / 35 Units -->
+                                            <div class="widget_summary" role="tab" id="headingFiveSold">
+                                                <div class="w_left widget_summary__left_panel widget_summary--collapse-label" data-toggle="collapse" data-parent="#accordion" href="#collapseFiveSold" aria-expanded="true" aria-controls="collapseFiveSold">
+                                                    <div class="widget_summary__left_panel-item">
+                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate5"></div>
+                                                        <a role="button" title="show / hide sold units">Core<sup class="intel_superscript_sm">™</sup> m3</a>
+                                                        <i class="fa fa-angle-right collapse_icon"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="w_center widget_summary_right_panel">
+                                                    <div class="progress_units">
+                                                        <div class="progress-bar_items">
+                                                            <div><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>17
+                                                            </div>
+
+                                                            <div>
+                                                                <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>$17
+                                                            </div>
+
+                                                            <div class="progress progress_quarter">
+                                                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" class="progress-bar bg-red_grad" role="progressbar" style="width: 50%;">
+                                                                </div>
+                                                                <div class="progress-bar_content"><i class="fas fa-hand-holding-usd one_margin_right" aria-hidden="true"></i>50%</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="clearfix">&nbsp;</div>
+                                            </div>
+
+                                            <div id="collapseFiveSold" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFiveSold">
+                                                <div class="panel-body panel-body_progress-collapse">
+                                                    <div class=" widget-summary-table-left-panel hidden"></div>
+                                                    <table class="table rbt_table table-hover panel-collapse-table table-fixed tablesorter table_no_border tablesorter_content_index">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="table_col_4"></th>
+                                                                <th class="table_col_12">CPU Name</th>
+                                                                <th class="table_col_12">Model Number</th>
+                                                                <th class="table_col_18">Model Name</th>
+                                                                <th class="table_col_18">Vendor</th>
+                                                                <th class="table_col_12">Quantity</th>
+                                                                <th class="table_col_12">Earnings per Units</th>
+                                                                <th class="table_col_12">Total Earnings</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate5">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> m3
+                                                                </td>
+                                                                <td>7Y32</td>
+                                                                <td>MacBook</td>
+                                                                <td>Net-On-net</td>
+                                                                <td>17</td>
+                                                                <td>$1</td>
+                                                                <td>$17</td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td colspan="4" class="table_total_row"></td>
+                                                                <td class="table_total_row--special">Total</td>
+                                                                <td class="table_total_row">17</td>
+                                                                <td class="table_total_row"></td>
+                                                                <td class="table_total_row">$17</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- /CPU Core m3 -->
+
+                                            <!-- CPU Xeon 50% / 20 Units -->
+                                            <div class="widget_summary" role="tab" id="headingSevenSold">
+                                                <div class="w_left widget_summary__left_panel widget_summary--collapse-label" data-toggle="collapse" data-parent="#accordion" href="#collapseSevenSold" aria-expanded="true" aria-controls="collapseSevenSold">
+                                                    <div class="widget_summary__left_panel-item">
+                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate7"></div>
+                                                        <a role="button" title="show / hide sold units">Xeon<sup class="intel_superscript_sm">®</sup></a>
+                                                        <i class="fa fa-angle-right collapse_icon"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="w_center widget_summary_right_panel">
+                                                    <div class="progress_units">
+                                                        <div class="progress-bar_items">
+                                                            <div><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>5
+                                                            </div>
+
+                                                            <div>
+                                                                <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>$10
+                                                            </div>
+
+                                                            <div class="progress progress_quarter">
+                                                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" class="progress-bar bg-red_grad" role="progressbar" style="width: 50%;">
+                                                                </div>
+                                                                <div class="progress-bar_content"><i class="fas fa-hand-holding-usd one_margin_right" aria-hidden="true"></i>50%</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="clearfix">&nbsp;</div>
+                                            </div>
+
+                                            <div id="collapseSevenSold" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSevenSold">
+                                                <div class="panel-body panel-body_progress-collapse">
+                                                    <div class=" widget-summary-table-left-panel hidden"></div>
+                                                    <table class="table rbt_table table-hover panel-collapse-table table-fixed tablesorter table_no_border tablesorter_content_index">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="table_col_4"></th>
+                                                                <th class="table_col_12">CPU Name</th>
+                                                                <th class="table_col_12">Model Number</th>
+                                                                <th class="table_col_18">Model Name</th>
+                                                                <th class="table_col_18">Vendor</th>
+                                                                <th class="table_col_12">Quantity</th>
+                                                                <th class="table_col_12">Earnings per Units</th>
+                                                                <th class="table_col_12">Total Earnings</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate7">
+                                                                        <i class="fal fa-microchip cpu-legend-icon-dark"></i>
+                                                                    </div>
+                                                                    Xeon<sup class="intel_superscript_sm">®</sup>
+                                                                </td>
+                                                                <td>E-2176M</td>
+                                                                <td>MARKUT M7 V2.1</td>
+                                                                <td>Net-On-net</td>
+                                                                <td>5</td>
+                                                                <td>$2</td>
+                                                                <td>$10</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="4" class="table_total_row"></td>
+                                                                <td class="table_total_row--special">Total</td>
+                                                                <td class="table_total_row">5</td>
+                                                                <td class="table_total_row"></td>
+                                                                <td class="table_total_row">$10</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- /CPU Xeon -->
+
+                                            <!-- CPU Pentium 33% / 354 Units -->
+                                            <div class="widget_summary" role="tab" id="headingSixSold">
+                                                <div class="w_left widget_summary__left_panel widget_summary--collapse-label" data-toggle="collapse" data-parent="#accordion" href="#collapseSixSold" aria-expanded="true" aria-controls="collapseSixSold">
+                                                    <div class="widget_summary__left_panel-item">
+                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate6"></div>
+                                                        <a role="button" title="show / hide sold units">Pentium<sup class="intel_superscript">®</sup> Gold</a>
+                                                        <i class="fa fa-angle-right collapse_icon"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="w_center widget_summary_right_panel">
+                                                    <div class="progress_units">
+                                                        <div class="progress-bar_items">
+                                                            <div><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>38
+                                                            </div>
+
+                                                            <div>
+                                                                <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>$172
+                                                            </div>
+
+                                                            <div class="progress progress_quarter">
+                                                                <div aria-valuemax="33" aria-valuemin="0" aria-valuenow="100" class="progress-bar bg-red_grad" role="progressbar" style="width: 33%;">
+                                                                </div>
+                                                                <div class="progress-bar_content"><i class="fas fa-hand-holding-usd one_margin_right" aria-hidden="true"></i>33%</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="clearfix">&nbsp;</div>
+                                            </div>
+
+                                            <div id="collapseSixSold" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixSold">
+                                                <div class="panel-body panel-body_progress-collapse">
+                                                    <div class=" widget-summary-table-left-panel hidden"></div>
+                                                    <table class="table rbt_table table-hover panel-collapse-table table-fixed tablesorter table_no_border tablesorter_content_index">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="table_col_4"></th>
+                                                                <th class="table_col_12">CPU Name</th>
+                                                                <th class="table_col_12">Model Number</th>
+                                                                <th class="table_col_18">Model Name</th>
+                                                                <th class="table_col_18">Vendor</th>
+                                                                <th class="table_col_12">Quantity</th>
+                                                                <th class="table_col_12">Earnings per Units</th>
+                                                                <th class="table_col_12">Total Earnings</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate6">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Pentium<sup class="intel_superscript">®</sup>
+                                                                </td>
+                                                                <td>N4200</td>
+                                                                <td>Chromebook C523NA-A20119</td>
+                                                                <td>Net-On-net</td>
+                                                                <td>29</td>
+                                                                <td>$4</td>
+                                                                <td>$118</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate6">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Pentium<sup class="intel_superscript">®</sup>
+                                                                </td>
+                                                                <td>N4200</td>
+                                                                <td>Chromebook 14 CB314-1HT-P46Q</td>
+                                                                <td>Net-On-net</td>
+                                                                <td>9</td>
+                                                                <td>$6</td>
+                                                                <td>$54</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="4" class="table_total_row"></td>
+                                                                <td class="table_total_row--special">Total</td>
+                                                                <td class="table_total_row">38</td>
+                                                                <td class="table_total_row"></td>
+                                                                <td class="table_total_row">$172</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- /CPU Pentium -->
+
+                                            <!-- CPU Core i9 17% / 220 Units -->
+                                            <div class="widget_summary" role="tab" id="headingFourSold">
+                                                <div class="w_left widget_summary__left_panel widget_summary--collapse-label" data-toggle="collapse" data-parent="#accordion" href="#collapseFourSold" aria-expanded="true" aria-controls="collapseFourSold">
+                                                    <div class="widget_summary__left_panel-item">
+                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate4"></div>
+                                                        <a role="button" title="show / hide sold units">Core<sup class="intel_superscript_sm">™</sup> i9</a>
+                                                        <i class="fa fa-angle-right collapse_icon"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="w_center widget_summary_right_panel">
+                                                    <div class="progress_units">
+                                                        <div class="progress-bar_items">
+                                                            <div><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>11
+                                                            </div>
+
+                                                            <div>
+                                                                <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>$110
+                                                            </div>
+
+                                                            <div class="progress progress_quarter">
+                                                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="17" class="progress-bar bg-red_grad" role="progressbar" style="width: 16.66%;">
+                                                                </div>
+                                                                <div class="progress-bar_content"><i class="fas fa-hand-holding-usd one_margin_right" aria-hidden="true"></i>17%</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="clearfix">&nbsp;</div>
+                                            </div>
+
+                                            <div id="collapseFourSold" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFourSold">
+                                                <div class="panel-body panel-body_progress-collapse">
+                                                    <div class=" widget-summary-table-left-panel hidden"></div>
+                                                    <table class="table rbt_table table-hover panel-collapse-table table-fixed tablesorter table_no_border tablesorter_content_index">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="table_col_4"></th>
+                                                                <th class="table_col_12">CPU Name</th>
+                                                                <th class="table_col_12">Model Number</th>
+                                                                <th class="table_col_18">Model Name</th>
+                                                                <th class="table_col_18">Vendor</th>
+                                                                <th class="table_col_12">Quantity</th>
+                                                                <th class="table_col_12">Earnings per Units</th>
+                                                                <th class="table_col_12">Total Earnings</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate4">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i9
+                                                                </td>
+                                                                <td>9880H</td>
+                                                                <td>MacBook Pro</td>
+                                                                <td>Net-On-net</td>
+                                                                <td>11</td>
+                                                                <td>$10</td>
+                                                                <td>$110</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="4" class="table_total_row"></td>
+                                                                <td class="table_total_row--special">Total</td>
+                                                                <td class="table_total_row">11</td>
+                                                                <td class="table_total_row"></td>
+                                                                <td class="table_total_row">$110</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- /CPU Core i9 -->
+
+                                        </div>
+                                    </div>
+
+                                    <div class="summary-items-panel">
+                                        <div class="widget_summary">
+                                            <div class="w_left widget_summary__left_panel left-legend-panel"></div>
+                                            <div class="w_center widget_summary_right_panel right_legend-panel">
+                                                <hr>
+                                                <ul class="infografic-legend__list">
+                                                    <li class="one_margin_right title-icon">
+                                                        <i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>634
+                                                    </li>
+                                                    <li>
+                                                        <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>$3,010</li>
+                                                    <li class="legend_progress_item2"></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //Units sold section -->
+
+                        <!-- Units Opportunities section -->
+                        <div role="tabpanel" class="tab-pane fade" id="rewardsBreakdownOutstandingSection">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="x_panel tile fixed_height_360 no_border">
+                                    <div class="x_title overview_title">
+                                        <h2 class="special-header__overall">Missed Opportunities </h2>
+                                    </div>
+
+                                    <div class="infografic-legend">
+                                        <div class="widget_summary">
+                                            <div class="w_left widget_summary__left_panel left-legend-panel"></div>
+                                            <div class="w_center widget_summary_right_panel right_legend-panel">
+                                                <ul class="infografic-legend__list">
+                                                    <li><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>Units
+                                                    </li>
+                                                    <li>
+                                                        <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>Potential Earnings
+                                                    </li>
+                                                    <li class="legend_progress_item2"><i class="fad fa-handshake one_margin_right br_opportunities_icon" aria-hidden="true"></i>Opportunities</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="x_content rb_x_content">
+
+                                            <!-- CPU Core i9  83% / 66 Units-->
+                                            <div class="widget_summary" role="tab" id="headingFour">
+                                                <div class="w_left widget_summary__left_panel widget_summary--collapse-label" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                                    <div class="widget_summary__left_panel-item">
+                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate4"></div>
+                                                        <a role="button" title="show / hide outstanding units">Core<sup class="intel_superscript_sm">™</sup> i9</a>
+                                                        <i class="fa fa-angle-right collapse_icon"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="w_center widget_summary_right_panel">
+                                                    <div class="progress_units">
+                                                        <div class="progress-bar_items">
+                                                            <div><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>5
+                                                            </div>
+
+                                                            <div>
+                                                                <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>$108
+                                                            </div>
+
+                                                            <div class="progress progress_quarter">
+                                                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="83" class="progress-bar bg-red_grad" role="progressbar" style="width: 83.34%;">
+                                                                </div>
+                                                                <div class="progress-bar_content"><i class="fas fa-handshake one_margin_right" aria-hidden="true"></i>83%</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="clearfix">&nbsp;</div>
+                                            </div>
+
+                                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                                <div class="panel-body panel-body_progress-collapse">
+                                                    <div class=" widget-summary-table-left-panel hidden"></div>
+                                                    <table class="table rbt_table table-hover panel-collapse-table table-fixed tablesorter table_no_border tablesorter_content_index">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="table_col_4"></th>
+                                                                <th class="table_col_18">CPU Name</th>
+                                                                <th class="table_col_18">Model Number</th>
+                                                                <th class="table_col_18">Earnings</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate4">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i9
+                                                                </td>
+                                                                <td>10900X</td>
+                                                                <td>$24</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate4">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i9
+                                                                </td>
+                                                                <td>9980HK</td>
+                                                                <td>$18</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate4">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i9
+                                                                </td>
+                                                                <td>9000X</td>
+                                                                <td>$24</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>4.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate4">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i9
+                                                                </td>
+                                                                <td>9980H</td>
+                                                                <td>$18</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>5.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate4">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i9
+                                                                </td>
+                                                                <td>10200K</td>
+                                                                <td>$24</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- /CPU Core i9 -->
+
+                                            <!-- CPU Pentium 66% / 2 Units-->
+                                            <div class="widget_summary" role="tab" id="headingSix">
+                                                <div class="w_left widget_summary__left_panel widget_summary--collapse-label" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                                    <div class="widget_summary__left_panel-item">
+                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate6"></div>
+                                                        <a role="button" title="show / hide Opportunities units">
+                                                            Pentium<sup class="intel_superscript_sm">®</sup> Gold
+                                                        </a>
+                                                        <i class="fa fa-angle-right collapse_icon"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="w_center widget_summary_right_panel">
+                                                    <div class="progress_units">
+                                                        <div class="progress-bar_items">
+                                                            <div><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>2
+                                                            </div>
+
+                                                            <div>
+                                                                <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>$33
+                                                            </div>
+
+                                                            <div class="progress progress_quarter">
+                                                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="66" class="progress-bar bg-red_grad" role="progressbar" style="width: 66%;">
+                                                                </div>
+                                                                <div class="progress-bar_content"><i class="fas fa-handshake one_margin_right" aria-hidden="true"></i>66%</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="clearfix">&nbsp;</div>
+                                            </div>
+
+                                            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                                <div class="panel-body panel-body_progress-collapse">
+                                                    <div class=" widget-summary-table-left-panel hidden"></div>
+                                                    <table class="table rbt_table table-hover panel-collapse-table table-fixed tablesorter table_no_border tablesorter_content_index">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="table_col_4"></th>
+                                                                <th class="table_col_18">CPU Name</th>
+                                                                <th class="table_col_18">Model Number</th>
+                                                                <th class="table_col_18">Earnings</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate6">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Pentium<sup class="intel_superscript">®</sup>
+                                                                </td>
+                                                                <td>4415U</td>
+                                                                <td>$18</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate6">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Pentium<sup class="intel_superscript">®</sup>
+                                                                </td>
+                                                                <td>G5400</td>
+                                                                <td>$15</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- /CPU Pentium -->
+
+                                            <!-- CPU Xeon 50% / 31 Units-->
+                                            <div class="widget_summary" role="tab" id="headingSeven">
+                                                <div class="w_left widget_summary__left_panel widget_summary--collapse-label" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                                                    <div class="widget_summary__left_panel-item">
+                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate7"></div>
+                                                        <a role="button" title="show / hide Opportunities units">
+                                                            Xeon<sup class="intel_superscript_sm">®</sup>
+                                                        </a>
+                                                        <i class="fa fa-angle-right collapse_icon"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="w_center widget_summary_right_panel">
+                                                    <div class="progress_units">
+                                                        <div class="progress-bar_items">
+                                                            <div><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>16
+                                                            </div>
+
+                                                            <div>
+                                                                <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>$278
+                                                            </div>
+
+                                                            <div class="progress progress_quarter">
+                                                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" class="progress-bar bg-red_grad" role="progressbar" style="width: 50%;">
+                                                                </div>
+                                                                <div class="progress-bar_content"><i class="fas fa-handshake one_margin_right" aria-hidden="true"></i>50%</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="clearfix">&nbsp;</div>
+                                            </div>
+
+                                            <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                                                <div class="panel-body panel-body_progress-collapse">
+                                                    <div class=" widget-summary-table-left-panel hidden"></div>
+                                                    <table class="table rbt_table table-hover panel-collapse-table table-fixed tablesorter table_no_border tablesorter_content_index">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="table_col_4"></th>
+                                                                <th class="table_col_18">CPU Name</th>
+                                                                <th class="table_col_18">Model Number</th>
+                                                                <th class="table_col_18">Earnings</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate7">
+                                                                        <i class="fal fa-microchip cpu-legend-icon-dark"></i>
+                                                                    </div>
+                                                                    Xeon<sup class="intel_superscript_sm">®</sup>
+                                                                </td>
+                                                                <td>N4200</td>
+                                                                <td>$54</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate7">
+                                                                        <i class="fal fa-microchip cpu-legend-icon-dark"></i>
+                                                                    </div>
+                                                                    Xeon<sup class="intel_superscript_sm">®</sup>
+                                                                </td>
+                                                                <td>N3800</td>
+                                                                <td>$28</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate7">
+                                                                        <i class="fal fa-microchip cpu-legend-icon-dark"></i>
+                                                                    </div>
+                                                                    Xeon<sup class="intel_superscript_sm">®</sup>
+                                                                </td>
+                                                                <td>N5100</td>
+                                                                <td>$24</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>4.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate7">
+                                                                        <i class="fal fa-microchip cpu-legend-icon-dark"></i>
+                                                                    </div>
+                                                                    Xeon<sup class="intel_superscript_sm">®</sup>
+                                                                </td>
+                                                                <td>N4250</td>
+                                                                <td>$20</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>5.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate7">
+                                                                        <i class="fal fa-microchip cpu-legend-icon-dark"></i>
+                                                                    </div>
+                                                                    Xeon<sup class="intel_superscript_sm">®</sup>
+                                                                </td>
+                                                                <td>N4010</td>
+                                                                <td>$10</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>6.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate7">
+                                                                        <i class="fal fa-microchip cpu-legend-icon-dark"></i>
+                                                                    </div>
+                                                                    Xeon<sup class="intel_superscript_sm">®</sup>
+                                                                </td>
+                                                                <td>W-10855M</td>
+                                                                <td>$15</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>7.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate7">
+                                                                        <i class="fal fa-microchip cpu-legend-icon-dark"></i>
+                                                                    </div>
+                                                                    Xeon<sup class="intel_superscript_sm">®</sup>
+                                                                </td>
+                                                                <td>W-1270</td>
+                                                                <td>$18</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>8.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate7">
+                                                                        <i class="fal fa-microchip cpu-legend-icon-dark"></i>
+                                                                    </div>
+                                                                    Xeon<sup class="intel_superscript_sm">®</sup>
+                                                                </td>
+                                                                <td>W-1290P</td>
+                                                                <td>$7</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>9.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate7">
+                                                                        <i class="fal fa-microchip cpu-legend-icon-dark"></i>
+                                                                    </div>
+                                                                    Xeon<sup class="intel_superscript_sm">®</sup>
+                                                                </td>
+                                                                <td>3120A</td>
+                                                                <td>$3</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>10.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate7">
+                                                                        <i class="fal fa-microchip cpu-legend-icon-dark"></i>
+                                                                    </div>
+                                                                    Xeon<sup class="intel_superscript_sm">®</sup>
+                                                                </td>
+                                                                <td>7120X</td>
+                                                                <td>$9</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>11.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate7">
+                                                                        <i class="fal fa-microchip cpu-legend-icon-dark"></i>
+                                                                    </div>
+                                                                    Xeon<sup class="intel_superscript_sm">®</sup>
+                                                                </td>
+                                                                <td>N4200</td>
+                                                                <td>$34</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>12.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate7">
+                                                                        <i class="fal fa-microchip cpu-legend-icon-dark"></i>
+                                                                    </div>
+                                                                    Xeon<sup class="intel_superscript_sm">®</sup>
+                                                                </td>
+                                                                <td>E-2288G</td>
+                                                                <td>$17</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>13.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate7">
+                                                                        <i class="fal fa-microchip cpu-legend-icon-dark"></i>
+                                                                    </div>
+                                                                    Xeon<sup class="intel_superscript_sm">®</sup>
+                                                                </td>
+                                                                <td>E-2234</td>
+                                                                <td>$11</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>14.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate7">
+                                                                        <i class="fal fa-microchip cpu-legend-icon-dark"></i>
+                                                                    </div>
+                                                                    Xeon<sup class="intel_superscript_sm">®</sup>
+                                                                </td>
+                                                                <td>8380HL</td>
+                                                                <td>$19</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>15.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate7">
+                                                                        <i class="fal fa-microchip cpu-legend-icon-dark"></i>
+                                                                    </div>
+                                                                    Xeon<sup class="intel_superscript_sm">®</sup>
+                                                                </td>
+                                                                <td>8376H</td>
+                                                                <td>$6</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>16.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate7">
+                                                                        <i class="fal fa-microchip cpu-legend-icon-dark"></i>
+                                                                    </div>
+                                                                    Xeon<sup class="intel_superscript_sm">®</sup>
+                                                                </td>
+                                                                <td>E3-1585</td>
+                                                                <td>$3</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- /CPU Xeon -->
+
+                                            <!-- CPU Core m3 50% / 26 Units-->
+                                            <div class="widget_summary" role="tab" id="headingFive">
+                                                <div class="w_left widget_summary__left_panel widget_summary--collapse-label" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                                    <div class="widget_summary__left_panel-item">
+                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate5"></div>
+                                                        <a role="button" title="show / hide outstanding units">
+                                                            Core<sup class="intel_superscript_sm">™</sup> m3
+                                                        </a>
+                                                        <i class="fa fa-angle-right collapse_icon"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="w_center widget_summary_right_panel">
+                                                    <div class="progress_units">
+                                                        <div class="progress-bar_items">
+                                                            <div><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>8
+                                                            </div>
+
+                                                            <div>
+                                                                <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>$92
+                                                            </div>
+
+                                                            <div class="progress progress_quarter">
+                                                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" class="progress-bar bg-red_grad" role="progressbar" style="width: 50%;">
+                                                                </div>
+                                                                <div class="progress-bar_content"><i class="fas fa-handshake one_margin_right" aria-hidden="true"></i>50%</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="clearfix">&nbsp;</div>
+                                            </div>
+
+                                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                                <div class="panel-body panel-body_progress-collapse">
+                                                    <div class=" widget-summary-table-left-panel hidden"></div>
+                                                    <table class="table rbt_table table-hover panel-collapse-table table-fixed tablesorter table_no_border tablesorter_content_index">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="table_col_4"></th>
+                                                                <th class="table_col_18">CPU Name</th>
+                                                                <th class="table_col_18">Model Number</th>
+                                                                <th class="table_col_18">Earnings</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate5">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> m3
+                                                                </td>
+                                                                <td>6Y30</td>
+                                                                <td>$20</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate5">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> m3
+                                                                </td>
+                                                                <td>8100Y</td>
+                                                                <td>$18</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate5">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> m3
+                                                                </td>
+                                                                <td>7Y30</td>
+                                                                <td>$15</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>4.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate5">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> m3
+                                                                </td>
+                                                                <td>7Y32</td>
+                                                                <td>$12</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>5.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate5">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> m3
+                                                                </td>
+                                                                <td>6Y54</td>
+                                                                <td>$10</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>6.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate5">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> m3
+                                                                </td>
+                                                                <td>5Y31</td>
+                                                                <td>$9</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>7.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate5">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> m3
+                                                                </td>
+                                                                <td>5Y10c</td>
+                                                                <td>$5</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>8.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate5">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> m3
+                                                                </td>
+                                                                <td>5Y10a</td>
+                                                                <td>$3</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- /CPU Core m3 -->
+
+                                            <!-- CPU Core i5 9% / 32 Units-->
+                                            <div class="widget_summary" role="tab" id="headingTwo">
+                                                <div class="w_left widget_summary__left_panel widget_summary--collapse-label" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                    <div class="widget_summary__left_panel-item">
+                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate2"></div>
+                                                        <a role="button" title="show / hide outstanding units">
+                                                            Core<sup class="intel_superscript_sm">™</sup> i5
+                                                        </a>
+                                                        <i class="fa fa-angle-right collapse_icon"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="w_center widget_summary_right_panel">
+                                                    <div class="progress_units">
+                                                        <div class="progress-bar_items">
+                                                            <div><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>5
+                                                            </div>
+
+                                                            <div>
+                                                                <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>$114
+                                                            </div>
+
+                                                            <div class="progress progress_quarter">
+                                                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="9" class="progress-bar bg-yellow_grad" role="progressbar" style="width: 9.09%;">
+                                                                </div>
+                                                                <div class="progress-bar_content"><i class="fas fa-handshake one_margin_right" aria-hidden="true"></i>9%</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="clearfix">&nbsp;</div>
+                                            </div>
+
+                                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                <div class="panel-body panel-body_progress-collapse">
+                                                    <div class=" widget-summary-table-left-panel hidden"></div>
+                                                    <table class="table rbt_table table-hover panel-collapse-table table-fixed tablesorter table_no_border tablesorter_content_index">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="table_col_4"></th>
+                                                                <th class="table_col_18">CPU Name</th>
+                                                                <th class="table_col_18">Model Number</th>
+                                                                <th class="table_col_18">Earnings</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate2">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i5
+                                                                </td>
+                                                                <td>8400</td>
+                                                                <td>$37</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate2">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i5
+                                                                </td>
+                                                                <td>8265U</td>
+                                                                <td>$25</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate2">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i5
+                                                                </td>
+                                                                <td>7400</td>
+                                                                <td>$21</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>4.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate2">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i5
+                                                                </td>
+                                                                <td>8250</td>
+                                                                <td>$17</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>5.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate2">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i5
+                                                                </td>
+                                                                <td>9300H</td>
+                                                                <td>$14</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- /CPU Core i5 -->
+
+                                            <!-- CPU Core i3 9% / 22 Units-->
+                                            <div class="widget_summary" role="tab" id="headingOne">
+                                                <div class="w_left widget_summary__left_panel widget_summary--collapse-label" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    <div class="widget_summary__left_panel-item">
+                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate1"></div>
+                                                        <a role="button" title="show / hide outstanding units">
+                                                            Core<sup class="intel_superscript_sm">™</sup> i3
+                                                        </a>
+                                                        <i class="fa fa-angle-right collapse_icon"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="w_center widget_summary_right_panel">
+                                                    <div class="progress_units">
+                                                        <div class="progress-bar_items">
+                                                            <div><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>5
+                                                            </div>
+
+                                                            <div>
+                                                                <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>$714
+                                                            </div>
+
+                                                            <div class="progress progress_quarter">
+                                                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="9" class="progress-bar bg-yellow_grad" role="progressbar" style="width: 8.57%;">
+                                                                </div>
+                                                                <div class="progress-bar_content"><i class="fas fa-handshake one_margin_right" aria-hidden="true"></i>9%</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="clearfix">&nbsp;</div>
+                                            </div>
+
+                                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                                <div class="panel-body panel-body_progress-collapse">
+                                                    <div class=" widget-summary-table-left-panel hidden"></div>
+                                                    <table class="table rbt_table table-hover panel-collapse-table table-fixed tablesorter table_no_border tablesorter_content_index">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="table_col_4"></th>
+                                                                <th class="table_col_18">CPU Name</th>
+                                                                <th class="table_col_18">Model Number</th>
+                                                                <th class="table_col_18">Earnings</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate1">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
+                                                                </td>
+                                                                <td>8145U</td>
+                                                                <td>$78</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate1">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
+                                                                </td>
+                                                                <td>10110U</td>
+                                                                <td>$69</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate1">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
+                                                                </td>
+                                                                <td>9350K</td>
+                                                                <td>$61</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>4.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate1">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
+                                                                </td>
+                                                                <td>6100</td>
+                                                                <td>$58</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>5.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate1">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
+                                                                </td>
+                                                                <td>7020U</td>
+                                                                <td>$53</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>6.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate1">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
+                                                                </td>
+                                                                <td>4170T</td>
+                                                                <td>$49</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>7.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate1">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
+                                                                </td>
+                                                                <td>4000M</td>
+                                                                <td>$46</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>8.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate1">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
+                                                                </td>
+                                                                <td>8300</td>
+                                                                <td>$42</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>9.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate1">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
+                                                                </td>
+                                                                <td>9100</td>
+                                                                <td>$38</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>10.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate1">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
+                                                                </td>
+                                                                <td>2120</td>
+                                                                <td>$36</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>11.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate1">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
+                                                                </td>
+                                                                <td>4170</td>
+                                                                <td>$33</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>12.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate1">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
+                                                                </td>
+                                                                <td>2350M</td>
+                                                                <td>$30</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>13.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate1">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
+                                                                </td>
+                                                                <td>3317U</td>
+                                                                <td>$29</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>14.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate1">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
+                                                                </td>
+                                                                <td>8121U</td>
+                                                                <td>$27</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>15.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate1">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
+                                                                </td>
+                                                                <td>6098P</td>
+                                                                <td>$24</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>16.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate1">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
+                                                                </td>
+                                                                <td>7350K</td>
+                                                                <td>$21</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>17.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate1">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
+                                                                </td>
+                                                                <td>5005U</td>
+                                                                <td>$20</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- /CPU Core i3 -->
+
+                                            <!-- CPU Core i7 3% / 38 Units-->
+                                            <div class="widget_summary" role="tab" id="headingThree">
+                                                <div class="w_left widget_summary__left_panel widget_summary--collapse-label" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                                    <div class="widget_summary__left_panel-item">
+                                                        <div class="rb_brand_category_legend-rebate rbbcl-rebate3"></div>
+                                                        <a role="button" title="show / hide outstanding units">
+                                                            Core<sup class="intel_superscript_sm">™</sup> i7
+                                                        </a>
+                                                        <i class="fa fa-angle-right collapse_icon"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="w_center widget_summary_right_panel">
+                                                    <div class="progress_units">
+                                                        <div class="progress-bar_items">
+                                                            <div><i class="fas fa-cubes one_margin_right br_units_icon" aria-hidden="true"></i>8
+                                                            </div>
+
+                                                            <div>
+                                                                <i class="fad fa-coins one_margin_right points-margin br_earnings_icon" aria-hidden="true"></i>$281
+                                                            </div>
+
+                                                            <div class="progress progress_quarter">
+                                                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="3" class="progress-bar bg-yellow_grad" role="progressbar" style="width: 2.56%;">
+                                                                </div>
+                                                                <div class="progress-bar_content"><i class="fas fa-handshake one_margin_right" aria-hidden="true"></i>3%</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="clearfix">&nbsp;</div>
+                                            </div>
+
+                                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                <div class="panel-body panel-body_progress-collapse">
+                                                    <div class=" widget-summary-table-left-panel hidden"></div>
+                                                    <table class="table rbt_table table-hover panel-collapse-table table-fixed tablesorter table_no_border tablesorter_content_index">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="table_col_4"></th>
+                                                                <th class="table_col_18">CPU Name</th>
+                                                                <th class="table_col_18">Model Number</th>
+                                                                <th class="table_col_18">Earnings</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate3">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i7
+                                                                </td>
+                                                                <td>8565U</td>
+                                                                <td>$47</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate3">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i7
+                                                                </td>
+                                                                <td>10510U</td>
+                                                                <td>$44</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate3">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i7
+                                                                </td>
+                                                                <td>9750H</td>
+                                                                <td>$40</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>4.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate3">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i7
+                                                                </td>
+                                                                <td>9700</td>
+                                                                <td>$37</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>5.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate3">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i7
+                                                                </td>
+                                                                <td>8565U</td>
+                                                                <td>$33</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>6.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate3">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i7
+                                                                </td>
+                                                                <td>8700</td>
+                                                                <td>$29</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>7.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate3">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i7
+                                                                </td>
+                                                                <td>9700F</td>
+                                                                <td>$28</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>8.</td>
+                                                                <td>
+                                                                    <div class="rb_brand_category_legend-rebate rbbcl-rebate3">
+                                                                        <i class="fal fa-microchip cpu-legend-icon"></i>
+                                                                    </div>
+                                                                    Core<sup class="intel_superscript_sm">™</sup> i7
+                                                                </td>
+                                                                <td>3520M</td>
+                                                                <td>$23</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- /CPU Core i7 -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Units Opportunities section -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Current Earning panel-->
 </div>
 
 </div>
