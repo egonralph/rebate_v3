@@ -263,7 +263,7 @@
                                             <a href="#unit_pill" aria-controls="unit_pill" role="tab" data-toggle="tab" class="nav-link active">Units</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#reward_pill" aria-controls="reward_pill" role="tab" data-toggle="tab" class="nav-link">Earnings</a>
+                                            <a href="#reward_pill" aria-controls="reward_pill" role="tab" data-toggle="tab" class="nav-link">Values</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -459,10 +459,10 @@
                                 <div class="col-lg-8 col-md-8 col-xs-6">
                                     <ul class="nav nav-pills" role="tablist">
                                         <li class="nav-item">
-                                            <a href="#percentage_pill" aria-controls="percentage_pill" role="tab" data-toggle="tab" class="nav-link active">Percentage</a>
+                                            <a href="#percentage_pill" aria-controls="percentage_pill" role="tab" data-toggle="tab" class="nav-link active">Units</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#opportunities_reward_pill" aria-controls="opportunities_reward_pill" role="tab" data-toggle="tab" class="nav-link">Earnings</a>
+                                            <a href="#opportunities_reward_pill" aria-controls="opportunities_reward_pill" role="tab" data-toggle="tab" class="nav-link">Values</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -1030,166 +1030,86 @@
             type: 'bar',
             data: {
 
-                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", ],
+                labels: ["Jan-2020", "Feb-2020", "Mar-2020", "Apr-2020", "May-2020", "Jun-2020", "Jul-2020", "Aug-2020", ],
                 datasets: [{
                     label: "Core™ i3",
-                    backgroundColor: "rgba(255, 145, 67, 0.8)",
-                    borderColor: "rgba(255, 145, 67, 0.9)",
-                    pointBorderColor: "rgba(255, 145, 67, 0.9)",
-                    pointBackgroundColor: "rgba(255, 145, 67, 0.9)",
+                    backgroundColor: "rgba(31, 120, 180, 0.8)",
+                    borderColor: "rgba(31, 120, 180, 0.9)",
+                    pointBorderColor: "rgba(31, 120, 180, 0.9)",
+                    pointBackgroundColor: "rgba(31, 120, 180, 0.9)",
                     pointHoverBackgroundColor: "#fff",
                     pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointBorderWidth: 1,
                     showLine: true,
-                    data: [708, 518, 60, 592, 509, 894, 833, 798, 774, 115, 590, 605]
+                    data: [708, 518, 60, 592, 509, 894, 833, 798]
                 }, {
                     label: "Core™ i5",
-                    backgroundColor: "rgba(155, 89, 182, 0.8)",
-                    borderColor: "rgba(155, 89, 182, 0.9)",
-                    pointBorderColor: "rgba(155, 89, 182, 0.9)",
-                    pointBackgroundColor: "rgba(155, 89, 182, 0.9)",
+                    backgroundColor: "rgba(178, 223, 138, 0.8)",
+                    borderColor: "rgba(178, 223, 138, 0.9)",
+                    pointBorderColor: "rgba(178, 223, 138, 0.9)",
+                    pointBackgroundColor: "rgba(178, 223, 138, 0.9)",
                     pointHoverBackgroundColor: "#fff",
                     pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointBorderWidth: 1,
                     showLine: true,
-                    data: [914, 382, 795, 472, 266, 726, 45, 987, 409, 922, 887, 825]
+                    data: [914, 382, 795, 472, 266, 726, 45, 987]
                 }, {
                     label: "Core™ i7",
-                    backgroundColor: "rgba(231, 76, 60, 0.8)",
-                    borderColor: "rgba(231, 76, 60, 0.9)",
-                    pointBorderColor: "rgba(231, 76, 60, 0.9)",
-                    pointBackgroundColor: "rgba(231, 76, 60, 0.9)",
+                    backgroundColor: "rgba(51, 160, 44, 0.8)",
+                    borderColor: "rgba(51, 160, 44, 0.9)",
+                    pointBorderColor: "rgba(51, 160, 44, 0.9)",
+                    pointBackgroundColor: "rgba(51, 160, 44, 0.9)",
                     pointHoverBackgroundColor: "#fff",
                     pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointBorderWidth: 1,
                     showLine: true,
-                    data: [400, 106, 95, 953, 687, 172, 180, 11, 587, 731, 165, 51]
+                    data: [400, 106, 95, 953, 687, 172, 180, 11]
                 }, {
                     label: "Core™ i9",
-                    backgroundColor: "rgba(23, 163, 184, 0.8)",
-                    borderColor: "rgba(23, 163, 184, 0.9)",
-                    pointBorderColor: "rgba(23, 163, 184, 0.9)",
-                    pointBackgroundColor: "rgba(23, 163, 184, 0.9)",
+                    backgroundColor: "rgba(251, 154, 153, 0.8)",
+                    borderColor: "rgba(251, 154, 153, 0.9)",
+                    pointBorderColor: "rgba(251, 154, 153, 0.9)",
+                    pointBackgroundColor: "rgba(251, 154, 153, 0.9)",
                     pointHoverBackgroundColor: "#fff",
                     pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointBorderWidth: 1,
                     showLine: true,
-                    data: [755, 60, 408, 877, 3, 388, 762, 88, 921, 745, 444, 297]
+                    data: [755, 60, 408, 877, 3, 388, 762, 88]
                 }, {
                     label: "Core™ m3",
-                    backgroundColor: "rgba(40, 167, 69, 0.8)",
-                    borderColor: "rgba(40, 167, 69, 0.9)",
-                    pointBorderColor: "rgba(40, 167, 69, 0.9)",
-                    pointBackgroundColor: "rgba(40, 167, 69, 0.9)",
+                    backgroundColor: "rgba(255, 127, 0, 0.8)",
+                    borderColor: "rgba(255, 127, 0, 0.9)",
+                    pointBorderColor: "rgba(255, 127, 0, 0.9)",
+                    pointBackgroundColor: "rgba(255, 127, 0, 0.9)",
                     pointHoverBackgroundColor: "#fff",
                     pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointBorderWidth: 1,
                     showLine: true,
-                    data: [767, 598, 284, 386, 969, 572, 467, 384, 987, 339, 911, 577]
+                    data: [767, 598, 284, 386, 969, 572, 467, 384]
                 }, {
                     label: "Pentium®",
-                    backgroundColor: "rgba(255, 193, 7, 0.8)",
-                    borderColor: "rgba(255, 193, 7, 0.9)",
-                    pointBorderColor: "rgba(255, 193, 7, 0.9)",
-                    pointBackgroundColor: "rgba(255, 193, 7, 0.9)",
+                    backgroundColor: "rgba(179, 222, 105, 0.8)",
+                    borderColor: "rgba(179, 222, 105, 0.9)",
+                    pointBorderColor: "rgba(179, 222, 105, 0.9)",
+                    pointBackgroundColor: "rgba(179, 222, 105, 0.9)",
                     pointHoverBackgroundColor: "#fff",
                     pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointBorderWidth: 1,
                     showLine: true,
-                    data: [793, 68, 226, 771, 81, 448, 978, 743, 903, 215, 859, 838]
+                    data: [793, 68, 226, 771, 81, 448, 978, 743]
                 }, {
                     label: "Xeon®",
-                    backgroundColor: "rgba(52, 152, 219, 0.8)",
-                    borderColor: "rgba(52, 152, 219, 0.9)",
-                    pointBorderColor: "rgba(52, 152, 219, 0.9)",
-                    pointBackgroundColor: "rgba(52, 152, 219, 0.9)",
+                    backgroundColor: "rgba(255, 255, 153, 0.8)",
+                    borderColor: "rgba(255, 255, 153, 0.9)",
+                    pointBorderColor: "rgba(255, 255, 153, 0.9)",
+                    pointBackgroundColor: "rgba(255, 255, 153, 0.9)",
                     pointHoverBackgroundColor: "#fff",
                     pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointBorderWidth: 1,
                     showLine: true,
-                    data: [189, 587, 849, 497, 62, 575, 800, 404, 579, 714, 729, 639]
+                    data: [189, 587, 849, 497, 62, 575, 800, 404]
                 }]
 
-
-                // labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-                // datasets: [{
-                //     label: "Core™ i3",
-                //     backgroundColor: "rgba(255, 145, 67, 0.8)",
-                //     borderColor: "rgba(255, 145, 67, 0.9)",
-                //     pointBorderColor: "rgba(255, 145, 67, 0.9)",
-                //     pointBackgroundColor: "rgba(255, 145, 67, 0.9)",
-                //     pointHoverBackgroundColor: "#fff",
-                //     pointHoverBorderColor: "rgba(220,220,220,1)",
-                //     pointBorderWidth: 1,
-                //     showLine: true,
-                //     data: [43, 7, 87, 55, 72, 93, 89]
-                // }, {
-                //     label: "Core™ i5",
-                //     backgroundColor: "rgba(155, 89, 182, 0.8)",
-                //     borderColor: "rgba(155, 89, 182, 0.9)",
-                //     pointBorderColor: "rgba(155, 89, 182, 0.9)",
-                //     pointBackgroundColor: "rgba(155, 89, 182, 0.9)",
-                //     pointHoverBackgroundColor: "#fff",
-                //     pointHoverBorderColor: "rgba(220,220,220,1)",
-                //     pointBorderWidth: 1,
-                //     showLine: true,
-                //     data: [85, 54, 72, 31, 9, 63, 86]
-                // }, {
-                // label: "Core™ i7",
-                // backgroundColor: "rgba(231, 76, 60, 0.8)",
-                // borderColor: "rgba(231, 76, 60, 0.9)",
-                // pointBorderColor: "rgba(231, 76, 60, 0.9)",
-                // pointBackgroundColor: "rgba(231, 76, 60, 0.9)",
-                // pointHoverBackgroundColor: "#fff",
-                // pointHoverBorderColor: "rgba(220,220,220,1)",
-                // pointBorderWidth: 1,
-                // showLine: true,
-                // data: [94, 58, 98, 78, 57, 81, 67]
-                // }, {
-                // label: "Core™ i9",
-                // backgroundColor: "rgba(23, 163, 184, 0.8)",
-                // borderColor: "rgba(23, 163, 184, 0.9)",
-                // pointBorderColor: "rgba(23, 163, 184, 0.9)",
-                // pointBackgroundColor: "rgba(23, 163, 184, 0.9)",
-                // pointHoverBackgroundColor: "#fff",
-                // pointHoverBorderColor: "rgba(220,220,220,1)",
-                // pointBorderWidth: 1,
-                // showLine: true,
-                // data: [49, 3, 9, 40, 95, 91, 2]
-                // }, {
-                // label: "Core™ m3",
-                // backgroundColor: "rgba(40, 167, 69, 0.8)",
-                // borderColor: "rgba(40, 167, 69, 0.9)",
-                // pointBorderColor: "rgba(40, 167, 69, 0.9)",
-                // pointBackgroundColor: "rgba(40, 167, 69, 0.9)",
-                // pointHoverBackgroundColor: "#fff",
-                // pointHoverBorderColor: "rgba(220,220,220,1)",
-                // pointBorderWidth: 1,
-                // showLine: true,
-                // data: [97, 12, 85, 12, 44, 98, 52]
-                // }, {
-                //     label: "Pentium®",
-                //     backgroundColor: "rgba(255, 193, 7, 0.8)",
-                //     borderColor: "rgba(255, 193, 7, 0.9)",
-                //     pointBorderColor: "rgba(255, 193, 7, 0.9)",
-                //     pointBackgroundColor: "rgba(255, 193, 7, 0.9)",
-                //     pointHoverBackgroundColor: "#fff",
-                //     pointHoverBorderColor: "rgba(220,220,220,1)",
-                //     pointBorderWidth: 1,
-                //     showLine: true,
-                //     data: [85, 10, 56, 73, 61, 90, 63]
-                // }, {
-                //     label: "Xeon®",
-                //     backgroundColor: "rgba(52, 152, 219, 0.8)",
-                //     borderColor: "rgba(52, 152, 219, 0.9)",
-                //     pointBorderColor: "rgba(52, 152, 219, 0.9)",
-                //     pointBackgroundColor: "rgba(52, 152, 219, 0.9)",
-                //     pointHoverBackgroundColor: "#fff",
-                //     pointHoverBorderColor: "rgba(220,220,220,1)",
-                //     pointBorderWidth: 1,
-                //     showLine: true,
-                //     data: [39, 93, 4, 39, 51, 89, 90]
-                // }]
             },
             options: options
         });
@@ -1235,9 +1155,6 @@
                     textShadowColor: 'rgba(255, 255, 255,0.75)',
                     textshadowOffsetX: 1,
                     textshadowOffsetY: 1,
-                    formatter: function(value) {
-                        return value + '%';
-                    },
                 }
             },
         };
@@ -1247,32 +1164,84 @@
         lineChartBrand2 = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+                labels: ["Jan-2020", "Feb-2020", "Mar-2020", "Apr-2020", "May-2020", "Jun-2020", "Jul-2020", "Aug-2020", ],
                 datasets: [{
-                    label: "Opportunities Achieved",
-                    backgroundColor: "rgba(103, 162, 219, 0.8)",
-                    borderColor: "rgba(103, 162, 219, 0.9)",
-                    pointBorderColor: "rgba(103, 162, 219, 0.9)",
-                    pointBackgroundColor: "rgba(103, 162, 219, 0.9)",
+                    label: "Core™ i3",
+                    backgroundColor: "rgba(31, 120, 180, 0.8)",
+                    borderColor: "rgba(31, 120, 180, 0.9)",
+                    pointBorderColor: "rgba(31, 120, 180, 0.9)",
+                    pointBackgroundColor: "rgba(31, 120, 180, 0.9)",
                     pointHoverBackgroundColor: "#fff",
                     pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointBorderWidth: 1,
                     showLine: true,
-                    data: [78, 41, 30, 80, 26, 59, 67]
+                    data: [708, 518, 60, 592, 509, 894, 833, 798]
                 }, {
-                    label: "Opportunities Missed",
-                    backgroundColor: "rgba(1, 64, 125, 0.8)",
-                    borderColor: "rgba(1, 64, 125, 0.9)",
-                    pointBorderColor: "rgba(1, 64, 125, 0.9)",
-                    pointBackgroundColor: "rgba(1, 64, 125, 0.9)",
+                    label: "Core™ i5",
+                    backgroundColor: "rgba(178, 223, 138, 0.8)",
+                    borderColor: "rgba(178, 223, 138, 0.9)",
+                    pointBorderColor: "rgba(178, 223, 138, 0.9)",
+                    pointBackgroundColor: "rgba(178, 223, 138, 0.9)",
                     pointHoverBackgroundColor: "#fff",
                     pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointBorderWidth: 1,
                     showLine: true,
-                    datalabels: {
-                        color: '#f2f2f2'
-                    },
-                    data: [22, 59, 70, 20, 74, 41, 34]
+                    data: [914, 382, 795, 472, 266, 726, 45, 987]
+                }, {
+                    label: "Core™ i7",
+                    backgroundColor: "rgba(51, 160, 44, 0.8)",
+                    borderColor: "rgba(51, 160, 44, 0.9)",
+                    pointBorderColor: "rgba(51, 160, 44, 0.9)",
+                    pointBackgroundColor: "rgba(51, 160, 44, 0.9)",
+                    pointHoverBackgroundColor: "#fff",
+                    pointHoverBorderColor: "rgba(220,220,220,1)",
+                    pointBorderWidth: 1,
+                    showLine: true,
+                    data: [400, 106, 95, 953, 687, 172, 180, 11]
+                }, {
+                    label: "Core™ i9",
+                    backgroundColor: "rgba(251, 154, 153, 0.8)",
+                    borderColor: "rgba(251, 154, 153, 0.9)",
+                    pointBorderColor: "rgba(251, 154, 153, 0.9)",
+                    pointBackgroundColor: "rgba(251, 154, 153, 0.9)",
+                    pointHoverBackgroundColor: "#fff",
+                    pointHoverBorderColor: "rgba(220,220,220,1)",
+                    pointBorderWidth: 1,
+                    showLine: true,
+                    data: [755, 60, 408, 877, 3, 388, 762, 88]
+                }, {
+                    label: "Core™ m3",
+                    backgroundColor: "rgba(255, 127, 0, 0.8)",
+                    borderColor: "rgba(255, 127, 0, 0.9)",
+                    pointBorderColor: "rgba(255, 127, 0, 0.9)",
+                    pointBackgroundColor: "rgba(255, 127, 0, 0.9)",
+                    pointHoverBackgroundColor: "#fff",
+                    pointHoverBorderColor: "rgba(220,220,220,1)",
+                    pointBorderWidth: 1,
+                    showLine: true,
+                    data: [767, 598, 284, 386, 969, 572, 467, 384]
+                }, {
+                    label: "Pentium®",
+                    backgroundColor: "rgba(179, 222, 105, 0.8)",
+                    borderColor: "rgba(179, 222, 105, 0.9)",
+                    pointBorderColor: "rgba(179, 222, 105, 0.9)",
+                    pointBackgroundColor: "rgba(179, 222, 105, 0.9)",
+                    pointHoverBackgroundColor: "#fff",
+                    pointHoverBorderColor: "rgba(220,220,220,1)",
+                    pointBorderWidth: 1,
+                    showLine: true,
+                    data: [793, 68, 226, 771, 81, 448, 978, 743]
+                }, {
+                    label: "Xeon®",
+                    backgroundColor: "rgba(255, 255, 153, 0.8)",
+                    borderColor: "rgba(255, 255, 153, 0.9)",
+                    pointBorderColor: "rgba(255, 255, 153, 0.9)",
+                    pointBackgroundColor: "rgba(255, 255, 153, 0.9)",
+                    pointHoverBackgroundColor: "#fff",
+                    pointHoverBorderColor: "rgba(220,220,220,1)",
+                    pointBorderWidth: 1,
+                    showLine: true,
+                    data: [189, 587, 849, 497, 62, 575, 800, 404]
                 }]
             },
             options: options
@@ -1334,10 +1303,10 @@
                 labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
                 datasets: [{
                     label: "Core™ i3",
-                    backgroundColor: "rgba(255, 145, 67, 0.8)",
-                    borderColor: "rgba(255, 145, 67, 0.9)",
-                    pointBorderColor: "rgba(255, 145, 67, 0.9)",
-                    pointBackgroundColor: "rgba(255, 145, 67, 0.9)",
+                    backgroundColor: "rgba(31, 120, 180, 0.8)",
+                    borderColor: "rgba(31, 120, 180, 0.9)",
+                    pointBorderColor: "rgba(31, 120, 180, 0.9)",
+                    pointBackgroundColor: "rgba(31, 120, 180, 0.9)",
                     pointHoverBackgroundColor: "#fff",
                     pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointBorderWidth: 1,
@@ -1345,10 +1314,10 @@
                     data: [6, 49, 19, 24, 32, 40, 41]
                 }, {
                     label: "Core™ i5",
-                    backgroundColor: "rgba(155, 89, 182, 0.8)",
-                    borderColor: "rgba(155, 89, 182, 0.9)",
-                    pointBorderColor: "rgba(155, 89, 182, 0.9)",
-                    pointBackgroundColor: "rgba(155, 89, 182, 0.9)",
+                    backgroundColor: "rgba(178, 223, 138, 0.8)",
+                    borderColor: "rgba(178, 223, 138, 0.9)",
+                    pointBorderColor: "rgba(178, 223, 138, 0.9)",
+                    pointBackgroundColor: "rgba(178, 223, 138, 0.9)",
                     pointHoverBackgroundColor: "#fff",
                     pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointBorderWidth: 1,
@@ -1356,10 +1325,10 @@
                     data: [6, 37, 100, 80, 7, 35, 53]
                 }, {
                     label: "Core™ i7",
-                    backgroundColor: "rgba(231, 76, 60, 0.8)",
-                    borderColor: "rgba(231, 76, 60, 0.9)",
-                    pointBorderColor: "rgba(231, 76, 60, 0.9)",
-                    pointBackgroundColor: "rgba(231, 76, 60, 0.9)",
+                    backgroundColor: "rgba(51, 160, 44, 0.8)",
+                    borderColor: "rgba(51, 160, 44, 0.9)",
+                    pointBorderColor: "rgba(51, 160, 44, 0.9)",
+                    pointBackgroundColor: "rgba(51, 160, 44, 0.9)",
                     pointHoverBackgroundColor: "#fff",
                     pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointBorderWidth: 1,
@@ -1367,10 +1336,10 @@
                     data: [45, 47, 20, 78, 8, 24, 78]
                 }, {
                     label: "Core™ i9",
-                    backgroundColor: "rgba(23, 163, 184, 0.8)",
-                    borderColor: "rgba(23, 163, 184, 0.9)",
-                    pointBorderColor: "rgba(23, 163, 184, 0.9)",
-                    pointBackgroundColor: "rgba(23, 163, 184, 0.9)",
+                    backgroundColor: "rgba(251, 154, 153, 0.8)",
+                    borderColor: "rgba(251, 154, 153, 0.9)",
+                    pointBorderColor: "rgba(251, 154, 153, 0.9)",
+                    pointBackgroundColor: "rgba(251, 154, 153, 0.9)",
                     pointHoverBackgroundColor: "#fff",
                     pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointBorderWidth: 1,
@@ -1378,10 +1347,10 @@
                     data: [79, 12, 52, 99, 44, 4, 85]
                 }, {
                     label: "Core™ m3",
-                    backgroundColor: "rgba(40, 167, 69, 0.8)",
-                    borderColor: "rgba(40, 167, 69, 0.9)",
-                    pointBorderColor: "rgba(40, 167, 69, 0.9)",
-                    pointBackgroundColor: "rgba(40, 167, 69, 0.9)",
+                    backgroundColor: "rgba(255, 127, 0, 0.8)",
+                    borderColor: "rgba(255, 127, 0, 0.9)",
+                    pointBorderColor: "rgba(255, 127, 0, 0.9)",
+                    pointBackgroundColor: "rgba(255, 127, 0, 0.9)",
                     pointHoverBackgroundColor: "#fff",
                     pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointBorderWidth: 1,
@@ -1389,10 +1358,10 @@
                     data: [71, 89, 60, 17, 3, 18, 8, 16]
                 }, {
                     label: "Pentium®",
-                    backgroundColor: "rgba(255, 193, 7, 0.8)",
-                    borderColor: "rgba(255, 193, 7, 0.9)",
-                    pointBorderColor: "rgba(255, 193, 7, 0.9)",
-                    pointBackgroundColor: "rgba(255, 193, 7, 0.9)",
+                    backgroundColor: "rgba(179, 222, 105, 0.8)",
+                    borderColor: "rgba(179, 222, 105, 0.9)",
+                    pointBorderColor: "rgba(179, 222, 105, 0.9)",
+                    pointBackgroundColor: "rgba(179, 222, 105, 0.9)",
                     pointHoverBackgroundColor: "#fff",
                     pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointBorderWidth: 1,
@@ -1400,10 +1369,10 @@
                     data: [86, 17, 21, 60, 80, 31, 20]
                 }, {
                     label: "Xeon®",
-                    backgroundColor: "rgba(52, 152, 219, 0.8)",
-                    borderColor: "rgba(52, 152, 219, 0.9)",
-                    pointBorderColor: "rgba(52, 152, 219, 0.9)",
-                    pointBackgroundColor: "rgba(52, 152, 219, 0.9)",
+                    backgroundColor: "rgba(255, 255, 153, 0.8)",
+                    borderColor: "rgba(255, 255, 153, 0.9)",
+                    pointBorderColor: "rgba(255, 255, 153, 0.9)",
+                    pointBackgroundColor: "rgba(255, 255, 153, 0.9)",
                     pointHoverBackgroundColor: "#fff",
                     pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointBorderWidth: 1,
