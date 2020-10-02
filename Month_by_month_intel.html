@@ -125,10 +125,10 @@
                             </h2>
 
                             <!-- Date Filter -->
-                            <div class="cpu-filter pull-right" style="padding-top: 8px;">
-                                <div class="cpu-list" style="display: inline-block; margin-bottom: 0;">
+                            <div class="cpu-filter pull-right">
+                                <div class="cpu-list">
                                     <div class="dropdown">
-                                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuRewardsUnits" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-bottom: 0; min-width: 14em;">
+                                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuRewardsUnits" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             Choose CPU Name
                                             <i class="fa fa-angle-down dropdown-icons"
                                                 aria-hidden="true"></i>
@@ -214,7 +214,7 @@
                                     </div>
                                 </div>
 
-                                <div class="range-calendar" id="monthByMonthDate" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; border-radius: 4px; display: inline-block; margin-bottom: 0; color: #919bab;">
+                                <div class="range-calendar" id="monthByMonthDate">
                                     <i class="fas fa-calendar-alt"></i>
                                     <span id="rangeFromTo" class="d-none d-lg-inline">2 October 2019 - 2 October 2020</span>
                                     <span id="rangeFromToSmall" class="d-lg-none">02 Oct 19 - 02 Oct 20</span>
@@ -231,17 +231,42 @@
 
                     <!-- navigation tabs  -->
                     <div class="col-xs-12">
-                        <ul class="nav nav-tabs pull-left no-border filter-charts" role="tablist">
-                            <li class="nav-item">
-                                <a href="#rewards_tab" aria-controls="rewards_tab" role="tab" data-toggle="tab" class="nav-link active">Earnings</a>
+                        <ul class="nav nav-tabs pull-left no-border filter-charts" role="tablist" id="parentNav">
+                            <li class="nav-item dropdown">
+                                <!-- <a href="#rewards_tab" aria-controls="rewards_tab" role="tab" data-toggle="tab" class="nav-link active">Earnings</a> -->
+                                <a class="dropdown-toggle btn btn-a-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                    Earned
+                                   <i class="fa fa-caret-down"></i>
+                                  </a>
+                                <ul class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                    <li class="dropdown-item">
+                                        <a aria-controls="rewardsUnit" class="nav-link show active" data-toggle="tab" href="#rewardsUnit" role="tab" aria-selected="true">Units</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a aria-controls="rewardsRewards" class="nav-link show" data-toggle="tab" href="#rewardsRewards" role="tab" aria-selected="true">Value</a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li class="nav-item">
-                                <a href="#opportunities_tab" aria-controls="opportunities_tab" role="tab" data-toggle="tab" class="nav-link">Opportunities</a>
+
+                            <li class="nav-item dropdown">
+                                <!-- <a href="#opportunities_tab" aria-controls="opportunities_tab" role="tab" data-toggle="tab" class="nav-link">Opportunities</a> -->
+                                <a class="dropdown-toggle btn btn-a-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                    Opportunities
+                                  <i class="fa fa-caret-down"></i>
+                                </a>
+                                <ul class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                    <li class="dropdown-item">
+                                        <a aria-controls="opportunitiesEarned" class="nav-link show" data-toggle="tab" href="#opportunitiesEarned" role="tab" aria-selected="true">Units</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a aria-controls="opportunitiesMissed" class="nav-link show" data-toggle="tab" href="#opportunitiesMissed" role="tab" aria-selected="true">Value</a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
 
                         <!-- CSV -->
-                        <a href="#" target="_blank" class="pull-right download-csv" download="ValueHistory2102020.csv" style="display: block; color: #1b7454; background: #dff3ec; border: 1px solid #97d8c1; padding: 10px 15px;">
+                        <a href="#" target="_blank" class="pull-right download-csv" download="ValueHistory2102020.csv">
                             <span>CSV</span>
                             <i class="fa fa-download ml-1 text-90"></i>
                         </a>
@@ -252,505 +277,81 @@
 
                     <!-- Tab panes content-->
                     <div class="tab-content">
-                        <!-- Rewards Tab panels-->
-                        <div role="tabpanel" class="tab-pane fade in active" id="rewards_tab">
-                            <!--Choose chart panel-->
-                            <div class="show-historical-pane">
-
-                                <!-- navigation pills  -->
-                                <div class="col-lg-8 col-md-8 col-xs-6">
-                                    <ul class="nav nav-pills" role="tablist">
-                                        <li class="nav-item">
-                                            <a href="#unit_pill" aria-controls="unit_pill" role="tab" data-toggle="tab" class="nav-link active">Units</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#reward_pill" aria-controls="reward_pill" role="tab" data-toggle="tab" class="nav-link">Values</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- End navigation pills  -->
-
-                                <!-- Pill panes -->
-                                <div class="tab-content">
-                                    <!-- Rewards units pill -->
-                                    <div role="tabpanel" class="tab-pane fade in active" id="unit_pill">
-
-
-                                        <!--Rewards Units graph render panel-->
-                                        <div id="daily_graph_i3">
-                                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                                <div class="x_panel panel-rounded">
-                                                    <div class="x_title">
-                                                        <h2 class="historical_header--js">Earned Units</h2>
-                                                        <h2><small id="daily_graph_i3_title"></small></h2>
-                                                        <ul class="nav navbar-right panel_toolbox">
-                                                            <li>&nbsp;</li>
-                                                            <li class="dropdown">
-                                                                <ul class="dropdown-menu" role="menu">
-                                                                    <li><a href="#">Settings 1</a></li>
-                                                                    <li><a href="#">Settings 2</a></li>
-                                                                </ul>
-                                                            </li>
-                                                            <li>&nbsp;</li>
-                                                        </ul>
-
-                                                        <div class="clearfix">&nbsp;</div>
-                                                    </div>
-
-                                                    <div class="x_content">
-                                                        <canvas height="400" id="lineChartByBrand"></canvas>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--/Rewards Units graph render panel-->
+                        <!--Rewards Units graph render panel-->
+                        <div role="tabpanel" class="tab-monthbymonth tab-pane fade active show" id="rewardsUnit">
+                            <div id="daily_graph_i3">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div>
+                                        <h2 class="historical_header--js">Earned Units</h2>
+                                        <h2><small id="daily_graph_i3_title"></small></h2>
                                     </div>
-                                    <!-- /Rewards units pill -->
 
-                                    <!-- Rewards rewards pill -->
-                                    <div role="tabpanel" class="tab-pane fade" id="reward_pill">
-                                        <!-- <div class="">
-                                            <div class="col-lg-4 col-md-4 col-xs-6 date_filters_panel">
-                                                <div class="col-xs-12 dashboard_filter_panel dashboard__filter-mbm">
-
-                                                    <div class="col-md-6 col-sm-6 col-xs-6 dashboard_freq" id="rewards_rewards_vendor_combobox">
-                                                        <div class="dropdown">
-                                                            <button class="btn btn-primary dropdown-toggle no_wrap" type="button" id="dropdownMenuBrandDateVendor" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            Choose CPU Name
-                                                            <i class="fa fa-angle-down dropdown-icon"
-                                                                aria-hidden="true"></i>
-                                                        </button>
-                                                            <ul class="dropdown-menu selectpicker" id="date_brand_vendor_dd_menu">
-                                                                <li class="dropdown_list">
-                                                                    <input type="checkbox" class="form-check-input dropdown_chbx" id="checkBrandDateVend1" checked>
-                                                                    <label class="form-check-label" for="checkBrandDateVend1">
-                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
-                                                                </label>
-                                                                    <span class="dropdown_menu_chart">
-                                                                    <i class="fa fa-minus fa-lg dropdown_menu_chart-icon1"
-                                                                        aria-hidden="true"></i>
-                                                                </span>
-                                                                </li>
-                                                                <li class="dropdown_list">
-                                                                    <input type="checkbox" class="form-check-input dropdown_chbx" id="checkBrandDateVend2" checked>
-                                                                    <label class="form-check-label" for="checkBrandDateVend2">
-                                                                    Core<sup class="intel_superscript_sm">™</sup> i5
-                                                                </label>
-                                                                    <span class="dropdown_menu_chart">
-                                                                    <i class="fa fa-minus fa-lg dropdown_menu_chart-icon2"
-                                                                        aria-hidden="true"></i>
-                                                                </span>
-                                                                </li>
-                                                                <li class="dropdown_list">
-                                                                    <input type="checkbox" class="form-check-input dropdown_chbx" id="checkBrandDateVend3" checked>
-                                                                    <label class="form-check-label" for="checkBrandDateVend3">
-                                                                    Core<sup class="intel_superscript_sm">™</sup> i7
-                                                                </label>
-                                                                    <span class="dropdown_menu_chart">
-                                                                    <i class="fa fa-minus fa-lg dropdown_menu_chart-icon3"
-                                                                        aria-hidden="true"></i>
-                                                                </span>
-                                                                </li>
-                                                                <li class="dropdown_list">
-                                                                    <input type="checkbox" class="form-check-input dropdown_chbx" id="checkBrandDateVend4" checked>
-                                                                    <label class="form-check-label" for="checkBrandDateVend4">
-                                                                    Core<sup class="intel_superscript_sm">™</sup> i9
-                                                                </label>
-                                                                    <span class="dropdown_menu_chart">
-                                                                    <i class="fa fa-minus fa-lg dropdown_menu_chart-icon4"
-                                                                        aria-hidden="true"></i>
-                                                                </span>
-                                                                </li>
-                                                                <li class="dropdown_list">
-                                                                    <input type="checkbox" class="form-check-input dropdown_chbx" id="checkBrandDateVend5" checked>
-                                                                    <label class="form-check-label" for="checkBrandDateVend5">
-                                                                    Core<sup class="intel_superscript_sm">™</sup> m3
-                                                                </label>
-                                                                    <span class="dropdown_menu_chart">
-                                                                    <i class="fa fa-minus fa-lg dropdown_menu_chart-icon5"
-                                                                        aria-hidden="true"></i>
-                                                                </span>
-                                                                </li>
-                                                                <li class="dropdown_list">
-                                                                    <input type="checkbox" class="form-check-input dropdown_chbx" id="checkBrandDateVend6" checked>
-                                                                    <label class="form-check-label" for="checkBrandDateVend6">
-                                                                    Pentium<sup class="intel_superscript_sm">®</sup> 
-                                                                </label>
-                                                                    <span class="dropdown_menu_chart">
-                                                                    <i class="fa fa-minus fa-lg dropdown_menu_chart-icon6"
-                                                                        aria-hidden="true"></i>
-                                                                </span>
-                                                                </li>
-                                                                <li class="dropdown_list">
-                                                                    <input type="checkbox" class="form-check-input dropdown_chbx" id="checkBrandDateVend7" checked>
-                                                                    <label class="form-check-label" for="checkBrandDateVend7">
-                                                                    Xeon<sup class="intel_superscript_sm">®</sup>
-                                                                </label>
-                                                                    <span class="dropdown_menu_chart">
-                                                                    <i class="fa fa-minus fa-lg dropdown_menu_chart-icon7"
-                                                                        aria-hidden="true"></i>
-                                                                </span>
-                                                                </li>
-                                                                <li class="not-sortable columns-li-padding dropdown-select-button-content">
-                                                                    <button class="btn btn-primary btn-xs select-category-btn" id="default_checkBrandDateVend">Select
-                                                                    All</button>
-                                                                    <button class="btn btn-primary btn-xs select-category-btn" id="default_uncheckBrandDateVend">Unselect
-                                                                    All</button>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-md-6 col-sm-6 col-xs-6 dashboard_freq" id="rewards_rewards_category_combobox">
-                                                        <div class="row">
-                                                            <select class="browser-default custom-select country" id="brand_date_point_activity_graph">
-                                                            <option value="1">Weekly</option>
-                                                            <option value="2">Monthly</option>
-                                                            <option value="3">Annual</option>
-                                                        </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> -->
-
-                                        <!--Rewards rewards graph render panel-->
-                                        <div id="daily_graph_i3">
-                                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                                <div class="x_panel panel-rounded">
-                                                    <div class="x_title">
-                                                        <h2 class="historical_header--js">Earned Value $</h2>
-                                                        <h2><small id="daily_graph_i3_title"></small></h2>
-                                                        <ul class="nav navbar-right panel_toolbox">
-                                                            <li>&nbsp;</li>
-                                                            <li class="dropdown">
-                                                                <ul class="dropdown-menu" role="menu">
-                                                                    <li><a href="#">Settings 1</a></li>
-                                                                    <li><a href="#">Settings 2</a></li>
-                                                                </ul>
-                                                            </li>
-                                                            <li>&nbsp;</li>
-                                                        </ul>
-
-                                                        <div class="clearfix">&nbsp;</div>
-                                                    </div>
-
-                                                    <div class="x_content">
-                                                        <canvas height="400" id="lineChartByBrand2"></canvas>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--/Rewards rewards graph render panel-->
+                                    <div class="x_content">
+                                        <canvas height="400" id="lineChartByBrand"></canvas>
                                     </div>
-                                    <!-- /Rewards rewards pill -->
                                 </div>
-                                <!-- /Pill panes -->
                             </div>
-                            <!--end Choose chart panel-->
                         </div>
-                        <!-- /Rewards Tab panels-->
+                        <!--/Rewards Units panel-->
 
-                        <!-- Opportunities Tab panels-->
-                        <div role="tabpanel" class="tab-pane fade" id="opportunities_tab">
-                            <!--Choose chart panel-->
-                            <div class="show-historical-pane">
-
-                                <!-- navigation pills  -->
-                                <div class="col-lg-8 col-md-8 col-xs-6">
-                                    <ul class="nav nav-pills" role="tablist">
-                                        <li class="nav-item">
-                                            <a href="#percentage_pill" aria-controls="percentage_pill" role="tab" data-toggle="tab" class="nav-link active">Units</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#opportunities_reward_pill" aria-controls="opportunities_reward_pill" role="tab" data-toggle="tab" class="nav-link">Values</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- End navigation pills  -->
-
-                                <!-- Pill panes -->
-                                <div class="tab-content">
-
-                                    <!-- Rewards units pill -->
-                                    <div role="tabpanel" class="tab-pane fade in active" id="percentage_pill">
-                                        <!-- <div class="">
-                                            <div class="col-lg-4 col-md-4 col-xs-6 date_filters_panel">
-                                                <div class="col-xs-12 dashboard_filter_panel dashboard__filter-mbm">
-
-                                                    <div class="col-md-6 col-sm-6 col-xs-6 dashboard_freq half_top_margin" id="opportunities_percentage_vendor_dropdownmenu">
-                                                        <div class="dropdown">
-                                                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuOpportunitiesPercentage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            Choose CPU Name
-                                                            <i class="fa fa-angle-down dropdown-icon" aria-hidden="true"></i>
-                                                        </button>
-                                                            <ul class="dropdown-menu" id="earn_vendor_dd_menu">
-                                                                <li class="dropdown_list">
-                                                                    <input type="checkbox" class="form-check-input dropdown_chbx" id="checkHistoricalSoldVend1" checked>
-                                                                    <label class="form-check-label" for="checkHistoricalSoldVend1">
-                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
-                                                                </label>
-                                                                    <span class="dropdown_menu_chart">
-                                                                    <i class="fa fa-minus fa-lg dropdown_menu_chart-icon1"
-                                                                        aria-hidden="true"></i>
-                                                                </span>
-                                                                </li>
-                                                                <li class="dropdown_list">
-                                                                    <input type="checkbox" class="form-check-input dropdown_chbx" id="checkHistoricalSoldVend2" checked>
-                                                                    <label class="form-check-label" for="checkHistoricalSoldVend2">
-                                                                    Core<sup class="intel_superscript_sm">™</sup> i5
-                                                                </label>
-                                                                    <span class="dropdown_menu_chart">
-                                                                    <i class="fa fa-minus fa-lg dropdown_menu_chart-icon2"
-                                                                        aria-hidden="true"></i>
-                                                                </span>
-                                                                </li>
-                                                                <li class="dropdown_list">
-                                                                    <input type="checkbox" class="form-check-input dropdown_chbx" id="checkHistoricalSoldVend3" checked>
-                                                                    <label class="form-check-label" for="checkHistoricalSoldVend3">
-                                                                    Core<sup class="intel_superscript_sm">™</sup> i7
-                                                                </label>
-                                                                    <span class="dropdown_menu_chart">
-                                                                    <i class="fa fa-minus fa-lg dropdown_menu_chart-icon3"
-                                                                        aria-hidden="true"></i>
-                                                                </span>
-                                                                </li>
-                                                                <li class="dropdown_list">
-                                                                    <input type="checkbox" class="form-check-input dropdown_chbx" id="checkHistoricalSoldVend4" checked>
-                                                                    <label class="form-check-label" for="checkHistoricalSoldVend4">
-                                                                    Core<sup class="intel_superscript_sm">™</sup> i9
-                                                                </label>
-                                                                    <span class="dropdown_menu_chart">
-                                                                    <i class="fa fa-minus fa-lg dropdown_menu_chart-icon4"
-                                                                        aria-hidden="true"></i>
-                                                                </span>
-                                                                </li>
-                                                                <li class="dropdown_list">
-                                                                    <input type="checkbox" class="form-check-input dropdown_chbx" id="checkHistoricalSoldVend5" checked>
-                                                                    <label class="form-check-label" for="checkHistoricalSoldVend5">
-                                                                    Core<sup class="intel_superscript_sm">™</sup> m3
-                                                                </label>
-                                                                    <span class="dropdown_menu_chart">
-                                                                    <i class="fa fa-minus fa-lg dropdown_menu_chart-icon5"
-                                                                        aria-hidden="true"></i>
-                                                                </span>
-                                                                </li>
-                                                                <li class="dropdown_list">
-                                                                    <input type="checkbox" class="form-check-input dropdown_chbx" id="checkHistoricalSoldVend6" checked>
-                                                                    <label class="form-check-label" for="checkHistoricalSoldVend6">
-                                                                    Pentium<sup class="intel_superscript_sm">®</sup> 
-                                                                </label>
-                                                                    <span class="dropdown_menu_chart">
-                                                                    <i class="fa fa-minus fa-lg dropdown_menu_chart-icon6"
-                                                                        aria-hidden="true"></i>
-                                                                </span>
-                                                                </li>
-                                                                <li class="dropdown_list">
-                                                                    <input type="checkbox" class="form-check-input dropdown_chbx" id="checkHistoricalSoldVend7" checked>
-                                                                    <label class="form-check-label" for="checkHistoricalSoldVend7">
-                                                                    Xeon<sup class="intel_superscript_sm">®</sup>
-                                                                </label>
-                                                                    <span class="dropdown_menu_chart">
-                                                                    <i class="fa fa-minus fa-lg dropdown_menu_chart-icon7"
-                                                                        aria-hidden="true"></i>
-                                                                </span>
-                                                                </li>
-                                                                <li class="not-sortable columns-li-padding dropdown-select-button-content">
-                                                                    <button class="btn btn-primary btn-xs btn-block select-category-btn" id="default_checkHistoricalSoldVend">Select
-                                                                    All</button>
-                                                                    <button class="btn btn-primary btn-xs btn-block select-category-btn" id="default_uncheckHistoricalSoldVend">Unselect
-                                                                    All</button>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-md-6 col-sm-6 col-xs-6 dashboard_freq" id="opportunities_percentage_category_combobox">
-                                                        <div class="row">
-                                                            <select class="browser-default custom-select country" id="earn_point_activity_graph">
-                                                            <option value="1">Weekly</option>
-                                                            <option value="2">Monthly</option>
-                                                            <option value="3">Annual</option>
-                                                        </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> -->
-
-                                        <!--Rewards Units graph render panel-->
-                                        <div id="daily_graph_i3">
-                                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                                <div class="x_panel panel-rounded">
-                                                    <div class="x_title">
-                                                        <h2 class="historical_header--js">Missed Units</h2>
-                                                        <h2><small id="daily_graph_i3_title"></small></h2>
-                                                        <ul class="nav navbar-right panel_toolbox">
-                                                            <li>&nbsp;</li>
-                                                            <li class="dropdown">
-                                                                <ul class="dropdown-menu" role="menu">
-                                                                    <li><a href="#">Settings 1</a></li>
-                                                                    <li><a href="#">Settings 2</a></li>
-                                                                </ul>
-                                                            </li>
-                                                            <li>&nbsp;</li>
-                                                        </ul>
-
-                                                        <div class="clearfix">&nbsp;</div>
-                                                    </div>
-
-                                                    <div class="x_content">
-                                                        <canvas height="400" id="lineChartByBrand3"></canvas>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--Rewards Units graph render panel-->
+                        <!--Rewards Values panel-->
+                        <div role="tabpanel" class="tab-monthbymonth tab-pane fade" id="rewardsRewards">
+                            <div id="daily_graph_i3">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div>
+                                        <h2 class="historical_header--js">Earned Value $</h2>
+                                        <h2><small id="daily_graph_i3_title"></small></h2>
                                     </div>
-                                    <!-- /Rewards units pill -->
 
-                                    <!-- Rewards rewards pill -->
-                                    <div role="tabpanel" class="tab-pane fade" id="opportunities_reward_pill">
-                                        <!-- <div class="">
-                                            <div class="col-lg-4 col-md-4 col-xs-6 date_filters_panel">
-                                                <div class="col-xs-12 dashboard_filter_panel dashboard__filter-mbm">
-
-                                                    <div class="col-md-6 col-sm-6 col-xs-6 dashboard_freq" id="opportunities_rewards_vendor_combobox">
-                                                        <div class="dropdown">
-                                                            <button class="btn btn-primary dropdown-toggle no_wrap" type="button" id="dropdownMenuBrandDateVendor" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            Choose CPU Name
-                                                            <i class="fa fa-angle-down dropdown-icon" aria-hidden="true"></i>
-                                                        </button>
-                                                            <ul class="dropdown-menu" id="date_brand_vendor_dd_menu">
-                                                                <li class="dropdown_list">
-                                                                    <input type="checkbox" class="form-check-input dropdown_chbx" id="checkBrandDateVend1" checked>
-                                                                    <label class="form-check-label" for="checkBrandDateVend1">
-                                                                    Core<sup class="intel_superscript_sm">™</sup> i3
-                                                                </label>
-                                                                    <span class="dropdown_menu_chart">
-                                                                    <i class="fa fa-minus fa-lg dropdown_menu_chart-icon1"
-                                                                        aria-hidden="true"></i>
-                                                                </span>
-                                                                </li>
-                                                                <li class="dropdown_list">
-                                                                    <input type="checkbox" class="form-check-input dropdown_chbx" id="checkBrandDateVend2" checked>
-                                                                    <label class="form-check-label" for="checkBrandDateVend2">
-                                                                    Core<sup class="intel_superscript_sm">™</sup> i5
-                                                                </label>
-                                                                    <span class="dropdown_menu_chart">
-                                                                    <i class="fa fa-minus fa-lg dropdown_menu_chart-icon2"
-                                                                        aria-hidden="true"></i>
-                                                                </span>
-                                                                </li>
-                                                                <li class="dropdown_list">
-                                                                    <input type="checkbox" class="form-check-input dropdown_chbx" id="checkBrandDateVend3" checked>
-                                                                    <label class="form-check-label" for="checkBrandDateVend3">
-                                                                    Core<sup class="intel_superscript_sm">™</sup> i7
-                                                                </label>
-                                                                    <span class="dropdown_menu_chart">
-                                                                    <i class="fa fa-minus fa-lg dropdown_menu_chart-icon3"
-                                                                        aria-hidden="true"></i>
-                                                                </span>
-                                                                </li>
-                                                                <li class="dropdown_list">
-                                                                    <input type="checkbox" class="form-check-input dropdown_chbx" id="checkBrandDateVend4" checked>
-                                                                    <label class="form-check-label" for="checkBrandDateVend4">
-                                                                    Core<sup class="intel_superscript_sm">™</sup> i9
-                                                                </label>
-                                                                    <span class="dropdown_menu_chart">
-                                                                    <i class="fa fa-minus fa-lg dropdown_menu_chart-icon4"
-                                                                        aria-hidden="true"></i>
-                                                                </span>
-                                                                </li>
-                                                                <li class="dropdown_list">
-                                                                    <input type="checkbox" class="form-check-input dropdown_chbx" id="checkBrandDateVend5" checked>
-                                                                    <label class="form-check-label" for="checkBrandDateVend5">
-                                                                    Core<sup class="intel_superscript_sm">™</sup> m3
-                                                                </label>
-                                                                    <span class="dropdown_menu_chart">
-                                                                    <i class="fa fa-minus fa-lg dropdown_menu_chart-icon5"
-                                                                        aria-hidden="true"></i>
-                                                                </span>
-                                                                </li>
-                                                                <li class="dropdown_list">
-                                                                    <input type="checkbox" class="form-check-input dropdown_chbx" id="checkBrandDateVend6" checked>
-                                                                    <label class="form-check-label" for="checkBrandDateVend6">
-                                                                    Pentium<sup class="intel_superscript_sm">®</sup> 
-                                                                </label>
-                                                                    <span class="dropdown_menu_chart">
-                                                                    <i class="fa fa-minus fa-lg dropdown_menu_chart-icon6"
-                                                                        aria-hidden="true"></i>
-                                                                </span>
-                                                                </li>
-                                                                <li class="dropdown_list">
-                                                                    <input type="checkbox" class="form-check-input dropdown_chbx" id="checkBrandDateVend7" checked>
-                                                                    <label class="form-check-label" for="checkBrandDateVend7">
-                                                                    Xeon<sup class="intel_superscript_sm">®</sup>
-                                                                </label>
-                                                                    <span class="dropdown_menu_chart">
-                                                                    <i class="fa fa-minus fa-lg dropdown_menu_chart-icon7"
-                                                                        aria-hidden="true"></i>
-                                                                </span>
-                                                                </li>
-                                                                <li class="not-sortable columns-li-padding dropdown-select-button-content">
-                                                                    <button class="btn btn-primary btn-xs select-category-btn" id="default_checkBrandDateVend">Select
-                                                                    All</button>
-                                                                    <button class="btn btn-primary btn-xs select-category-btn" id="default_uncheckBrandDateVend">Unselect
-                                                                    All</button>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-md-6 col-sm-6 col-xs-6 dashboard_freq" id="opportunities_rewards_category_combobox">
-                                                        <div class="row">
-                                                            <select class="browser-default custom-select country" id="brand_date_point_activity_graph">
-                                                            <option value="1">Weekly</option>
-                                                            <option value="2">Monthly</option>
-                                                            <option value="3">Annual</option>
-                                                        </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> -->
-
-                                        <!--Rewards rewards graph render panel-->
-                                        <div id="daily_graph_i3">
-                                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                                <div class="x_panel panel-rounded">
-                                                    <div class="x_title">
-                                                        <h2 class="historical_header--js">Missed Value $</h2>
-                                                        <h2><small id="daily_graph_i3_title"></small></h2>
-                                                        <ul class="nav navbar-right panel_toolbox">
-                                                            <li>&nbsp;</li>
-                                                            <li class="dropdown">
-                                                                <ul class="dropdown-menu" role="menu">
-                                                                    <li><a href="#">Settings 1</a></li>
-                                                                    <li><a href="#">Settings 2</a></li>
-                                                                </ul>
-                                                            </li>
-                                                            <li>&nbsp;</li>
-                                                        </ul>
-
-                                                        <div class="clearfix">&nbsp;</div>
-                                                    </div>
-
-                                                    <div class="x_content">
-                                                        <canvas height="400" id="lineChartByBrand4"></canvas>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--/Rewards rewards graph render panel-->
+                                    <div class="x_content">
+                                        <canvas height="400" id="lineChartByBrand2"></canvas>
                                     </div>
-                                    <!-- /Rewards rewards pill -->
                                 </div>
-                                <!-- /Pill panes -->
                             </div>
-                            <!--end Choose chart panel-->
                         </div>
-                        <!-- /Opportunities Tab panels-->
+                        <!--/Rewards Values panel-->
+
+                        <!-- Opportunities Units panels-->
+                        <div role="tabpanel" class="tab-monthbymonth tab-pane fade" id="opportunitiesEarned">
+                            <!--Rewards Units graph render panel-->
+                            <div id="daily_graph_i3">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div>
+                                        <h2 class="historical_header--js">Missed Units</h2>
+                                        <h2><small id="daily_graph_i3_title"></small></h2>
+                                    </div>
+
+                                    <div class="x_content">
+                                        <canvas height="400" id="lineChartByBrand3"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Rewards Units graph render panel-->
+
+
+
+                        </div>
+                        <!-- /Opportunities Units panels-->
+
+                        <!-- Opportunities Values panels-->
+                        <div role="tabpanel" class="tab-monthbymonth tab-pane fade" id="opportunitiesMissed">
+
+                            <!--Rewards rewards graph render panel-->
+                            <div id="daily_graph_i3">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div>
+                                        <h2 class="historical_header--js">Missed Value $</h2>
+                                        <h2><small id="daily_graph_i3_title"></small></h2>
+                                    </div>
+
+                                    <div class="x_content">
+                                        <canvas height="400" id="lineChartByBrand4"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/Rewards rewards graph render panel-->
+                        </div>
+                        <!-- /Opportunities Values panels-->
                     </div>
                     <!-- /Tab panes content-->
                 </div>

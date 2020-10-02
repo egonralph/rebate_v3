@@ -236,6 +236,11 @@ body .container.body .right_col {
     margin-bottom: 0;
 }
 
+.cpu-list .dropdown button {
+    margin-bottom: 0;
+    min-width: 14em;
+}
+
 .current {
     font-weight: bolder;
 }
@@ -1515,11 +1520,13 @@ span.quater_earnings_icon {
 
 .range-calendar {
     padding: 5px 10px;
-    margin-bottom: 0.5em;
+    margin-bottom: 0;
     background: #fff;
     cursor: pointer;
     border: 1px solid #ccc;
     border-radius: 4px;
+    display: inline-block;
+    color: #919bab;
 }
 
 .rb_brand_category_legend-rebate {
@@ -2307,15 +2314,6 @@ td span.bsl-table-val {
 .pi_thumbnail.thumbnail_rewards {
     height: 35.5em;
     margin: 0.5em;
-}
-
-.range-calendar {
-    padding: 5px 10px;
-    margin-bottom: 0.5em;
-    background: #fff;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    border-radius: 4px;
 }
 
 .rewardsbreakdown-portlet .right-filter,
