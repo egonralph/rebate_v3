@@ -117,36 +117,18 @@
     <div class="row">
         <div class="col-xs-12">
             <div class="panel panel-default panel_section__historical">
-                <div class="panel-heading panel-sticky flex_header">
+                <div class="panel-heading auto-height">
                     <div class="row">
                         <div class="col-xs-12 header-title__historical">
-                            <h2 class="bold section_main_header">
+                            <h2 class="bold section_main_header pull-left">
                                 <i class="fad fa-calendar-check half_margin_right"></i> Historical
                             </h2>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="panel-body panel-body__historical">
-
-                    <!-- navigation tabs  -->
-                    <div class="col-xs-12">
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li class="nav-item">
-                                <a href="#rewards_tab" aria-controls="rewards_tab" role="tab" data-toggle="tab" class="nav-link active">Earnings</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#opportunities_tab" aria-controls="opportunities_tab" role="tab" data-toggle="tab" class="nav-link">Opportunities</a>
-                            </li>
-                        </ul>
-
-                        <!-- Date Filter -->
-                        <div class="cpu_date_filters_panel">
-                            <div class="col-xs-12 dashboard_filter_panel">
-
-                                <div class="col-md-6 col-sm-6 col-xs-6" id="rewards_units_vendor_dropdownmenu">
+                            <!-- Date Filter -->
+                            <div class="cpu-filter pull-right" style="padding-top: 8px;">
+                                <div class="cpu-list" style="display: inline-block; margin-bottom: 0;">
                                     <div class="dropdown">
-                                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuRewardsUnits" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuRewardsUnits" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-bottom: 0; min-width: 14em;">
                                             Choose CPU Name
                                             <i class="fa fa-angle-down dropdown-icons"
                                                 aria-hidden="true"></i>
@@ -232,18 +214,37 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-6 col-sm-6 col-xs-6" id="rewards_units_category_combobox">
-                                    <div class="range-calendar" id="monthByMonthDate">
-                                        <i class="fas fa-calendar-alt"></i>
-                                        <span id="rangeFromTo" class="d-none d-lg-inline">17 September 2019 - 17 September 2020</span>
-                                        <span id="rangeFromToSmall" class="d-lg-none">17 Sep 19 - 17 Sep 20</span>
-                                        <span class="hide" id="rangeFrom">17-09-2019</span>
-                                        <span class="hide" id="rangeTo">17-09-2020</span>
-                                    </div>
+                                <div class="range-calendar" id="monthByMonthDate" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; border-radius: 4px; display: inline-block; margin-bottom: 0; color: #919bab;">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span id="rangeFromTo" class="d-none d-lg-inline">2 October 2019 - 2 October 2020</span>
+                                    <span id="rangeFromToSmall" class="d-lg-none">02 Oct 19 - 02 Oct 20</span>
+                                    <span class="hide" id="rangeFrom">02-10-2019</span>
+                                    <span class="hide" id="rangeTo">02-10-2020</span>
                                 </div>
                             </div>
+                            <!-- End Date Filter -->
                         </div>
-                        <!-- End Date Filter -->
+                    </div>
+                </div>
+
+                <div class="panel-body panel-body__historical">
+
+                    <!-- navigation tabs  -->
+                    <div class="col-xs-12">
+                        <ul class="nav nav-tabs pull-left no-border filter-charts" role="tablist">
+                            <li class="nav-item">
+                                <a href="#rewards_tab" aria-controls="rewards_tab" role="tab" data-toggle="tab" class="nav-link active">Earnings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#opportunities_tab" aria-controls="opportunities_tab" role="tab" data-toggle="tab" class="nav-link">Opportunities</a>
+                            </li>
+                        </ul>
+
+                        <!-- CSV -->
+                        <a href="#" target="_blank" class="pull-right download-csv" download="ValueHistory2102020.csv" style="display: block; color: #1b7454; background: #dff3ec; border: 1px solid #97d8c1; padding: 10px 15px;">
+                            <span>CSV</span>
+                            <i class="fa fa-download ml-1 text-90"></i>
+                        </a>
                     </div>
                     <!-- End navigation tabs  -->
 
@@ -280,7 +281,7 @@
                                             <div class="col-md-12 col-sm-12 col-xs-12">
                                                 <div class="x_panel panel-rounded">
                                                     <div class="x_title">
-                                                        <h2 class="historical_header--js">Units</h2>
+                                                        <h2 class="historical_header--js">Earned Units</h2>
                                                         <h2><small id="daily_graph_i3_title"></small></h2>
                                                         <ul class="nav navbar-right panel_toolbox">
                                                             <li>&nbsp;</li>
@@ -418,7 +419,7 @@
                                             <div class="col-md-12 col-sm-12 col-xs-12">
                                                 <div class="x_panel panel-rounded">
                                                     <div class="x_title">
-                                                        <h2 class="historical_header--js">Units</h2>
+                                                        <h2 class="historical_header--js">Earned Value $</h2>
                                                         <h2><small id="daily_graph_i3_title"></small></h2>
                                                         <ul class="nav navbar-right panel_toolbox">
                                                             <li>&nbsp;</li>
@@ -582,7 +583,7 @@
                                             <div class="col-md-12 col-sm-12 col-xs-12">
                                                 <div class="x_panel panel-rounded">
                                                     <div class="x_title">
-                                                        <h2 class="historical_header--js">Percentage</h2>
+                                                        <h2 class="historical_header--js">Missed Units</h2>
                                                         <h2><small id="daily_graph_i3_title"></small></h2>
                                                         <ul class="nav navbar-right panel_toolbox">
                                                             <li>&nbsp;</li>
@@ -719,7 +720,7 @@
                                             <div class="col-md-12 col-sm-12 col-xs-12">
                                                 <div class="x_panel panel-rounded">
                                                     <div class="x_title">
-                                                        <h2 class="historical_header--js">Percentage</h2>
+                                                        <h2 class="historical_header--js">Missed Value $</h2>
                                                         <h2><small id="daily_graph_i3_title"></small></h2>
                                                         <ul class="nav navbar-right panel_toolbox">
                                                             <li>&nbsp;</li>
@@ -1146,7 +1147,7 @@
                     display: true,
                     align: 'center',
                     anchor: 'center',
-                    color: '#f2f2f2',
+                    color: '#495057',
                     font: {
                         weight: 'bold',
                         family: '"Lucida Console", Monaco, monospace',
@@ -1175,7 +1176,7 @@
                     pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointBorderWidth: 1,
                     showLine: true,
-                    data: [708, 518, 60, 592, 509, 894, 833, 798]
+                    data: [3974, 7124, 8638, 6352, 995, 1900, 2398, 34541]
                 }, {
                     label: "Core™ i5",
                     backgroundColor: "rgba(178, 223, 138, 0.8)",
@@ -1186,7 +1187,7 @@
                     pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointBorderWidth: 1,
                     showLine: true,
-                    data: [914, 382, 795, 472, 266, 726, 45, 987]
+                    data: [7517, 719, 14382, 795, 4722, 667, 2645, 987]
                 }, {
                     label: "Core™ i7",
                     backgroundColor: "rgba(51, 160, 44, 0.8)",
@@ -1197,7 +1198,7 @@
                     pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointBorderWidth: 1,
                     showLine: true,
-                    data: [400, 106, 95, 953, 687, 172, 180, 11]
+                    data: [4001, 9065, 953, 6871, 7218, 3811]
                 }, {
                     label: "Core™ i9",
                     backgroundColor: "rgba(251, 154, 153, 0.8)",
@@ -1208,7 +1209,7 @@
                     pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointBorderWidth: 1,
                     showLine: true,
-                    data: [755, 60, 408, 877, 3, 388, 762, 88]
+                    data: [7556, 408, 8773, 3887, 6288, 965, 4375, 6952]
                 }, {
                     label: "Core™ m3",
                     backgroundColor: "rgba(255, 127, 0, 0.8)",
@@ -1219,7 +1220,7 @@
                     pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointBorderWidth: 1,
                     showLine: true,
-                    data: [767, 598, 284, 386, 969, 572, 467, 384]
+                    data: [6759, 1828, 4386, 5969, 2467, 384, 1009, 2831]
                 }, {
                     label: "Pentium®",
                     backgroundColor: "rgba(179, 222, 105, 0.8)",
@@ -1230,7 +1231,7 @@
                     pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointBorderWidth: 1,
                     showLine: true,
-                    data: [793, 68, 226, 771, 81, 448, 978, 743]
+                    data: [2582, 1793, 2682, 2677, 181, 448, 978, 743]
                 }, {
                     label: "Xeon®",
                     backgroundColor: "rgba(255, 255, 153, 0.8)",
@@ -1241,7 +1242,7 @@
                     pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointBorderWidth: 1,
                     showLine: true,
-                    data: [189, 587, 849, 497, 62, 575, 800, 404]
+                    data: [1895, 1287, 899, 2497, 3462, 575, 800, 1404]
                 }]
             },
             options: options
@@ -1259,21 +1260,6 @@
                 position: 'top',
             },
             responsive: false,
-            scales: {
-                xAxes: [{
-                    stacked: true
-                }],
-                yAxes: [{
-                    stacked: true
-                }]
-            },
-            tooltips: {
-                callbacks: {
-                    afterLabel: function(tooltipItem, data) {
-                        return '%';
-                    },
-                },
-            },
             plugins: {
                 datalabels: {
                     display: true,
@@ -1284,13 +1270,11 @@
                         weight: 'bold',
                         family: '"Lucida Console", Monaco, monospace',
                     },
+                    rotation: -90,
                     textShadowBlur: 1,
                     textShadowColor: 'rgba(255, 255, 255,0.75)',
                     textshadowOffsetX: 1,
                     textshadowOffsetY: 1,
-                    formatter: function(value) {
-                        return value + '%';
-                    },
                 }
             },
         };
@@ -1300,7 +1284,7 @@
         lineChartBrand3 = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+                labels: ["Jan-2020", "Feb-2020", "Mar-2020", "Apr-2020", "May-2020", "Jun-2020", "Jul-2020", "Aug-2020", ],
                 datasets: [{
                     label: "Core™ i3",
                     backgroundColor: "rgba(31, 120, 180, 0.8)",
@@ -1395,38 +1379,21 @@
                 position: 'top',
             },
             responsive: false,
-            scales: {
-                xAxes: [{
-                    stacked: true
-                }],
-                yAxes: [{
-                    stacked: true
-                }]
-            },
-            tooltips: {
-                callbacks: {
-                    afterLabel: function(tooltipItem, data) {
-                        return '%';
-                    }
-                },
-            },
             plugins: {
                 datalabels: {
                     display: true,
                     align: 'center',
                     anchor: 'center',
-                    color: '#f2f2f2',
+                    color: '#495057',
                     font: {
                         weight: 'bold',
                         family: '"Lucida Console", Monaco, monospace',
                     },
+                    rotation: -90,
                     textShadowBlur: 1,
                     textShadowColor: 'rgba(255, 255, 255,0.75)',
                     textshadowOffsetX: 1,
                     textshadowOffsetY: 1,
-                    formatter: function(value) {
-                        return value + '%';
-                    }
                 }
             },
         };
@@ -1436,32 +1403,84 @@
         lineChartBrand4 = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+                labels: ["Jan-2020", "Feb-2020", "Mar-2020", "Apr-2020", "May-2020", "Jun-2020", "Jul-2020", "Aug-2020", ],
                 datasets: [{
-                    label: "Opportunities Achieved",
-                    backgroundColor: "rgba(103, 162, 219, 0.8)",
-                    borderColor: "rgba(103, 162, 219, 0.9)",
-                    pointBorderColor: "rgba(103, 162, 219, 0.9)",
-                    pointBackgroundColor: "rgba(103, 162, 219, 0.9)",
+                    label: "Core™ i3",
+                    backgroundColor: "rgba(31, 120, 180, 0.8)",
+                    borderColor: "rgba(31, 120, 180, 0.9)",
+                    pointBorderColor: "rgba(31, 120, 180, 0.9)",
+                    pointBackgroundColor: "rgba(31, 120, 180, 0.9)",
                     pointHoverBackgroundColor: "#fff",
                     pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointBorderWidth: 1,
                     showLine: true,
-                    data: [31, 49, 91, 96, 4, 27, 26]
+                    data: [79, 32, 9, 92, 73, 6, 22, 9]
                 }, {
-                    label: "Opportunities Missed",
-                    backgroundColor: "rgba(1, 64, 125, 0.8)",
-                    borderColor: "rgba(1, 64, 125, 0.9)",
-                    pointBorderColor: "rgba(1, 64, 125, 0.9)",
-                    pointBackgroundColor: "rgba(1, 64, 125, 0.9)",
+                    label: "Core™ i5",
+                    backgroundColor: "rgba(178, 223, 138, 0.8)",
+                    borderColor: "rgba(178, 223, 138, 0.9)",
+                    pointBorderColor: "rgba(178, 223, 138, 0.9)",
+                    pointBackgroundColor: "rgba(178, 223, 138, 0.9)",
                     pointHoverBackgroundColor: "#fff",
                     pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointBorderWidth: 1,
                     showLine: true,
-                    datalabels: {
-                        color: '#f2f2f2'
-                    },
-                    data: [69, 51, 9, 4, 96, 73, 74]
+                    data: [26, 35, 98, 22, 25, 6, 10, 83]
+                }, {
+                    label: "Core™ i7",
+                    backgroundColor: "rgba(51, 160, 44, 0.8)",
+                    borderColor: "rgba(51, 160, 44, 0.9)",
+                    pointBorderColor: "rgba(51, 160, 44, 0.9)",
+                    pointBackgroundColor: "rgba(51, 160, 44, 0.9)",
+                    pointHoverBackgroundColor: "#fff",
+                    pointHoverBorderColor: "rgba(220,220,220,1)",
+                    pointBorderWidth: 1,
+                    showLine: true,
+                    data: [56, 16, 1, 16, 50, 40, 92, 98]
+                }, {
+                    label: "Core™ i9",
+                    backgroundColor: "rgba(251, 154, 153, 0.8)",
+                    borderColor: "rgba(251, 154, 153, 0.9)",
+                    pointBorderColor: "rgba(251, 154, 153, 0.9)",
+                    pointBackgroundColor: "rgba(251, 154, 153, 0.9)",
+                    pointHoverBackgroundColor: "#fff",
+                    pointHoverBorderColor: "rgba(220,220,220,1)",
+                    pointBorderWidth: 1,
+                    showLine: true,
+                    data: [49, 21, 54, 5, 9, 32, 12, 95]
+                }, {
+                    label: "Core™ m3",
+                    backgroundColor: "rgba(255, 127, 0, 0.8)",
+                    borderColor: "rgba(255, 127, 0, 0.9)",
+                    pointBorderColor: "rgba(255, 127, 0, 0.9)",
+                    pointBackgroundColor: "rgba(255, 127, 0, 0.9)",
+                    pointHoverBackgroundColor: "#fff",
+                    pointHoverBorderColor: "rgba(220,220,220,1)",
+                    pointBorderWidth: 1,
+                    showLine: true,
+                    data: [62, 11, 16, 14, 32, 92, 77, 77]
+                }, {
+                    label: "Pentium®",
+                    backgroundColor: "rgba(179, 222, 105, 0.8)",
+                    borderColor: "rgba(179, 222, 105, 0.9)",
+                    pointBorderColor: "rgba(179, 222, 105, 0.9)",
+                    pointBackgroundColor: "rgba(179, 222, 105, 0.9)",
+                    pointHoverBackgroundColor: "#fff",
+                    pointHoverBorderColor: "rgba(220,220,220,1)",
+                    pointBorderWidth: 1,
+                    showLine: true,
+                    data: [10, 21, 99, 74, 24, 16, 41, 87]
+                }, {
+                    label: "Xeon®",
+                    backgroundColor: "rgba(255, 255, 153, 0.8)",
+                    borderColor: "rgba(255, 255, 153, 0.9)",
+                    pointBorderColor: "rgba(255, 255, 153, 0.9)",
+                    pointBackgroundColor: "rgba(255, 255, 153, 0.9)",
+                    pointHoverBackgroundColor: "#fff",
+                    pointHoverBorderColor: "rgba(220,220,220,1)",
+                    pointBorderWidth: 1,
+                    showLine: true,
+                    data: [7, 69, 47, 92, 86, 76, 45, 39]
                 }]
             },
             options: options

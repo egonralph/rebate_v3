@@ -226,6 +226,16 @@ body .container.body .right_col {
     }
 }
 
+.cpu-filter {
+    padding-top: 8px;
+}
+
+.cpu-list,
+.range-calendar {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
 .current {
     font-weight: bolder;
 }
@@ -568,6 +578,14 @@ a#brand_sku_table_next:hover,
     margin-top: 0.5em;
 }
 
+.download-csv {
+    display: block;
+    color: #1b7454;
+    background: #dff3ec;
+    border: 1px solid #97d8c1;
+    padding: 10px 15px;
+}
+
 .dropdown_chbx {
     margin-left: 1.5em;
 }
@@ -594,31 +612,31 @@ a#brand_sku_table_next:hover,
 }
 
 .dropdown_menu_chart-icon1 {
-    color: #FF9143;
+    color: #1f78b4;
 }
 
 .dropdown_menu_chart-icon2 {
-    color: #9B59B6;
+    color: #b2df8a;
 }
 
 .dropdown_menu_chart-icon3 {
-    color: #E74C3C;
+    color: #33a02c;
 }
 
 .dropdown_menu_chart-icon4 {
-    color: #17a2b8;
+    color: #fb9a99;
 }
 
 .dropdown_menu_chart-icon5 {
-    color: #28a745;
+    color: #ff7f00;
 }
 
 .dropdown_menu_chart-icon6 {
-    color: #ffc107;
+    color: #b3de69;
 }
 
 .dropdown_menu_chart-icon7 {
-    color: #3498DB;
+    color: #ffff99;
 }
 
 .dropdown-select-button-content,
@@ -1493,6 +1511,15 @@ span.quater_earnings_icon {
 
 .radius-round {
     border-radius: 50%;
+}
+
+.range-calendar {
+    padding: 5px 10px;
+    margin-bottom: 0.5em;
+    background: #fff;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .rb_brand_category_legend-rebate {
