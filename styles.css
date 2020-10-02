@@ -853,6 +853,10 @@ input[type="search"] {
     margin-right: 15px;
 }
 
+.nav-item.orange-border {
+    border-top: 3px solid orange;
+}
+
 #full_period,
 #full_periods,
 #month_by_month {

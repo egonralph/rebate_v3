@@ -232,33 +232,33 @@
                     <!-- navigation tabs  -->
                     <div class="col-xs-12">
                         <ul class="nav nav-tabs pull-left no-border filter-charts" role="tablist" id="parentNav">
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown orange-border" id="nav-item-earned">
                                 <!-- <a href="#rewards_tab" aria-controls="rewards_tab" role="tab" data-toggle="tab" class="nav-link active">Earnings</a> -->
                                 <a class="dropdown-toggle btn btn-a-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                                     Earned
                                    <i class="fa fa-caret-down"></i>
                                   </a>
                                 <ul class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                    <li class="dropdown-item">
+                                    <li class="dropdown-item" onclick="updateChart('#nav-item-earned')">
                                         <a aria-controls="rewardsUnit" class="nav-link show active" data-toggle="tab" href="#rewardsUnit" role="tab" aria-selected="true">Units</a>
                                     </li>
-                                    <li class="dropdown-item">
+                                    <li class="dropdown-item" onclick="updateChart('#nav-item-earned')">
                                         <a aria-controls="rewardsRewards" class="nav-link show" data-toggle="tab" href="#rewardsRewards" role="tab" aria-selected="true">Value</a>
                                     </li>
                                 </ul>
                             </li>
 
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown" id="nav-item-opportunities">
                                 <!-- <a href="#opportunities_tab" aria-controls="opportunities_tab" role="tab" data-toggle="tab" class="nav-link">Opportunities</a> -->
                                 <a class="dropdown-toggle btn btn-a-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                                     Opportunities
                                   <i class="fa fa-caret-down"></i>
                                 </a>
                                 <ul class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                    <li class="dropdown-item">
+                                    <li class="dropdown-item" onclick="updateChart('#nav-item-opportunities')">
                                         <a aria-controls="opportunitiesEarned" class="nav-link show" data-toggle="tab" href="#opportunitiesEarned" role="tab" aria-selected="true">Units</a>
                                     </li>
-                                    <li class="dropdown-item">
+                                    <li class="dropdown-item" onclick="updateChart('#nav-item-opportunities')">
                                         <a aria-controls="opportunitiesMissed" class="nav-link show" data-toggle="tab" href="#opportunitiesMissed" role="tab" aria-selected="true">Value</a>
                                     </li>
                                 </ul>
@@ -2150,33 +2150,10 @@
         console.log('update chart_new function');
     }
 
-    // function changeHistoricalHeader() {
-    //     $('#dash_ratio_container .radio_label').on('click', function(event) {
-    //         var historicalHeader = $('#daily_graph_i3 .historical_header--js');
-    //         var val = $(this).find('input').val();
 
-    //         historicalHeader.text('Units Opportunities');
-
-    //         if (val == 'PTD') {
-    //             historicalHeader.text('Units Opportunities');
-    //             console.log('Units Opportunities test');
-    //         }
-    //         if (val == 'PTE') {
-    //             historicalHeader.text('Units Earnings');
-    //             console.log('Units Earnings Test');
-    //         }
-    //     });
-    // };
 
     $(document).ready(function() {
-        // chooseSoldOutstandingRadio();
-        // chooseRadioButtons();
-        // chooseEarnVendorChbxNew();
         chooseEarnVendorChbx();
-        // changeHistoricalHeader();
-        // selectCategoryPerEarn();
-        // selectCategoryPerDate();
-        // selectDashboardChart();
     });
 </script>
 
@@ -2193,4 +2170,13 @@
 
 <script>
     $('input[name="dates"]').daterangepicker();
+</script>
+
+<script>
+    function updateChart(containerID) {
+        $(".dropdown-item .nav-link").removeClass("active");
+        $(".nav-item").removeClass("orange-border");
+        $(this).addClass("active");
+        $(containerID).addClass("orange-border");
+    };
 </script>
